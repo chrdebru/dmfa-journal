@@ -1,0 +1,16 @@
+Code DMFA,Libellé,Niveau,Déduction valide à partir du,Déduction valide jusqu'au,Montant de la déduction -détail,Numéro d'enregistrement du règlement de travail,Date d'origine droit,Date d'expiration du droit,Temps de travail hebdomadaire moyen avant la réduction du temps de travail,Temps de travail hebdomadaire moyen après la réduction du temps de travail
+1350,Réduction du temps de travail à 38 heures par semaine,Ligne travailleur,2001/4,2003/1,Obligatoire,Obligatoire,Obligatoire,Interdit,Obligatoire,Obligatoire
+1351,Réduction du temps de travail en deçà de 38 heures par semaine - réduction unique calculée en une fois,Ligne travailleur,2002/1,2003/4,Obligatoire,Obligatoire,Obligatoire,Interdit,Obligatoire,Obligatoire
+1352,Réduction du temps de travail en deçà de 38 heures par semaine - réduction unique calculée en quatre tranches,Ligne travailleur,2002/1,2003/4,Obligatoire,Obligatoire,Obligatoire,Interdit,Obligatoire,Obligatoire
+1353,Réduction du temps de travail en deçà de 38 heures par semaine - réduction de maintien,Ligne travailleur,2002/1,2003/4,Obligatoire,Obligatoire,Obligatoire,Interdit,Obligatoire,Obligatoire
+1353,Réduction du temps de travail en deçà de 38 heures par semaine - réduction de maintien,Occupation de la ligne travailleur,2004/1,9999/4,Interdit,Interdit,Obligatoire,Interdit,Obligatoire,Obligatoire
+1345,La semaine de quatre jours - réduction unique calculée en une fois,Ligne travailleur,2002/1,2003/4,Obligatoire,Obligatoire,Obligatoire,Interdit,Interdit,Interdit
+1346,La semaine de quatre jours - réduction unique calculée en quatre tranches,Ligne travailleur,2002/1,2003/4,Obligatoire,Obligatoire,Obligatoire,Interdit,Interdit,Interdit
+3500,Réduction du temps de travail,Occupation de la ligne travailleur,2004/1,9999/4,Interdit,Interdit,Obligatoire,Interdit,Obligatoire,Obligatoire
+3520,Réduction du temps de travail et semaine des quatre jours,Occupation de la ligne travailleur,2004/1,9999/4,Interdit,Interdit,Obligatoire,Interdit,Obligatoire,Obligatoire
+3700,Réduction du temps de travail suite à la crise,Occupation de la ligne travailleur,2009/2,2011/1,Interdit,Interdit,Obligatoire,Obligatoire,Obligatoire,Obligatoire
+3700,Réduction du temps de travail suite à la crise,Occupation de la ligne travailleur,2020/3,9999/4,Interdit,Interdit,Obligatoire,Obligatoire,Obligatoire,Obligatoire
+3701,Réduction temporaire du temps de travail suite au Brexit,Occupation de la ligne travailleur,2021/1,2022/1,Interdit,Interdit,Obligatoire,Obligatoire,Obligatoire,Obligatoire
+3720,Réduction du temps de travail combinée avec la semaine de quatre jours suite à la crise,Occupation de la ligne travailleur,2009/2,2011/1,Interdit,Interdit,Obligatoire,Obligatoire,Obligatoire,Obligatoire
+3720,Réduction  du temps de travail combinée avec la semaine de quatre jours suite à la crise,Occupation de la ligne travailleur,2020/3,9999/4,Interdit,Interdit,Obligatoire,Obligatoire,Obligatoire,Obligatoire
+3721,Réduction temporaire du temps de travail combinée avec la semaine de quatre jours suite au Brexit,Occupation de la ligne travailleur,2021/1,2022/1,Interdit,Interdit,Obligatoire,Obligatoire,Obligatoire,Obligatoire

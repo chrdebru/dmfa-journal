@@ -1,0 +1,278 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ont: <http://kg.socialsecurity.be/ont/dmfa#> .
+
+@prefix kg: <http://kg.socialsecurity.be/resource/shapes/dmfareq/20221/> .
+@base <http://kg.socialsecurity.be/resource/shapes/dmfareq/20221/> .
+
+
+<> 
+    sh:declare [
+		sh:prefix "rdfs" ;
+		sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xs:anyURI ;
+	] ;
+    
+	sh:declare [
+		sh:prefix "xs" ;
+		sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xs:anyURI ;
+	] ;
+
+	sh:declare [
+		sh:prefix "ont" ;
+		sh:namespace "http://kg.socialsecurity.be/ont/dmfa#"^^xs:anyURI ;
+	] ;
+
+    sh:declare [
+        sh:prefix "an2" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex2#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an4" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex4#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an6" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex6#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an7" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex7#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an8" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex8#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an9" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex9#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an10" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex10#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an11" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex11#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an21" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex21#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an27" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex27#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an28" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex28#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an31" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex31#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an35" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex35#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an42" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex42#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an44" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex44#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an45" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex45#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an46" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex46#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "dmfas02" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/dmfas02#"^^xs:anyURI ;
+    ] ;
+.
+
+
+kg:DmfAREQCountInstancesShape a sh:NodeShape ;
+    rdfs:comment "A graph should have exactly one instance of ont:DmfAConsultationRequest" ;
+    sh:targetNode ont:DmfAConsultationRequest ;
+
+    sh:property [
+        sh:message "Graph does not contain exactly one instance of ont:DmfAConsultationRequest" ;
+        sh:path [ sh:inversePath rdf:type ] ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+.
+
+kg:DmfAREQShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DmfAConsultationRequest (90169)" ;
+    sh:targetClass ont:DmfAConsultationRequest ;
+
+    sh:property [
+        sh:message "Each ont:DmfAConsultationRequest must have at least one ont:Form." ;
+        sh:minCount 1 ;
+        sh:path ont:R_90169_90059 ;
+        sh:class ont:Form
+    ] ;
+.
+
+kg:DmfAREQFormShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Form (90059)" ;
+    sh:targetClass ont:Form ;
+
+    sh:property [
+        sh:message "Each ont:Form must belongs to exactly one ont:DmfAConsultationRequest." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90169_90059 ; ] ;
+        sh:class ont:DmfAOriginal ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:Form has at most one ont:Reference." ;
+        sh:maxCount 1 ;
+        sh:path ont:R_90059_90082 ;
+        sh:class ont:Reference ;
+    ] ;
+
+    sh:property[
+        sh:message "Each ont:Form has exactly one ont:EmployerDeclarationId." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path ont:R_90059_90198 ;
+        sh:class ont:EmployerDeclarationId ;
+    ] ;
+.
+
+kg:DmfAREQAttestationStatusShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AttestationStatus (00110)" ;
+    sh:path ont:AttestationStatus;
+    sh:in ( 0 ) ;
+.
+
+kg:DmfAREQTypeFormShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TypeForm (00297)" ;
+    sh:path ont:TypeForm;
+    sh:in ( "RE" ) ;
+.
+
+kg:DmfAREQIdentificationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Identification (00296)" ;
+    sh:path ont:Identification;
+    sh:in ("DMFAREQ") ;
+.
+
+kg:DmfAREQReferenceShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Reference (90082)" ;
+    sh:targetClass ont:Reference ;
+
+    sh:property [
+        sh:message "Each ont:Reference must belongs to exactly one ont:Form." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90059_90082 ; ] ;
+        sh:class ont:Form
+    ] ;
+.
+
+
+kg:DmfAREQReferenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceNbr (00222)" ;
+    sh:path ont:ReferenceNbr;
+    sh:maxLength 20 ;
+.
+
+kg:DmfAREQReferenceOriginShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceOrigin (00298)" ;
+    sh:path ont:ReferenceOrigin;
+    sh:in ( 1 ) ;
+.
+
+kg:DmfAREQReferenceTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceType (00221)" ;
+    sh:path ont:ReferenceType;
+    sh:datatype xs:integer;
+    sh:in ( 1 ) ;
+.
+
+kg:DmfAREQEmployerDeclarationIdShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EmployerDeclarationId (90198)" ;
+    sh:targetClass ont:EmployerDeclaration ;
+
+    sh:property [
+        sh:message "Each ont:EmployerDeclarationId must belongs to exactly one ont:Form." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90059_90198 ; ] ;
+        sh:class ont:Form ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:EmployerDeclaration has at most 9999999 ont:NaturalPerson." ;
+        sh:maxCount 9999999 ; 
+        sh:path ont:R_90198_90017 ;
+        sh:class ont:NaturalPerson ;
+    ] ;
+.
+
+kg:DmfAREQQuarterShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Quarter (00013)" ;
+    sh:path ont:Quarter;
+    sh:in ( 20221 ) ;
+.
+
+kg:DmfAREQNaturalPersonShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for NaturalPerson (90017)" ;
+    sh:targetClass ont:NaturalPerson ;
+
+    sh:property [
+        sh:message "Each ont:NaturalPerson must belongs to exactly one ont:EmployerDeclarationId." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90198_90017 ; ] ;
+        sh:class ont:EmployerDeclarationId ;
+    ] ;
+.
+
+kg:DmfAREQNaturalPersonUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NaturalPersonUserReference (00615)" ;
+    sh:path ont:NaturalPersonUserReference;
+    sh:maxLength 20 ;
+.
+
+kg:DmfAREQContributionUnrelatedToNPIdShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ContributionUnrelatedToNPId (90199)" ;
+    sh:targetClass ont:ContributionUnrelatedToNPId ;
+
+    sh:property [
+        sh:message "Each ont:ContributionUnrelatedToNPId must belongs to exactly one ont:EmployerDeclarationId." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90198_90199 ; ] ;
+        sh:class ont:EmployerDeclarationId ;
+    ] ;
+.

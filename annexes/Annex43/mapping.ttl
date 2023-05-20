@@ -1,0 +1,90 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/annex43#> .
+@base <http://kg.socialsecurity.be/resource/mappings/annex43/>  .
+
+
+<#PublicSectorPersonnelCategory-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./Adjusted_AN2020-1-FR43.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/List/ann43" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:PublicSectorPersonnelCategory;
+        rr:termType rr:IRI ;
+        rr:template "http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory{Id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "LabelFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:Code ;
+        rr:objectMap [
+            rml:reference "Code" ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "LabelFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validCodeDMFA ;
+        rr:objectMap [
+            rml:reference "DMFA" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validCodeDMFAPPL ;
+        rr:objectMap [
+            rml:reference "DMFAAPL" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validCodeCapeloDHG ;
+        rr:objectMap [
+            rml:reference "Capelo_DHG" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFromQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_vanaf" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validToQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_tot" ;
+        ] ;
+    ] ;
+.

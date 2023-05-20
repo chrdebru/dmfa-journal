@@ -1,0 +1,97 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/annex31#> .
+@base <http://kg.socialsecurity.be/resource/mappings/annex31/>  .
+
+
+<#CodeNace-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./Adjusted_AN2015-2-FR31.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/List/ann31" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:CodeNace;
+        rr:termType rr:IRI ;
+        rr:template "http://kg.socialsecurity.be/resource/annex31/CodeNace{Id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "Label" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:Code ;
+        rr:objectMap [
+            rml:reference "Code" ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "Description" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:isCodeDmfAppl ;
+        rr:objectMap [
+            rr:datatype xs:boolean ;
+            rml:reference "Code_DmfAppl" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:isSocialMaribelONSSAPL ;
+        rr:objectMap [
+            rr:datatype xs:boolean ;
+            rml:reference "Maribel_Social_ONSSAPL" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFrom ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            rml:reference "Date_debut_validite" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validTo ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            rml:reference "Date_fin_validite" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFromQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_vanaf" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validToQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_tot" ;
+        ] ;
+    ] ;
+.

@@ -1,0 +1,97 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/annex7#> .
+@base <http://kg.socialsecurity.be/resource/mappings/annex7/>  .
+
+
+<#RemunCode-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./Adjusted_AN2021-4-FR7.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/List/ann7" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:RemunCode;
+        rr:termType rr:IRI ;
+        rr:template "http://kg.socialsecurity.be/resource/annex7/RemunCode{Id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "Label" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:Code ;
+        rr:objectMap [
+            rml:reference "Code" ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "Description" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validCodeDMFA ;
+        rr:objectMap [
+            rml:reference "DMFA" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validCodeDMFAPPL ;
+        rr:objectMap [
+            rml:reference "ADRS" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFrom ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            rml:reference "begin_geldigheid" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validTo ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            rml:reference "einde_geldigheid" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFromQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_vanaf" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validToQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_tot" ;
+        ] ;
+    ] ;
+.

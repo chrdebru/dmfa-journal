@@ -1,0 +1,1220 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ont: <http://kg.socialsecurity.be/ont/dmfa#> .
+
+@prefix kg: <http://kg.socialsecurity.be/resource/shapes/dmfa/20222/> .
+@base <http://kg.socialsecurity.be/resource/shapes/dmfa/20222/> .
+
+#TODO comment specific to dmfa
+
+<> 
+    sh:declare [
+		sh:prefix "rdfs" ;
+		sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xs:anyURI ;
+	] ;
+    
+	sh:declare [
+		sh:prefix "xs" ;
+		sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xs:anyURI ;
+	] ;
+
+	sh:declare [
+		sh:prefix "ont" ;
+		sh:namespace "http://kg.socialsecurity.be/ont/dmfa#"^^xs:anyURI ;
+	] ;
+
+    sh:declare [
+        sh:prefix "an2" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex2#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an4" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex4#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an6" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex6#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an7" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex7#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an8" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex8#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an9" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex9#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an10" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex10#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an11" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex11#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an21" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex21#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an27" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex27#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an28" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex28#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an31" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex31#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an35" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex35#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an42" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex42#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an43" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex43#"^^xs:anyURI ;
+    ] ;
+    
+    sh:declare [
+        sh:prefix "an44" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex44#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an45" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex45#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an46" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex46#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "dmfas02" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/dmfas02#"^^xs:anyURI ;
+    ] ;
+.
+
+kg:sparqlValidOrdinaryContribution a sh:SPARQLConstraint;
+    sh:message """Invalid Worker Code, code is not a valid "cotisation ordinaire".""" ;
+    sh:prefixes <> ;
+    sh:select """
+        SELECT $this ?value 
+        WHERE {
+            $this ont:WorkerCode ?value.
+            OPTIONAL{
+                ?wc a an2:WorkerCodeContributionDue;
+                    an2:WorkerCode ?value;
+                    an2:WorkerCodeType ?wct;
+                    an2:Presence ?presence; 
+                .
+                FILTER( ?presence = 1 || ?presence = 3)
+                FILTER( ?wct = "Cotisation ordinaire"@fr)
+            }
+            FILTER(!BOUND(?wc))
+        }""" ;
+.
+
+kg:DmfAOriginalCountInstancesShape a sh:NodeShape ;
+    rdfs:comment "A graph should have exactly one instance of ont:DmfAOriginal" ;
+    sh:targetNode ont:DmfAOriginal ;
+
+    sh:property [
+        sh:message "Graph does not contain exactly one instance of ont:DmfAOriginal" ;
+        sh:path [ sh:inversePath rdf:type ] ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+.
+
+kg:DmfAOriginalShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DmfAOriginal (90169)" ;
+    sh:targetClass ont:DmfAOriginal ;
+
+    sh:property [
+        sh:message "Each ont:DmfAOriginal must have at least one ont:Form." ;
+        sh:minCount 1 ;
+        sh:path ont:R_90169_90059 ;
+        sh:class ont:Form
+    ] ;
+.
+
+kg:DmfAFormShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Form (90059)" ;
+    sh:targetClass ont:Form ;
+
+    sh:property [
+        sh:message "Each ont:Form must belongs to exactly one ont:DmfAOriginal." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90169_90059 ; ] ;
+        sh:class ont:DmfAOriginal ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:Form has at most one ont:Reference." ;
+        sh:maxCount 1 ;
+        sh:path ont:R_90059_90082 ;
+        sh:class ont:Reference ;
+    ] ;
+
+    sh:property[
+        sh:message "Each ont:Form has exactly one ont:EmployerDeclaration." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path ont:R_90059_90007 ;
+        sh:class ont:EmployerDeclaration ;
+    ] ;
+
+    sh:property kg:DmfAAttestationStatusShape;
+    sh:property kg:DmfATypeFormShape;
+    sh:property kg:DmfAIdentificationShape;
+.
+
+kg:DmfAAttestationStatusShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AttestationStatus (00110)" ;
+    sh:path ont:AttestationStatus;
+    sh:in ( 0 ) ;
+.
+
+kg:DmfATypeFormShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TypeForm (00297)" ;
+    sh:path ont:TypeForm;
+    sh:in ( "SU" ) ;
+.
+
+kg:DmfAIdentificationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Identification (00296)" ;
+    sh:path ont:Identification;
+    sh:in ("DMFA") ;
+.
+
+kg:DmfAReferenceShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Reference (90082)" ;
+    sh:targetClass ont:Reference ;
+
+    sh:property [
+        sh:message "Each ont:Reference must belongs to exactly one ont:Form." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90059_90082 ; ] ;
+        sh:class ont:Form
+    ] ;
+
+    sh:property kg:DmfAReferenceNbrShape;
+    sh:property kg:DmfAReferenceOriginShape;
+    sh:property kg:DmfAReferenceTypeShape;
+.
+
+kg:DmfAReferenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceNbr (00222)" ;
+    sh:path ont:ReferenceNbr;
+    sh:maxLength 20 ;
+.
+
+kg:DmfAReferenceOriginShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceOrigin (00298)" ;
+    sh:path ont:ReferenceOrigin;
+    sh:in ( 1 ) ;
+.
+
+kg:DmfAReferenceTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceType (00221)" ;
+    sh:path ont:ReferenceType;
+    sh:datatype xs:integer;
+    sh:in ( 1 ) ;
+.
+
+kg:DmfAEmployerDeclarationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EmployerDeclaration (90007)" ;
+    sh:targetClass ont:EmployerDeclaration ;
+
+    sh:property [
+        sh:message "Each ont:EmployerDeclaration must belongs to exactly one ont:Form." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90059_90007 ; ] ;
+        sh:class ont:Form ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:EmployerDeclaration has at most 9999999 ont:NaturalPerson." ;
+        sh:maxCount 9999999 ; 
+        sh:path ont:R_90007_90017 ;
+        sh:class ont:NaturalPerson ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:EmployerDeclaration has at most 99999 ont:CompanyVehicle." ;
+        sh:maxCount 99999 ; 
+        sh:path ont:R_90007_90294 ;
+        sh:class ont:CompanyVehicle ;
+    ] ;
+
+    
+    # sh:and (
+    #     [
+    #         sh:targetClass ont:EmployerDeclaration ;
+    #         sh:message "Each ont:EmployerDeclaration has at least one of ont:NaturalPerson or ont:CompanyVehicle or ont:ContributionUnrelatedToNP" ;
+            sh:or (
+                [
+                    sh:minCount 10 ;
+                    sh:path ont:R_90007_90002 ;
+                    sh:class ont:ContributionUnrelatedToNP ;
+                ]
+                [
+                    sh:minCount 10 ;
+                    sh:path ont:R_90007_90017 ;
+                    sh:class ont:NaturalPerson ;
+                ]
+                [
+                    sh:minCount 1 ;
+                    sh:path ont:R_90007_90294 ;
+                    sh:class ont:CompanyVehicle ;
+                ]
+            ) ; 
+    #     ]
+    #  ) ;
+
+   sh:property kg:DmfAQuarterShape;
+.
+
+#TODO discuss
+kg:DmfAQuarterShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Quarter (00013)" ;
+    sh:path ont:Quarter;
+    sh:in ( 20222 ) ;
+.
+
+kg:DmfANaturalPersonShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for NaturalPerson (90017)" ;
+    sh:targetClass ont:NaturalPerson ;
+
+    sh:property [
+        sh:message "Each ont:NaturalPerson must belongs to exactly one ont:EmployerDeclaration." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90007_90017 ; ] ;
+        sh:class ont:EmployerDeclaration ;
+    ] ;
+
+    sh:property [
+        rdfs:comment "Each ont:NaturalPerson must have at least one ont:WorkerRecord." ;
+        sh:minCount 1 ;
+        sh:path ont:R_90017_90012 ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+
+    sh:property kg:DmfANaturalPersonUserReferenceShape;
+.
+
+kg:DmfANaturalPersonUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NaturalPersonUserReference (00615)" ;
+    sh:path ont:NaturalPersonUserReference;
+    sh:maxLength 20 ;
+.
+
+kg:DmfACompanyVehicleShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for CompanyVehicle (90294)" ;
+    sh:targetClass ont:CompanyVehicle ;
+
+    sh:property [
+        sh:message "Each ont:CompanyVehicle must belongs to exactly one ont:EmployerDeclaration." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90007_90294 ; ] ;
+        sh:class ont:EmployerDeclaration ;
+    ] ;
+.
+
+kg:DmfAContributionUnrelatedToNPShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ContributionUnrelatedToNP (90002)" ;
+    sh:targetClass ont:ContributionUnrelatedToNP ;
+
+    sh:property [
+        sh:message "Each ont:ContributionUnrelatedToNP must belongs to exactly one ont:EmployerDeclaration." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90007_90002 ; ] ;
+        sh:class ont:EmployerDeclaration ;
+    ] ;
+.
+
+kg:DmfAWorkerRecordShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerRecord (90012)" ;
+    sh:targetClass ont:WorkerRecord ;
+
+    sh:property [
+        sh:message "Each ont:WorkerRecord must belongs to exactly one ont:NaturalPerson." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90017_90012 ; ] ;
+        sh:class ont:NaturalPerson ;
+    ] ;
+
+    # sh:and (
+    #     [
+    #         sh:message "Each ont:WorkerRecord has at least one of ont:StudentContribution xor ont:DismissedStatutoryWorkerContribution xor ont:IndemnityWAPM xor ont:Occupation xor ont:EarlyRetirementContribution xor ont:ComplementaryIndemnity" ;
+            sh:xone (
+                [
+                    sh:minCount 1 ;
+                    sh:path ont:R_90012_90003 ;
+                    sh:class ont:StudentContribution ;
+                ]
+                [
+                    sh:minCount 1 ;
+                    sh:path ont:R_90012_90005 ;
+                    sh:class ont:DismissedStatutoryWorkerContribution ;
+                ]
+                [
+                    sh:minCount 1 ;
+                    sh:path ont:R_90012_90011 ;
+                    sh:class ont:IndemnityWAPM ;
+                ]
+                [
+                    sh:minCount 1 ;
+                    sh:path ont:R_90012_90015 ;
+                    sh:class ont:Occupation ;
+                ]
+                [
+                    sh:minCount 1 ;
+                    sh:path ont:R_90012_90042 ;
+                    sh:class ont:EarlyRetirementContribution ;
+                ]
+                [
+                    sh:minCount 1 ;
+                    sh:path ont:R_90012_90336 ;
+                    sh:class ont:ComplementaryIndemnity ;
+                ]
+            ) ;
+    #     ]
+    #  ) ;
+    
+
+    sh:xone (
+        [
+            sh:property [
+                sh:message "Each ont:WorkerRecord has between 1 (included) and 99 (included) ont:Occupation." ;
+                sh:minCount 1 ;
+                sh:maxCount 99 ;
+                sh:path ont:R_90012_90015 ;
+                sh:class ont:Occupation ;
+            ] ;
+            sh:sparql kg:sparqlValidOrdinaryContribution; #TODO 676 is valid but not cotisationordinaire            
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90012_90015 ;
+            ]
+        ]
+    ) ;
+
+    sh:property [
+        sh:message "Each ont:WorkerRecord has at most one ont:ActivationInformation." ;
+        sh:maxCount 1 ; 
+        sh:path ont:R_90012_90578 ;
+        sh:class ont:ActivationInformation ;
+    ] ;
+    
+    sh:sparql [
+        sh:message "Incompatible number of ont:WorkerContribution with respect to the ont:WorkerCode." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?wc) as ?wcAmount)
+                    WHERE {
+                        $this ont:R_90012_90001 ?wc .
+                    } 
+                    GROUP BY $this
+                }
+                {
+                    SELECT $this (MAX (?allowedAmount) as ?maxAllowedAmount)
+                    WHERE
+                    {
+                        {
+                            SELECT $this ?allowedAmount
+                            WHERE{
+                                $this ont:WorkerCode ?code .
+                                ?wc a an2:WorkerCodeContributionDue;
+                                    an2:WorkerCode ?code;
+                                    an2:WorkerCodeType ?wct;
+                                    an2:Presence ?presence; 
+                                .
+                                FILTER( ?presence = 1 || ?presence = 3)
+                                FILTER( ?wct = "Cotisation ordinaire"@fr)
+                                BIND( 9999999 as ?allowedAmount)
+                            }
+                        }
+                        UNION
+                        {
+                            SELECT $this ?allowedAmount
+                            WHERE{
+                                $this ont:WorkerCode ?code .
+                                ?wc a an2:WorkerCodeContributionDue;
+                                    an2:WorkerCode ?code;
+                                    an2:WorkerCodeType ?wct;
+                                    an2:Presence ?presence; 
+                                .
+                                FILTER( ?presence = 1 || ?presence = 3)
+                                FILTER( ?wct = "Cotisation Fedris"@fr)
+                                BIND( 2 as ?allowedAmount)
+                            }
+                        }
+                        UNION
+                        {
+                            SELECT $this ?allowedAmount
+                            WHERE{
+                                $this ont:WorkerCode ?code .
+                                ?wc a an2:WorkerCodeContributionDue;
+                                    an2:WorkerCode ?code;
+                                    an2:WorkerCodeType ?wct;
+                                    an2:Presence ?presence; 
+                                .
+                                FILTER( ?presence = 1 || ?presence = 3)
+                                FILTER( ?wct = "Cotisation spéciale étudiant"@fr)
+                                BIND( 1 as ?allowedAmount)
+                            }
+                        }
+                    }
+                    GROUP BY $this
+                }
+                FILTER( ?maxAllowedAmount < ?wcAmount )
+            }""" ;
+    ] ;
+
+    sh:xone (
+        [
+            sh:property [
+                sh:minCount 1 ;
+                sh:path ont:R_90012_90110 ;
+                sh:class ont:WorkerDeduction ;
+                sh:sparql kg:sparqlValidOrdinaryContribution ;
+            ]
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90012_90110 ;
+            ]
+        ]
+    ) ;
+
+    sh:xone (
+        [
+            sh:property [
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:path ont:R_90012_90005 ;
+                sh:class ont:DismissedStatutoryWorkerContribution ;
+                sh:sparql [
+                    sh:message """Invalid Worker Code, code is not a valid "Cotisation spéciale travailleur statutaire licencié".""" ;
+                    sh:prefixes <> ;
+                    sh:select """
+                        SELECT $this ?value 
+                        WHERE {
+                            $this ont:WorkerCode ?value. 
+                            OPTIONAL{
+                                ?wc a an2:WorkerCodeContributionDue;
+                                    an2:WorkerCode ?value;
+                                    an2:WorkerCodeType ?wct;
+                                    an2:Presence ?presence; 
+                                .
+                                FILTER( ?presence = 1 || ?presence = 3)
+                                FILTER( ?wct = "Cotisation spéciale travailleur statutaire licencié"@fr)
+                            }
+                            FILTER(!BOUND(?wc))
+                        }""" ;
+                ] ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90012_90005 ;
+            ] ;
+        ]
+    ) ;
+
+    sh:property [
+        sh:message "Each ont:WorkerRecord must not have any ont:EarlyRetirementContributionShape." ;
+        sh:maxCount 0 ;
+        sh:path ont:R_90012_90042 ;
+    ] ;
+
+    sh:xone (
+        [
+            sh:property [
+                sh:minCount 1 ;
+                sh:path ont:R_90012_90336 ;
+                sh:class ont:ComplementaryIndemnity ;
+                sh:sparql [
+                    sh:message """Invalid Worker Code, code is not a valid "Cotisation sur des indemnités complémentaires".""" ;
+                    sh:prefixes <> ;
+                       sh:select """
+                        SELECT $this ?value 
+                        WHERE {
+                            $this ont:WorkerCode ?value. 
+                            OPTIONAL{
+                                ?wc a an2:WorkerCodeContributionDue;
+                                    an2:WorkerCode ?value;
+                                    an2:WorkerCodeType ?wct;
+                                    an2:Presence ?presence; 
+                                .
+                                FILTER( ?presence = 1 || ?presence = 3)
+                                FILTER( ?wct in (
+                                    "Cotisation personnelle chômeur avec complément d'entreprise (RCC) ou indemnités complémentaires pour travailleurs âgés (RCIC)"@fr,
+                                    "Cotisation spéciale chômeur avec complément d'entreprise (RCC)"@fr,
+                                    "Cotisation spéciale indemnités complémentaires"@fr)
+                                )
+                            }
+                            FILTER(!BOUND(?wc))
+                        }""" ;
+                ] ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90012_90336 ;
+            ] ;
+        ]
+    ) ;
+
+    sh:xone (
+        [
+            sh:property [
+                sh:minCount 1 ;
+                sh:path ont:R_90012_90011 ;
+                sh:class ont:IndemnityWAPM ;
+                sh:sparql [
+                    sh:message """Invalid Worker Code, code is not a valid "Cotisation Fedris".""" ;
+                    sh:prefixes <> ;
+                    sh:select """
+                        SELECT $this ?value 
+                        WHERE {
+                            $this ont:WorkerCode ?value.
+                            OPTIONAL{
+                                ?wc a an2:WorkerCodeContributionDue;
+                                    an2:WorkerCode ?value;
+                                    an2:WorkerCodeType ?wct;
+                                    an2:Presence ?presence; 
+                                .
+                                FILTER( ?presence = 1 || ?presence = 3)
+                                FILTER( ?wct = "Cotisation Fedris"@fr)
+                            }
+                            FILTER(!BOUND(?wc))
+                        }""" ;
+                ] ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90012_90011 ;
+            ] ;
+        ]
+    ) ;
+
+    sh:property [
+        sh:message "Each ont:WorkerRecord must have at most 99 ont:Occupation." ;
+        sh:maxCount 99 ;
+        sh:path ont:R_90012_90015 ;
+    ] ;
+
+    sh:xone(
+        [
+            sh:property [
+                sh:path ont:R_90012_90578;
+                sh:maxCount 1 ;
+                sh:minCount 1 ;
+                sh:sparql [
+                    sh:message """There must exist a ont:ActivationInformation if a ont:ServiceExemptionNotion with the value "2" exist""" ;
+                    sh:prefixes <> ;
+                    sh:select """
+                        SELECT $this
+                        WHERE {
+                            {
+                                SELECT $this (SUM(?occ) AS ?nbrOcc) 
+                                WHERE {
+                                    $this ont:R_90012_90015/ont:R_90015_90313/ont:ServiceExemptionNotion ?sen.
+                                    BIND (IF(?sen = "2", 1, 0) as ?occ)
+                                }
+                                GROUP BY $this
+                            }
+                            FILTER(?nbrOcc = 0)
+                        }""" ;
+                ] ;
+            ]
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90012_90578;
+            ]
+        ]
+    ) ;
+
+    sh:xone (
+        [
+            sh:property [
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:path ont:R_90012_90003 ;
+                sh:class ont:StudentContribution ;
+                sh:sparql [
+                    sh:message """Invalid Worker Code, code is not a valid "Cotisation spéciale étudiant".""" ;
+                    sh:prefixes <> ;
+                    sh:select """
+                        SELECT $this ?value 
+                        WHERE {
+                            $this ont:WorkerCode ?value.
+                            OPTIONAL {
+                                ?wc a an2:WorkerCodeContributionDue;
+                                    an2:WorkerCode ?value;
+                                    an2:WorkerCodeType ?wct;
+                                    an2:Presence ?presence; 
+                                .
+                                FILTER( ?presence = 1 || ?presence = 3)
+                                FILTER( ?wct = "Cotisation spéciale étudiant"@fr)
+                            }
+                            FILTER(!BOUND(?wc))
+                        }""" ;
+                ] ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90012_90003 ;
+            ] ;
+        ]
+    ) ;
+        
+    sh:property kg:DmfAWorkerCodeShape;
+    sh:property kg:DmfAWorkerRecordUserReferenceShape;
+.
+
+kg:DmfAWorkerCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerCode (00037)" ;
+    sh:path ont:WorkerCode;
+    sh:datatype xs:integer;
+    #TODO vs not in
+    sh:sparql [
+        sh:message """Invalid Worker Code, code 848 and 849 are not allowed for a DmfA.""" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                FILTER(?value in (848, 849))
+            }""" ;
+    ] ;
+.
+
+kg:DmfAWorkerRecordUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerRecordUserReference (00616)" ;
+    sh:path ont:WorkerRecordUserReference;
+    sh:datatype xs:string;
+    sh:maxLength 20 ;
+.
+
+kg:DmfAOccupationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Occupation (90015)" ;
+    sh:targetClass ont:Occupation ;
+
+    sh:property [
+        sh:message "Each ont:Occupation must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90012_90015 ; ] ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:Occupation has at most one ont:OccupationInformations." ;
+        sh:maxCount 1 ; 
+        sh:path ont:R_90015_90313 ;
+        sh:class ont:OccupationInformations ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:Occupation has at most one ont:SecondPillarInformation." ;
+        sh:maxCount 1 ; 
+        sh:path ont:R_90015_90172 ;
+        sh:class ont:SecondPillarInformation ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:Occupation has at most 99 ont:Service." ;
+        sh:maxCount 99 ; 
+        sh:path ont:R_90015_90018 ;
+        sh:class ont:Service ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:Occupation  has at most 99 ont:Remun." ;
+        sh:maxCount 99 ; 
+        sh:path ont:R_90015_90019 ;
+        sh:class ont:Remun ;
+    ] ;
+
+    #TODO not enough info combinaison d'une catégorie d'employeur et de code travailleur qui n'appartient pas à la liste des combinaisons nécessitant
+    sh:property [
+        sh:message "Each ont:Occupation has at most 99 ont:OccupationPublicServiceData." ;
+        sh:maxCount 99 ; 
+        sh:path ont:R_90015_90411 ;
+        sh:class ont:OccupationPublicServiceData ;
+    ] ;
+
+    sh:xone (
+        [
+            sh:message "Each ont:Occupation with a ont:ReorganisationMeasure having the value 599 must have exactly 2 ont:ReorgMeasureInformation." ;
+            sh:property [
+                sh:path ont:R_90015_90438 ;
+                sh:class ont:ReorgMeasureInformation ;
+                sh:minCount 2 ;
+                sh:maxCount 2 ;
+            ] ;
+            sh:property [
+                sh:path ont:ReorganisationMeasure;
+                sh:in ( 599 ) ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90015_90438 ;
+            ]
+        ]
+    ) ;
+
+    sh:xone (
+        [
+            sh:property [
+                sh:minCount 1 ;
+                sh:path ont:R_90015_90109 ;
+                sh:class ont:OccupationDeduction ;
+            ] ;
+            sh:sparql [
+                sh:message """Invalid Worker Code, code is not a valid "cotisation ordinaire".""" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this ?value 
+                    WHERE {
+                        $this ^ont:R_90012_90015/ont:WorkerCode ?value. 
+                        OPTIONAL{
+                            ?wc a an2:WorkerCodeContributionDue;
+                                an2:WorkerCode ?value;
+                                an2:WorkerCodeType ?wct;
+                                an2:Presence ?presence; 
+                            .
+                            FILTER( ?presence = 1 || ?presence = 3)
+                            FILTER( ?wct = "Cotisation ordinaire"@fr)
+                        }
+                        FILTER(!BOUND(?wc))
+                    }""" ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90015_90109 ;
+            ]
+        ]
+    ) ;
+ 
+    sh:property [
+        sh:message "Each ont:Occupation has at most 99 ont:Remun." ;
+        sh:maxCount 99 ; 
+        sh:path ont:R_90015_90019 ;
+        sh:class ont:Remun ;
+    ] ;
+
+    sh:property kg:DmfAOccupationUserReferenceShape;
+.
+
+kg:DmfAOccupationUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationUserReference (00617)" ;
+    sh:path ont:OccupationUserReference;
+    sh:maxLength 20 ;
+.
+
+kg:DmfAActivationInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ActivationInformation (90578)" ;
+    sh:targetClass ont:ActivationInformation ;
+
+    sh:property [
+        sh:message "Each ont:ActivationInformation must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90012_90578 ; ] ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+.
+
+kg:DmfAWorkerContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerContribution (90001)" ;
+    sh:targetClass ont:WorkerContribution ;
+
+    sh:property [
+        sh:message "Each ont:WorkerContribution must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90012_90001 ; ] ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+.
+
+kg:DmfAWorkerDeductionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerDeduction (90110)" ;
+    sh:targetClass ont:WorkerDeduction ;
+
+    sh:property [
+        sh:message "Each ont:WorkerDeduction must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90012_90110 ; ] ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+
+    sh:xone (
+        [
+            sh:property [
+                sh:minCount 1 ;
+                sh:maxCount 99 ;
+                sh:path ont:R_90110_90108 ;
+                sh:class ont:DeductionDetail ;
+            ] ;
+            sh:sparql [
+                sh:message "This ont:DedutionCode does not require any ont:DeductionDetail" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this
+                    WHERE {
+                        $this ont:DeductionCode ?dc.
+                        ?d a an4:DeductionCode;
+                            an4:Code ?dc;
+                            an4:inOccupationDeductionDetailPresence ?ioddp;
+                        FILTER(?ioddp = false)
+                    }""" ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90110_90108 ;
+            ]
+        ]
+    ) ;
+.
+
+kg:DmfADismissedStatutoryWorkerContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DismissedStatutoryWorkerContribution (90005)" ;
+    sh:targetClass ont:DismissedStatutoryWorkerContribution ;
+
+    sh:property [
+        sh:message "Each ont:DismissedStatutoryWorkerContribution must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90012_90005 ; ] ; 
+        sh:class ont:WorkerRecord ;
+    ] ;
+.
+
+kg:DmfAStudentContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for StudentContribution (90003)" ;
+    sh:targetClass ont:StudentContribution ;
+
+    sh:property [
+        sh:message "Each ont:StudentContribution must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90012_90003 ; ] ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+
+.
+
+kg:DmfAEarlyRetirementContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EarlyRetirementContribution (90042)" ;
+    sh:targetClass ont:EarlyRetirementContribution ;
+
+    sh:property [
+        sh:message "Each ont:EarlyRetirementContribution must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path ont:R_90012_90042 ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+.
+
+kg:DmfAComplementaryIndemnityShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ComplementaryIndemnity (90336)" ;
+    sh:targetClass ont:ComplementaryIndemnity ;
+
+    sh:property [
+        sh:message "Each ont:ComplementaryIndemnity must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [sh:inversePath ont:R_90012_90336 ; ] ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:ComplementaryIndemnity has between 1 (included) and 999 (included) ont:ComplIndemnityContribution." ;
+        sh:minCount 1 ; 
+        sh:maxCount 999 ; 
+        sh:path ont:R_90336_90337 ;
+        sh:class ont:ComplIndemnityContribution ;
+    ] ;
+.
+
+
+kg:DmfAIndemnityWAPMShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for IndemnityWAPM (90011)" ;
+    sh:targetClass ont:IndemnityWAPM ;
+
+    sh:property [
+        sh:message "Each ont:IndemnityWAPM must belongs to exactly one ont:WorkerRecord." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90012_90011 ; ] ;
+        sh:class ont:WorkerRecord ;
+    ] ;
+.
+
+kg:DmfAOccupationInformationsShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationInformations (90313)" ;
+    sh:targetClass ont:OccupationInformations ;
+
+    sh:property [
+        sh:message "Each ont:OccupationInformations must belongs to exactly one ont:Occupation." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90015_90313 ; ] ;
+        sh:class ont:Occupation ;
+    ] ;
+.
+
+kg:DmfASecondPillarInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for SecondPillarInformation (90172)" ;
+    sh:targetClass ont:SecondPillarInformation ;
+
+    sh:property [
+        sh:message "Each ont:SecondPillarInformation must belongs to exactly one ont:Occupation." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90015_90172 ; ] ;
+        sh:class ont:Occupation ;
+    ] ;
+.
+
+kg:DmfAServiceShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Service (90018)" ;
+    sh:targetClass ont:Service ;
+
+    sh:property [
+        rdfs:comment "Each ont:Service must belongs to exactly one ont:Occupation." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90015_90018 ; ] ;
+        sh:class ont:Occupation ;
+    ] ;
+.
+
+kg:DmfARemunShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Remun (90019)" ;
+    sh:targetClass ont:Remun ;
+
+    sh:property [
+        sh:message "Each ont:Remun must belongs to exactly one ont:Occupation." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90015_90019 ; ] ;
+        sh:class ont:Occupation ;
+    ] ;
+.
+
+kg:DmfAOccupationPublicServiceDataShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationPublicServiceData (90411)" ;
+    sh:targetClass ont:OccupationPublicServiceData ;
+
+    sh:property [
+        sh:message "Each ont:OccupationPublicServiceData must belongs to exactly one ont:Occupation." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90015_90411 ; ] ;
+        sh:class ont:Occupation ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:OccupationPublicServiceData has between 1 (included) and 99 (included) ont:ScaleSalary." ;
+        sh:minCount 1 ; 
+        sh:maxCount 99 ; 
+        sh:path ont:R_90411_90412 ;
+        sh:class ont:ScaleSalary ;
+    ] ;
+.
+
+kg:DmfAReorgMeasureInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ReorgMeasureInformation (90438)" ;
+    sh:targetClass ont:ReorgMeasureInformation ;
+
+    sh:property [
+        sh:message "Each ont:ReorgMeasureInformation must belongs to exactly one ont:Occupation." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90015_90438 ; ] ;
+        sh:class ont:Occupation ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:ReorgMeasureInformationShape has at least one ont:ReorganisationMeasure." ;
+        sh:path ont:ReorganisationMeasure;
+        sh:minCount 1;
+    ] ;
+.
+
+kg:DmfAOccupationDeductionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationDeduction (90109)" ;
+    sh:targetClass ont:OccupationDeduction ;
+
+    sh:property [
+        sh:message "Each ont:OccupationDeduction must belongs to exactly one ont:Occupation." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90015_90109 ; ] ;
+        sh:class ont:Occupation ;
+    ] ;
+
+    sh:xone (
+        [
+            sh:property [
+                sh:minCount 1 ;
+                sh:maxCount 99 ;
+                sh:path ont:R_90109_90250 ;
+                sh:class ont:OccupationDeductionDetail ;
+            ] ;
+            sh:sparql [
+                sh:message "This ont:DedutionCode does not require any ont:DeductionDetail" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this
+                    WHERE {
+                        $this ont:DeductionCode ?dc.
+                        ?d a an4:DeductionCode;
+                            an4:Code ?dc;
+                            an4:inOccupationDeductionDetailPresence ?ioddp;
+                        FILTER(?ioddp = false)
+                    }""" ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:maxCount 0 ;
+                sh:path ont:R_90109_90250 ;
+            ]
+        ]
+    ) ;
+.
+
+kg:DmfADeductionDetailShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DeductionDetail (90108)" ;
+    sh:targetClass ont:DeductionDetail ;
+
+    sh:property [
+        sh:message "Each ont:DeductionDetail must belongs to exactly one ont:WorkerDeduction." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90110_90108 ; ] ;
+        sh:class ont:WorkerDeduction ;
+    ] ;
+.
+
+kg:DmfAComplIndemnityContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ComplIndemnityContribution (90337)" ;
+    sh:targetClass ont:ComplIndemnityContribution ;
+
+    sh:property [
+        sh:message "Each ont:ComplIndemnityContribution must belongs to exactly one ont:ComplementaryIndemnity." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90015_90337 ; ] ;
+        sh:class ont:ComplementaryIndemnity ;
+    ] ;
+.
+
+kg:DmfAScaleSalaryShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ScaleSalary (90412)" ;
+    sh:targetClass ont:ScaleSalary ;
+
+    sh:property [
+        sh:message "Each ont:ScaleSalary must belongs to exactly one ont:OccupationPublicServiceData." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90411_90412 ; ] ;
+        sh:class ont:OccupationPublicServiceData ;
+    ] ;
+
+    sh:property [
+        sh:message "Each ont:ScaleSalary has at most 99 (included) ont:AdditionalScaleSalary." ;
+        sh:maxCount 99 ; 
+        sh:path ont:R_90412_90413;
+        sh:class ont:AdditionalScaleSalary ;
+    ] ;
+.
+
+kg:DmfAOccupationDeductionDetailShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationDeductionDetail (90250)" ;
+    sh:targetClass ont:OccupationDeductionDetail ;
+
+    sh:property [
+        sh:message "Each ont:OccupationDeductionDetail must belongs to exactly one ont:OccupationDeduction." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90109_90250 ; ] ;
+        sh:class ont:OccupationDeduction ;
+    ] ;
+.
+
+kg:DmfAAdditionalScaleSalaryShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for AdditionalScaleSalary (90413)" ;
+    sh:targetClass ont:AdditionalScaleSalary ;
+
+    sh:property [
+        sh:message "Each ont:AdditionalScaleSalary must belongs to exactly one ont:AdditionalScaleSalary." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:path [ sh:inversePath ont:R_90412_90413 ; ] ;
+        sh:class ont:AdditionalScaleSalary ;
+    ] ;
+.

@@ -1,0 +1,11 @@
+child
+    Targets the node of problem
+    O(n²) Time
+    O(n^n) space if no distinct  => highlights some memory limitations
+    O(n) space if distinct
+
+parent
+    O(n) in Time
+    Can maybe fine tune returned value(s) to identify target (at what cost)
+
+

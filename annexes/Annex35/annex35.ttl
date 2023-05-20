@@ -1,0 +1,137 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex35#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex35#> .
+
+<http://kg.socialsecurity.be/ont/annex35#> rdf:type owl:Ontology .
+
+:EmploymentPromotion a owl:Class ;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :EmploymentPromotion;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :EmploymentPromotion;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :EmploymentPromotion;
+.
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:range :EmploymentPromotion;
+.
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:range :EmploymentPromotion;
+.
+
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion1-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion1-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "2007-06-30"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion1-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion1-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "20072"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion1-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion1-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur engagé dans le cadre de l'A.R. 495"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion1-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion2-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion2-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion2-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion2-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion2-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "2"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion2-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur engagé dans le cadre de mesures d'activation des allocations de chômage, du revenu d'intégration ou de l'aide sociale financière. Ce code doit uniquement être utilisé dans un des cas suivants:\n une occupation dans le cadre d'un programme de transition professionnelle reconnu, une occupation dans le cadre d'un poste de travail reconnu, une occupation dans le cadre de l'économie sociale d'insertion (SINE)."@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion2-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion3-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion3-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "2013-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion3-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion3-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "20134"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion3-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "3"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion3-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur engagé dans le cadre de la redistribution du travail dans le secteur public"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion3-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion4-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion4-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion4-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion4-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion4-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "4"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion4-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur engagé dans le cadre du troisième circuit du travail"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion4-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion5-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion5-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion5-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion5-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion5-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "5"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion5-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur engagé dans le cadre du programme PRIME"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion5-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion10-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion10-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion10-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion10-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion10-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "10"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion10-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 1°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion10-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion11-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion11-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion11-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion11-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion11-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "11"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion11-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 2°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion11-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion12-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion12-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion12-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion12-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion12-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "12"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion12-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 3°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion12-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion13-20033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion13-20033> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion13-20033> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20033"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion13-20033> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion13-20033> <http://kg.socialsecurity.be/ont/annex35#Code> "13"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion13-20033> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur handicapé engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 1°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion13-20033> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion14-20033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion14-20033> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion14-20033> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20033"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion14-20033> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion14-20033> <http://kg.socialsecurity.be/ont/annex35#Code> "14"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion14-20033> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur handicapé engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 2°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion14-20033> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion15-20033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion15-20033> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion15-20033> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20033"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion15-20033> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion15-20033> <http://kg.socialsecurity.be/ont/annex35#Code> "15"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion15-20033> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur handicapé engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 3°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion15-20033> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion16-20033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion16-20033> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion16-20033> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20033"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion16-20033> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion16-20033> <http://kg.socialsecurity.be/ont/annex35#Code> "16"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion16-20033> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur d'origine étrangère engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 1°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion16-20033> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion17-20033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion17-20033> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion17-20033> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20033"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion17-20033> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion17-20033> <http://kg.socialsecurity.be/ont/annex35#Code> "17"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion17-20033> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur d'origine étrangère engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 2°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion17-20033> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion18-20033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion18-20033> <http://kg.socialsecurity.be/ont/annex35#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion18-20033> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20033"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion18-20033> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion18-20033> <http://kg.socialsecurity.be/ont/annex35#Code> "18"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion18-20033> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur d'origine étrangère engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 3°, de la loi du 24 décembre 1999"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion18-20033> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion19-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex35#EmploymentPromotion>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion19-20031> <http://kg.socialsecurity.be/ont/annex35#validTo> "2004-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion19-20031> <http://kg.socialsecurity.be/ont/annex35#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion19-20031> <http://kg.socialsecurity.be/ont/annex35#validToQuarter> "20044"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion19-20031> <http://kg.socialsecurity.be/ont/annex35#Code> "19"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion19-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "travailleur ancien chômeur complet indemnisé de 45 ans au moins dont l'engagement est assimilé à une convention de premier emploi"@fr.
+<http://kg.socialsecurity.be/resource/annex35/EmploymentPromotion19-20031> <http://kg.socialsecurity.be/ont/annex35#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,6 @@
+From,To,Domain,Range
+90198,90017,EmployerDeclarationId,NaturalPerson
+90198,90199,EmployerDeclarationId,ContributionUnrelatedToNPId
+90200,90059,DmfAConsultationRequest,Form
+90059,90082,Form,Reference
+90059,90198,Form,EmployerDeclarationId

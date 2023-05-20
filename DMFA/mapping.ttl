@@ -1,0 +1,2501 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/dmfa#> .
+@base <http://kg.socialsecurity.be/resource/> .
+
+
+<#DmfAOriginal-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "/DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:DmfAOriginal;
+        rr:termType rr:BlankNode ;
+        rr:template "DmfAOriginal{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90169_90059 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#Form-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#Form-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:Form;
+        rr:termType rr:BlankNode ;
+        rr:template "Form{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:Identification;
+        rr:objectMap [
+            rml:reference "Identification";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FormCreationDate;
+        rr:objectMap [
+            rml:reference "FormCreationDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FormCreationHour;
+        rr:objectMap [
+            rml:reference "FormCreationHour";
+            rr:datatype xs:time ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AttestationStatus;
+        rr:objectMap [
+            rml:reference "AttestationStatus";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:TypeForm;
+        rr:objectMap [
+            rml:reference "TypeForm";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90059_90082 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#Reference-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90059_90007 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#EmployerDeclaration-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#Reference-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/Reference" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:Reference;
+        rr:termType rr:BlankNode ;
+        rr:template "Reference{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:ReferenceType;
+        rr:objectMap [
+            rml:reference "ReferenceType";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReferenceOrigin;
+        rr:objectMap [
+            rml:reference "ReferenceOrigin";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReferenceNbr;
+        rr:objectMap [
+            rml:reference "ReferenceNbr";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+.
+
+<#EmployerDeclaration-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:EmployerDeclaration;
+        rr:termType rr:BlankNode ;
+        rr:template "EmployerDeclaration{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:Quarter;
+        rr:objectMap [
+            rml:reference "Quarter";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NOSSRegistrationNbr;
+        rr:objectMap [
+            rml:reference "NOSSRegistrationNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:Trusteeship;
+        rr:objectMap [
+            rml:reference "Trusteeship";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:CompanyID;
+        rr:objectMap [
+            rml:reference "CompanyID";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NetOwedAmount;
+        rr:objectMap [
+            rml:reference "NetOwedAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:System5;
+        rr:objectMap [
+            rml:reference "System5";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:HolidayStartingDate;
+        rr:objectMap [
+            rml:reference "HolidayStartingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90007_90017 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#NaturalPerson-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90007_90294 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#CompanyVehicle-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90007_90002 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#ContributionUnrelatedToNP-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#NaturalPerson-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:NaturalPerson;
+        rr:termType rr:BlankNode ;
+        rr:template "NaturalPerson{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:NaturalPersonSequenceNbr;
+        rr:objectMap [
+            rml:reference "NaturalPersonSequenceNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:INSS;
+        rr:objectMap [
+            rml:reference "INSS";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SIS;
+        rr:objectMap [
+            rml:reference "SIS";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerName;
+        rr:objectMap [
+            rml:reference "WorkerName";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerFirstName;
+        rr:objectMap [
+            rml:reference "WorkerFirstName";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerInitial;
+        rr:objectMap [
+            rml:reference "WorkerInitial";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerBirthdate;
+        rr:objectMap [
+            rml:reference "WorkerBirthdate";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerBirthplace;
+        rr:objectMap [
+            rml:reference "WorkerBirthplace";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerBirthplaceCountry;
+        rr:objectMap [
+            rml:reference "WorkerBirthplaceCountry";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerSex;
+        rr:objectMap [
+            rml:reference "WorkerSex";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerStreet;
+        rr:objectMap [
+            rml:reference "WorkerStreet";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerHouseNbr;
+        rr:objectMap [
+            rml:reference "WorkerHouseNbr";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerPostBox;
+        rr:objectMap [
+            rml:reference "WorkerPostBox";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerZIPCode;
+        rr:objectMap [
+            rml:reference "WorkerZIPCode";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerCity;
+        rr:objectMap [
+            rml:reference "WorkerCity";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerCountry;
+        rr:objectMap [
+            rml:reference "WorkerCountry";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:Nationality;
+        rr:objectMap [
+            rml:reference "Nationality";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NaturalPersonUserReference;
+        rr:objectMap [
+            rml:reference "NaturalPersonUserReference";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90017_90012 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#WorkerRecord-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#CompanyVehicle-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/CompanyVehicle" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:CompanyVehicle;
+        rr:termType rr:BlankNode ;
+        rr:template "CompanyVehicle{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:CompanyVehicleSequenceNbr;
+        rr:objectMap [
+            rml:reference "CompanyVehicleSequenceNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:LicensePlate;
+        rr:objectMap [
+            rml:reference "LicensePlate";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:EcoVehicle;
+        rr:objectMap [
+            rml:reference "EcoVehicle";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#ContributionUnrelatedToNP-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/ContributionUnrelatedToNP" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:ContributionUnrelatedToNP;
+        rr:termType rr:BlankNode ;
+        rr:template "ContributionUnrelatedToNP{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:UnrelatedEmployerClass;
+        rr:objectMap [
+            rml:reference "UnrelatedEmployerClass";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:UnrelatedWorkerCode;
+        rr:objectMap [
+            rml:reference "UnrelatedWorkerCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:UnrelatedCalculationBasis;
+        rr:objectMap [
+            rml:reference "UnrelatedCalculationBasis";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:UnrelatedAmount;
+        rr:objectMap [
+            rml:reference "UnrelatedAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#WorkerRecord-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:WorkerRecord;
+        rr:termType rr:BlankNode ;
+        rr:template "WorkerRecord{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:EmployerClass;
+        rr:objectMap [
+            rml:reference "EmployerClass";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerCode;
+        rr:objectMap [
+            rml:reference "WorkerCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NOSSQuarterStartingDate;
+        rr:objectMap [
+            rml:reference "NOSSQuarterStartingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NOSSQuarterEndingDate;
+        rr:objectMap [
+            rml:reference "NOSSQuarterEndingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:Border;
+        rr:objectMap [
+            rml:reference "Border";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ActivityWithRisk;
+        rr:objectMap [
+            rml:reference "ActivityWithRisk";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:LocalUnitID;
+        rr:objectMap [
+            rml:reference "LocalUnitID";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerRecordUserReference;
+        rr:objectMap [
+            rml:reference "WorkerRecordUserReference";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90015 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#Occupation-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90578 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#ActivationInformation-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90001 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#WorkerContribution-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90110 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#WorkerDeduction-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90005 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#DismissedStatutoryWorkerContribution-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90003 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#StudentContribution-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90042 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#EarlyRetirementContribution-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90336 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#ComplementaryIndemnity-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90012_90011 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#IndemnityWAPM-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#Occupation-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:Occupation;
+        rr:termType rr:BlankNode ;
+        rr:template "Occupation{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:OccupationSequenceNbr;
+        rr:objectMap [
+            rml:reference "OccupationSequenceNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:OccupationStartingDate;
+        rr:objectMap [
+            rml:reference "OccupationStartingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:OccupationEndingDate;
+        rr:objectMap [
+            rml:reference "OccupationEndingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:JointCommissionNbr;
+        rr:objectMap [
+            rml:reference "JointCommissionNbr";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkingDaysSystem;
+        rr:objectMap [
+            rml:reference "WorkingDaysSystem";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ContractType;
+        rr:objectMap [
+            rml:reference "ContractType";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:RefMeanWorkingHours;
+        rr:objectMap [
+            rml:reference "RefMeanWorkingHours";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkerStatus;
+        rr:objectMap [
+            rml:reference "WorkerStatus";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:MeanWorkingHours;
+        rr:objectMap [
+            rml:reference "MeanWorkingHours";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReorganisationMeasure;
+        rr:objectMap [
+            rml:reference "ReorganisationMeasure";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:EmploymentPromotion;
+        rr:objectMap [
+            rml:reference "EmploymentPromotion";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:Retired;
+        rr:objectMap [
+            rml:reference "Retired";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:Apprenticeship;
+        rr:objectMap [
+            rml:reference "Apprenticeship";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:RemunMethod;
+        rr:objectMap [
+            rml:reference "RemunMethod";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:PositionCode;
+        rr:objectMap [
+            rml:reference "PositionCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FlyingStaffClass;
+        rr:objectMap [
+            rml:reference "FlyingStaffClass";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:TenthOrTwelfth;
+        rr:objectMap [
+            rml:reference "TenthOrTwelfth";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:OccupationUserReference;
+        rr:objectMap [
+            rml:reference "OccupationUserReference";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DaysJustification;
+        rr:objectMap [
+            rml:reference "DaysJustification";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ActivityCode;
+        rr:objectMap [
+            rml:reference "ActivityCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:LocalUnitID;
+        rr:objectMap [
+            rml:reference "LocalUnitID";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ShipId;
+        rr:objectMap [
+            rml:reference "ShipId";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:StaffCode;
+        rr:objectMap [
+            rml:reference "StaffCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SubsidizedMeanWorkingHours;
+        rr:objectMap [
+            rml:reference "SubsidizedMeanWorkingHours";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90015_90313 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#OccupationInformations-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90015_90172 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#SecondPillarInformation-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90015_90018 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#Service-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90015_90019 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#Remun-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90015_90411 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#OccupationPublicServiceData-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90015_90438 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#ReorgMeasureInformation-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90015_90109 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#OccupationDeduction-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#ActivationInformation-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/ActivationInformation" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:ActivationInformation;
+        rr:termType rr:BlankNode ;
+        rr:template "ActivationInformation{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:ServiceExemptionStartDate;
+        rr:objectMap [
+            rml:reference "ServiceExemptionStartDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:TrainingSituationStartDate;
+        rr:objectMap [
+            rml:reference "TrainingSituationStartDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:TrainingSituation;
+        rr:objectMap [
+            rml:reference "TrainingSituation";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#WorkerContribution-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/WorkerContribution" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:WorkerContribution;
+        rr:termType rr:BlankNode ;
+        rr:template "WorkerContribution{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:ContributionWorkerCode;
+        rr:objectMap [
+            rml:reference "ContributionWorkerCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ContributionType;
+        rr:objectMap [
+            rml:reference "ContributionType";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ContributionCalculationBasis;
+        rr:objectMap [
+            rml:reference "ContributionCalculationBasis";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ContributionAmount;
+        rr:objectMap [
+            rml:reference "ContributionAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FirstHiringDate;
+        rr:objectMap [
+            rml:reference "FirstHiringDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+.
+
+<#WorkerDeduction-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/WorkerDeduction" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:WorkerDeduction;
+        rr:termType rr:BlankNode ;
+        rr:template "WorkerDeduction{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionCode;
+        rr:objectMap [
+            rml:reference "DeductionCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionCalculationBasis;
+        rr:objectMap [
+            rml:reference "DeductionCalculationBasis";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionAmount;
+        rr:objectMap [
+            rml:reference "DeductionAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionRightStartingDate;
+        rr:objectMap [
+            rml:reference "DeductionRightStartingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ManagementCostNbrMonths;
+        rr:objectMap [
+            rml:reference "ManagementCostNbrMonths";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReplacedINSS;
+        rr:objectMap [
+            rml:reference "ReplacedINSS";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ApplicantINSS;
+        rr:objectMap [
+            rml:reference "ApplicantINSS";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:CertificateOrigin;
+        rr:objectMap [
+            rml:reference "CertificateOrigin";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90110_90108 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#DeductionDetail-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#DismissedStatutoryWorkerContribution-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/DismissedStatutoryWorkerContribution" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:DismissedStatutoryWorkerContribution;
+        rr:termType rr:BlankNode ;
+        rr:template "DismissedStatutoryWorkerContribution{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:GrossRefRemunAmount;
+        rr:objectMap [
+            rml:reference "GrossRefRemunAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:GrossRefRemunContributionAmount;
+        rr:objectMap [
+            rml:reference "GrossRefRemunContributionAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:RefNbrDays;
+        rr:objectMap [
+            rml:reference "RefNbrDays";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SubjectionStartingDate;
+        rr:objectMap [
+            rml:reference "SubjectionStartingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SubjectionEndingDate;
+        rr:objectMap [
+            rml:reference "SubjectionEndingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+.
+
+<#StudentContribution-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/StudentContribution" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:StudentContribution;
+        rr:termType rr:BlankNode ;
+        rr:template "StudentContribution{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:StudentRemunAmount;
+        rr:objectMap [
+            rml:reference "StudentRemunAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:StudentContributionAmount;
+        rr:objectMap [
+            rml:reference "StudentContributionAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:StudentNbrDays;
+        rr:objectMap [
+            rml:reference "StudentNbrDays";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:StudentHoursNbr;
+        rr:objectMap [
+            rml:reference "StudentHoursNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:LocalUnitID;
+        rr:objectMap [
+            rml:reference "LocalUnitID";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#EarlyRetirementContribution-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/EarlyRetirementContribution" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:EarlyRetirementContribution;
+        rr:termType rr:BlankNode ;
+        rr:template "EarlyRetirementContribution{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:EarlyRetirementCode;
+        rr:objectMap [
+            rml:reference "EarlyRetirementCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:EarlyRetirementNbrMonths;
+        rr:objectMap [
+            rml:reference "EarlyRetirementNbrMonths";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:EarlyRetirementContributionAmount;
+        rr:objectMap [
+            rml:reference "EarlyRetirementContributionAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#ComplementaryIndemnity-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/ComplementaryIndemnity" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:ComplementaryIndemnity;
+        rr:termType rr:BlankNode ;
+        rr:template "ComplementaryIndemnity{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:EmployerNotion;
+        rr:objectMap [
+            rml:reference "EmployerNotion";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:JointCommissionNbr;
+        rr:objectMap [
+            rml:reference "JointCommissionNbr";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ActivityCode;
+        rr:objectMap [
+            rml:reference "ActivityCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DebtorType;
+        rr:objectMap [
+            rml:reference "DebtorType";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FirstComplIndemnityDate;
+        rr:objectMap [
+            rml:reference "FirstComplIndemnityDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ComplIndemnityAgreementNotion;
+        rr:objectMap [
+            rml:reference "ComplIndemnityAgreementNotion";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:HalfTimeCareerInterruptionNotion;
+        rr:objectMap [
+            rml:reference "HalfTimeCareerInterruptionNotion";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ServiceExemptionNotion;
+        rr:objectMap [
+            rml:reference "ServiceExemptionNotion";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReplacementAccordanceWCCNotion;
+        rr:objectMap [
+            rml:reference "ReplacementAccordanceWCCNotion";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SubstituteINSS;
+        rr:objectMap [
+            rml:reference "SubstituteINSS";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ResumptionOfWorkMeasure;
+        rr:objectMap [
+            rml:reference "ResumptionOfWorkMeasure";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ComplIndemnityNbrOfParts;
+        rr:objectMap [
+            rml:reference "ComplIndemnityNbrOfParts";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NoticeDate;
+        rr:objectMap [
+            rml:reference "NoticeDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AilingOrReorgCompanyNotion;
+        rr:objectMap [
+            rml:reference "AilingOrReorgCompanyNotion";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AcknowledgementStartDate;
+        rr:objectMap [
+            rml:reference "AcknowledgementStartDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AcknowledgementEndDate;
+        rr:objectMap [
+            rml:reference "AcknowledgementEndDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90336_90337 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#ComplIndemnityContribution-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#IndemnityWAPM-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/IndemnityWAPM" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:IndemnityWAPM;
+        rr:termType rr:BlankNode ;
+        rr:template "IndemnityWAPM{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:IndemnityNature;
+        rr:objectMap [
+            rml:reference "IndemnityNature";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:IncapacityDegree;
+        rr:objectMap [
+            rml:reference "IncapacityDegree";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:IndemnityAmount;
+        rr:objectMap [
+            rml:reference "IndemnityAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#OccupationInformations-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/OccupationInformations" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:OccupationInformations;
+        rr:termType rr:BlankNode ;
+        rr:template "OccupationInformations{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:HorecaExtra;
+        rr:objectMap [
+            rml:reference "HorecaExtra";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:PostedWorker;
+        rr:objectMap [
+            rml:reference "PostedWorker";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NOSSLPASocialMaribel;
+        rr:objectMap [
+            rml:reference "NOSSLPASocialMaribel";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:HourRemun;
+        rr:objectMap [
+            rml:reference "HourRemun";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:HourRemunInThousandthOfEuro;
+        rr:objectMap [
+            rml:reference "HourRemunInThousandthOfEuro";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SixMonthsIllnessDate;
+        rr:objectMap [
+            rml:reference "SixMonthsIllnessDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FirstWeekGuaranteedSalaryNbrDays;
+        rr:objectMap [
+            rml:reference "FirstWeekGuaranteedSalaryNbrDays";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:IllnessGrossRemunAmount;
+        rr:objectMap [
+            rml:reference "IllnessGrossRemunAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:PSDDclExemption;
+        rr:objectMap [
+            rml:reference "PSDDclExemption";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SupplPensionContributionExemption;
+        rr:objectMap [
+            rml:reference "SupplPensionContributionExemption";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ObligationControlInformation;
+        rr:objectMap [
+            rml:reference "ObligationControlInformation";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DefinitiveNominationDate;
+        rr:objectMap [
+            rml:reference "DefinitiveNominationDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NewMaribelEmploymentDate;
+        rr:objectMap [
+            rml:reference "NewMaribelEmploymentDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:PSPContribCalcBasisDerogation;
+        rr:objectMap [
+            rml:reference "PSPContribCalcBasisDerogation";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:CareerMeasure;
+        rr:objectMap [
+            rml:reference "CareerMeasure";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ServiceExemptionNotion;
+        rr:objectMap [
+            rml:reference "ServiceExemptionNotion";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:HolidayDaysNumber;
+        rr:objectMap [
+            rml:reference "HolidayDaysNumber";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SectorDetail;
+        rr:objectMap [
+            rml:reference "SectorDetail";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:MobilityBudget;
+        rr:objectMap [
+            rml:reference "MobilityBudget";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FlemishTrainingHolidayHoursNbr;
+        rr:objectMap [
+            rml:reference "FlemishTrainingHolidayHoursNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:RegionalAidMeasure;
+        rr:objectMap [
+            rml:reference "RegionalAidMeasure";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+.
+
+<#SecondPillarInformation-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/SecondPillarInformation" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:SecondPillarInformation;
+        rr:termType rr:BlankNode ;
+        rr:template "SecondPillarInformation{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:ReferenceYearMonth;
+        rr:objectMap [
+            rml:reference "ReferenceYearMonth";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:MonthlyScaleSalary;
+        rr:objectMap [
+            rml:reference "MonthlyScaleSalary";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:MonthlyAdditionalScaleSalary;
+        rr:objectMap [
+            rml:reference "MonthlyAdditionalScaleSalary";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:MonthlyHomeIndemnity;
+        rr:objectMap [
+            rml:reference "MonthlyHomeIndemnity";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:OfficialLanguage;
+        rr:objectMap [
+            rml:reference "OfficialLanguage";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#Service-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/Service" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:Service;
+        rr:termType rr:BlankNode ;
+        rr:template "Service{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:ServiceSequenceNbr;
+        rr:objectMap [
+            rml:reference "ServiceSequenceNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ServiceCode;
+        rr:objectMap [
+            rml:reference "ServiceCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ServiceNbrDays;
+        rr:objectMap [
+            rml:reference "ServiceNbrDays";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ServiceNbrHours;
+        rr:objectMap [
+            rml:reference "ServiceNbrHours";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FlightNbrMinutes;
+        rr:objectMap [
+            rml:reference "FlightNbrMinutes";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#Remun-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/Remun" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:Remun;
+        rr:termType rr:BlankNode ;
+        rr:template "Remun{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:RemunSequenceNbr;
+        rr:objectMap [
+            rml:reference "RemunSequenceNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:RemunCode;
+        rr:objectMap [
+            rml:reference "RemunCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:BonusPaymentFrequency;
+        rr:objectMap [
+            rml:reference "BonusPaymentFrequency";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:PercentagePaid;
+        rr:objectMap [
+            rml:reference "PercentagePaid";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:RemunAmount;
+        rr:objectMap [
+            rml:reference "RemunAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#OccupationPublicServiceData-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/OccupationPublicServiceData" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:OccupationPublicServiceData;
+        rr:termType rr:BlankNode ;
+        rr:template "OccupationPublicServiceData{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:OccupationPSDStartDate;
+        rr:objectMap [
+            rml:reference "OccupationPSDStartDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:OccupationPSDEndDate;
+        rr:objectMap [
+            rml:reference "OccupationPSDEndDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:PublicSectorInstitutionType;
+        rr:objectMap [
+            rml:reference "PublicSectorInstitutionType";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:PublicSectorPersonnelCategory;
+        rr:objectMap [
+            rml:reference "PublicSectorPersonnelCategory";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:GradeOrFunction;
+        rr:objectMap [
+            rml:reference "GradeOrFunction";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:OfficialLanguage;
+        rr:objectMap [
+            rml:reference "OfficialLanguage";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AssignmentType;
+        rr:objectMap [
+            rml:reference "AssignmentType";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FunctionNature;
+        rr:objectMap [
+            rml:reference "FunctionNature";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:StatutoryRelationEndReason;
+        rr:objectMap [
+            rml:reference "StatutoryRelationEndReason";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90411_90412 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#ScaleSalary-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#ReorgMeasureInformation-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/ReorgMeasureInformation" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:ReorgMeasureInformation;
+        rr:termType rr:BlankNode ;
+        rr:template "ReorgMeasureInformation{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:ReorganisationMeasure;
+        rr:objectMap [
+            rml:reference "ReorganisationMeasure";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReorganisationMeasurePercentage;
+        rr:objectMap [
+            rml:reference "ReorganisationMeasurePercentage";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#OccupationDeduction-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/OccupationDeduction" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:OccupationDeduction;
+        rr:termType rr:BlankNode ;
+        rr:template "OccupationDeduction{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionCode;
+        rr:objectMap [
+            rml:reference "DeductionCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionCalculationBasis;
+        rr:objectMap [
+            rml:reference "DeductionCalculationBasis";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionAmount;
+        rr:objectMap [
+            rml:reference "DeductionAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionRightStartingDate;
+        rr:objectMap [
+            rml:reference "DeductionRightStartingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ManagementCostNbrMonths;
+        rr:objectMap [
+            rml:reference "ManagementCostNbrMonths";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReplacedINSS;
+        rr:objectMap [
+            rml:reference "ReplacedINSS";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ApplicantINSS;
+        rr:objectMap [
+            rml:reference "ApplicantINSS";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:CertificateOrigin;
+        rr:objectMap [
+            rml:reference "CertificateOrigin";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90109_90250 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#OccupationDeductionDetail-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#DeductionDetail-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/WorkerDeduction/DeductionDetail" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:DeductionDetail;
+        rr:termType rr:BlankNode ;
+        rr:template "DeductionDetail{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionDetailSequenceNbr;
+        rr:objectMap [
+            rml:reference "DeductionDetailSequenceNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionDetailAmount;
+        rr:objectMap [
+            rml:reference "DeductionDetailAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkingRegulationsRegistryNbr;
+        rr:objectMap [
+            rml:reference "WorkingRegulationsRegistryNbr";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkingRegulationsStartingDate;
+        rr:objectMap [
+            rml:reference "WorkingRegulationsStartingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AverageWorkingTimeBeforeReduction;
+        rr:objectMap [
+            rml:reference "AverageWorkingTimeBeforeReduction";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AverageWorkingTimeAfterReduction;
+        rr:objectMap [
+            rml:reference "AverageWorkingTimeAfterReduction";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#ComplIndemnityContribution-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/ComplementaryIndemnity/ComplIndemnityContribution" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:ComplIndemnityContribution;
+        rr:termType rr:BlankNode ;
+        rr:template "ComplIndemnityContribution{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:ContributionWorkerCode;
+        rr:objectMap [
+            rml:reference "ContributionWorkerCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ContributionType;
+        rr:objectMap [
+            rml:reference "ContributionType";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:IndemnityContributionPeriodCode;
+        rr:objectMap [
+            rml:reference "IndemnityContributionPeriodCode";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ComplIndemnityAmountAdjustNotion;
+        rr:objectMap [
+            rml:reference "ComplIndemnityAmountAdjustNotion";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ContributionSequenceNbr;
+        rr:objectMap [
+            rml:reference "ContributionSequenceNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ComplIndemnityAmount;
+        rr:objectMap [
+            rml:reference "ComplIndemnityAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:CapitalizationNotion;
+        rr:objectMap [
+            rml:reference "CapitalizationNotion";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WelfareBenefitTheoreticalAmount;
+        rr:objectMap [
+            rml:reference "WelfareBenefitTheoreticalAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ComplIndemnityNbrMonths;
+        rr:objectMap [
+            rml:reference "ComplIndemnityNbrMonths";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NbrMonthsDecimals;
+        rr:objectMap [
+            rml:reference "NbrMonthsDecimals";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:IncompleteMonthNbrDays;
+        rr:objectMap [
+            rml:reference "IncompleteMonthNbrDays";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:IncompleteMonthReason;
+        rr:objectMap [
+            rml:reference "IncompleteMonthReason";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FloorApplicationNotion;
+        rr:objectMap [
+            rml:reference "FloorApplicationNotion";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ContributionAmount;
+        rr:objectMap [
+            rml:reference "ContributionAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#ScaleSalary-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/OccupationPublicServiceData/ScaleSalary" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:ScaleSalary;
+        rr:termType rr:BlankNode ;
+        rr:template "ScaleSalary{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:ScaleSalaryStartDate;
+        rr:objectMap [
+            rml:reference "ScaleSalaryStartDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ScaleSalaryEndDate;
+        rr:objectMap [
+            rml:reference "ScaleSalaryEndDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:PecuniarySeniorityStartDate;
+        rr:objectMap [
+            rml:reference "PecuniarySeniorityStartDate";
+            rr:datatype xs:gYearMonth ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:SalaryScaleReference;
+        rr:objectMap [
+            rml:reference "SalaryScaleReference";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ScaleSalaryAmount;
+        rr:objectMap [
+            rml:reference "ScaleSalaryAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WeekHoursNbr;
+        rr:objectMap [
+            rml:reference "WeekHoursNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ScaleSalaryWeekHoursNbr;
+        rr:objectMap [
+            rml:reference "ScaleSalaryWeekHoursNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReducedScaleSalaryNotion;
+        rr:objectMap [
+            rml:reference "ReducedScaleSalaryNotion";
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:R_90412_90413 ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#AdditionalScaleSalary-Mapping> ;
+            rr:joinCondition [
+                rr:child "./@id";
+                rr:parent "./@parent";
+            ] ; 
+        ] ;
+    ] ;
+.
+
+<#OccupationDeductionDetail-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/OccupationDeduction/OccupationDeductionDetail" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:OccupationDeductionDetail;
+        rr:termType rr:BlankNode ;
+        rr:template "OccupationDeductionDetail{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionDetailSequenceNbr;
+        rr:objectMap [
+            rml:reference "DeductionDetailSequenceNbr";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkingRegulationsStartingDate;
+        rr:objectMap [
+            rml:reference "WorkingRegulationsStartingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkingRegulationsEndingDate;
+        rr:objectMap [
+            rml:reference "WorkingRegulationsEndingDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AverageWorkingTimeBeforeReduction;
+        rr:objectMap [
+            rml:reference "AverageWorkingTimeBeforeReduction";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AverageWorkingTimeAfterReduction;
+        rr:objectMap [
+            rml:reference "AverageWorkingTimeAfterReduction";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.
+
+<#AdditionalScaleSalary-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./DmfAExamples/Linked_DmfAOriginal_20223_1_Corrected.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/DmfAOriginal/Form/EmployerDeclaration/NaturalPerson/WorkerRecord/Occupation/OccupationPublicServiceData/ScaleSalary/AdditionalScaleSalary" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:AdditionalScaleSalary;
+        rr:termType rr:BlankNode ;
+        rr:template "AdditionalScaleSalary{@id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:AdditionalScaleSalaryStartDate;
+        rr:objectMap [
+            rml:reference "AdditionalScaleSalaryStartDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AdditionalScaleSalaryEndDate;
+        rr:objectMap [
+            rml:reference "AdditionalScaleSalaryEndDate";
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AdditionalScaleSalaryReference;
+        rr:objectMap [
+            rml:reference "AdditionalScaleSalaryReference";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AdditionalScaleSalaryBasisAmount;
+        rr:objectMap [
+            rml:reference "AdditionalScaleSalaryBasisAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AdditionalScaleSalaryPercentage;
+        rr:objectMap [
+            rml:reference "AdditionalScaleSalaryPercentage";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:NbrHoursOrServices;
+        rr:objectMap [
+            rml:reference "NbrHoursOrServices";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AdditionalScaleSalaryAmount;
+        rr:objectMap [
+            rml:reference "AdditionalScaleSalaryAmount";
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+.

@@ -1,0 +1,113 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/dmfas02#> .
+@base <http://kg.socialsecurity.be/resource/mappings/dmfas02/>  .
+
+
+<#DeductionDetailDataDetail-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./Adjusted_AN 2021-2-Frdmfas02.csv" ;
+        rml:referenceFormulation ql:CSV ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:DeductionDetailDataDetail;
+        rr:termType rr:IRI ;
+        rr:template "http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail{Id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "Libellé" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:Code ;
+        rr:objectMap [
+            rml:reference "Code DMFA" ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FunctionalBlocLinked ;
+        rr:objectMap [
+            rml:reference "Niveau" ;
+            rr:termType rr:IRI ;
+        ] ;
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:validFromQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Déduction valide à partir du" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validToQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Déduction valide jusqu'au" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:DeductionDetailAmountPresence ;
+        rr:objectMap [
+            rml:reference "Montant de la déduction -détail" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkingRegulationsRegistryNbrPresence ;
+        rr:objectMap [
+            rml:reference "Numéro d'enregistrement du règlement de travail" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkingRegulationsStartingDatePresence ;
+        rr:objectMap [
+            rml:reference "Date d'origine droit" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:WorkingRegulationsEndingDatePresence ;
+        rr:objectMap [
+            rml:reference "Date d'expiration du droit" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AverageWorkingTimeBeforeReductionPresence ;
+        rr:objectMap [
+            rml:reference "Temps de travail hebdomadaire moyen avant la réduction du temps de travail" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AverageWorkingTimeAfterReductionPresence ;
+        rr:objectMap [
+            rml:reference "Temps de travail hebdomadaire moyen après la réduction du temps de travail" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+.

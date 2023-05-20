@@ -1,0 +1,34 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix kg: <http://kg.socialsecurity.be/resource/shapes/> .
+@prefix ont: <http://www.example.org/> .
+@base <http://kg.socialsecurity.be/resource/shapes/> .
+
+<> 
+    sh:declare [
+        sh:prefix "an6" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex6#"^^xs:anyURI ;
+    ] ;
+.
+
+kg:NodeCodeExistenceShape a sh:NodeShape;
+    sh:targetNode ont:Node;
+    sh:property [
+        sh:path ont:ActivityWithRisk;
+        sh:sparql [
+            sh:message "Invalid code for ont:ActivityWithRisk, does not exist" ;
+            sh:prefixes <> ;
+            sh:select """
+                SELECT $this ?value 
+                WHERE {
+                    $this $PATH ?value. 
+                    OPTIONAL{
+                        ?awr a an6:ActivityWithRisk;
+                            an6:Code ?value;
+                        .
+                    }
+                    FILTER(!BOUND(?awr))
+                }""" ;
+        ] ;
+    ] ;
+.

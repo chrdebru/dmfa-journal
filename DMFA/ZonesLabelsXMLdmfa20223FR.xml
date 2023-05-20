@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE List [
+     <!ELEMENT glossary (Code+, Version+, Titre+, XMLLabel+, Modifications+)>
+     <!ELEMENT List (glossary+)>
+     <!ELEMENT Code (#PCDATA)>
+     <!ELEMENT Version (#PCDATA)>
+     <!ELEMENT Titre (#PCDATA)>
+     <!ELEMENT XMLLabel (#PCDATA)>
+     <!ELEMENT Modifications (#PCDATA)>
+]>
+<List>
+     <glossary>
+          <Code>00011</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO ONSS</Titre>
+          <XMLLabel>NOSSRegistrationNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00012</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION CURATELLE</Titre>
+          <XMLLabel>Trusteeship</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00013</Code>
+          <Version>2022/3</Version>
+          <Titre>ANNÉE - TRIMESTRE</Titre>
+          <XMLLabel>Quarter</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00014</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'ENTREPRISE</Titre>
+          <XMLLabel>CompanyID</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00015</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT NET À PAYER</Titre>
+          <XMLLabel>NetOwedAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00016</Code>
+          <Version>2022/3</Version>
+          <Titre>CONVERSION EN RÉGIME 5</Titre>
+          <XMLLabel>System5</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00017</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DES VACANCES</Titre>
+          <XMLLabel>HolidayStartingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00019</Code>
+          <Version>2022/3</Version>
+          <Titre>CATÉGORIE DE L'EMPLOYEUR POUR LAQUELLE UNE COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE EST DUE</Titre>
+          <XMLLabel>UnrelatedEmployerClass</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00020</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE TRAVAILLEUR POUR UNE COTISATION QUI N'EST PAS LIÉE À UNE PERSONNE PHYSIQUE</Titre>
+          <XMLLabel>UnrelatedWorkerCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00021</Code>
+          <Version>2022/3</Version>
+          <Titre>BASE DE CALCUL DE LA COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE</Titre>
+          <XMLLabel>UnrelatedCalculationBasis</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00022</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DE LA COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE</Titre>
+          <XMLLabel>UnrelatedAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00023</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE SUITE PERSONNE PHYSIQUE</Titre>
+          <XMLLabel>NaturalPersonSequenceNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00024</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS</Titre>
+          <XMLLabel>INSS</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00025</Code>
+          <Version>2022/3</Version>
+          <Titre>NOM DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerName</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00026</Code>
+          <Version>2022/3</Version>
+          <Titre>PRÉNOM DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerFirstName</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00027</Code>
+          <Version>2022/3</Version>
+          <Titre>INITIALE DU DEUXIÈME PRÉNOM DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerInitial</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00028</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE NAISSANCE DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerBirthdate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00029</Code>
+          <Version>2022/3</Version>
+          <Titre>SEXE DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerSex</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00030</Code>
+          <Version>2022/3</Version>
+          <Titre>RUE DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerStreet</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00031</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE L'ADRESSE DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerHouseNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00032</Code>
+          <Version>2022/3</Version>
+          <Titre>BOÎTE AUX LETTRES DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerPostBox</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00033</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE POSTAL DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerZIPCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00034</Code>
+          <Version>2022/3</Version>
+          <Titre>COMMUNE DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerCity</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00035</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE PAYS DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerCountry</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00036</Code>
+          <Version>2022/3</Version>
+          <Titre>CATÉGORIE DE L'EMPLOYEUR</Titre>
+          <XMLLabel>EmployerClass</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00037</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00038</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DU TRIMESTRE POUR LA SÉCURITÉ SOCIALE</Titre>
+          <XMLLabel>NOSSQuarterStartingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00039</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE FIN DU TRIMESTRE POUR LA SÉCURITÉ SOCIALE</Titre>
+          <XMLLabel>NOSSQuarterEndingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00040</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION FRONTALIER</Titre>
+          <XMLLabel>Border</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00041</Code>
+          <Version>2022/3</Version>
+          <Titre>ACTIVITÉ PAR RAPPORT AU RISQUE</Titre>
+          <XMLLabel>ActivityWithRisk</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00042</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'IDENTIFICATION DE L'UNITÉ LOCALE</Titre>
+          <XMLLabel>LocalUnitID</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00043</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'OCCUPATION</Titre>
+          <XMLLabel>OccupationSequenceNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00044</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DE L'OCCUPATION</Titre>
+          <XMLLabel>OccupationStartingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00045</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE FIN DE L'OCCUPATION</Titre>
+          <XMLLabel>OccupationEndingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00046</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE COMMISSION PARITAIRE</Titre>
+          <XMLLabel>JointCommissionNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00047</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE JOURS PAR SEMAINE DU RÉGIME DE TRAVAIL</Titre>
+          <XMLLabel>WorkingDaysSystem</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00048</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE MOYEN D'HEURES PAR SEMAINE DU TRAVAILLEUR</Titre>
+          <XMLLabel>MeanWorkingHours</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00049</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE MOYEN D'HEURES PAR SEMAINE DE LA PERSONNE DE RÉFÉRENCE</Titre>
+          <XMLLabel>RefMeanWorkingHours</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00050</Code>
+          <Version>2022/3</Version>
+          <Titre>TYPE DU CONTRAT</Titre>
+          <XMLLabel>ContractType</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00051</Code>
+          <Version>2022/3</Version>
+          <Titre>MESURE DE RÉORGANISATION DU TRAVAIL</Titre>
+          <XMLLabel>ReorganisationMeasure</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00052</Code>
+          <Version>2022/3</Version>
+          <Titre>MESURE DE PROMOTION DE L'EMPLOI</Titre>
+          <XMLLabel>EmploymentPromotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00053</Code>
+          <Version>2022/3</Version>
+          <Titre>STATUT DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerStatus</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00054</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION PENSIONNÉ</Titre>
+          <XMLLabel>Retired</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00055</Code>
+          <Version>2022/3</Version>
+          <Titre>TYPE D'APPRENTISSAGE</Titre>
+          <XMLLabel>Apprenticeship</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00056</Code>
+          <Version>2022/3</Version>
+          <Titre>MODE DE RÉMUNÉRATION</Titre>
+          <XMLLabel>RemunMethod</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00057</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE FONCTION</Titre>
+          <XMLLabel>PositionCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00059</Code>
+          <Version>2022/3</Version>
+          <Titre>CLASSE DU PERSONNEL VOLANT</Titre>
+          <XMLLabel>FlyingStaffClass</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00060</Code>
+          <Version>2022/3</Version>
+          <Titre>ENSEIGNEMENT - MODE PAIEMENT</Titre>
+          <XMLLabel>TenthOrTwelfth</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00061</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE LIGNE PRESTATION</Titre>
+          <XMLLabel>ServiceSequenceNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00062</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE PRESTATION</Titre>
+          <XMLLabel>ServiceCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00063</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE JOURS DE LA PRESTATION</Titre>
+          <XMLLabel>ServiceNbrDays</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00064</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE D'HEURES DE LA PRESTATION</Titre>
+          <XMLLabel>ServiceNbrHours</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00065</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE MINUTES DE VOL</Titre>
+          <XMLLabel>FlightNbrMinutes</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00066</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE LIGNE RÉMUNÉRATION</Titre>
+          <XMLLabel>RemunSequenceNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00067</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE RÉMUNÉRATION</Titre>
+          <XMLLabel>RemunCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00068</Code>
+          <Version>2022/3</Version>
+          <Titre>FRÉQUENCE EN MOIS DE PAIEMENT DE LA PRIME</Titre>
+          <XMLLabel>BonusPaymentFrequency</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00069</Code>
+          <Version>2022/3</Version>
+          <Titre>POURCENTAGE DE LA RÉMUNÉRATION SUR BASE ANNUELLE</Titre>
+          <XMLLabel>PercentagePaid</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00070</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉMUNÉRATION</Titre>
+          <XMLLabel>RemunAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00071</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉMUNÉRATION BRUTE DE RÉFÉRENCE</Titre>
+          <XMLLabel>GrossRefRemunAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00072</Code>
+          <Version>2022/3</Version>
+          <Titre>COTISATION RÉMUNÉRATION BRUTE DE RÉFÉRENCE</Titre>
+          <XMLLabel>GrossRefRemunContributionAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00073</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE JOURS DE RÉFÉRENCE</Titre>
+          <XMLLabel>RefNbrDays</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00076</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉMUNÉRATION ÉTUDIANT</Titre>
+          <XMLLabel>StudentRemunAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00077</Code>
+          <Version>2022/3</Version>
+          <Titre>COTISATION ÉTUDIANT</Titre>
+          <XMLLabel>StudentContributionAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00078</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE JOURS ÉTUDIANT</Titre>
+          <XMLLabel>StudentNbrDays</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00079</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE COTISATION PRÉPENSION</Titre>
+          <XMLLabel>EarlyRetirementCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00080</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE MOIS PRÉPENSION</Titre>
+          <XMLLabel>EarlyRetirementNbrMonths</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00081</Code>
+          <Version>2022/3</Version>
+          <Titre>COTISATION PRÉPENSION</Titre>
+          <XMLLabel>EarlyRetirementContributionAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00082</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE TRAVAILLEUR COTISATION</Titre>
+          <XMLLabel>ContributionWorkerCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00083</Code>
+          <Version>2022/3</Version>
+          <Titre>TYPE DE COTISATION</Titre>
+          <XMLLabel>ContributionType</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00084</Code>
+          <Version>2022/3</Version>
+          <Titre>BASE DE CALCUL DE LA COTISATION</Titre>
+          <XMLLabel>ContributionCalculationBasis</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00085</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DE LA COTISATION</Titre>
+          <XMLLabel>ContributionAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00086</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE DÉDUCTION</Titre>
+          <XMLLabel>DeductionCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00088</Code>
+          <Version>2022/3</Version>
+          <Titre>BASE DE CALCUL DE LA DÉDUCTION</Titre>
+          <XMLLabel>DeductionCalculationBasis</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00089</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DE LA DÉDUCTION</Titre>
+          <XMLLabel>DeductionAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00090</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DU DROIT À LA DÉDUCTION</Titre>
+          <XMLLabel>DeductionRightStartingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00091</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE MOIS FRAIS DE GESTION SSA</Titre>
+          <XMLLabel>ManagementCostNbrMonths</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00092</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS DE LA PERSONNE REMPLACÉE</Titre>
+          <XMLLabel>ReplacedINSS</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00093</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS DE LA PERSONNE QUI A OUVERT LE DROIT À LA DÉDUCTION</Titre>
+          <XMLLabel>ApplicantINSS</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00094</Code>
+          <Version>2022/3</Version>
+          <Titre>ORIGINE DE L'ATTESTATION</Titre>
+          <XMLLabel>CertificateOrigin</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00110</Code>
+          <Version>2022/3</Version>
+          <Titre>STATUT DE L'ATTESTATION</Titre>
+          <XMLLabel>AttestationStatus</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00119</Code>
+          <Version>2022/3</Version>
+          <Titre>NATIONALITÉ DU TRAVAILLEUR</Titre>
+          <XMLLabel>Nationality</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00127</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DE PÉRIODE DE L'ASSUJETTISSEMENT</Titre>
+          <XMLLabel>SubjectionStartingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00129</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE FIN DE PÉRIODE DE L'ASSUJETTISSEMENT</Titre>
+          <XMLLabel>SubjectionEndingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00138</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE SUITE DÉTAIL DÉDUCTION</Titre>
+          <XMLLabel>DeductionDetailSequenceNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00141</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DE LA DÉDUCTION - DÉTAIL</Titre>
+          <XMLLabel>DeductionDetailAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00142</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'ENREGISTREMENT DU RÈGLEMENT DE TRAVAIL</Titre>
+          <XMLLabel>WorkingRegulationsRegistryNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00143</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE D'ORIGINE DU DROIT</Titre>
+          <XMLLabel>WorkingRegulationsStartingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00144</Code>
+          <Version>2022/3</Version>
+          <Titre>NATURE DE L'INDEMNITÉ</Titre>
+          <XMLLabel>IndemnityNature</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00145</Code>
+          <Version>2022/3</Version>
+          <Titre>DEGRÉ D'INCAPACITÉ</Titre>
+          <XMLLabel>IncapacityDegree</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00146</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DE L'INDEMNITÉ</Titre>
+          <XMLLabel>IndemnityAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00147</Code>
+          <Version>2022/3</Version>
+          <Titre>TEMPS DE TRAVAIL HEBDOMADAIRE MOYEN AVANT LA RÉDUCTION DU TEMPS DE TRAVAIL</Titre>
+          <XMLLabel>AverageWorkingTimeBeforeReduction</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00148</Code>
+          <Version>2022/3</Version>
+          <Titre>TEMPS DE TRAVAIL HEBDOMADAIRE MOYEN APRÈS LA RÉDUCTION DU TEMPS DE TRAVAIL</Titre>
+          <XMLLabel>AverageWorkingTimeAfterReduction</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00167</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE LA CARTE D'IDENTITÉ SOCIALE</Titre>
+          <XMLLabel>SIS</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00168</Code>
+          <Version>2022/3</Version>
+          <Titre>COMMUNE - LIEU DE NAISSANCE DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerBirthplace</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00169</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE PAYS DU LIEU DE NAISSANCE DU TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerBirthplaceCountry</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00197</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE JOURS DE VACANCES</Titre>
+          <XMLLabel>HolidayDaysNumber</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00218</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE CRÉATION DU FORMULAIRE</Titre>
+          <XMLLabel>FormCreationDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00221</Code>
+          <Version>2022/3</Version>
+          <Titre>TYPE DE LA RÉFÉRENCE</Titre>
+          <XMLLabel>ReferenceType</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00222</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE RÉFÉRENCE</Titre>
+          <XMLLabel>ReferenceNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00228</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE NACE</Titre>
+          <XMLLabel>ActivityCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00296</Code>
+          <Version>2022/3</Version>
+          <Titre>IDENTIFICATION DU FORMULAIRE</Titre>
+          <XMLLabel>Identification</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00297</Code>
+          <Version>2022/3</Version>
+          <Titre>TYPE DU FORMULAIRE</Titre>
+          <XMLLabel>TypeForm</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00298</Code>
+          <Version>2022/3</Version>
+          <Titre>ORIGINE DE LA RÉFÉRENCE</Titre>
+          <XMLLabel>ReferenceOrigin</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00299</Code>
+          <Version>2022/3</Version>
+          <Titre>HEURE PRÉCISE DE CRÉATION DU FORMULAIRE</Titre>
+          <XMLLabel>FormCreationHour</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00615</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉFÉRENCE UTILISATEUR - PERSONNE PHYSIQUE</Titre>
+          <XMLLabel>NaturalPersonUserReference</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00616</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉFÉRENCE UTILISATEUR - LIGNE TRAVAILLEUR</Titre>
+          <XMLLabel>WorkerRecordUserReference</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00617</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉFÉRENCE UTILISATEUR - OCCUPATION DE LA LIGNE TRAVAILLEUR</Titre>
+          <XMLLabel>OccupationUserReference</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00625</Code>
+          <Version>2022/3</Version>
+          <Titre>JUSTIFICATION DES JOURS</Titre>
+          <XMLLabel>DaysJustification</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00728</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE À LAQUELLE UN MEMBRE DU PERSONNEL NOMMÉ EST MALADE DEPUIS 6 MOIS OU PLUS</Titre>
+          <XMLLabel>SixMonthsIllnessDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00749</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS DU REMPLAÇANT</Titre>
+          <XMLLabel>SubstituteINSS</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00780</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE SUITE VÉHICULE DE SOCIÉTÉ</Titre>
+          <XMLLabel>CompanyVehicleSequenceNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00781</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE PLAQUE</Titre>
+          <XMLLabel>LicensePlate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00794</Code>
+          <Version>2022/3</Version>
+          <Titre>MESURES POUR LE NON MARCHAND</Titre>
+          <XMLLabel>NOSSLPASocialMaribel</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00795</Code>
+          <Version>2022/3</Version>
+          <Titre>EXTRA</Titre>
+          <XMLLabel>HorecaExtra</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00812</Code>
+          <Version>2022/3</Version>
+          <Titre>SALAIRE HORAIRE</Titre>
+          <XMLLabel>HourRemun</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00815</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION EMPLOYEUR</Titre>
+          <XMLLabel>EmployerNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00823</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DU PREMIER OCTROI DE L'INDEMNITÉ COMPLÉMENTAIRE</Titre>
+          <XMLLabel>FirstComplIndemnityDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00824</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION TYPE D'ACCORD DE L'INDEMNITÉ COMPLÉMENTAIRE</Titre>
+          <XMLLabel>ComplIndemnityAgreementNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00825</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION D'INTERRUPTION DE CARRIÈRE OU DE PRÉPENSION À MI-TEMPS</Titre>
+          <XMLLabel>HalfTimeCareerInterruptionNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00826</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION DE DISPENSE DE PRESTATIONS</Titre>
+          <XMLLabel>ServiceExemptionNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00827</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION DE REMPLACEMENT CONFORME</Titre>
+          <XMLLabel>ReplacementAccordanceWCCNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00829</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION D'ADAPTATION DU MONTANT DE L'INDEMNITÉ COMPLÉMENTAIRE OU DE L'ALLOCATION SOCIALE</Titre>
+          <XMLLabel>ComplIndemnityAmountAdjustNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00830</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DE L'INDEMNITÉ COMPLÉMENTAIRE</Titre>
+          <XMLLabel>ComplIndemnityAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00831</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE MOIS - INDEMNITÉ COMPLÉMENTAIRE</Titre>
+          <XMLLabel>ComplIndemnityNbrMonths</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00853</Code>
+          <Version>2022/3</Version>
+          <Titre>MESURES PRÉVUES EN CAS DE REPRISE DU TRAVAIL</Titre>
+          <XMLLabel>ResumptionOfWorkMeasure</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00862</Code>
+          <Version>2022/3</Version>
+          <Titre>SALAIRE HORAIRE EN MILLIÈMES D'EURO</Titre>
+          <XMLLabel>HourRemunInThousandthOfEuro</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00892</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION DE CAPITALISATION</Titre>
+          <XMLLabel>CapitalizationNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00893</Code>
+          <Version>2022/3</Version>
+          <Titre>PERSONNEL MIS À DISPOSITION</Titre>
+          <XMLLabel>PostedWorker</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00896</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE PREMIÈRE EMBAUCHE</Titre>
+          <XMLLabel>FirstHiringDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00914</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE D'EXPIRATION DU DROIT</Titre>
+          <XMLLabel>WorkingRegulationsEndingDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00949</Code>
+          <Version>2022/3</Version>
+          <Titre>TYPE DE DÉBITEUR</Titre>
+          <XMLLabel>DebtorType</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00950</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE PARTIES DE L'INDEMNITÉ COMPLÉMENTAIRE</Titre>
+          <XMLLabel>ComplIndemnityNbrOfParts</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00951</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE NOTIFICATION DU PRÉAVIS</Titre>
+          <XMLLabel>NoticeDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00952</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION D'ENTREPRISE EN DIFFICULTÉ OU EN RESTRUCTURATION</Titre>
+          <XMLLabel>AilingOrReorgCompanyNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00953</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DE RECONNAISSANCE</Titre>
+          <XMLLabel>AcknowledgementStartDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00954</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE FIN DE RECONNAISSANCE</Titre>
+          <XMLLabel>AcknowledgementEndDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00955</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO DE SUITE COTISATION</Titre>
+          <XMLLabel>ContributionSequenceNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00956</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT THÉORIQUE DE L'ALLOCATION SOCIALE</Titre>
+          <XMLLabel>WelfareBenefitTheoreticalAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00957</Code>
+          <Version>2022/3</Version>
+          <Titre>DÉCIMALES POUR LE NOMBRE DE MOIS</Titre>
+          <XMLLabel>NbrMonthsDecimals</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00958</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE JOURS - MOIS INCOMPLET</Titre>
+          <XMLLabel>IncompleteMonthNbrDays</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00959</Code>
+          <Version>2022/3</Version>
+          <Titre>MOIS INCOMPLET - RAISON</Titre>
+          <XMLLabel>IncompleteMonthReason</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00960</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION D'APPLICATION DU PLANCHER</Titre>
+          <XMLLabel>FloorApplicationNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00961</Code>
+          <Version>2022/3</Version>
+          <Titre>TYPE D'INSTITUTION DU SECTEUR PUBLIC</Titre>
+          <XMLLabel>PublicSectorInstitutionType</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00962</Code>
+          <Version>2022/3</Version>
+          <Titre>CATÉGORIE DE PERSONNEL DU SECTEUR PUBLIC</Titre>
+          <XMLLabel>PublicSectorPersonnelCategory</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00963</Code>
+          <Version>2022/3</Version>
+          <Titre>DÉNOMINATION DU GRADE OU DE LA FONCTION</Titre>
+          <XMLLabel>GradeOrFunction</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00964</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT - DONNÉES DE L'OCCUPATION RELATIVES AU SECTEUR PUBLIC</Titre>
+          <XMLLabel>OccupationPSDStartDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00965</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE FIN - DONNÉES DE L'OCCUPATION RELATIVES AU SECTEUR PUBLIC</Titre>
+          <XMLLabel>OccupationPSDEndDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00966</Code>
+          <Version>2022/3</Version>
+          <Titre>RÔLE LINGUISTIQUE</Titre>
+          <XMLLabel>OfficialLanguage</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00967</Code>
+          <Version>2022/3</Version>
+          <Titre>NATURE DU SERVICE</Titre>
+          <XMLLabel>AssignmentType</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00968</Code>
+          <Version>2022/3</Version>
+          <Titre>CARACTÈRE DE LA FONCTION</Titre>
+          <XMLLabel>FunctionNature</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00969</Code>
+          <Version>2022/3</Version>
+          <Titre>MOTIF DE FIN DE LA RELATION STATUTAIRE</Titre>
+          <XMLLabel>StatutoryRelationEndReason</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00970</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DU TRAITEMENT BARÉMIQUE</Titre>
+          <XMLLabel>ScaleSalaryStartDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00971</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE FIN DU TRAITEMENT BARÉMIQUE</Titre>
+          <XMLLabel>ScaleSalaryEndDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00972</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE PRISE DE RANG DE L'ANCIENNETÉ PÉCUNIAIRE</Titre>
+          <XMLLabel>PecuniarySeniorityStartDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00973</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉFÉRENCE DE L'ÉCHELLE DE TRAITEMENT</Titre>
+          <XMLLabel>SalaryScaleReference</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00974</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DU TRAITEMENT BARÉMIQUE</Titre>
+          <XMLLabel>ScaleSalaryAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00975</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE D'HEURES PAR SEMAINE</Titre>
+          <XMLLabel>WeekHoursNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00976</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE D'HEURES PAR SEMAINE - TRAITEMENT BARÉMIQUE COMPLET</Titre>
+          <XMLLabel>ScaleSalaryWeekHoursNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00977</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉFÉRENCE DU SUPPLÉMENT DE TRAITEMENT</Titre>
+          <XMLLabel>AdditionalScaleSalaryReference</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00978</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DU SUPPLÉMENT DE TRAITEMENT</Titre>
+          <XMLLabel>AdditionalScaleSalaryStartDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00979</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE FIN DU SUPPLÉMENT DE TRAITEMENT</Titre>
+          <XMLLabel>AdditionalScaleSalaryEndDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00980</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DE BASE DU SUPPLÉMENT DE TRAITEMENT</Titre>
+          <XMLLabel>AdditionalScaleSalaryBasisAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00981</Code>
+          <Version>2022/3</Version>
+          <Titre>POURCENTAGE DU SUPPLÉMENT DE TRAITEMENT</Titre>
+          <XMLLabel>AdditionalScaleSalaryPercentage</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00982</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE D'HEURES OU DE PRESTATIONS</Titre>
+          <XMLLabel>NbrHoursOrServices</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>00983</Code>
+          <Version>2022/3</Version>
+          <Titre>MONTANT DU SUPPLÉMENT DE TRAITEMENT</Titre>
+          <XMLLabel>AdditionalScaleSalaryAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01010</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE DE JOURS SALAIRE GARANTI PREMIÈRE SEMAINE</Titre>
+          <XMLLabel>FirstWeekGuaranteedSalaryNbrDays</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01011</Code>
+          <Version>2022/3</Version>
+          <Titre>RÉMUNÉRATION BRUTE PAYÉE EN CAS DE MALADIE</Titre>
+          <XMLLabel>IllnessGrossRemunAmount</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01012</Code>
+          <Version>2022/3</Version>
+          <Titre>DISPENSE DE DÉCLARATION DES DONNÉES DE L'OCCUPATION RELATIVES AU SECTEUR PUBLIC</Titre>
+          <XMLLabel>PSDDclExemption</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01013</Code>
+          <Version>2022/3</Version>
+          <Titre>DISPENSE - RÉGIME DE PENSION COMPLÉMENTAIRE</Titre>
+          <XMLLabel>SupplPensionContributionExemption</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01030</Code>
+          <Version>2022/3</Version>
+          <Titre>POURCENTAGE DE LA MESURE DE RÉORGANISATION DU TRAVAIL</Titre>
+          <XMLLabel>ReorganisationMeasurePercentage</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01063</Code>
+          <Version>2022/3</Version>
+          <Titre>DONNÉE DE CONTRÔLE - OBLIGATION</Titre>
+          <XMLLabel>ObligationControlInformation</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01092</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE NOMINATION À TITRE DÉFINITIF</Titre>
+          <XMLLabel>DefinitiveNominationDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01129</Code>
+          <Version>2022/3</Version>
+          <Titre>CODE PÉRIODE</Titre>
+          <XMLLabel>IndemnityContributionPeriodCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01148</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE D'ATTRIBUTION DU NOUVEAU POSTE MARIBEL SOCIAL</Titre>
+          <XMLLabel>NewMaribelEmploymentDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01158</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE D'HEURES ÉTUDIANT</Titre>
+          <XMLLabel>StudentHoursNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01176</Code>
+          <Version>2022/3</Version>
+          <Titre>COTISATION PENSION DU SECTEUR PUBLIC POUR TRAVAILLEURS STATUTAIRES - BASE DE CALCUL DÉROGATOIRE</Titre>
+          <XMLLabel>PSPContribCalcBasisDerogation</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01191</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT DISPENSE DE PRESTATIONS</Titre>
+          <XMLLabel>ServiceExemptionStartDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01192</Code>
+          <Version>2022/3</Version>
+          <Titre>DATE DE DÉBUT SITUATION DE FORMATION</Titre>
+          <XMLLabel>TrainingSituationStartDate</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01193</Code>
+          <Version>2022/3</Version>
+          <Titre>SITUATION DE FORMATION</Titre>
+          <XMLLabel>TrainingSituation</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01194</Code>
+          <Version>2022/3</Version>
+          <Titre>MESURE CARRIÈRE</Titre>
+          <XMLLabel>CareerMeasure</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01195</Code>
+          <Version>2022/3</Version>
+          <Titre>NUMÉRO D'IDENTIFICATION DU NAVIRE</Titre>
+          <XMLLabel>ShipId</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01199</Code>
+          <Version>2022/3</Version>
+          <Titre>CLASSE DU PERSONNEL</Titre>
+          <XMLLabel>StaffCode</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01203</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE MOYEN D'HEURES SUBSIDIÉES PAR SEMAINE DU TRAVAILLEUR</Titre>
+          <XMLLabel>SubsidizedMeanWorkingHours</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01215</Code>
+          <Version>2022/3</Version>
+          <Titre>DÉTAIL SECTEUR</Titre>
+          <XMLLabel>SectorDetail</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01216</Code>
+          <Version>2022/3</Version>
+          <Titre>BUDGET MOBILITÉ</Titre>
+          <XMLLabel>MobilityBudget</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01217</Code>
+          <Version>2022/3</Version>
+          <Titre>VÉHICULE RESPECTUEUX DE L'ENVIRONNEMENT</Titre>
+          <XMLLabel>EcoVehicle</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01219</Code>
+          <Version>2022/3</Version>
+          <Titre>ANNÉE ET MOIS DE RÉFÉRENCE</Titre>
+          <XMLLabel>ReferenceYearMonth</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01220</Code>
+          <Version>2022/3</Version>
+          <Titre>TRAITEMENT MENSUEL</Titre>
+          <XMLLabel>MonthlyScaleSalary</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01221</Code>
+          <Version>2022/3</Version>
+          <Titre>SUPPLÉMENT DE TRAITEMENT ET BONIFICATION MENSUELS</Titre>
+          <XMLLabel>MonthlyAdditionalScaleSalary</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01222</Code>
+          <Version>2022/3</Version>
+          <Titre>ALLOCATION DE FOYER ET RÉSIDENCE MENSUELLE</Titre>
+          <XMLLabel>MonthlyHomeIndemnity</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01232</Code>
+          <Version>2022/3</Version>
+          <Titre>NOMBRE D'HEURES DE CONGÉ FORMATION FLAMAND</Titre>
+          <XMLLabel>FlemishTrainingHolidayHoursNbr</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01235</Code>
+          <Version>2022/3</Version>
+          <Titre>NOTION TRAITEMENT BARÉMIQUE RÉDUIT</Titre>
+          <XMLLabel>ReducedScaleSalaryNotion</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+     <glossary>
+          <Code>01237</Code>
+          <Version>2022/3</Version>
+          <Titre>AIDE RÉGIONALE À L'EMPLOI</Titre>
+          <XMLLabel>RegionalAidMeasure</XMLLabel>
+          <Modifications></Modifications>
+     </glossary>
+</List>

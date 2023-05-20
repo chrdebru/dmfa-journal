@@ -1,0 +1,2188 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ont: <http://kg.socialsecurity.be/ont/dmfa#> .
+
+@prefix kg: <http://kg.socialsecurity.be/resource/shapes/> .
+@base <http://kg.socialsecurity.be/resource/shapes/> .
+
+<> 
+	sh:declare [
+		sh:prefix "xs" ;
+		sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xs:anyURI ;
+	] ;
+
+	sh:declare [
+		sh:prefix "ont" ;
+		sh:namespace "http://kg.socialsecurity.be/ont/dmfa#"^^xs:anyURI ;
+	] ;
+.
+
+kg:DmfAOriginalCountInstancesShape a sh:NodeShape ;
+    rdfs:comment "A graph should have exactly one instance of ont:DmfAOriginal" ;
+    sh:targetNode ont:DmfAOriginal ;
+
+    sh:property [
+        sh:message "Graph does not contain exactly one instance of ont:DmfAOriginal" ;
+        sh:path [ sh:inversePath rdf:type ] ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+.
+
+kg:DmfAOriginalShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DmfAOriginal (90169)" ;
+    sh:targetClass ont:DmfAOriginal ;
+
+.
+
+kg:FormShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Form (90059)" ;
+    sh:targetClass ont:Form ;
+
+    sh:property kg:IdentificationShape;
+    sh:property kg:FormCreationDateShape;
+    sh:property kg:FormCreationHourShape;
+    sh:property kg:AttestationStatusShape;
+    sh:property kg:TypeFormShape;
+.
+
+kg:IdentificationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Identification (00296)" ;
+    sh:path ont:Identification;
+
+    sh:datatype xs:string;
+    sh:maxLength 7;
+ .
+
+kg:FormCreationDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FormCreationDate (00218)" ;
+    sh:path ont:FormCreationDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:FormCreationHourShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FormCreationHour (00299)" ;
+    sh:path ont:FormCreationHour;
+
+    sh:datatype xs:time;
+    sh:pattern "\\d{2}:\\d{2}:\\d{2}.\\d{3}";
+ .
+
+kg:AttestationStatusShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AttestationStatus (00110)" ;
+    sh:path ont:AttestationStatus;
+
+    sh:datatype xs:integer;
+    sh:maxLength 1;
+ .
+
+kg:TypeFormShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TypeForm (00297)" ;
+    sh:path ont:TypeForm;
+
+    sh:datatype xs:string;
+    sh:maxLength 2;
+ .
+
+kg:ReferenceShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Reference (90082)" ;
+    sh:targetClass ont:Reference ;
+
+    sh:property kg:ReferenceTypeShape;
+    sh:property kg:ReferenceOriginShape;
+    sh:property kg:ReferenceNbrShape;
+.
+
+kg:ReferenceTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceType (00221)" ;
+    sh:path ont:ReferenceType;
+
+    sh:datatype xs:integer;
+    sh:maxLength 1;
+ .
+
+kg:ReferenceOriginShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceOrigin (00298)" ;
+    sh:path ont:ReferenceOrigin;
+
+    sh:datatype xs:integer;
+    sh:maxLength 1;
+ .
+
+kg:ReferenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceNbr (00222)" ;
+    sh:path ont:ReferenceNbr;
+
+    sh:datatype xs:string;
+    sh:minLength 1;
+    sh:maxLength 20;
+ .
+
+kg:EmployerDeclarationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EmployerDeclaration (90007)" ;
+    sh:targetClass ont:EmployerDeclaration ;
+
+    sh:property kg:QuarterShape;
+    sh:property kg:NOSSRegistrationNbrShape;
+    sh:property kg:TrusteeshipShape;
+    sh:property kg:CompanyIDShape;
+    sh:property kg:NetOwedAmountShape;
+    sh:property kg:System5Shape;
+    sh:property kg:HolidayStartingDateShape;
+.
+
+kg:QuarterShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Quarter (00013)" ;
+    sh:path ont:Quarter;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 20031;
+    sh:maxLength 5;
+    sh:pattern "\\d{4}(1|2|3|4)";
+ .
+
+kg:NOSSRegistrationNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NOSSRegistrationNbr (00011)" ;
+    sh:path ont:NOSSRegistrationNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 199999934;
+    sh:maxLength 9;
+ .
+
+kg:TrusteeshipShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Trusteeship (00012)" ;
+    sh:path ont:Trusteeship;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 1;
+ .
+
+kg:CompanyIDShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CompanyID (00014)" ;
+    sh:path ont:CompanyID;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1999999943;
+    sh:maxLength 10;
+    sh:pattern "0|\\d{9}|\\d{10}";
+ .
+
+kg:NetOwedAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NetOwedAmount (00015)" ;
+    sh:path ont:NetOwedAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999999999;
+    sh:maxLength 15;
+ .
+
+kg:System5Shape a sh:PropertyShape;
+    rdfs:comment "Property Shape for System5 (00016)" ;
+    sh:path ont:System5;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 1;
+ .
+
+kg:HolidayStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HolidayStartingDate (00017)" ;
+    sh:path ont:HolidayStartingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:NaturalPersonShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for NaturalPerson (90017)" ;
+    sh:targetClass ont:NaturalPerson ;
+
+    sh:property kg:NaturalPersonSequenceNbrShape;
+    sh:property kg:INSSShape;
+    sh:property kg:SISShape;
+    sh:property kg:WorkerNameShape;
+    sh:property kg:WorkerFirstNameShape;
+    sh:property kg:WorkerInitialShape;
+    sh:property kg:WorkerBirthdateShape;
+    sh:property kg:WorkerBirthplaceShape;
+    sh:property kg:WorkerBirthplaceCountryShape;
+    sh:property kg:WorkerSexShape;
+    sh:property kg:WorkerStreetShape;
+    sh:property kg:WorkerHouseNbrShape;
+    sh:property kg:WorkerPostBoxShape;
+    sh:property kg:WorkerZIPCodeShape;
+    sh:property kg:WorkerCityShape;
+    sh:property kg:WorkerCountryShape;
+    sh:property kg:NationalityShape;
+    sh:property kg:NaturalPersonUserReferenceShape;
+.
+
+kg:NaturalPersonSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NaturalPersonSequenceNbr (00023)" ;
+    sh:path ont:NaturalPersonSequenceNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 9999999;
+    sh:maxLength 7;
+ .
+
+kg:INSSShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for INSS (00024)" ;
+    sh:path ont:INSS;
+
+    sh:datatype xs:integer;
+    sh:maxLength 11;
+    sh:pattern "\\d{11}";
+ .
+
+kg:SISShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SIS (00167)" ;
+    sh:path ont:SIS;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 9999999999;
+    sh:maxLength 10;
+ .
+
+kg:WorkerNameShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerName (00025)" ;
+    sh:path ont:WorkerName;
+
+    sh:datatype xs:string;
+    sh:minLength 1;
+    sh:maxLength 48;
+ .
+
+kg:WorkerFirstNameShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerFirstName (00026)" ;
+    sh:path ont:WorkerFirstName;
+
+    sh:datatype xs:string;
+    sh:minLength 1;
+    sh:maxLength 24;
+ .
+
+kg:WorkerInitialShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerInitial (00027)" ;
+    sh:path ont:WorkerInitial;
+
+    sh:datatype xs:string;
+    sh:pattern "\\p{L}";
+ .
+
+kg:WorkerBirthdateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerBirthdate (00028)" ;
+    sh:path ont:WorkerBirthdate;
+
+    sh:datatype xs:string;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:WorkerBirthplaceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerBirthplace (00168)" ;
+    sh:path ont:WorkerBirthplace;
+
+    sh:datatype xs:string;
+    sh:maxLength 40;
+    sh:pattern "[\\s\\S]*\\S[\\s\\S]*";
+ .
+
+kg:WorkerBirthplaceCountryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerBirthplaceCountry (00169)" ;
+    sh:path ont:WorkerBirthplaceCountry;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999;
+    sh:maxLength 5;
+ .
+
+kg:WorkerSexShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerSex (00029)" ;
+    sh:path ont:WorkerSex;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 2;
+    sh:maxLength 1;
+ .
+
+kg:WorkerStreetShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerStreet (00030)" ;
+    sh:path ont:WorkerStreet;
+
+    sh:datatype xs:string;
+    sh:maxLength 35;
+ .
+
+kg:WorkerHouseNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerHouseNbr (00031)" ;
+    sh:path ont:WorkerHouseNbr;
+
+    sh:datatype xs:string;
+    sh:maxLength 10;
+ .
+
+kg:WorkerPostBoxShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerPostBox (00032)" ;
+    sh:path ont:WorkerPostBox;
+
+    sh:datatype xs:string;
+    sh:maxLength 4;
+ .
+
+kg:WorkerZIPCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerZIPCode (00033)" ;
+    sh:path ont:WorkerZIPCode;
+
+    sh:datatype xs:string;
+    sh:maxLength 9;
+ .
+
+kg:WorkerCityShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerCity (00034)" ;
+    sh:path ont:WorkerCity;
+
+    sh:datatype xs:string;
+    sh:maxLength 40;
+ .
+
+kg:WorkerCountryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerCountry (00035)" ;
+    sh:path ont:WorkerCountry;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999;
+    sh:maxLength 5;
+ .
+
+kg:NationalityShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Nationality (00119)" ;
+    sh:path ont:Nationality;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999;
+    sh:maxLength 5;
+ .
+
+kg:NaturalPersonUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NaturalPersonUserReference (00615)" ;
+    sh:path ont:NaturalPersonUserReference;
+
+    sh:datatype xs:string;
+    sh:maxLength 20;
+ .
+
+kg:CompanyVehicleShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for CompanyVehicle (90294)" ;
+    sh:targetClass ont:CompanyVehicle ;
+
+    sh:property kg:CompanyVehicleSequenceNbrShape;
+    sh:property kg:LicensePlateShape;
+    sh:property kg:EcoVehicleShape;
+.
+
+kg:CompanyVehicleSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CompanyVehicleSequenceNbr (00780)" ;
+    sh:path ont:CompanyVehicleSequenceNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999;
+    sh:maxLength 5;
+ .
+
+kg:LicensePlateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for LicensePlate (00781)" ;
+    sh:path ont:LicensePlate;
+
+    sh:datatype xs:string;
+    sh:maxLength 10;
+ .
+
+kg:EcoVehicleShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EcoVehicle (01217)" ;
+    sh:path ont:EcoVehicle;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 1;
+ .
+
+kg:ContributionUnrelatedToNPShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ContributionUnrelatedToNP (90002)" ;
+    sh:targetClass ont:ContributionUnrelatedToNP ;
+
+    sh:property kg:UnrelatedEmployerClassShape;
+    sh:property kg:UnrelatedWorkerCodeShape;
+    sh:property kg:UnrelatedCalculationBasisShape;
+    sh:property kg:UnrelatedAmountShape;
+.
+
+kg:UnrelatedEmployerClassShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for UnrelatedEmployerClass (00019)" ;
+    sh:path ont:UnrelatedEmployerClass;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 000;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+    sh:pattern "\\d{3}";
+ .
+
+kg:UnrelatedWorkerCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for UnrelatedWorkerCode (00020)" ;
+    sh:path ont:UnrelatedWorkerCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 000;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+    sh:pattern "\\d{3}";
+ .
+
+kg:UnrelatedCalculationBasisShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for UnrelatedCalculationBasis (00021)" ;
+    sh:path ont:UnrelatedCalculationBasis;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 9999999999999;
+    sh:maxLength 13;
+ .
+
+kg:UnrelatedAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for UnrelatedAmount (00022)" ;
+    sh:path ont:UnrelatedAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 9999999999999;
+    sh:maxLength 13;
+ .
+
+kg:WorkerRecordShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerRecord (90012)" ;
+    sh:targetClass ont:WorkerRecord ;
+
+    sh:property kg:EmployerClassShape;
+    sh:property kg:WorkerCodeShape;
+    sh:property kg:NOSSQuarterStartingDateShape;
+    sh:property kg:NOSSQuarterEndingDateShape;
+    sh:property kg:BorderShape;
+    sh:property kg:ActivityWithRiskShape;
+    sh:property kg:LocalUnitIDShape;
+    sh:property kg:WorkerRecordUserReferenceShape;
+.
+
+kg:EmployerClassShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EmployerClass (00036)" ;
+    sh:path ont:EmployerClass;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 000;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+    sh:pattern "\\d{3}";
+ .
+
+kg:WorkerCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerCode (00037)" ;
+    sh:path ont:WorkerCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 000;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+    sh:pattern "\\d{3}";
+ .
+
+kg:NOSSQuarterStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NOSSQuarterStartingDate (00038)" ;
+    sh:path ont:NOSSQuarterStartingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:NOSSQuarterEndingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NOSSQuarterEndingDate (00039)" ;
+    sh:path ont:NOSSQuarterEndingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:BorderShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Border (00040)" ;
+    sh:path ont:Border;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 1;
+ .
+
+kg:ActivityWithRiskShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ActivityWithRisk (00041)" ;
+    sh:path ont:ActivityWithRisk;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+ .
+
+kg:LocalUnitIDShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for LocalUnitID (00042)" ;
+    sh:path ont:LocalUnitID;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 9999999999;
+    sh:maxLength 10;
+ .
+
+kg:WorkerRecordUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerRecordUserReference (00616)" ;
+    sh:path ont:WorkerRecordUserReference;
+
+    sh:datatype xs:string;
+    sh:maxLength 20;
+ .
+
+kg:OccupationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Occupation (90015)" ;
+    sh:targetClass ont:Occupation ;
+
+    sh:property kg:OccupationSequenceNbrShape;
+    sh:property kg:OccupationStartingDateShape;
+    sh:property kg:OccupationEndingDateShape;
+    sh:property kg:JointCommissionNbrShape;
+    sh:property kg:WorkingDaysSystemShape;
+    sh:property kg:ContractTypeShape;
+    sh:property kg:RefMeanWorkingHoursShape;
+    sh:property kg:WorkerStatusShape;
+    sh:property kg:MeanWorkingHoursShape;
+    sh:property kg:ReorganisationMeasureShape;
+    sh:property kg:EmploymentPromotionShape;
+    sh:property kg:RetiredShape;
+    sh:property kg:ApprenticeshipShape;
+    sh:property kg:RemunMethodShape;
+    sh:property kg:PositionCodeShape;
+    sh:property kg:FlyingStaffClassShape;
+    sh:property kg:TenthOrTwelfthShape;
+    sh:property kg:OccupationUserReferenceShape;
+    sh:property kg:DaysJustificationShape;
+    sh:property kg:ActivityCodeShape;
+    sh:property kg:LocalUnitIDShape;
+    sh:property kg:ShipIdShape;
+    sh:property kg:StaffCodeShape;
+    sh:property kg:SubsidizedMeanWorkingHoursShape;
+.
+
+kg:OccupationSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationSequenceNbr (00043)" ;
+    sh:path ont:OccupationSequenceNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+    sh:maxLength 2;
+ .
+
+kg:OccupationStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationStartingDate (00044)" ;
+    sh:path ont:OccupationStartingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:OccupationEndingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationEndingDate (00045)" ;
+    sh:path ont:OccupationEndingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:JointCommissionNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for JointCommissionNbr (00046)" ;
+    sh:path ont:JointCommissionNbr;
+
+    sh:datatype xs:string;
+    sh:minLength 1;
+    sh:maxLength 9;
+    sh:pattern "\\d{3}|\\d{3}\\.\\d{2}|\\d{3}\\.\\d{2}\\.\\d{2}";
+ .
+
+kg:WorkingDaysSystemShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkingDaysSystem (00047)" ;
+    sh:path ont:WorkingDaysSystem;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 700;
+    sh:maxLength 3;
+ .
+
+kg:ContractTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContractType (00050)" ;
+    sh:path ont:ContractType;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 1;
+ .
+
+kg:RefMeanWorkingHoursShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RefMeanWorkingHours (00049)" ;
+    sh:path ont:RefMeanWorkingHours;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 6000;
+    sh:maxLength 4;
+ .
+
+kg:WorkerStatusShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerStatus (00053)" ;
+    sh:path ont:WorkerStatus;
+
+    sh:datatype xs:string;
+    sh:maxLength 2;
+ .
+
+kg:MeanWorkingHoursShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MeanWorkingHours (00048)" ;
+    sh:path ont:MeanWorkingHours;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 6000;
+    sh:maxLength 4;
+ .
+
+kg:ReorganisationMeasureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReorganisationMeasure (00051)" ;
+    sh:path ont:ReorganisationMeasure;
+
+    sh:datatype xs:integer;
+    sh:maxLength 3;
+ .
+
+kg:EmploymentPromotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EmploymentPromotion (00052)" ;
+    sh:path ont:EmploymentPromotion;
+
+    sh:datatype xs:integer;
+    sh:maxLength 3;
+ .
+
+kg:RetiredShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Retired (00054)" ;
+    sh:path ont:Retired;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 1;
+ .
+
+kg:ApprenticeshipShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Apprenticeship (00055)" ;
+    sh:path ont:Apprenticeship;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 5;
+    sh:maxLength 1;
+ .
+
+kg:RemunMethodShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RemunMethod (00056)" ;
+    sh:path ont:RemunMethod;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 3;
+    sh:maxLength 1;
+ .
+
+kg:PositionCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PositionCode (00057)" ;
+    sh:path ont:PositionCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99;
+    sh:maxLength 2;
+ .
+
+kg:FlyingStaffClassShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FlyingStaffClass (00059)" ;
+    sh:path ont:FlyingStaffClass;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 3;
+    sh:maxLength 1;
+ .
+
+kg:TenthOrTwelfthShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TenthOrTwelfth (00060)" ;
+    sh:path ont:TenthOrTwelfth;
+
+    sh:datatype xs:integer;
+    sh:maxLength 2;
+ .
+
+kg:OccupationUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationUserReference (00617)" ;
+    sh:path ont:OccupationUserReference;
+
+    sh:datatype xs:string;
+    sh:maxLength 20;
+ .
+
+kg:DaysJustificationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DaysJustification (00625)" ;
+    sh:path ont:DaysJustification;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:ActivityCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ActivityCode (00228)" ;
+    sh:path ont:ActivityCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999;
+    sh:maxLength 5;
+ .
+
+kg:ShipIdShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ShipId (01195)" ;
+    sh:path ont:ShipId;
+
+    sh:datatype xs:integer;
+    sh:maxLength 7;
+ .
+
+kg:StaffCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StaffCode (01199)" ;
+    sh:path ont:StaffCode;
+
+    sh:datatype xs:integer;
+    sh:maxLength 4;
+ .
+
+kg:SubsidizedMeanWorkingHoursShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SubsidizedMeanWorkingHours (01203)" ;
+    sh:path ont:SubsidizedMeanWorkingHours;
+
+    sh:datatype xs:integer;
+    sh:maxLength 4;
+ .
+
+kg:ActivationInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ActivationInformation (90578)" ;
+    sh:targetClass ont:ActivationInformation ;
+
+    sh:property kg:ServiceExemptionStartDateShape;
+    sh:property kg:TrainingSituationStartDateShape;
+    sh:property kg:TrainingSituationShape;
+.
+
+kg:ServiceExemptionStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceExemptionStartDate (01191)" ;
+    sh:path ont:ServiceExemptionStartDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:TrainingSituationStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TrainingSituationStartDate (01192)" ;
+    sh:path ont:TrainingSituationStartDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:TrainingSituationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TrainingSituation (01193)" ;
+    sh:path ont:TrainingSituation;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 2;
+ .
+
+kg:WorkerContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerContribution (90001)" ;
+    sh:targetClass ont:WorkerContribution ;
+
+    sh:property kg:ContributionWorkerCodeShape;
+    sh:property kg:ContributionTypeShape;
+    sh:property kg:ContributionCalculationBasisShape;
+    sh:property kg:ContributionAmountShape;
+    sh:property kg:FirstHiringDateShape;
+.
+
+kg:ContributionWorkerCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionWorkerCode (00082)" ;
+    sh:path ont:ContributionWorkerCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 000;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+    sh:pattern "\\d{3}";
+ .
+
+kg:ContributionTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionType (00083)" ;
+    sh:path ont:ContributionType;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 9;
+    sh:maxLength 1;
+ .
+
+kg:ContributionCalculationBasisShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionCalculationBasis (00084)" ;
+    sh:path ont:ContributionCalculationBasis;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:ContributionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionAmount (00085)" ;
+    sh:path ont:ContributionAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:FirstHiringDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FirstHiringDate (00896)" ;
+    sh:path ont:FirstHiringDate;
+
+    sh:datatype xs:date;
+    sh:minInclusive "2007-07-01";
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:WorkerDeductionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerDeduction (90110)" ;
+    sh:targetClass ont:WorkerDeduction ;
+
+    sh:property kg:DeductionCodeShape;
+    sh:property kg:DeductionCalculationBasisShape;
+    sh:property kg:DeductionAmountShape;
+    sh:property kg:DeductionRightStartingDateShape;
+    sh:property kg:ManagementCostNbrMonthsShape;
+    sh:property kg:ReplacedINSSShape;
+    sh:property kg:ApplicantINSSShape;
+    sh:property kg:CertificateOriginShape;
+.
+
+kg:DeductionCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionCode (00086)" ;
+    sh:path ont:DeductionCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 9999;
+    sh:maxLength 4;
+ .
+
+kg:DeductionCalculationBasisShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionCalculationBasis (00088)" ;
+    sh:path ont:DeductionCalculationBasis;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:DeductionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionAmount (00089)" ;
+    sh:path ont:DeductionAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:DeductionRightStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionRightStartingDate (00090)" ;
+    sh:path ont:DeductionRightStartingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:ManagementCostNbrMonthsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ManagementCostNbrMonths (00091)" ;
+    sh:path ont:ManagementCostNbrMonths;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 3;
+    sh:maxLength 1;
+ .
+
+kg:ReplacedINSSShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReplacedINSS (00092)" ;
+    sh:path ont:ReplacedINSS;
+
+    sh:datatype xs:integer;
+    sh:maxLength 11;
+    sh:pattern "[0]|\\d{11}";
+ .
+
+kg:ApplicantINSSShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ApplicantINSS (00093)" ;
+    sh:path ont:ApplicantINSS;
+
+    sh:datatype xs:integer;
+    sh:maxLength 11;
+    sh:pattern "[0]|\\d{11}";
+ .
+
+kg:CertificateOriginShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CertificateOrigin (00094)" ;
+    sh:path ont:CertificateOrigin;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 5;
+    sh:maxLength 3;
+ .
+
+kg:DismissedStatutoryWorkerContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DismissedStatutoryWorkerContribution (90005)" ;
+    sh:targetClass ont:DismissedStatutoryWorkerContribution ;
+
+    sh:property kg:GrossRefRemunAmountShape;
+    sh:property kg:GrossRefRemunContributionAmountShape;
+    sh:property kg:RefNbrDaysShape;
+    sh:property kg:SubjectionStartingDateShape;
+    sh:property kg:SubjectionEndingDateShape;
+.
+
+kg:GrossRefRemunAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for GrossRefRemunAmount (00071)" ;
+    sh:path ont:GrossRefRemunAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 999999999;
+    sh:maxLength 9;
+ .
+
+kg:GrossRefRemunContributionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for GrossRefRemunContributionAmount (00072)" ;
+    sh:path ont:GrossRefRemunContributionAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999;
+    sh:maxLength 9;
+ .
+
+kg:RefNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RefNbrDays (00073)" ;
+    sh:path ont:RefNbrDays;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 624;
+    sh:maxLength 3;
+ .
+
+kg:SubjectionStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SubjectionStartingDate (00127)" ;
+    sh:path ont:SubjectionStartingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:SubjectionEndingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SubjectionEndingDate (00129)" ;
+    sh:path ont:SubjectionEndingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:StudentContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for StudentContribution (90003)" ;
+    sh:targetClass ont:StudentContribution ;
+
+    sh:property kg:StudentRemunAmountShape;
+    sh:property kg:StudentContributionAmountShape;
+    sh:property kg:StudentNbrDaysShape;
+    sh:property kg:StudentHoursNbrShape;
+    sh:property kg:LocalUnitIDShape;
+.
+
+kg:StudentRemunAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StudentRemunAmount (00076)" ;
+    sh:path ont:StudentRemunAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999;
+    sh:maxLength 9;
+ .
+
+kg:StudentContributionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StudentContributionAmount (00077)" ;
+    sh:path ont:StudentContributionAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999;
+    sh:maxLength 9;
+ .
+
+kg:StudentNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StudentNbrDays (00078)" ;
+    sh:path ont:StudentNbrDays;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 50;
+    sh:maxLength 2;
+ .
+
+kg:StudentHoursNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StudentHoursNbr (01158)" ;
+    sh:path ont:StudentHoursNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+ .
+
+kg:EarlyRetirementContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EarlyRetirementContribution (90042)" ;
+    sh:targetClass ont:EarlyRetirementContribution ;
+
+    sh:property kg:EarlyRetirementCodeShape;
+    sh:property kg:EarlyRetirementNbrMonthsShape;
+    sh:property kg:EarlyRetirementContributionAmountShape;
+.
+
+kg:EarlyRetirementCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EarlyRetirementCode (00079)" ;
+    sh:path ont:EarlyRetirementCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 1;
+ .
+
+kg:EarlyRetirementNbrMonthsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EarlyRetirementNbrMonths (00080)" ;
+    sh:path ont:EarlyRetirementNbrMonths;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 156;
+    sh:maxLength 3;
+ .
+
+kg:EarlyRetirementContributionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EarlyRetirementContributionAmount (00081)" ;
+    sh:path ont:EarlyRetirementContributionAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 999999999;
+    sh:maxLength 9;
+ .
+
+kg:ComplementaryIndemnityShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ComplementaryIndemnity (90336)" ;
+    sh:targetClass ont:ComplementaryIndemnity ;
+
+    sh:property kg:EmployerNotionShape;
+    sh:property kg:JointCommissionNbrShape;
+    sh:property kg:ActivityCodeShape;
+    sh:property kg:DebtorTypeShape;
+    sh:property kg:FirstComplIndemnityDateShape;
+    sh:property kg:ComplIndemnityAgreementNotionShape;
+    sh:property kg:HalfTimeCareerInterruptionNotionShape;
+    sh:property kg:ServiceExemptionNotionShape;
+    sh:property kg:ReplacementAccordanceWCCNotionShape;
+    sh:property kg:SubstituteINSSShape;
+    sh:property kg:ResumptionOfWorkMeasureShape;
+    sh:property kg:ComplIndemnityNbrOfPartsShape;
+    sh:property kg:NoticeDateShape;
+    sh:property kg:AilingOrReorgCompanyNotionShape;
+    sh:property kg:AcknowledgementStartDateShape;
+    sh:property kg:AcknowledgementEndDateShape;
+.
+
+kg:EmployerNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EmployerNotion (00815)" ;
+    sh:path ont:EmployerNotion;
+
+    sh:datatype xs:integer;
+    sh:maxLength 11;
+    sh:pattern "0|00\\d{9}|1\\d{10}";
+ .
+
+kg:DebtorTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DebtorType (00949)" ;
+    sh:path ont:DebtorType;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:FirstComplIndemnityDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FirstComplIndemnityDate (00823)" ;
+    sh:path ont:FirstComplIndemnityDate;
+
+    sh:datatype xs:date;
+    sh:minInclusive "1995-03-01";
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:ComplIndemnityAgreementNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityAgreementNotion (00824)" ;
+    sh:path ont:ComplIndemnityAgreementNotion;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 3;
+    sh:maxLength 1;
+ .
+
+kg:HalfTimeCareerInterruptionNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HalfTimeCareerInterruptionNotion (00825)" ;
+    sh:path ont:HalfTimeCareerInterruptionNotion;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:ServiceExemptionNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceExemptionNotion (00826)" ;
+    sh:path ont:ServiceExemptionNotion;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:ReplacementAccordanceWCCNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReplacementAccordanceWCCNotion (00827)" ;
+    sh:path ont:ReplacementAccordanceWCCNotion;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:SubstituteINSSShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SubstituteINSS (00749)" ;
+    sh:path ont:SubstituteINSS;
+
+    sh:datatype xs:integer;
+    sh:maxLength 11;
+    sh:pattern "[0]|\\d{11}";
+ .
+
+kg:ResumptionOfWorkMeasureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ResumptionOfWorkMeasure (00853)" ;
+    sh:path ont:ResumptionOfWorkMeasure;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:ComplIndemnityNbrOfPartsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityNbrOfParts (00950)" ;
+    sh:path ont:ComplIndemnityNbrOfParts;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 9;
+    sh:maxLength 1;
+ .
+
+kg:NoticeDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NoticeDate (00951)" ;
+    sh:path ont:NoticeDate;
+
+    sh:datatype xs:date;
+    sh:minInclusive "1990-01-01";
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:AilingOrReorgCompanyNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AilingOrReorgCompanyNotion (00952)" ;
+    sh:path ont:AilingOrReorgCompanyNotion;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:AcknowledgementStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AcknowledgementStartDate (00953)" ;
+    sh:path ont:AcknowledgementStartDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:AcknowledgementEndDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AcknowledgementEndDate (00954)" ;
+    sh:path ont:AcknowledgementEndDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:IndemnityWAPMShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for IndemnityWAPM (90011)" ;
+    sh:targetClass ont:IndemnityWAPM ;
+
+    sh:property kg:IndemnityNatureShape;
+    sh:property kg:IncapacityDegreeShape;
+    sh:property kg:IndemnityAmountShape;
+.
+
+kg:IndemnityNatureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IndemnityNature (00144)" ;
+    sh:path ont:IndemnityNature;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99;
+    sh:maxLength 2;
+ .
+
+kg:IncapacityDegreeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IncapacityDegree (00145)" ;
+    sh:path ont:IncapacityDegree;
+
+    sh:datatype xs:string;
+    sh:pattern "\\d{3},\\d{2}";
+ .
+
+kg:IndemnityAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IndemnityAmount (00146)" ;
+    sh:path ont:IndemnityAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:OccupationInformationsShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationInformations (90313)" ;
+    sh:targetClass ont:OccupationInformations ;
+
+    sh:property kg:HorecaExtraShape;
+    sh:property kg:PostedWorkerShape;
+    sh:property kg:NOSSLPASocialMaribelShape;
+    sh:property kg:HourRemunShape;
+    sh:property kg:HourRemunInThousandthOfEuroShape;
+    sh:property kg:SixMonthsIllnessDateShape;
+    sh:property kg:FirstWeekGuaranteedSalaryNbrDaysShape;
+    sh:property kg:IllnessGrossRemunAmountShape;
+    sh:property kg:PSDDclExemptionShape;
+    sh:property kg:SupplPensionContributionExemptionShape;
+    sh:property kg:ObligationControlInformationShape;
+    sh:property kg:DefinitiveNominationDateShape;
+    sh:property kg:NewMaribelEmploymentDateShape;
+    sh:property kg:PSPContribCalcBasisDerogationShape;
+    sh:property kg:CareerMeasureShape;
+    sh:property kg:ServiceExemptionNotionShape;
+    sh:property kg:HolidayDaysNumberShape;
+    sh:property kg:SectorDetailShape;
+    sh:property kg:MobilityBudgetShape;
+    sh:property kg:FlemishTrainingHolidayHoursNbrShape;
+    sh:property kg:RegionalAidMeasureShape;
+.
+
+kg:HorecaExtraShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HorecaExtra (00795)" ;
+    sh:path ont:HorecaExtra;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:PostedWorkerShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PostedWorker (00893)" ;
+    sh:path ont:PostedWorker;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:NOSSLPASocialMaribelShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NOSSLPASocialMaribel (00794)" ;
+    sh:path ont:NOSSLPASocialMaribel;
+
+    sh:datatype xs:integer;
+    sh:maxLength 2;
+ .
+
+kg:HourRemunShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HourRemun (00812)" ;
+    sh:path ont:HourRemun;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999;
+    sh:maxLength 5;
+ .
+
+kg:HourRemunInThousandthOfEuroShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HourRemunInThousandthOfEuro (00862)" ;
+    sh:path ont:HourRemunInThousandthOfEuro;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 999999;
+    sh:maxLength 6;
+ .
+
+kg:SixMonthsIllnessDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SixMonthsIllnessDate (00728)" ;
+    sh:path ont:SixMonthsIllnessDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:FirstWeekGuaranteedSalaryNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FirstWeekGuaranteedSalaryNbrDays (01010)" ;
+    sh:path ont:FirstWeekGuaranteedSalaryNbrDays;
+
+    sh:datatype xs:integer;
+    sh:maxLength 4;
+ .
+
+kg:IllnessGrossRemunAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IllnessGrossRemunAmount (01011)" ;
+    sh:path ont:IllnessGrossRemunAmount;
+
+    sh:datatype xs:integer;
+    sh:maxLength 11;
+ .
+
+kg:PSDDclExemptionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PSDDclExemption (01012)" ;
+    sh:path ont:PSDDclExemption;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:SupplPensionContributionExemptionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SupplPensionContributionExemption (01013)" ;
+    sh:path ont:SupplPensionContributionExemption;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:ObligationControlInformationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ObligationControlInformation (01063)" ;
+    sh:path ont:ObligationControlInformation;
+
+    sh:datatype xs:string;
+    sh:maxLength 3;
+ .
+
+kg:DefinitiveNominationDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DefinitiveNominationDate (01092)" ;
+    sh:path ont:DefinitiveNominationDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:NewMaribelEmploymentDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NewMaribelEmploymentDate (01148)" ;
+    sh:path ont:NewMaribelEmploymentDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:PSPContribCalcBasisDerogationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PSPContribCalcBasisDerogation (01176)" ;
+    sh:path ont:PSPContribCalcBasisDerogation;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:CareerMeasureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CareerMeasure (01194)" ;
+    sh:path ont:CareerMeasure;
+
+    sh:datatype xs:integer;
+    sh:maxLength 2;
+ .
+
+kg:HolidayDaysNumberShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HolidayDaysNumber (00197)" ;
+    sh:path ont:HolidayDaysNumber;
+
+    sh:datatype xs:integer;
+    sh:maxLength 3;
+ .
+
+kg:SectorDetailShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SectorDetail (01215)" ;
+    sh:path ont:SectorDetail;
+
+    sh:datatype xs:integer;
+    sh:maxLength 4;
+ .
+
+kg:MobilityBudgetShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MobilityBudget (01216)" ;
+    sh:path ont:MobilityBudget;
+
+    sh:datatype xs:integer;
+    sh:maxLength 11;
+ .
+
+kg:FlemishTrainingHolidayHoursNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FlemishTrainingHolidayHoursNbr (01232)" ;
+    sh:path ont:FlemishTrainingHolidayHoursNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 9999999;
+    sh:maxLength 7;
+ .
+
+kg:RegionalAidMeasureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RegionalAidMeasure (01237)" ;
+    sh:path ont:RegionalAidMeasure;
+
+    sh:datatype xs:string;
+    sh:maxLength 2;
+ .
+
+kg:SecondPillarInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for SecondPillarInformation (90172)" ;
+    sh:targetClass ont:SecondPillarInformation ;
+
+    sh:property kg:ReferenceYearMonthShape;
+    sh:property kg:MonthlyScaleSalaryShape;
+    sh:property kg:MonthlyAdditionalScaleSalaryShape;
+    sh:property kg:MonthlyHomeIndemnityShape;
+    sh:property kg:OfficialLanguageShape;
+.
+
+kg:ReferenceYearMonthShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceYearMonth (01219)" ;
+    sh:path ont:ReferenceYearMonth;
+
+    sh:datatype xs:string;
+    sh:maxLength 7;
+ .
+
+kg:MonthlyScaleSalaryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MonthlyScaleSalary (01220)" ;
+    sh:path ont:MonthlyScaleSalary;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:MonthlyAdditionalScaleSalaryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MonthlyAdditionalScaleSalary (01221)" ;
+    sh:path ont:MonthlyAdditionalScaleSalary;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:MonthlyHomeIndemnityShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MonthlyHomeIndemnity (01222)" ;
+    sh:path ont:MonthlyHomeIndemnity;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:OfficialLanguageShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OfficialLanguage (00966)" ;
+    sh:path ont:OfficialLanguage;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 3;
+    sh:maxLength 1;
+ .
+
+kg:ServiceShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Service (90018)" ;
+    sh:targetClass ont:Service ;
+
+    sh:property kg:ServiceSequenceNbrShape;
+    sh:property kg:ServiceCodeShape;
+    sh:property kg:ServiceNbrDaysShape;
+    sh:property kg:ServiceNbrHoursShape;
+    sh:property kg:FlightNbrMinutesShape;
+.
+
+kg:ServiceSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceSequenceNbr (00061)" ;
+    sh:path ont:ServiceSequenceNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+    sh:maxLength 2;
+ .
+
+kg:ServiceCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceCode (00062)" ;
+    sh:path ont:ServiceCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+ .
+
+kg:ServiceNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceNbrDays (00063)" ;
+    sh:path ont:ServiceNbrDays;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 36600;
+    sh:maxLength 5;
+ .
+
+kg:ServiceNbrHoursShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceNbrHours (00064)" ;
+    sh:path ont:ServiceNbrHours;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 9999999;
+    sh:maxLength 7;
+ .
+
+kg:FlightNbrMinutesShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FlightNbrMinutes (00065)" ;
+    sh:path ont:FlightNbrMinutes;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 9999999;
+    sh:maxLength 7;
+ .
+
+kg:RemunShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Remun (90019)" ;
+    sh:targetClass ont:Remun ;
+
+    sh:property kg:RemunSequenceNbrShape;
+    sh:property kg:RemunCodeShape;
+    sh:property kg:BonusPaymentFrequencyShape;
+    sh:property kg:PercentagePaidShape;
+    sh:property kg:RemunAmountShape;
+.
+
+kg:RemunSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RemunSequenceNbr (00066)" ;
+    sh:path ont:RemunSequenceNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+    sh:maxLength 2;
+ .
+
+kg:RemunCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RemunCode (00067)" ;
+    sh:path ont:RemunCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+ .
+
+kg:BonusPaymentFrequencyShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for BonusPaymentFrequency (00068)" ;
+    sh:path ont:BonusPaymentFrequency;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99;
+    sh:maxLength 2;
+ .
+
+kg:PercentagePaidShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PercentagePaid (00069)" ;
+    sh:path ont:PercentagePaid;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 10000;
+    sh:maxInclusive 15000;
+    sh:maxLength 5;
+ .
+
+kg:RemunAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RemunAmount (00070)" ;
+    sh:path ont:RemunAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:OccupationPublicServiceDataShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationPublicServiceData (90411)" ;
+    sh:targetClass ont:OccupationPublicServiceData ;
+
+    sh:property kg:OccupationPSDStartDateShape;
+    sh:property kg:OccupationPSDEndDateShape;
+    sh:property kg:PublicSectorInstitutionTypeShape;
+    sh:property kg:PublicSectorPersonnelCategoryShape;
+    sh:property kg:GradeOrFunctionShape;
+    sh:property kg:OfficialLanguageShape;
+    sh:property kg:AssignmentTypeShape;
+    sh:property kg:FunctionNatureShape;
+    sh:property kg:StatutoryRelationEndReasonShape;
+.
+
+kg:OccupationPSDStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationPSDStartDate (00964)" ;
+    sh:path ont:OccupationPSDStartDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:OccupationPSDEndDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationPSDEndDate (00965)" ;
+    sh:path ont:OccupationPSDEndDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:PublicSectorInstitutionTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PublicSectorInstitutionType (00961)" ;
+    sh:path ont:PublicSectorInstitutionType;
+
+    sh:datatype xs:integer;
+    sh:maxLength 2;
+ .
+
+kg:PublicSectorPersonnelCategoryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PublicSectorPersonnelCategory (00962)" ;
+    sh:path ont:PublicSectorPersonnelCategory;
+
+    sh:datatype xs:integer;
+    sh:maxLength 2;
+ .
+
+kg:GradeOrFunctionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for GradeOrFunction (00963)" ;
+    sh:path ont:GradeOrFunction;
+
+    sh:datatype xs:string;
+    sh:maxLength 100;
+ .
+
+kg:AssignmentTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AssignmentType (00967)" ;
+    sh:path ont:AssignmentType;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+    sh:maxLength 1;
+ .
+
+kg:FunctionNatureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FunctionNature (00968)" ;
+    sh:path ont:FunctionNature;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 3;
+    sh:maxLength 1;
+ .
+
+kg:StatutoryRelationEndReasonShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StatutoryRelationEndReason (00969)" ;
+    sh:path ont:StatutoryRelationEndReason;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 10;
+    sh:maxLength 2;
+ .
+
+kg:ReorgMeasureInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ReorgMeasureInformation (90438)" ;
+    sh:targetClass ont:ReorgMeasureInformation ;
+
+    sh:property kg:ReorganisationMeasureShape;
+    sh:property kg:ReorganisationMeasurePercentageShape;
+.
+
+kg:ReorganisationMeasurePercentageShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReorganisationMeasurePercentage (01030)" ;
+    sh:path ont:ReorganisationMeasurePercentage;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 9999;
+    sh:maxLength 4;
+ .
+
+kg:OccupationDeductionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationDeduction (90109)" ;
+    sh:targetClass ont:OccupationDeduction ;
+
+    sh:property kg:DeductionCodeShape;
+    sh:property kg:DeductionCalculationBasisShape;
+    sh:property kg:DeductionAmountShape;
+    sh:property kg:DeductionRightStartingDateShape;
+    sh:property kg:ManagementCostNbrMonthsShape;
+    sh:property kg:ReplacedINSSShape;
+    sh:property kg:ApplicantINSSShape;
+    sh:property kg:CertificateOriginShape;
+.
+
+kg:DeductionDetailShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DeductionDetail (90108)" ;
+    sh:targetClass ont:DeductionDetail ;
+
+    sh:property kg:DeductionDetailSequenceNbrShape;
+    sh:property kg:DeductionDetailAmountShape;
+    sh:property kg:WorkingRegulationsRegistryNbrShape;
+    sh:property kg:WorkingRegulationsStartingDateShape;
+    sh:property kg:AverageWorkingTimeBeforeReductionShape;
+    sh:property kg:AverageWorkingTimeAfterReductionShape;
+.
+
+kg:DeductionDetailSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionDetailSequenceNbr (00138)" ;
+    sh:path ont:DeductionDetailSequenceNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+    sh:maxLength 2;
+ .
+
+kg:DeductionDetailAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionDetailAmount (00141)" ;
+    sh:path ont:DeductionDetailAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:WorkingRegulationsRegistryNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkingRegulationsRegistryNbr (00142)" ;
+    sh:path ont:WorkingRegulationsRegistryNbr;
+
+    sh:datatype xs:string;
+    sh:maxLength 16;
+ .
+
+kg:WorkingRegulationsStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkingRegulationsStartingDate (00143)" ;
+    sh:path ont:WorkingRegulationsStartingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:AverageWorkingTimeBeforeReductionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AverageWorkingTimeBeforeReduction (00147)" ;
+    sh:path ont:AverageWorkingTimeBeforeReduction;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 4800;
+    sh:maxLength 4;
+ .
+
+kg:AverageWorkingTimeAfterReductionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AverageWorkingTimeAfterReduction (00148)" ;
+    sh:path ont:AverageWorkingTimeAfterReduction;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 4800;
+    sh:maxLength 4;
+ .
+
+kg:ComplIndemnityContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ComplIndemnityContribution (90337)" ;
+    sh:targetClass ont:ComplIndemnityContribution ;
+
+    sh:property kg:ContributionWorkerCodeShape;
+    sh:property kg:ContributionTypeShape;
+    sh:property kg:IndemnityContributionPeriodCodeShape;
+    sh:property kg:ComplIndemnityAmountAdjustNotionShape;
+    sh:property kg:ContributionSequenceNbrShape;
+    sh:property kg:ComplIndemnityAmountShape;
+    sh:property kg:CapitalizationNotionShape;
+    sh:property kg:WelfareBenefitTheoreticalAmountShape;
+    sh:property kg:ComplIndemnityNbrMonthsShape;
+    sh:property kg:NbrMonthsDecimalsShape;
+    sh:property kg:IncompleteMonthNbrDaysShape;
+    sh:property kg:IncompleteMonthReasonShape;
+    sh:property kg:FloorApplicationNotionShape;
+    sh:property kg:ContributionAmountShape;
+.
+
+kg:IndemnityContributionPeriodCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IndemnityContributionPeriodCode (01129)" ;
+    sh:path ont:IndemnityContributionPeriodCode;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 5;
+    sh:maxLength 2;
+ .
+
+kg:ComplIndemnityAmountAdjustNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityAmountAdjustNotion (00829)" ;
+    sh:path ont:ComplIndemnityAmountAdjustNotion;
+
+    sh:datatype xs:integer;
+    sh:maxLength 1;
+ .
+
+kg:ContributionSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionSequenceNbr (00955)" ;
+    sh:path ont:ContributionSequenceNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 999;
+    sh:maxLength 3;
+ .
+
+kg:ComplIndemnityAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityAmount (00830)" ;
+    sh:path ont:ComplIndemnityAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999;
+    sh:maxLength 9;
+ .
+
+kg:CapitalizationNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CapitalizationNotion (00892)" ;
+    sh:path ont:CapitalizationNotion;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:WelfareBenefitTheoreticalAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WelfareBenefitTheoreticalAmount (00956)" ;
+    sh:path ont:WelfareBenefitTheoreticalAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999;
+    sh:maxLength 9;
+ .
+
+kg:ComplIndemnityNbrMonthsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityNbrMonths (00831)" ;
+    sh:path ont:ComplIndemnityNbrMonths;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 181;
+    sh:maxLength 3;
+ .
+
+kg:NbrMonthsDecimalsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NbrMonthsDecimals (00957)" ;
+    sh:path ont:NbrMonthsDecimals;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 99;
+    sh:maxLength 2;
+ .
+
+kg:IncompleteMonthNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IncompleteMonthNbrDays (00958)" ;
+    sh:path ont:IncompleteMonthNbrDays;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 78;
+    sh:maxLength 2;
+ .
+
+kg:IncompleteMonthReasonShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IncompleteMonthReason (00959)" ;
+    sh:path ont:IncompleteMonthReason;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 5;
+    sh:maxLength 1;
+ .
+
+kg:FloorApplicationNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FloorApplicationNotion (00960)" ;
+    sh:path ont:FloorApplicationNotion;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 4;
+    sh:maxLength 1;
+ .
+
+kg:ScaleSalaryShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ScaleSalary (90412)" ;
+    sh:targetClass ont:ScaleSalary ;
+
+    sh:property kg:ScaleSalaryStartDateShape;
+    sh:property kg:ScaleSalaryEndDateShape;
+    sh:property kg:PecuniarySeniorityStartDateShape;
+    sh:property kg:SalaryScaleReferenceShape;
+    sh:property kg:ScaleSalaryAmountShape;
+    sh:property kg:WeekHoursNbrShape;
+    sh:property kg:ScaleSalaryWeekHoursNbrShape;
+    sh:property kg:ReducedScaleSalaryNotionShape;
+.
+
+kg:ScaleSalaryStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ScaleSalaryStartDate (00970)" ;
+    sh:path ont:ScaleSalaryStartDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:ScaleSalaryEndDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ScaleSalaryEndDate (00971)" ;
+    sh:path ont:ScaleSalaryEndDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:PecuniarySeniorityStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PecuniarySeniorityStartDate (00972)" ;
+    sh:path ont:PecuniarySeniorityStartDate;
+
+    sh:datatype xs:gYearMonth;
+    sh:pattern "\\d{4}-\\d{2}";
+ .
+
+kg:SalaryScaleReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SalaryScaleReference (00973)" ;
+    sh:path ont:SalaryScaleReference;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 999999999999;
+    sh:maxLength 12;
+ .
+
+kg:ScaleSalaryAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ScaleSalaryAmount (00974)" ;
+    sh:path ont:ScaleSalaryAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:WeekHoursNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WeekHoursNbr (00975)" ;
+    sh:path ont:WeekHoursNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 0;
+    sh:maxInclusive 4800;
+    sh:maxLength 4;
+ .
+
+kg:ScaleSalaryWeekHoursNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ScaleSalaryWeekHoursNbr (00976)" ;
+    sh:path ont:ScaleSalaryWeekHoursNbr;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 4800;
+    sh:maxLength 4;
+ .
+
+kg:ReducedScaleSalaryNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReducedScaleSalaryNotion (01235)" ;
+    sh:path ont:ReducedScaleSalaryNotion;
+
+    sh:datatype xs:string;
+    sh:maxLength 1;
+ .
+
+kg:OccupationDeductionDetailShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationDeductionDetail (90250)" ;
+    sh:targetClass ont:OccupationDeductionDetail ;
+
+    sh:property kg:DeductionDetailSequenceNbrShape;
+    sh:property kg:WorkingRegulationsStartingDateShape;
+    sh:property kg:WorkingRegulationsEndingDateShape;
+    sh:property kg:AverageWorkingTimeBeforeReductionShape;
+    sh:property kg:AverageWorkingTimeAfterReductionShape;
+.
+
+kg:WorkingRegulationsEndingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkingRegulationsEndingDate (00914)" ;
+    sh:path ont:WorkingRegulationsEndingDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:AdditionalScaleSalaryShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for AdditionalScaleSalary (90413)" ;
+    sh:targetClass ont:AdditionalScaleSalary ;
+
+    sh:property kg:AdditionalScaleSalaryStartDateShape;
+    sh:property kg:AdditionalScaleSalaryEndDateShape;
+    sh:property kg:AdditionalScaleSalaryReferenceShape;
+    sh:property kg:AdditionalScaleSalaryBasisAmountShape;
+    sh:property kg:AdditionalScaleSalaryPercentageShape;
+    sh:property kg:NbrHoursOrServicesShape;
+    sh:property kg:AdditionalScaleSalaryAmountShape;
+.
+
+kg:AdditionalScaleSalaryStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryStartDate (00978)" ;
+    sh:path ont:AdditionalScaleSalaryStartDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:AdditionalScaleSalaryEndDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryEndDate (00979)" ;
+    sh:path ont:AdditionalScaleSalaryEndDate;
+
+    sh:datatype xs:date;
+    sh:pattern "\\d{4}-\\d{2}-\\d{2}";
+ .
+
+kg:AdditionalScaleSalaryReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryReference (00977)" ;
+    sh:path ont:AdditionalScaleSalaryReference;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 999999999999;
+    sh:maxLength 12;
+ .
+
+kg:AdditionalScaleSalaryBasisAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryBasisAmount (00980)" ;
+    sh:path ont:AdditionalScaleSalaryBasisAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .
+
+kg:AdditionalScaleSalaryPercentageShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryPercentage (00981)" ;
+    sh:path ont:AdditionalScaleSalaryPercentage;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999;
+    sh:maxLength 5;
+ .
+
+kg:NbrHoursOrServicesShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NbrHoursOrServices (00982)" ;
+    sh:path ont:NbrHoursOrServices;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 9999999;
+    sh:maxLength 7;
+ .
+
+kg:AdditionalScaleSalaryAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryAmount (00983)" ;
+    sh:path ont:AdditionalScaleSalaryAmount;
+
+    sh:datatype xs:integer;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+    sh:maxLength 11;
+ .

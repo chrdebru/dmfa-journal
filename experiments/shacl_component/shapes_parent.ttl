@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ont: <http://kg.socialsecurity.be/ont/dmfa#> .
+
+@prefix kg: <http://kg.socialsecurity.be/resource/shapes/> .
+@base <http://kg.socialsecurity.be/resource/shapes/> .
+
+<> 
+	sh:declare [
+		sh:prefix "ont" ;
+		sh:namespace "http://kg.socialsecurity.be/ont/dmfa#"^^xs:anyURI ;
+	] ;
+
+    sh:declare [
+		sh:prefix "sh" ;
+		sh:namespace "http://www.w3.org/ns/shacl#"^^xs:anyURI ;
+	] ;
+
+    sh:declare [
+		sh:prefix "rdf" ;
+		sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xs:anyURI ;
+	] ;
+.
+
+kg:EmployerDeclarationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EmployerDeclaration (90007)" ;
+    sh:targetClass ont:EmployerDeclaration ;
+
+    ont:path1ToUniqueValue ont:R_90007_90017;
+    ont:path2ToUniqueValue ont:NaturalPersonSequenceNbr;
+.
+
+sh:UniqueValueConstraintComponent
+	a sh:ConstraintComponent ;
+	sh:parameter [
+		sh:path ont:path1ToUniqueValue ;
+	] ;
+    sh:parameter [
+		sh:path ont:path2ToUniqueValue ;
+	] ;
+
+
+	sh:validator [
+        a sh:SPARQLSelectValidator ;
+        sh:message "Value does not match pattern {$pattern}" ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this $path1ToUniqueValue ?NP.
+                        ?NP $path2ToUniqueValue ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ]
+.

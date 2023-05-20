@@ -1,0 +1,483 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex11#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex11#> .
+
+<http://kg.socialsecurity.be/ont/annex11#> rdf:type owl:Ontology .
+
+:IdentificationType a owl:Class ;
+.
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:range :IdentificationType;
+.
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:range :IdentificationType;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :IdentificationType;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :IdentificationType;
+.
+
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAADD501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAADD501> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAADD501> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAADD501> <http://www.w3.org/2000/01/rdf-schema#label> "AADD501".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAADD501> <http://www.w3.org/2000/01/rdf-schema#comment> "Demande enrichie d'une déclaration"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAADD501> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAADD501> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeACRF001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeACRF001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeACRF001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeACRF001> <http://www.w3.org/2000/01/rdf-schema#label> "ACRF001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeACRF001> <http://www.w3.org/2000/01/rdf-schema#comment> "Accusé de réception"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeACRF001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeACRF001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT001> <http://www.w3.org/2000/01/rdf-schema#label> "AOAT001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT001> <http://www.w3.org/2000/01/rdf-schema#comment> "Accidents de Travail scénario 1 - déclaration d'un accident de travail"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT002> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT002> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT002> <http://www.w3.org/2000/01/rdf-schema#label> "AOAT002".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT002> <http://www.w3.org/2000/01/rdf-schema#comment> "Accidents de Travail scénario 2 - rapport mensuel"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT002> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT002> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT003> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT003> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT003> <http://www.w3.org/2000/01/rdf-schema#label> "AOAT003".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT003> <http://www.w3.org/2000/01/rdf-schema#comment> "Accidents de Travail scénario 3 - déclaration d'une reprise de travail"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT003> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAOAT003> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVDDTUP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVDDTUP> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVDDTUP> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVDDTUP> <http://www.w3.org/2000/01/rdf-schema#label> "AVDDTUP".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVDDTUP> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration de modification relative à une déclaration de travaux"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVDDTUP> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVDDTUP> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVWDDT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVWDDT> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVWDDT> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVWDDT> <http://www.w3.org/2000/01/rdf-schema#label> "AVWDDT".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVWDDT> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration de travaux"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVWDDT> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeAVWDDT> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWARE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWARE> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWARE> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWARE> <http://www.w3.org/2000/01/rdf-schema#label> "BEWARE".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWARE> <http://www.w3.org/2000/01/rdf-schema#comment> "Notification reprenant les informations comptables relatives aux modifications de la déclaration multifonctionnelle d'un employeur immatriculé à l'ONSS et, le cas échéant, les données relatives à l'avis rectificatif de cotisations qui en a résulté."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWARE> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWARE> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWLST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWLST> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWLST> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWLST> <http://www.w3.org/2000/01/rdf-schema#label> "BEWLST".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWLST> <http://www.w3.org/2000/01/rdf-schema#comment> "Liste de contrôle des notifications Beware envoyées le jour précédent à la maison mère d'un SSA."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWLST> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBEWLST> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBZMP001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBZMP001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBZMP001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "20112"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBZMP001> <http://www.w3.org/2000/01/rdf-schema#label> "BZMP001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBZMP001> <http://www.w3.org/2000/01/rdf-schema#comment> "Maladies professionnelles scénario 1 - demande mandatée - écartement d'une travailleuse enceinte - secteur privé"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBZMP001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeBZMP001> <http://kg.socialsecurity.be/ont/annex11#validTo> "2011-06-30"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeCDHG001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeCDHG001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeCDHG001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeCDHG001> <http://www.w3.org/2000/01/rdf-schema#label> "CDHG001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeCDHG001> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration de l'attestation Historique de carrière"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeCDHG001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeCDHG001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDEFI001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDEFI001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDEFI001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDEFI001> <http://www.w3.org/2000/01/rdf-schema#label> "DEFI001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDEFI001> <http://www.w3.org/2000/01/rdf-schema#comment> "Décision finale"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDEFI001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDEFI001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDIMONA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDIMONA> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDIMONA> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDIMONA> <http://www.w3.org/2000/01/rdf-schema#label> "DIMONA".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDIMONA> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration immédiate à l'emploi"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDIMONA> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDIMONA> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFA> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFA> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFA> <http://www.w3.org/2000/01/rdf-schema#label> "DMFA".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFA> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration multifonctionnelle trimestrielle concernant un employeur immatriculé à l'ONSS"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFA> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFA> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFADB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFADB> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFADB> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFADB> <http://www.w3.org/2000/01/rdf-schema#label> "DMFADB".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFADB> <http://www.w3.org/2000/01/rdf-schema#comment> "Réponse à une demande de consultation de la dernière situation d'une déclaration multifonctionnelle"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFADB> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFADB> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFANOT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFANOT> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFANOT> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFANOT> <http://www.w3.org/2000/01/rdf-schema#label> "DMFANOT".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFANOT> <http://www.w3.org/2000/01/rdf-schema#comment> "Notification de modification relative à une déclaration multifonctionnelle"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFANOT> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFANOT> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPID> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPID> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPID> <http://www.w3.org/2000/01/rdf-schema#label> "DMFAPID".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPID> <http://www.w3.org/2000/01/rdf-schema#comment> "Données d'identification dans la DB DmfA d'une déclaration DmfA originale"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPID> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPID> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPPL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPPL> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPPL> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPPL> <http://www.w3.org/2000/01/rdf-schema#label> "DMFAPPL".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPPL> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration multifonctionnelle trimestrielle concernant une administration provinciale ou locale"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPPL> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAPPL> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAREQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAREQ> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAREQ> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAREQ> <http://www.w3.org/2000/01/rdf-schema#label> "DMFAREQ".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAREQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Demande de consultation de la dernière situation d'une déclaration multifonctionnelle"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAREQ> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAREQ> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAUPD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAUPD> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAUPD> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAUPD> <http://www.w3.org/2000/01/rdf-schema#label> "DMFAUPD".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAUPD> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration de modification relative à une déclaration multifonctionnelle concernant un employeur immatriculé à l'ONSS"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAUPD> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeDMFAUPD> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECAROAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECAROAN> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECAROAN> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECAROAN> <http://www.w3.org/2000/01/rdf-schema#label> "ECAROAN".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECAROAN> <http://www.w3.org/2000/01/rdf-schema#comment> "Réponse à une demande de consultation des données ECARO d'une personne"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECAROAN> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECAROAN> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECARORQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECARORQ> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECARORQ> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECARORQ> <http://www.w3.org/2000/01/rdf-schema#label> "ECARORQ".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECARORQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Demande de consultation des données ECARO d'une personne"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECARORQ> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECARORQ> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDAN> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDAN> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDAN> <http://www.w3.org/2000/01/rdf-schema#label> "ECOUDAN".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDAN> <http://www.w3.org/2000/01/rdf-schema#comment> "Réponse à une demande de consultation des jours de chômage économique hors du secteur de la construction"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDAN> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDAN> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDRQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDRQ> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDRQ> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDRQ> <http://www.w3.org/2000/01/rdf-schema#label> "ECOUDRQ".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDRQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Demande de consultation des jours de chômage économique hors du secteur de la construction"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDRQ> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeECOUDRQ> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO001> <http://www.w3.org/2000/01/rdf-schema#label> "FINO001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO001> <http://www.w3.org/2000/01/rdf-schema#comment> "Note reprenant les informations relatives aux transactions financières et au processus de calcul des provisions forfaitaires ou procentuelles dont les employeurs sont redevables (ou pas) envers l'ONSS."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO002> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO002> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO002> <http://www.w3.org/2000/01/rdf-schema#label> "FINO002".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO002> <http://www.w3.org/2000/01/rdf-schema#comment> "Note reprenant les informations relatives aux transactions financières et au processus de calcul des provisions forfaitaires et/ou procentuelles dont les employeurs sont redevables envers l'ONSS."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO002> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO002> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO003> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO003> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO003> <http://www.w3.org/2000/01/rdf-schema#label> "FINO003".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO003> <http://www.w3.org/2000/01/rdf-schema#comment> "Note reprenant les informations relatives aux transactions financières et aux processus des rappels DGII/397 à payer par les employeurs ONSS."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO003> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO003> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO004> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO004> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "20192"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO004> <http://www.w3.org/2000/01/rdf-schema#label> "FINO004".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO004> <http://www.w3.org/2000/01/rdf-schema#comment> "Note reprenant les informations relatives aux transactions financières et aux processus des rappels DGII/398 à payer par les employeurs ONSS."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO004> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO004> <http://kg.socialsecurity.be/ont/annex11#validTo> "2019-06-30"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO014> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO014> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO014> <http://www.w3.org/2000/01/rdf-schema#label> "FINO014".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO014> <http://www.w3.org/2000/01/rdf-schema#comment> "Note reprenant les informations relatives aux transactions financières et au processus de mise en demeure"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO014> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFINO014> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI001> <http://www.w3.org/2000/01/rdf-schema#label> "FISI001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI001> <http://www.w3.org/2000/01/rdf-schema#comment> "Note reprenant les situations relatives aux paiements du trimestre courant des employeurs ONSS."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI002> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI002> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI002> <http://www.w3.org/2000/01/rdf-schema#label> "FISI002".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI002> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication des dettes sociales des employeurs ONSS"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI002> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI002> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI003> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI003> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI003> <http://www.w3.org/2000/01/rdf-schema#label> "FISI003".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI003> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication trimestrielle des dettes sociales des employeurs Titres Services ONSS"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI003> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeFISI003> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeIDFLUX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeIDFLUX> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeIDFLUX> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeIDFLUX> <http://www.w3.org/2000/01/rdf-schema#label> "IDFLUX".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeIDFLUX> <http://www.w3.org/2000/01/rdf-schema#comment> "Informations d'identification à destination de l'employeur"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeIDFLUX> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeIDFLUX> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeLOIC001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeLOIC001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeLOIC001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeLOIC001> <http://www.w3.org/2000/01/rdf-schema#label> "LOIC001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeLOIC001> <http://www.w3.org/2000/01/rdf-schema#comment> "Formulaire de demande d'interruption de carrière ou de crédit-temps"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeLOIC001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeLOIC001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeNOTI001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeNOTI001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeNOTI001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeNOTI001> <http://www.w3.org/2000/01/rdf-schema#label> "NOTI001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeNOTI001> <http://www.w3.org/2000/01/rdf-schema#comment> "Notification en réponse à une déclaration"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeNOTI001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeNOTI001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA001> <http://www.w3.org/2000/01/rdf-schema#label> "OSSA001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA001> <http://www.w3.org/2000/01/rdf-schema#comment> "Attestation d'affiliation à la Sécurité Sociale d'Outre-mer qui indique pour quelle période une personne est assurée."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA002> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA002> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA002> <http://www.w3.org/2000/01/rdf-schema#label> "OSSA002".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA002> <http://www.w3.org/2000/01/rdf-schema#comment> "Contrats et lettre d'accompagnement envoyés au souscripteur lors de son affiliation à la Sécurité Sociale d'Outre-mer."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA002> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeOSSA002> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFANS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFANS> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFANS> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFANS> <http://www.w3.org/2000/01/rdf-schema#label> "PFANS".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFANS> <http://www.w3.org/2000/01/rdf-schema#comment> "Réponse à une demande de consultation de masse du fichier du personnel"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFANS> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFANS> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFREQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFREQ> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFREQ> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFREQ> <http://www.w3.org/2000/01/rdf-schema#label> "PFREQ".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFREQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Demande de consultation de masse du fichier du personnel"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFREQ> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePFREQ> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLCAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLCAL> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLCAL> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLCAL> <http://www.w3.org/2000/01/rdf-schema#label> "PPLCAL".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLCAL> <http://www.w3.org/2000/01/rdf-schema#comment> "Notification de calcul DMFAPPL"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLCAL> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLCAL> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLUPD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLUPD> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLUPD> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLUPD> <http://www.w3.org/2000/01/rdf-schema#label> "PPLUPD".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLUPD> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration de modification relative à une déclaration multifonctionnelle concernant une administration provinciale ou locale"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLUPD> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePPLUPD> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePROA001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePROA001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePROA001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePROA001> <http://www.w3.org/2000/01/rdf-schema#label> "PROA001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePROA001> <http://www.w3.org/2000/01/rdf-schema#comment> "Message reprenant les informations relatives aux échanges sur les actions de proactivité entreprises par les SSA ou à prendre par l'ONSS envers les employeurs"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePROA001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypePROA001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCOAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCOAN> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCOAN> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCOAN> <http://www.w3.org/2000/01/rdf-schema#label> "REDCOAN".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCOAN> <http://www.w3.org/2000/01/rdf-schema#comment> "Réponse à une demande de consultation de la dernière situation des déductions d'une déclaration multifonctionnelle"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCOAN> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCOAN> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCORQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCORQ> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCORQ> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCORQ> <http://www.w3.org/2000/01/rdf-schema#label> "REDCORQ".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCORQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Demande de consultation de la dernière situation des déductions d'une déclaration multifonctionnelle"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCORQ> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeREDCORQ> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeRORE001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeRORE001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeRORE001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "20121"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeRORE001> <http://www.w3.org/2000/01/rdf-schema#label> "RORE001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeRORE001> <http://www.w3.org/2000/01/rdf-schema#comment> "Règles de routage - communication des secrétariats sociaux et Full Service Center à la sécurité sociale, concernant la gestion des destinataires (et canaux) de messages."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeRORE001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeRORE001> <http://kg.socialsecurity.be/ont/annex11#validTo> "2012-03-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeTWCT001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeTWCT001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeTWCT001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeTWCT001> <http://www.w3.org/2000/01/rdf-schema#label> "TWCT001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeTWCT001> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication de chômage temporaire par l'employeur"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeTWCT001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeTWCT001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUC> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUC> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUC> <http://www.w3.org/2000/01/rdf-schema#label> "UWDUC".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUC> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration unique de chantier"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUC> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUC> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUCUP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUCUP> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUCUP> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUCUP> <http://www.w3.org/2000/01/rdf-schema#label> "UWDUCUP".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUCUP> <http://www.w3.org/2000/01/rdf-schema#comment> "Déclaration de modification relative à une déclaration unique de chantier"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUCUP> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeUWDUCUP> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeVBLV001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeVBLV001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeVBLV001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeVBLV001> <http://www.w3.org/2000/01/rdf-schema#label> "VBLV001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeVBLV001> <http://www.w3.org/2000/01/rdf-schema#comment> "Livre de validation chômage temporaire"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeVBLV001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeVBLV001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH001> <http://www.w3.org/2000/01/rdf-schema#label> "WECH001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH001> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 1 - Déclaration de fin de contrat de travail ou de chômage avec complément d'entreprise / Preuve de travail"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH002> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH002> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH002> <http://www.w3.org/2000/01/rdf-schema#label> "WECH002".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH002> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 2 - Déclaration constat du droit au chômage temporaire ou à la suspension employés"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH002> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH002> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH003> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH003> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH003> <http://www.w3.org/2000/01/rdf-schema#label> "WECH003".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH003> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 3 - Déclaration de début de travail à temps partiel"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH003> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH003> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH004> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH004> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "20121"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH004> <http://www.w3.org/2000/01/rdf-schema#label> "WECH004".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH004> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 4 - Déclaration de prépension à mi-temps"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH004> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH004> <http://kg.socialsecurity.be/ont/annex11#validTo> "2012-03-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH005> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH005> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH005> <http://www.w3.org/2000/01/rdf-schema#label> "WECH005".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH005> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 5 - Déclaration mensuelle d'heures de chômage temporaire ou de suspension employés"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH005> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH005> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH006> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH006> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH006> <http://www.w3.org/2000/01/rdf-schema#label> "WECH006".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH006> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 6 - Déclaration mensuelle de travail à temps partiel pour le calcul de l'allocation de garantie de revenus"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH006> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH006> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH007> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH007> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH007> <http://www.w3.org/2000/01/rdf-schema#label> "WECH007".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH007> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 7 - Déclaration mensuelle de travail en tant que travailleur occupé dans un atelier protégé"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH007> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH007> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH008> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH008> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH008> <http://www.w3.org/2000/01/rdf-schema#label> "WECH008".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH008> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 8 - Déclaration mensuelle de travail dans le cadre d'un programme d'activation"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH008> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH008> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH009> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH009> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH009> <http://www.w3.org/2000/01/rdf-schema#label> "WECH009".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH009> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 9 - Déclaration pour l'octroi du droit aux vacances jeunes ou seniors"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH009> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH009> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH010> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH010> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH010> <http://www.w3.org/2000/01/rdf-schema#label> "WECH010".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH010> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 10 - Déclaration mensuelle d'heures de vacances jeunes ou seniors"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH010> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH010> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH011> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH011> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH011> <http://www.w3.org/2000/01/rdf-schema#label> "WECH011".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH011> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage scénario 11 - Déclaration mensuelle travail portuaire"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH011> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeWECH011> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA001> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA001> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA001> <http://www.w3.org/2000/01/rdf-schema#label> "ZIMA001".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA001> <http://www.w3.org/2000/01/rdf-schema#comment> "Scénario 1 - Déclaration en cas d'incapacité de travail, de repos de maternité, d'écartement complet du travail en tant que mesure de protection de la maternité, d'écartement partiel du travail en tant que mesure de protection de la maternité, de congé maternité converti (art. 39, al. 6 loi du 16.3.1971 sur le travail), de congé de paternité ou de naissance (art. 30, § 2, loi du 3 juillet 1978 relative aux contrats de travail), de congé d'adoption et de congé parental d'accueil."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA001> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA001> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA002> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA002> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA002> <http://www.w3.org/2000/01/rdf-schema#label> "ZIMA002".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA002> <http://www.w3.org/2000/01/rdf-schema#comment> "Indemnités scénario 2 - Déclaration mensuelle en cas de reprise d'un travail adapté dans le courant d'une période d'incapacité de travail, d'exercice d'un travail adapté dans le cadre d'une mesure de protection de la maternité [et (jusqu'au 31/12/2017) de poursuite d'une activité chez un des deux employeurs, lorsque la travailleuse est titulaire de deux emplois salariés auprès d'employeurs différents et n'est écartée du travail que du chef de l'une de ces deux occupations]."@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA002> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA002> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA003> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA003> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA003> <http://www.w3.org/2000/01/rdf-schema#label> "ZIMA003".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA003> <http://www.w3.org/2000/01/rdf-schema#comment> "Indemnités scénario 3 - Attestation en vue de l'indemnisation des pauses d'allaitement"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA003> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA003> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA005> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA005> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA005> <http://www.w3.org/2000/01/rdf-schema#label> "ZIMA005".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA005> <http://www.w3.org/2000/01/rdf-schema#comment> "Indemnités scénario 5 - Déclaration annuelle de vacances"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA005> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA005> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex11#IdentificationType>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA006> <http://kg.socialsecurity.be/ont/annex11#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA006> <http://kg.socialsecurity.be/ont/annex11#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA006> <http://www.w3.org/2000/01/rdf-schema#label> "ZIMA006".
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA006> <http://www.w3.org/2000/01/rdf-schema#comment> "Indemnités scénario 6 - Déclaration de reprise du travail"@fr.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA006> <http://kg.socialsecurity.be/ont/annex11#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex11/IdentificationTypeZIMA006> <http://kg.socialsecurity.be/ont/annex11#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.

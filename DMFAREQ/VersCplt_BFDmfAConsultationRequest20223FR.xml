@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE List [
+     <!ELEMENT FunctionalBlock (Code+, Version+, DatePublication+, Nom+, Zones+, XmlLabel+, Description+, CardinaliteMinimum+, CardinaliteMaximum+, NrBlocLie+, BlocLie+, Presence+, LimitationsSupplementaires+, Anomalie+)>
+     <!ELEMENT List (FunctionalBlock+)>
+     <!ELEMENT Code (#PCDATA)>
+     <!ELEMENT Version (#PCDATA)>
+     <!ELEMENT DatePublication (#PCDATA)>
+     <!ELEMENT Nom (#PCDATA)>
+     <!ELEMENT Zones (#PCDATA)>
+     <!ELEMENT XmlLabel (#PCDATA)>
+     <!ELEMENT Description (#PCDATA)>
+     <!ELEMENT CardinaliteMinimum (#PCDATA)>
+     <!ELEMENT CardinaliteMaximum (#PCDATA)>
+     <!ELEMENT NrBlocLie (#PCDATA)>
+     <!ELEMENT BlocLie (#PCDATA)>
+     <!ELEMENT Presence (#PCDATA)>
+     <!ELEMENT LimitationsSupplementaires (#PCDATA)>
+     <!ELEMENT Anomalie (CodeAnomalie+,IntituleAnomalie+,GraviteAnomalie+)>
+     <!ELEMENT CodeAnomalie (#PCDATA)>
+     <!ELEMENT IntituleAnomalie (#PCDATA)>
+     <!ELEMENT GraviteAnomalie (#PCDATA)>
+]>
+<List>
+     <FunctionalBlock>
+          <Code>90199</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Cotisation non liée à une personne physique - Identification</Nom>
+          <Zones>00019 - CATÉGORIE DE L'EMPLOYEUR POUR LAQUELLE UNE COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE EST DUE</Zones>
+          <Zones>00020 - CODE TRAVAILLEUR POUR UNE COTISATION QUI N'EST PAS LIÉE À UNE PERSONNE PHYSIQUE</Zones>
+          <XmlLabel>ContributionUnrelatedToNPId</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données d'identification d'une cotisation non liée à une personne physique.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Obligatoire si la requête concerne une cotisation non liée à une personne physique.</Presence>
+          <LimitationsSupplementaires>Une cotisation donnée (une combinaison catégorie / code travailleur pour laquelle une cotisation non liée à une personne physique est due) ne peut se retrouver qu'une seule fois par demande de consultation.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90199-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90199-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90199-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90198</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Déclaration employeur - Identification</Nom>
+          <Zones>00013 - ANNÉE - TRIMESTRE</Zones>
+          <Zones>00011 - NUMÉRO ONSS</Zones>
+          <Zones>00012 - NOTION CURATELLE</Zones>
+          <Zones>00109 - NUMÉRO PPL</Zones>
+          <Zones>00014 - NUMÉRO D'ENTREPRISE</Zones>
+          <Zones>00852 - ENVOI DES ANOMALIES</Zones>
+          <XmlLabel>EmployerDeclarationId</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données d'identification d'une déclaration employeur.</Description>
+          <CardinaliteMinimum>1</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie>90017</NrBlocLie>
+          <NrBlocLie>90199</NrBlocLie>
+          <BlocLie>90017 - Personne physique</BlocLie>
+          <BlocLie>90199 - Cotisation non liée à une personne physique - Identification</BlocLie>
+          <Presence>Indispensable</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90198-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90198-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90198-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90198-151</CodeAnomalie>
+               <IntituleAnomalie>Pas identifiable</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90200</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>DmfAConsultationRequest</Nom>
+          <Zones></Zones>
+          <XmlLabel>DmfAConsultationRequest</XmlLabel>
+          <Description>Elément racine du message XML permettant de communiquer une demande de consultation de la dernière situation d'une déclaration multifonctionnelle</Description>
+          <CardinaliteMinimum>1</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie>90059</NrBlocLie>
+          <BlocLie>90059 - Formulaire</BlocLie>
+          <Presence>Indispensable</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90200-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90200-089</CodeAnomalie>
+               <IntituleAnomalie>Root inconnu</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90200-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90059</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Formulaire</Nom>
+          <Zones>00296 - IDENTIFICATION DU FORMULAIRE</Zones>
+          <Zones>00218 - DATE DE CRÉATION DU FORMULAIRE</Zones>
+          <Zones>00299 - HEURE PRÉCISE DE CRÉATION DU FORMULAIRE</Zones>
+          <Zones>00110 - STATUT DE L'ATTESTATION</Zones>
+          <Zones>00297 - TYPE DU FORMULAIRE</Zones>
+          <XmlLabel>Form</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer un formulaire.</Description>
+          <CardinaliteMinimum>1</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie>90082</NrBlocLie>
+          <NrBlocLie>90198</NrBlocLie>
+          <BlocLie>90082 - Référence</BlocLie>
+          <BlocLie>90198 - Déclaration employeur - Identification</BlocLie>
+          <Presence>Indispensable</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90059-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90059-134</CodeAnomalie>
+               <IntituleAnomalie>Pas de données</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90059-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90059-163</CodeAnomalie>
+               <IntituleAnomalie>Formulaire non traitable</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90017</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Personne physique</Nom>
+          <Zones>00023 - NUMÉRO DE SUITE PERSONNE PHYSIQUE</Zones>
+          <Zones>00024 - NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS</Zones>
+          <Zones>00167 - NUMÉRO DE LA CARTE D'IDENTITÉ SOCIALE</Zones>
+          <Zones>00025 - NOM DU TRAVAILLEUR</Zones>
+          <Zones>00026 - PRÉNOM DU TRAVAILLEUR</Zones>
+          <Zones>00027 - INITIALE DU DEUXIÈME PRÉNOM DU TRAVAILLEUR</Zones>
+          <Zones>00028 - DATE DE NAISSANCE DU TRAVAILLEUR</Zones>
+          <Zones>00168 - COMMUNE - LIEU DE NAISSANCE DU TRAVAILLEUR</Zones>
+          <Zones>00169 - CODE PAYS DU LIEU DE NAISSANCE DU TRAVAILLEUR</Zones>
+          <Zones>00029 - SEXE DU TRAVAILLEUR</Zones>
+          <Zones>00030 - RUE DU TRAVAILLEUR</Zones>
+          <Zones>00031 - NUMÉRO DE L'ADRESSE DU TRAVAILLEUR</Zones>
+          <Zones>00032 - BOÎTE AUX LETTRES DU TRAVAILLEUR</Zones>
+          <Zones>00033 - CODE POSTAL DU TRAVAILLEUR</Zones>
+          <Zones>00034 - COMMUNE DU TRAVAILLEUR</Zones>
+          <Zones>00035 - CODE PAYS DU TRAVAILLEUR</Zones>
+          <Zones>00119 - NATIONALITÉ DU TRAVAILLEUR</Zones>
+          <Zones>00615 - RÉFÉRENCE UTILISATEUR - PERSONNE PHYSIQUE</Zones>
+          <XmlLabel>NaturalPerson</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données d'identification d'une personne physique.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Obligatoire si la requête concerne une personne physique.</Presence>
+          <LimitationsSupplementaires>Une personne physique ne peut se retrouver qu'une seule fois par demande de consultation.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90017-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-151</CodeAnomalie>
+               <IntituleAnomalie>Pas identifiable</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90082</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Référence</Nom>
+          <Zones>00221 - TYPE DE LA RÉFÉRENCE</Zones>
+          <Zones>00298 - ORIGINE DE LA RÉFÉRENCE</Zones>
+          <Zones>00222 - NUMÉRO DE RÉFÉRENCE</Zones>
+          <XmlLabel>Reference</XmlLabel>
+          <Description>Bloc fonctionnel permettant de préciser des références relatives à un ou plusieurs formulaires ; un formulaire pouvant être une déclaration DmfA originale, une déclaration de modification DmfA, une DRS, une demande de renseignements, une déclaration Dimona, etc.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Facultatif</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90082-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90082-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90082-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+</List>

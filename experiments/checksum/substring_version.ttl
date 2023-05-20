@@ -1,0 +1,36 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix kg: <http://kg.socialsecurity.be/resource/shapes/> .
+@prefix ont: <http://www.example.org/> .
+@base <http://kg.socialsecurity.be/resource/shapes/> .
+
+<> 
+	sh:declare [
+		sh:prefix "xs" ;
+		sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xs:anyURI ;
+	] ;
+.
+
+kg:NodeStringChecksumShape a sh:NodeShape;
+    sh:targetNode ont:Node;
+    sh:property [
+        sh:path ont:number;
+        sh:sparql kg:sparql2DigitsChecksum97 ;
+    ]
+.
+
+kg:sparql2DigitsChecksum97 a sh:SPARQLConstraint;
+    sh:message "Checksum is wrong." ;
+    sh:prefixes <> ;
+    sh:select """
+        SELECT $this ?value
+        WHERE {
+            $this $PATH ?value .
+  			BIND( STR(?value) as ?stringvalue )
+            BIND( xs:integer(SUBSTR(?stringvalue, 1, STRLEN(?stringvalue) - 2)) AS ?number )
+            BIND( xs:integer(SUBSTR(?stringvalue, STRLEN(?stringvalue) - 1)) AS ?check )
+            BIND( ?number - (97 * FLOOR(?number / 97)) AS ?rest )
+            BIND( 97 - ?rest AS ?check2 )
+            FILTER ( ?check != ?check2 )
+        }""" ;
+.

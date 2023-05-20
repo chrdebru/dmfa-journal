@@ -1,0 +1,866 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex46#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex46#> .
+
+<http://kg.socialsecurity.be/ont/annex46#> rdf:type owl:Ontology .
+
+:IndemnityNature a owl:Class ;
+.
+
+:Sector a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:JointCommissionNbr a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:isPublic a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+    rdfs:domain xsd:boolean;
+.
+
+:isPrivate a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+    rdfs:domain xsd:boolean;
+.
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Garderie ou crèche (à partir de 9 enfants, dans la plupart des cas dans un bâtiment séparé) qui fixent eux-mêmes le prix."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "700"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'accueil d'un groupe d'enfants, pour bébés et bambins - échelle de subvention 1"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail700-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Garderie ou crèche (à partir de 9 enfants, dans la plupart des cas dans un bâtiment séparé) qui utilisent le système IKG et qui sont complètement subventionnés."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "701"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'accueil d'un groupe d'enfants, pour bébés et bambins - échelle de subvention 2A & 3"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail701-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Garderie ou crèche (à partir de 9 enfants, dans la plupart des cas dans un bâtiment séparé) qui utilisent le système IKG et qui sont complètement subventionnés."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "702"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'accueil d'un groupe d'enfants, pour bébés et bambins - échelle de subvention 2B"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail702-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Gardiens d'enfants (max. 8 enfants, dans la plupart des cas à leur domicile) qui fixent eux-mêmes le prix.\n\nRemarque : les gardiens d'enfants « sui generis » (déclaration séparée sous la CP 999 et le code travailleur spécifique 497 (secteur privé) ou 761 (secteur public)) doivent être déclarés sous ce code."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "703"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'accueil familial pour bébés et bambins - échelle de subvention 1"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail703-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Gardiens  d'enfants (max. 8 enfants, dans la plupart des cas à leur domicile) qui utilisent le système IKG et qui sont complètement subventionnés.\n\nRemarque : les gardiens d'enfants « sui generis » (déclaration séparée sous la CP 999 et le code travailleur spécifique 497 (secteur privé) ou 761 (secteur public) doivent être déclarés sous ce code."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "704"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'accueil familial pour bébés et bambins - échelle de subvention 2A & 3"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail704-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Gardiens d'enfants (max. 8 enfants, dans la plupart des cas à leur domicile) qui utilisent le système IKG mais qui ne bénéficient que d'un subventionnement partiel.\n\nRemarque : les parents d'accueil « sui generis » (déclaration séparée sous la CP 999 et le code travailleur spécifique 497 (secteur privé) ou 761 (secteur public) doivent être déclarés sous ce code."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "705"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'accueil familial pour bébés et bambins - échelle de subvention 2B"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail705-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Projet pilote « gardiens d'enfants » (max. 8 enfants, dans la plupart des cas à leur domicile) au statut de travailleur"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "706"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'accueil familial pour bébés et bambins - statut d'employé pour parents d'accueil"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail706-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "707"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des \"Buitenschoolse Opvang met Afzonderlijke Binnenruimte (BOAB)\""@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail707-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "708"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des \"Initiatieven Buitenschoolse opvang (IBO)\""@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail708-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "709"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des membres du personnel FCUD"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail709-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "710"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de LDE (lokale diensteneconomie) - garderie d'enfants"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail710-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser pour les activités qui ne relèvent pas des sous-secteurs spécifiques, p.ex :\n l'accueil des enfants avec l'échelle de subvention 0\n accueil à domicile des enfants malades\n centres de services régionaux"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "711"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des autres garderie d'enfants"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail711-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser si aucune donnée n'est disponible concernant le sous-secteur. À terme, ce code doit être remplacé par un code plus spécifique."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Accueil des enfants, crèches, jardins d'enfants, services de garde d'enfants à domicile, services de garde à domicile des enfants malades, garderies extrascolaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "712"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de la garderie d'enfants - sous-secteur inconnu"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail712-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "S'il ne s'agit pas des équipes d'accompagnement multidisciplinaire en soins palliatifs, ce champ est laissé vide."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Autres services et établissements - équipes d'accompagnement multidisciplinaire en soins palliatifs flamandes"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "614"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des équipes d'accompagnement multidisciplinaire en soins palliatifs"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail614-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.04".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "713"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des centres de soins de santé mentale"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail713-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Il s'agit ici du soutien préventif aux familles, p.ex. :\n équipes de soutien éducatif (« inloopteams »)\n boutique de l'éducation\n lieux de rencontre\n bureaux de consultation"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "714"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des bureaux de consultation pour le jeune enfant, centres de consultation prénatale, \"inloopteams\""@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail714-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "715"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand centres de confiance pour l'enfance maltraitée"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail715-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "716"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des services d'adoption"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail716-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "717"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des centres des troubles du développement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail717-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "718"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de télé-accueil"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail718-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "719"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des services/centres pour la promotion de la santé et la prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail719-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Depuis le 01/07/2020 les initiatives de collaboration - Soins de santé de première ligne, les réseaux multidisciplinaires locaux et la concertation régionale en matière d'aide sociale de la Flandre Orientale se sont transformés en Conseils des soins"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "720"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des initiatives de collaboration - Soins de santé de première ligne, des zones de première ligne et des Conseils des soins"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail720-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser pour les activités qui ne relèvent pas des sous-secteurs spécifiques, p.ex. :\n centres de services locaux (CSL)\n les services de garde à domicile"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "721"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des établissements et services de bien-être et de santé"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail721-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser si aucune donnée n'est disponible concernant le sous-secteur. À terme, ce code doit être remplacé par un code plus spécifique."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de planning familial, centres de télé-accueil, organisations de volontaires sociaux, services de lutte contre la toxicomanie (sans revalidation), centres de consultation matrimoniale, centres de consultation prénatale, bureaux de consultation pour le jeune enfant, centres de confiance pour l'enfance maltraitée, services d'adoption, centres de troubles du développement, centres de consultation de soins pour handicapés, initiatives de coopération en matière de soins à domicile, centres de santé mentale, les services et centres de promotion de la santé et de prévention"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "722"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des établissements de bien-être et de santé - sous-secteur inconnu"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail722-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "331.00.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de revalidation autonomes flamands"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "608"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des dispositifs de revalidation, à l'exception des centre pour rééducation ambulatoire et les centres de traitement pour assuétudes"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail608-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.41".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de revalidation autonomes flamands"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "609"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des centres de rééducation ambulatoire"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail609-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.41".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de revalidation autonomes flamands"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "610"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des centres de traitement pour assuétudes"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail610-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.41".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser si aucune donnée n'est disponible concernant le sous-secteur. À terme, ce code doit être remplacé par un code plus spécifique."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de revalidation autonomes flamands"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "611"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des dispositifs de revalidation - sous-secteur inconnu"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail611-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.41".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Centres de revalidation autonomes flamands"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "612"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur des dispositifs de revalidation qui ne relèvent pas de la compétence flamande"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail612-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.41".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "200"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de soutien aux personnes avec un handicap"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail200-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "201"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'aide à la jeunesse"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail201-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Les centres d'aide sociale générale offrent de l'aide professionnelle aux personnes ayant des problèmes. Les prestataires d'aide cherchent avec elles les possibilités renfermées en elles-mêmes et dans leur entourage. Ils peuvent aussi les renvoyer à d'autres services."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "202"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des centres d'action sociale globale (incl. aide aux sans-abri)"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail202-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Les centres de soins intégraux à la famille offrent de l'aide aux familles et aux (futurs) parents faisant face à de graves problèmes d'éducation. L'accompagnement s'adresse à la famille en tant qu'un ensemble."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "203"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des centres d'aide intégrale aux familles"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail203-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Les centres d'aide aux enfants et d'assistance des familles s'adressent aux familles ayant des enfants âgés de 0 à 12 ans (aussi longtemps qu'ils fréquentent l'enseignement fondamental, avec une attention particulière destinée aux enfants âgés de 0 à 6 ans) dans toute leur diversité (race, état civil, religion, origine,...) et posant une demande d'aide puisque l'éducation échoue ou risque d'échouer pour le parent et/ou l'enfant et dont une offre d'aide temporaire ouvre des perspectives de changement suffisantes."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "204"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des centres d'assistance à l'enfance et de soutien aux familles"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail204-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "205"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des agences de location sociales"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail205-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "206"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des syndicats des locataires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail206-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser pour les activités qui ne relèvent pas des sous-secteurs spécifiques, p.ex. :\n centres de services locaux (CSL)\n services d'aide sociale de la mutualité"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "207"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand d'autres établissements et services d'éducation et d'hébergement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail207-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser si aucune donnée n'est disponible concernant le sous-secteur. À terme, ce code doit être remplacé par un code plus spécifique."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Établissements et services flamands d'éducation et de logement"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "208"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des établissements et services d'éducation et d'hébergement - sous-secteur inconnu"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail208-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "319.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Initiatives flamandes d'habitations protégées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "613"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des initiatives d'habitations protégées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail613-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.51".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Les hôpitaux privés, hôpitaux de revalidation et les maisons de soins psychiatriques"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "600"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des hôpitaux de revalidation"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail600-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Les hôpitaux privés, hôpitaux de revalidation et les maisons de soins psychiatriques"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "601"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des maisons de soins psychiatriques"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail601-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser si aucune donnée n'est disponible concernant le sous-secteur. À terme, ce code doit être remplacé par un code plus spécifique."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Les hôpitaux privés, hôpitaux de revalidation et les maisons de soins psychiatriques"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "602"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des hôpitaux - sous-secteur inconnu"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail602-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "P. ex. hôpitaux généraux"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Les hôpitaux privés, hôpitaux de revalidation et les maisons de soins psychiatriques"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "603"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur des hôpitaux qui ne relèvent pas de la compétence flamande"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail603-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.10".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "On entend par « centres de soins de jour » les centres de soins de jours « normaux » qui ne sont pas conformes à l'article 51."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Résidences pour personnes âgées, centre de soins de jour, centres de jour pour court séjour et résidences-services"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "604"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des résidences pour personnes âgées, des centre de soins de jour et des centre de court séjour"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail604-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Pour l'employeur avec une résidence pour personnes âgées et résidences-services, il convient d'utiliser le code 604 pour le personnel de la résidence pour personnes âgées et le code 605 pour le personnel de la résidence-services."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Résidences pour personnes âgées, centre de soins de jour, centres de jour pour court séjour et résidences-services"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "605"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des résidences-services"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail605-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser si aucune donnée n'est disponible concernant le sous-secteur. À terme, ce code doit être remplacé par un code plus spécifique."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Résidences pour personnes âgées, centre de soins de jour, centres de jour pour court séjour et résidences-services"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "606"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de soins aux personnes âgées - sous-secteur inconnu"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail606-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipements de soins wallons et bruxellois pour les personnes âgées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Résidences pour personnes âgées, centre de soins de jour, centres de jour pour court séjour et résidences-services"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "607"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur des soins aux personnes âgées qui ne relève pas de la compétence flamande"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail607-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "330.01.20".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "p.ex. :\n soins aux personnes (lavage, habillage, soins, ...)\n aide dans le ménage (cuisine, lavage, repassage, ...)\n soutien psychosocial et pédagogique et accompagnement (compagnie, point de contact, renvoi à d'autres prestataires de soins, ....)\n dans une mesure restreinte, aide au nettoyage de la maison"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand de l'assistance familiale et de l'assistance aux personnes âgées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "100"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand d'assistance familiale"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail100-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "318.02".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "p.ex. :\n nettoyage de la maison (nettoyage, dépoussiérage et passage de l'aspirateur, ...)\n aides de gardiennage (compagnie, aide pour manger, ...)\n aide à l'exécution de petits travaux (petites réparations, peintures ou tapissages, ...)"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand de l'assistance familiale et de l'assistance aux personnes âgées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "101"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des soins à domicile complémentaires"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail101-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "318.02".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Le personnel titres-services ainsi que leur encadrement :\n aide dans le ménage (nettoyage (y compris les vitres), lavage et repassage, préparation des repas, petits raccommodages occasionnels)\n repassage en dehors du domicile \n courses à usage quotidien\n transport des personnes à mobilité réduite (aides aux transports des utilisateurs moins valides ou de l'enfant moins valide d'un utilisateur)"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand de l'assistance familiale et de l'assistance aux personnes âgées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "102"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des titres-services"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail102-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "318.02".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Quelques services d'assistance familiale sont agréés pour garder les enfants malades avec les moyens de l'ancien \"FCUD\", transmis aujourd'hui à Kind&Gezin."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand de l'assistance familiale et de l'assistance aux personnes âgées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "103"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de la garderie d'enfants malades"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail103-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "318.02".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser pour les activités qui ne relèvent pas des sous-secteurs spécifiques, p.ex :\n centres de services locaux (CSL)\n centres de services régionaux\n services de garde\n centres de soins de jour ou « Collectieve Autonome DagOpvang (CADO) » (accueil de jour collectif et autonome), exploités par un service des d'assistance familiale et des soins à domicile complémentaires agréé (conformément à l'article 51)\n services d'accueil temporaire\n livraison de repas"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand de l'assistance familiale et de l'assistance aux personnes âgées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "104"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des autres services pour l'assistance familiale et l'assistance aux personnes âgées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail104-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "318.02".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser si aucune donnée n'est disponible concernant le sous-secteur. À terme, ce code doit être remplacé par un code plus spécifique."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand de l'assistance familiale et de l'assistance aux personnes âgées"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "105"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'assistance familiale et de l'assistance aux personnes âgées - sous-secteur inconnu"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail105-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "318.02".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand des ateliers protégés, des ateliers sociaux et des entreprises de travail adapté"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "400"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des ateliers sociaux"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail400-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "327.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand des ateliers protégés, des ateliers sociaux et des entreprises de travail adapté"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "401"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des ateliers protégés"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail401-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "327.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Ne pas utiliser tant qu'il existe une distinction entre, p. ex., les conditions de rémunération et d'emploi et l' ONSS"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand des ateliers protégés, des ateliers sociaux et des entreprises de travail adapté"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "402"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des entreprises de travail adapté"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail402-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "327.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Le travail socioculturel pour adultes est un secteur au sein duquel beaucoup de pratiques socioculturelles sont organisées et soutenues.\nLes rencontres, l'apprentissage non-formel et informel, la formation d'une communauté et l'engagement social constituent le noyau de ces pratiques. Il est question de travail socio-culturel quand les pratiques socioculturelles présentent une certaine institutionnalisation.\nCette institutionnalisation est effectuée par la voie de trois axes : la formalisation, la professionnalisation et la régulation par les autorités.\n secteur privé : il s'agit ici uniquement des organisations recevant des moyens sur la base d'un décret ou d'un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année.\n secteur public : p.ex. les centres de quartier"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "500"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand du travail socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail500-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "La diffusion de la culture vise à une diffusion géographique et sociale de l'art et de la culture.\n secteur privé : il s'agit ici uniquement des organisations recevant des moyens sur la base d'un décret ou d'un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année.\n secteur public : p.ex. les bibliothèques, les services de culture, l'infrastructure culturelle, les musées, le fonctionnement de patrimoine culturel,..."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "501"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de la diffusion de la culture"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail501-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Le secteur de l'organisation sociétale consiste en huit instituts régionaux : un institut dans chaque province flamande et dans les villes d'Anvers, de Bruxelles et de Gand. Les instituts sont reconnus et subventionnés par l'Autorité flamande.\nCeci vaut uniquement pour le secteur privé: il s'agit ici uniquement des organisations recevant des moyens sur la base d'un décret ou d'un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "502"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'organisation sociétale"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail502-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Objectif : s'engager pour une société qui offre des chances égales à tout le monde, quelle que soit leur origine. \nOffre: parcours d'intégration ; soutien aux administrations, aux organisations et aux services pour faire face à la diversité croissante ; accompagnement des allophones vers une offre appropriée de néerlandais comme deuxième langue, ...\n secteur privé : il s'agit ici uniquement des organisations recevant des moyens sur la base d'un décret ou d'un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année.\n secteur public : entres autres les initiatives d'accueil locales."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "503"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de l'intégration"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail503-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Ceci vaut uniquement le secteur privé: ceci concerne uniquement les organisations recevant des moyens sur la base d'un décret ou un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "504"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des organisations néerlandophones d'activation socioprofessionnelle à Bruxelles"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail504-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Ceci vaut uniquement le secteur privé: ceci concerne uniquement les organisations recevant des moyens sur la base d'un décret ou un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "505"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand de la formation professionnelle"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail505-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Dans le domaine du secteur privé, ceci concerne uniquement les organisations recevant des moyens sur la base d'un décret ou un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "506"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des fédérations sportives, services sportifs et infrastructures sportives"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail506-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Dans le domaine du secteur privé, ceci concerne uniquement les organisations recevant des moyens sur la base d'un décret ou un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "507"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand du secteur de l'environnement et de la nature"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail507-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://www.w3.org/2000/01/rdf-schema#comment> " secteur privé : il s'agit ici uniquement des organisations recevant des moyens sur la base d'un décret ou un arrêté flamand et qui relèvent par conséquentaussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année, p.ex. l'aide à la jeunesse communautaire et supralocale.\n secteur public : entre autres des services de jeunes"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "508"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des organisations et mouvements de jeunesse"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail508-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "509"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des travailleurs du groupe cible LDE (lokale diensteneconomie)"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail509-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Ceci vaut uniquement le secteur privé : il s'agit ici uniquement des organisations recevant des moyens sur la base d'un décret ou un arrêté flamand et qui relèvent par conséquent aussi du champ d'application de la CCT du 6 décembre 2013 concernant l'octroi d'une prime de fin d'année, p.ex.\n les associations où les pauvres prennent la parole\n les centres de services locaux (CSL)\n les centres culturels et les centres communautaires sous la forme d'asbl communales subventionnées par le Gouvernement flamand par le biais du Fonds des communes"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "510"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des autres sous-secteurs qui relèvent de la prime de fin d'année VIA4"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail510-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser pour les activités qui ne relèvent pas des sous-secteurs spécifiques\n secteur privé : les organisations qui ne reçoivent pas de moyens via un agrément flamand, entre autres les centres d'éducation de base, le tourisme, les associations des utilisateurs et d'intervenants de proximité, les centres de service régionaux\n secteur public : p.ex. les services de loisirs, le tourisme"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "511"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des autres dispositifs socioculturels"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail511-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Code à utiliser si aucune donnée n'est disponible concernant le sous-secteur. À terme, ce code doit être remplacé par un code plus spécifique."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur flamand socioculturel"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "512"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur socioculturel flamand - sous-secteur inconnu"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail512-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "329.01".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex46#SectorDetail>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#isPublic> "false".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#isPrivate> "true".
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Il s'agit d'employeurs qui engagent des assistants personnels avec un contrat de travail dans le cadre d'un PVB (persoonsvolgend budget) ou d'un PAB (persoonlijk assistentiebudget)\nS'il ne s'agit pas d'un PVB ou PAB, ce champ est laissé vide."@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#Sector> "Secteur non-marchand - PVB/PAB"@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#Code> "209"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur flamand des employeurs d'assistants personnels dans le cadre d'un \"PVB (persoonsvolgend budget)\" et d'un \"PAB (persoonlijk assistentiebudget)\""@fr.
+<http://kg.socialsecurity.be/resource/annex46/SectorDetail209-20191> <http://kg.socialsecurity.be/ont/annex46#JointCommissionNbr> "337".

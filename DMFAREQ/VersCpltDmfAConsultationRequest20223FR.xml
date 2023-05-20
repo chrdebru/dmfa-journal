@@ -1,0 +1,1737 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE List [
+     <!ELEMENT glossary (Code+, Version+, DatePublication+, Title+, LabelXml+, BlocFonctionnel+, Description+, DomaineDeDefinition+, Reference+, Type+, Longueur+, Presence+, Format+, Anomalie+)>
+     <!ELEMENT List (glossary+)>
+     <!ELEMENT Code (#PCDATA)>
+     <!ELEMENT Version (#PCDATA)>
+     <!ELEMENT DatePublication (#PCDATA)>
+     <!ELEMENT Title (#PCDATA)>
+     <!ELEMENT LabelXml (#PCDATA)>
+     <!ELEMENT BlocFonctionnel (#PCDATA)>
+     <!ELEMENT Description (#PCDATA)>
+     <!ELEMENT DomaineDeDefinition (#PCDATA)>
+     <!ELEMENT Reference (#PCDATA)>
+     <!ELEMENT Type (#PCDATA)>
+     <!ELEMENT Longueur (#PCDATA)>
+     <!ELEMENT Presence (#PCDATA)>
+     <!ELEMENT Format (#PCDATA)>
+     <!ELEMENT Anomalie (CodeAnomalie+,IntituleAnomalie+,GraviteAnomalie+)>
+     <!ELEMENT CodeAnomalie (#PCDATA)>
+     <!ELEMENT IntituleAnomalie (#PCDATA)>
+     <!ELEMENT GraviteAnomalie (#PCDATA)>
+]>
+<List>
+     <glossary>
+          <Code>00013</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>ANNÉE - TRIMESTRE</Title>
+          <LabelXml>Quarter</LabelXml>
+          <BlocFonctionnel>Déclaration employeur - Identification</BlocFonctionnel>
+          <Description>Détermination de l'année et du trimestre.
+Détermination de l'année et du trimestre de la déclaration.</Description>
+          <DomaineDeDefinition>Si la demande de consultation concerne une DfmA, la valeur renseignée doit être comprise entre le premier trimestre 2003 (20031) et le dernier trimestre civil échu (AAAAT en cours -1).
+Si la demande de consultation concerne une DmfAPPL, la valeur renseignée doit être comprise entre le premier trimestre 2005 (20051) et le dernier trimestre civil échu (AAAAT en cours -1).</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>5</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format>AAAAT
+. AAAA est l'année
+. T est le trimestre</Format>
+          <Anomalie>
+               <CodeAnomalie>00013-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00013-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00013-003</CodeAnomalie>
+               <IntituleAnomalie>Invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00013-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00013-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00013-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00013-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00013-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00032</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>BOÎTE AUX LETTRES DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerPostBox</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Numéro de boîte aux lettres.
+Numéro de boîte aux lettres du domicile du travailleur.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition></DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>4</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00032-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00032-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00032-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00032-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00032-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00019</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>CATÉGORIE DE L'EMPLOYEUR POUR LAQUELLE UNE COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE EST DUE</Title>
+          <LabelXml>UnrelatedEmployerClass</LabelXml>
+          <BlocFonctionnel>Cotisation non liée à une personne physique - Identification</BlocFonctionnel>
+          <Description>L'indice de catégorie permet de différencier les employeurs selon leurs obligations en fonction de particularités propres à l'activité exercée. Il est attribué par l'ONSS.
+Il s'agit ici de déclarer la catégorie de l'employeur pour laquelle une cotisation non liée à une personne physique est due.</Description>
+          <DomaineDeDefinition>Nombre de 3 chiffres attribué par l'ONSS.
+Pour les valeurs admises pour une administration provinciale ou locale, voir l'annexe 29 - Liste des indices des différentes catégories d'employeurs APL ; uniquement les catégories pour lesquelles le code présence est égal à 4 ou 6.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>3</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00019-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00019-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00019-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00019-034</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité trimestre</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00019-051</CodeAnomalie>
+               <IntituleAnomalie>Non repris au répertoire pour le trimestre de déclaration</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00019-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00019-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00019-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00019-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00169</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>CODE PAYS DU LIEU DE NAISSANCE DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerBirthplaceCountry</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Code permettant d'identifier un pays.
+Code permettant de déterminer de façon unique le pays du lieu de naissance de la personne physique.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition>Voir Annexe 5 - Liste des codes pays.
+</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>5</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00169-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00169-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00169-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00169-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00169-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00169-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00035</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>CODE PAYS DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerCountry</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Code permettant d'identifier un pays.
+Code permettant d'identifier le pays où est domicilié le travailleur.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition>Voir Annexe 5 - Liste des codes pays.
+</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>5</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00035-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00035-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00035-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00035-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00035-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00035-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00033</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>CODE POSTAL DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerZIPCode</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Numéro postal d'une commune.
+Numéro postal de l'adresse où le travailleur est domicilié.
+Pour les travailleurs domiciliés en Belgique, il faut utiliser la liste officielle des codes postaux belges.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition></DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>9</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00033-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00033-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00033-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00033-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00033-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00020</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>CODE TRAVAILLEUR POUR UNE COTISATION QUI N'EST PAS LIÉE À UNE PERSONNE PHYSIQUE</Title>
+          <LabelXml>UnrelatedWorkerCode</LabelXml>
+          <BlocFonctionnel>Cotisation non liée à une personne physique - Identification</BlocFonctionnel>
+          <Description>Ce code travailleur permet d'identifier une cotisation qui n'est pas liée à une personne physique mais qui est due au niveau de l'indice de catégorie de l'employeur.</Description>
+          <DomaineDeDefinition>Les codes travailleur correspondant à une cotisation non liée à une personne physique (voir annexe 2 - Liste des codes travailleurs pour lesquels des cotisations sont dues).Pour une administration provinciale ou locale, les codes travailleurs sont repris dans l'annexe 28.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>3</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00020-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00020-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00020-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00020-035</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité trimestre - catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00020-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00020-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00020-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00020-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00168</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>COMMUNE - LIEU DE NAISSANCE DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerBirthplace</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Nom d'une commune.
+Nom de la commune du lieu de naissance de la personne physique.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition></DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>40</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00168-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00168-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00168-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00168-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00168-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00034</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>COMMUNE DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerCity</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Nom d'une commune.
+Nom de la commune de domiciliation du travailleur.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition>
+S'il s'agit d'une commune belge, la valeur doit référer à un des noms qui correspond en annexe 23 au code postal indiqué dans la zone 00033 [Code postal du travailleur].</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>40</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00034-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00034-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00034-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00034-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00034-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00218</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>DATE DE CRÉATION DU FORMULAIRE</Title>
+          <LabelXml>FormCreationDate</LabelXml>
+          <BlocFonctionnel>Formulaire</BlocFonctionnel>
+          <Description>
+Date à laquelle le formulaire est créé.</Description>
+          <DomaineDeDefinition>
+AAAA est un élément de [année en cours -1 ; année en cours] ;
+La date ne peut pas se trouver dans le futur.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>10</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format>AAAA-MM-JJ
+· AAAA est l'année 
+· MM est le mois 
+. JJ est le jour</Format>
+          <Anomalie>
+               <CodeAnomalie>00218-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00218-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00218-003</CodeAnomalie>
+               <IntituleAnomalie>Invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00218-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00218-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00218-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00218-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00028</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>DATE DE NAISSANCE DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerBirthdate</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Date de naissance de la personne physique.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition>AAAA est un élément de [année de la déclaration-120; année de la déclaration]. </DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>10</Longueur>
+          <Presence>Interdit </Presence>
+          <Format>AAAA-MM-JJ (date valide)
+AAAA-00-00</Format>
+          <Anomalie>
+               <CodeAnomalie>00028-003</CodeAnomalie>
+               <IntituleAnomalie>Invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00028-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00028-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00028-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00028-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00028-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00852</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>ENVOI DES ANOMALIES</Title>
+          <LabelXml>AnomalySubmission</LabelXml>
+          <BlocFonctionnel>Déclaration employeur - Identification</BlocFonctionnel>
+          <Description>Code qui indique si l'utilisateur souhaite ou non recevoir les anomalies </Description>
+          <DomaineDeDefinition>0 = ne pas envoyer les anomalies
+1 = envoyer les anomalies</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>1</Longueur>
+          <Presence>Facultative </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00852-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00852-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00852-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00852-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00852-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00852-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00299</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>HEURE PRÉCISE DE CRÉATION DU FORMULAIRE</Title>
+          <LabelXml>FormCreationHour</LabelXml>
+          <BlocFonctionnel>Formulaire</BlocFonctionnel>
+          <Description>Moment précis, exprimé en heures, minutes, secondes et millièmes de secondes.
+</Description>
+          <DomaineDeDefinition>HH est un élément de  [00;23]
+MM est un élément de [00;59]
+SS est un élément de [00;59]
+SSS un élément de [000;999]
+</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>12</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format>HH:MM:SS.SSS
+. HH sont les heures
+. MM sont les minutes
+. SS sont les secondes
+. SSS sont les millièmes de secondes</Format>
+          <Anomalie>
+               <CodeAnomalie>00299-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00299-003</CodeAnomalie>
+               <IntituleAnomalie>Invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00299-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00299-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00299-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00299-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00296</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>IDENTIFICATION DU FORMULAIRE</Title>
+          <LabelXml>Identification</LabelXml>
+          <BlocFonctionnel>Formulaire</BlocFonctionnel>
+          <Description>Zone qui décrit la teneur d'un formulaire.
+</Description>
+          <DomaineDeDefinition>Voir annexe 11 - Identification du formulaire.
+DMFAREQ pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>7</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00296-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00296-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00296-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00296-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00296-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00296-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00027</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>INITIALE DU DEUXIÈME PRÉNOM DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerInitial</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Initiale du deuxième prénom d'une personne physique.
+Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition>Un caractère alphabétique.
+</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>1</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00027-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00027-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00027-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00027-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00027-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00119</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NATIONALITÉ DU TRAVAILLEUR</Title>
+          <LabelXml>Nationality</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Code indiquant la nationalité du travailleur.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition>Voir Annexe 5 - Liste des codes pays.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>5</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00119-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00119-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00119-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00119-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00119-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00119-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00025</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NOM DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerName</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Nom de famille d'une personne physique.
+Il faut mentionner le nom repris sur le passeport ou la carte d'identité.
+Pour les femmes de nationalité belge, il s'agit du nom de jeune fille.
+Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition></DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>48</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00025-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00025-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00025-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00025-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00025-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00012</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NOTION CURATELLE</Title>
+          <LabelXml>Trusteeship</LabelXml>
+          <BlocFonctionnel>Déclaration employeur - Identification</BlocFonctionnel>
+          <Description>Code qui indique si une déclaration se rapporte à une période pendant laquelle elle est sous curatelle.Cette zone ne peut pas être reprise pour une administration provinciale ou locale.</Description>
+          <DomaineDeDefinition>0 = période pendant laquelle elle n'est pas sous la curatelle
+1 = période pendant laquelle elle est sous curatelle</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>1</Longueur>
+          <Presence>Obligatoire si la demande de consultation concerne DmfA.</Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00012-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00012-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00012-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00012-022</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité avec le répertoire</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00012-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00012-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00012-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00012-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00014</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NUMÉRO D'ENTREPRISE</Title>
+          <LabelXml>CompanyID</LabelXml>
+          <BlocFonctionnel>Déclaration employeur - Identification</BlocFonctionnel>
+          <Description>Numéro qui identifie de manière unique un employeur, qu'il s'agisse d'une personne physique, d'un groupement de personnes physiques ou d'une personne morale.
+</Description>
+          <DomaineDeDefinition>
+Nombre de 10 chiffres dont :
+les positions 1 à 8 correspondent à un numéro d'ordre, avec en première position un chiffre égal à zéro ou 1;
+les positions 9 et 10 correspondent à un nombre de contrôle.
+Si le numéro d'entreprise n'est pas connu, la valeur à renseigner est zéro.Si la demande de consulation concerne un une administration provinciale ou locale, le numéro d'entreprise est toujours connu et ne peut jamais être renseigné à 0.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>10</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00014-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-004</CodeAnomalie>
+               <IntituleAnomalie>Nombre de contrôle invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-235</CodeAnomalie>
+               <IntituleAnomalie>Non repris au répertoire</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-022</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité avec le répertoire</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00014-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00024</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS</Title>
+          <LabelXml>INSS</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Numéro d'identification d'une personne physique au sein de la sécurité sociale. Il s'agit du numéro d'identification de la personne physique au registre national ou au registre bis des personnes physiques.
+</Description>
+          <DomaineDeDefinition>La valeur 0 n'est plus autorisée.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>11</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format>0 ou NNNNNNNNNCC
+· NNNNNNNNN est le numéro
+· CC est le chiffre de contrôle.</Format>
+          <Anomalie>
+               <CodeAnomalie>00024-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00024-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00024-003</CodeAnomalie>
+               <IntituleAnomalie>Invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00024-004</CodeAnomalie>
+               <IntituleAnomalie>Nombre de contrôle invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00024-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00024-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00024-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00024-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00031</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NUMÉRO DE L'ADRESSE DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerHouseNbr</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>
+Numéro du domicile du travailleur.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition></DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>10</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00031-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00031-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00031-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00031-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00031-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00167</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NUMÉRO DE LA CARTE D'IDENTITÉ SOCIALE</Title>
+          <LabelXml>SIS</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Numéro de la carte d'identité sociale d'une personne physique (SIS).
+Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition>Nombre de 10 chiffres.
+</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>10</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00167-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00167-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00167-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00167-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00167-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00167-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00222</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NUMÉRO DE RÉFÉRENCE</Title>
+          <LabelXml>ReferenceNbr</LabelXml>
+          <BlocFonctionnel>Référence</BlocFonctionnel>
+          <Description>Le numéro de référence.</Description>
+          <DomaineDeDefinition>Dans ce message, la longueur autorisée pour cette zone est de 20 positions.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>64</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00222-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00222-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00222-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00222-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00222-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00023</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NUMÉRO DE SUITE PERSONNE PHYSIQUE</Title>
+          <LabelXml>NaturalPersonSequenceNbr</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Numéro de suite des personnes physiques au sein d'une déclaration.
+Ce numéro doit être unique au sein d'une déclaration.</Description>
+          <DomaineDeDefinition>Nombre entier positif et élément de [1;9999999].</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>7</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00023-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00023-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00023-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00023-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00023-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00023-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00023-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00023-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00011</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NUMÉRO ONSS</Title>
+          <LabelXml>NOSSRegistrationNbr</LabelXml>
+          <BlocFonctionnel>Déclaration employeur - Identification</BlocFonctionnel>
+          <Description>Chaque employeur, qu'il soit une personne physique, un groupement de personnes physiques ou une personne morale, qui occupe du personnel soumis à la loi du 27 juin 1969, doit être inscrit à l'ONSS. Il s'agit d'un numéro ONSS définitif.
+Cette zone ne peut pas être reprise pour une administration provinciale ou locale.</Description>
+          <DomaineDeDefinition>Nombre entier et élément de [100006;199999934] pour les numéros définitifs.
+Si le numéro unique d'entreprise est connu (zone 00014 différent de zéro), le numéro ONSS peut être mis à la valeur zéro.
+</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>9</Longueur>
+          <Presence>Obligatoire si la demande de consultation concerne une DmfA.</Presence>
+          <Format>0 ou NNNNNNNCC
+. NNNNNNN est le numéro
+· CC est le numéro de contrôle.</Format>
+          <Anomalie>
+               <CodeAnomalie>00011-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-004</CodeAnomalie>
+               <IntituleAnomalie>Nombre de contrôle invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-041</CodeAnomalie>
+               <IntituleAnomalie>Numéro ONSS/PPL erroné</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-051</CodeAnomalie>
+               <IntituleAnomalie>Non repris au répertoire pour le trimestre de déclaration</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-155</CodeAnomalie>
+               <IntituleAnomalie>Pas ou plus de mandat</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00011-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00109</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>NUMÉRO PPL</Title>
+          <LabelXml>NOSSLPARegistrationNbr</LabelXml>
+          <BlocFonctionnel>Déclaration employeur - Identification</BlocFonctionnel>
+          <Description>Toute administration locale ou provinciale qui occupe du personnel doit être inscrite à l'ONSS.Cette zone ne peut pas être reprise pour une DmfA.</Description>
+          <DomaineDeDefinition>Nombre entier et élément de [00000197;99999926]. Si le numéro unique d'entreprise est connu (zone 00014 différente de zéro), le numéro PPL peut être mis à la valeur zéro.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>8</Longueur>
+          <Presence>Obligatoire si la demande de consultation concerne une DmfAPPL.</Presence>
+          <Format>0 ou NNNNNNCC
+· NNNNNN est le numéro
+· CC est le numéro de contrôle.</Format>
+          <Anomalie>
+               <CodeAnomalie>00109-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-004</CodeAnomalie>
+               <IntituleAnomalie>Nombre de contrôle invalide</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-041</CodeAnomalie>
+               <IntituleAnomalie>Numéro ONSS/PPL erroné</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-051</CodeAnomalie>
+               <IntituleAnomalie>Non repris au répertoire pour le trimestre de déclaration</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00109-155</CodeAnomalie>
+               <IntituleAnomalie>Pas ou plus de mandat</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00298</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>ORIGINE DE LA RÉFÉRENCE</Title>
+          <LabelXml>ReferenceOrigin</LabelXml>
+          <BlocFonctionnel>Référence</BlocFonctionnel>
+          <Description>Valeur indiquant la source authentique d'un numéro de référence. 
+</Description>
+          <DomaineDeDefinition>1 = le numéro de référence est attribué par un déclarant ou demandeur (une entreprise, un secrétariat social, un développeur de logiciels, ...)
+2 = le numéro de ticket attribué par la Sécurité Sociale, identifiant de manière unique une déclaration , une demande ou une réponse
+3 = le numéro de référence est attribué par un secteur de la Sécurité Sociale
+4 = le numéro de référence est attribué par le service ePost
+5 = le numéro de référence est attribué par la BCSS
+6 = le numéro de référence est attribué par le système d'archivage (DOC-ID)
+7 = le numéro de référence est attribué par le DSP à un fichier archivé (DSP-ID)
+1 pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>1</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00298-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00298-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00298-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00298-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00298-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00298-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00298-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00026</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>PRÉNOM DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerFirstName</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Premier prénom d'une personne physique.
+Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition></DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>24</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00026-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00026-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00026-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00026-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00026-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00615</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>RÉFÉRENCE UTILISATEUR - PERSONNE PHYSIQUE</Title>
+          <LabelXml>NaturalPersonUserReference</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Référence.
+Référence de la personne physique utilisée par l'employeur ou un secrétariat social agréé.</Description>
+          <DomaineDeDefinition>Dans ce message, la longueur autorisée pour cette zone est de 20 positions.</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>200</Longueur>
+          <Presence>Facultative </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00615-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00615-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00615-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00615-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00030</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>RUE DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerStreet</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Voie publique.
+Voie publique où se trouve le domicile du travailleur.
+La notion "étage" peut être reprise dans cette zone s'il y a lieu.Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition></DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>35</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00030-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00030-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00030-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00030-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00030-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00029</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>SEXE DU TRAVAILLEUR</Title>
+          <LabelXml>WorkerSex</LabelXml>
+          <BlocFonctionnel>Personne physique</BlocFonctionnel>
+          <Description>Sexe d'une personne physique.
+Cette donnée ne peut plus être utilisée.</Description>
+          <DomaineDeDefinition>1 = masculin
+2 = féminin
+</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>1</Longueur>
+          <Presence>Interdit </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00029-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00029-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00029-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00029-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00029-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00029-005</CodeAnomalie>
+               <IntituleAnomalie>Interdit</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00110</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>STATUT DE L'ATTESTATION</Title>
+          <LabelXml>AttestationStatus</LabelXml>
+          <BlocFonctionnel>Formulaire</BlocFonctionnel>
+          <Description></Description>
+          <DomaineDeDefinition>0 = Original
+1 = Modification
+2 = Duplicata
+3 = Annulation
+4 = Révision
+5 = Rappel
+6 = Clôture
+7 = Modification de l'original version papier
+8 = Copie 0 pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>1</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00110-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00110-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00110-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00110-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00110-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00110-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00110-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00221</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>TYPE DE LA RÉFÉRENCE</Title>
+          <LabelXml>ReferenceType</LabelXml>
+          <BlocFonctionnel>Référence</BlocFonctionnel>
+          <Description>Indique sur quoi porte la référence (00222 Numéro de référence) : sur cette déclaration, sur une déclaration qui est apparentée à cette déclaration ou sur un ensemble de déclarations (= un dossier) auquel appartient cette déclaration, sur cette demande, sur ce formulaire.</Description>
+          <DomaineDeDefinition>0 = la référence porte sur un formulaire précédemment échangé n'ayant pas la même identification (voir annexes 11/302) et qui est en rapport avec le présent formulaire
+1 = la référence porte sur ce formulaire
+2 = la référence est un numéro de dossier et porte sur le dossier (= ensemble de déclarations) auquel appartient cette déclaration ou auquel appartient ce formulaire
+3 = la référence porte sur un formulaire précédemment échangé ayant la même identification (voir annexes 11/302) et qui est en rapport avec le présent formulaire, par exemple : la référence porte sur la déclaration qui doit être annulée par cette déclaration, ou sur la déclaration qui doit être remplacée par cette déclaration, ou sur la déclaration qui fait l'objet de modifications, ou sur la déclaration qui est à l'origine de la création de ce formulaire...
+4 = la référence porte sur une déclaration dans un autre scénario qui est apparentée à cette déclaration
+5 = la référence porte sur une demande
+6 = la référence porte sur une déclaration refusée
+7 = la référence porte sur l'employeur mentionné dans cette déclaration
+8 = la référence porte sur le travailleur mentionné dans cette déclaration
+9 = la référence est une communication structurée qui doit être utilisée dans le cadre d'un payement et porte sur ce formulaire1 pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Numérique</Type>
+          <Longueur>1</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00221-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00221-002</CodeAnomalie>
+               <IntituleAnomalie>Non numérique</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00221-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00221-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00221-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00221-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00221-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+     <glossary>
+          <Code>00297</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Title>TYPE DU FORMULAIRE</Title>
+          <LabelXml>TypeForm</LabelXml>
+          <BlocFonctionnel>Formulaire</BlocFonctionnel>
+          <Description>Le type indique la nature du formulaire électronique. 
+</Description>
+          <DomaineDeDefinition>RE = REQUEST - le formulaire contient une demande de renseignements
+PA = PROVISIONAL ANSWER - le formulaire contient une réponse provisoire à une demande de renseignements ou à une communication de renseignements
+FA = FINAL ANSWER - le formulaire contient une réponse définitive à une demande de renseignements ou à une communication de renseignements
+LA = LIMITED ANSWER - le formulaire contient une réponse limitée à une demande de renseignements ou à une communication de renseignements
+SU = SUBMISSION - le formulaire communique des renseignements
+RE pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle</DomaineDeDefinition>
+          <Reference></Reference>
+          <Type>Alphanumérique</Type>
+          <Longueur>2</Longueur>
+          <Presence>Indispensable </Presence>
+          <Format></Format>
+          <Anomalie>
+               <CodeAnomalie>00297-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00297-008</CodeAnomalie>
+               <IntituleAnomalie>Pas dans le domaine de définition</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00297-093</CodeAnomalie>
+               <IntituleAnomalie>Longueur incorrecte</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00297-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00297-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>00297-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </glossary>
+</List>

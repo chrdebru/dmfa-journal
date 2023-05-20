@@ -1,0 +1,343 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix fnml:     <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno:      <https://w3id.org/function/ontology#> .
+@prefix grel:     <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix idlab-fn: <http://example.com/idlab/function/> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/annex11#> .
+@base <http://kg.socialsecurity.be/resource/mappings/annex11/>  .
+
+
+<#IdentificationType-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "AN2020-1-FR11.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/List/ann11" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:IdentificationType;
+        rr:termType rr:IRI ;
+        rr:template "http://kg.socialsecurity.be/resource/annex11/IdentificationType{Code}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "Code" ;
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "Description" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFrom ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            fnml:functionValue [
+                rr:predicateObjectMap [    
+                    rr:predicate fno:executes ;
+                    rr:objectMap [     
+                        rr:constant grel:array_join ;
+                        rr:termType rr:IRI ;
+                    ] ;
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_string_sep ;
+                    rr:objectMap [
+                        rr:constant "-" ;
+                        rr:termType rr:Literal ;
+                    ] ;
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_array_a ;
+                    rr:objectMap [
+                        fnml:functionValue [
+                            rr:predicateObjectMap [
+                                rr:predicate fno:executes ;
+                                rr:objectMap [     
+                                    rr:constant grel:array_reverse ;
+                                    rr:termType rr:IRI ;
+                                ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:p_array_a ;
+                                rr:objectMap [
+                                    fnml:functionValue [
+                                        rr:predicateObjectMap [
+                                            rr:predicate fno:executes ;
+                                            rr:objectMap [     
+                                                rr:constant grel:string_split ;
+                                                rr:termType rr:IRI ;
+                                            ] ;
+                                        ] ;
+                                        
+                                        rr:predicateObjectMap [
+                                            rr:predicate grel:p_string_sep ;
+                                            rr:objectMap [
+                                                rr:constant "/" ;
+                                                rr:termType rr:Literal ;
+                                            ] ;
+                                        ] ;
+
+                                        rr:predicateObjectMap [
+                                            rr:predicate grel:valueParameter ;
+                                            rr:objectMap [
+                                                rml:reference "begin_geldigheid" ;
+                                            ] ;
+                                        ] ;
+                                    ] ;
+                                ] ;                                
+                            ] ;
+                        ] ;
+                    ] ;
+                ] ;
+            ] ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFrom ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            fnml:functionValue [
+                rr:predicateObjectMap [    
+                    rr:predicate fno:executes ;
+                    rr:objectMap [     
+                        rr:constant grel:array_join ;
+                        rr:termType rr:IRI ;
+                    ] ;
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_string_sep ;
+                    rr:objectMap [
+                        rr:constant "-" ;
+                        rr:termType rr:Literal ;
+                    ] ;
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_array_a ;
+                    rr:objectMap [
+                        fnml:functionValue [
+                            rr:predicateObjectMap [
+                                rr:predicate fno:executes ;
+                                rr:objectMap [     
+                                    rr:constant grel:string_substring ;
+                                    rr:termType rr:IRI ;
+                                ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:valueParameter ;
+                                rr:objectMap [ rml:reference "begin_geldigheid" ; ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_from ;
+                                rr:object 6;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_opt_to ;
+                                rr:object 10;
+                            ] ;
+                        ] ;
+                    ] ;                                
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_array_a ;
+                    rr:objectMap [
+                        fnml:functionValue [
+                            rr:predicateObjectMap [
+                                rr:predicate fno:executes ;
+                                rr:objectMap [     
+                                    rr:constant grel:string_substring ;
+                                    rr:termType rr:IRI ;
+                                ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:valueParameter ;
+                                rr:objectMap [ rml:reference "begin_geldigheid" ; ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_from ;
+                                rr:object 3;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_opt_to ;
+                                rr:object 5;
+                            ] ;
+                        ] ;
+                    ] ;                                
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_array_a ;
+                    rr:objectMap [
+                        fnml:functionValue [
+                            rr:predicateObjectMap [
+                                rr:predicate fno:executes ;
+                                rr:objectMap [     
+                                    rr:constant grel:string_substring ;
+                                    rr:termType rr:IRI ;
+                                ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:valueParameter ;
+                                rr:objectMap [ rml:reference "begin_geldigheid" ; ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_from ;
+                                rr:object 0;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_opt_to ;
+                                rr:object 2;
+                            ] ;
+                        ] ;
+                    ] ;                                
+                ] ;
+            ] ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validTo ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            fnml:functionValue [
+                rr:predicateObjectMap [    
+                    rr:predicate fno:executes ;
+                    rr:objectMap [     
+                        rr:constant grel:array_join ;
+                        rr:termType rr:IRI ;
+                    ] ;
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_string_sep ;
+                    rr:objectMap [
+                        rr:constant "-" ;
+                        rr:termType rr:Literal ;
+                    ] ;
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_array_a ;
+                    rr:objectMap [
+                        fnml:functionValue [
+                            rr:predicateObjectMap [
+                                rr:predicate fno:executes ;
+                                rr:objectMap [     
+                                    rr:constant grel:string_substring ;
+                                    rr:termType rr:IRI ;
+                                ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:valueParameter ;
+                                rr:objectMap [ rml:reference "einde_geldigheid" ; ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_from ;
+                                rr:object 6;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_opt_to ;
+                                rr:object 10;
+                            ] ;
+                        ] ;
+                    ] ;                                
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_array_a ;
+                    rr:objectMap [
+                        fnml:functionValue [
+                            rr:predicateObjectMap [
+                                rr:predicate fno:executes ;
+                                rr:objectMap [     
+                                    rr:constant grel:string_substring ;
+                                    rr:termType rr:IRI ;
+                                ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:valueParameter ;
+                                rr:objectMap [ rml:reference "einde_geldigheid" ; ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_from ;
+                                rr:object 3;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_opt_to ;
+                                rr:object 5;
+                            ] ;
+                        ] ;
+                    ] ;                                
+                ] ;
+
+                rr:predicateObjectMap [
+                    rr:predicate grel:p_array_a ;
+                    rr:objectMap [
+                        fnml:functionValue [
+                            rr:predicateObjectMap [
+                                rr:predicate fno:executes ;
+                                rr:objectMap [     
+                                    rr:constant grel:string_substring ;
+                                    rr:termType rr:IRI ;
+                                ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:valueParameter ;
+                                rr:objectMap [ rml:reference "einde_geldigheid" ; ] ;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_from ;
+                                rr:object 0;
+                            ] ;
+
+                            rr:predicateObjectMap [
+                                rr:predicate grel:param_int_i_opt_to ;
+                                rr:object 2;
+                            ] ;
+                        ] ;
+                    ] ;                                
+                ] ;
+            ] ;
+        ] ;
+    ] ;
+.

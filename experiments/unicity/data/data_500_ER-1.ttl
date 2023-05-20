@@ -1,0 +1,2000 @@
+_:EmployerDeclaration <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#EmployerDeclaration>.
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson0.
+_:NaturalPerson0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson0 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson1.
+_:NaturalPerson1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson1 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson2.
+_:NaturalPerson2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson2 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson3.
+_:NaturalPerson3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson3 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson4.
+_:NaturalPerson4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson4 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson5.
+_:NaturalPerson5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson5 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson6.
+_:NaturalPerson6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson6 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson7.
+_:NaturalPerson7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson7 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson8.
+_:NaturalPerson8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson8 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson9.
+_:NaturalPerson9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson9 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson10.
+_:NaturalPerson10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson10 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson11.
+_:NaturalPerson11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson11 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson12.
+_:NaturalPerson12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson12 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson13.
+_:NaturalPerson13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson13 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson14.
+_:NaturalPerson14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson14 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson15.
+_:NaturalPerson15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson15 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson16.
+_:NaturalPerson16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson16 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson17.
+_:NaturalPerson17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson17 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson18.
+_:NaturalPerson18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson18 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson19.
+_:NaturalPerson19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson19 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson20.
+_:NaturalPerson20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson20 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson21.
+_:NaturalPerson21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson21 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson22.
+_:NaturalPerson22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson22 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson23.
+_:NaturalPerson23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson23 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson24.
+_:NaturalPerson24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson24 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson25.
+_:NaturalPerson25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson25 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson26.
+_:NaturalPerson26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson26 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson27.
+_:NaturalPerson27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson27 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson28.
+_:NaturalPerson28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson28 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson29.
+_:NaturalPerson29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson29 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson30.
+_:NaturalPerson30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson30 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson31.
+_:NaturalPerson31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson31 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson32.
+_:NaturalPerson32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson32 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson33.
+_:NaturalPerson33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson33 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson34.
+_:NaturalPerson34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson34 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson35.
+_:NaturalPerson35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson35 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson36.
+_:NaturalPerson36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson36 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson37.
+_:NaturalPerson37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson37 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson38.
+_:NaturalPerson38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson38 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson39.
+_:NaturalPerson39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson39 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson40.
+_:NaturalPerson40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson40 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson41.
+_:NaturalPerson41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson41 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson42.
+_:NaturalPerson42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson42 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson43.
+_:NaturalPerson43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson43 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson44.
+_:NaturalPerson44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson44 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson45.
+_:NaturalPerson45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson45 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson46.
+_:NaturalPerson46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson46 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson47.
+_:NaturalPerson47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson47 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson48.
+_:NaturalPerson48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson48 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson49.
+_:NaturalPerson49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson49 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson50.
+_:NaturalPerson50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson50 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson51.
+_:NaturalPerson51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson51 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson52.
+_:NaturalPerson52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson52 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson53.
+_:NaturalPerson53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson53 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson54.
+_:NaturalPerson54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson54 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson55.
+_:NaturalPerson55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson55 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson56.
+_:NaturalPerson56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson56 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson57.
+_:NaturalPerson57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson57 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson58.
+_:NaturalPerson58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson58 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson59.
+_:NaturalPerson59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson59 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson60.
+_:NaturalPerson60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson60 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson61.
+_:NaturalPerson61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson61 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson62.
+_:NaturalPerson62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson62 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson63.
+_:NaturalPerson63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson63 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson64.
+_:NaturalPerson64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson64 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson65.
+_:NaturalPerson65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson65 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson66.
+_:NaturalPerson66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson66 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson67.
+_:NaturalPerson67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson67 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson68.
+_:NaturalPerson68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson68 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson69.
+_:NaturalPerson69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson69 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson70.
+_:NaturalPerson70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson70 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson71.
+_:NaturalPerson71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson71 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson72.
+_:NaturalPerson72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson72 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson73.
+_:NaturalPerson73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson73 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson74.
+_:NaturalPerson74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson74 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson75.
+_:NaturalPerson75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson75 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson76.
+_:NaturalPerson76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson76 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson77.
+_:NaturalPerson77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson77 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson78.
+_:NaturalPerson78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson78 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson79.
+_:NaturalPerson79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson79 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson80.
+_:NaturalPerson80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson80 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson81.
+_:NaturalPerson81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson81 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson82.
+_:NaturalPerson82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson82 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson83.
+_:NaturalPerson83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson83 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson84.
+_:NaturalPerson84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson84 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson85.
+_:NaturalPerson85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson85 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson86.
+_:NaturalPerson86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson86 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson87.
+_:NaturalPerson87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson87 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson88.
+_:NaturalPerson88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson88 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson89.
+_:NaturalPerson89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson89 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson90.
+_:NaturalPerson90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson90 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson91.
+_:NaturalPerson91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson91 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson92.
+_:NaturalPerson92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson92 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson93.
+_:NaturalPerson93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson93 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson94.
+_:NaturalPerson94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson94 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson95.
+_:NaturalPerson95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson95 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson96.
+_:NaturalPerson96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson96 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson97.
+_:NaturalPerson97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson97 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson98.
+_:NaturalPerson98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson98 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson99.
+_:NaturalPerson99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson99 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson100.
+_:NaturalPerson100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson100 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson101.
+_:NaturalPerson101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson101 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson102.
+_:NaturalPerson102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson102 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson103.
+_:NaturalPerson103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson103 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson104.
+_:NaturalPerson104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson104 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson105.
+_:NaturalPerson105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson105 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson106.
+_:NaturalPerson106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson106 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson107.
+_:NaturalPerson107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson107 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson108.
+_:NaturalPerson108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson108 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson109.
+_:NaturalPerson109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson109 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson110.
+_:NaturalPerson110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson110 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson111.
+_:NaturalPerson111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson111 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson112.
+_:NaturalPerson112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson112 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson113.
+_:NaturalPerson113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson113 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson114.
+_:NaturalPerson114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson114 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson115.
+_:NaturalPerson115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson115 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson116.
+_:NaturalPerson116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson116 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson117.
+_:NaturalPerson117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson117 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson118.
+_:NaturalPerson118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson118 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson119.
+_:NaturalPerson119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson119 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson120.
+_:NaturalPerson120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson120 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson121.
+_:NaturalPerson121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson121 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson122.
+_:NaturalPerson122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson122 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson123.
+_:NaturalPerson123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson123 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson124.
+_:NaturalPerson124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson124 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson125.
+_:NaturalPerson125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson125 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson126.
+_:NaturalPerson126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson126 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson127.
+_:NaturalPerson127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson127 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson128.
+_:NaturalPerson128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson128 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson129.
+_:NaturalPerson129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson129 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson130.
+_:NaturalPerson130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson130 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson131.
+_:NaturalPerson131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson131 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson132.
+_:NaturalPerson132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson132 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson133.
+_:NaturalPerson133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson133 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson134.
+_:NaturalPerson134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson134 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson135.
+_:NaturalPerson135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson135 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson136.
+_:NaturalPerson136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson136 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson137.
+_:NaturalPerson137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson137 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson138.
+_:NaturalPerson138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson138 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson139.
+_:NaturalPerson139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson139 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson140.
+_:NaturalPerson140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson140 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson141.
+_:NaturalPerson141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson141 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson142.
+_:NaturalPerson142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson142 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson143.
+_:NaturalPerson143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson143 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson144.
+_:NaturalPerson144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson144 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson145.
+_:NaturalPerson145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson145 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson146.
+_:NaturalPerson146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson146 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson147.
+_:NaturalPerson147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson147 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson148.
+_:NaturalPerson148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson148 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson149.
+_:NaturalPerson149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson149 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson150.
+_:NaturalPerson150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson150 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson151.
+_:NaturalPerson151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson151 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson152.
+_:NaturalPerson152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson152 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson153.
+_:NaturalPerson153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson153 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson154.
+_:NaturalPerson154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson154 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson155.
+_:NaturalPerson155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson155 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson156.
+_:NaturalPerson156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson156 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson157.
+_:NaturalPerson157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson157 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson158.
+_:NaturalPerson158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson158 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson159.
+_:NaturalPerson159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson159 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson160.
+_:NaturalPerson160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson160 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson161.
+_:NaturalPerson161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson161 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson162.
+_:NaturalPerson162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson162 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson163.
+_:NaturalPerson163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson163 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson164.
+_:NaturalPerson164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson164 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson165.
+_:NaturalPerson165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson165 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson166.
+_:NaturalPerson166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson166 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson167.
+_:NaturalPerson167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson167 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson168.
+_:NaturalPerson168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson168 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson169.
+_:NaturalPerson169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson169 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson170.
+_:NaturalPerson170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson170 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson171.
+_:NaturalPerson171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson171 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson172.
+_:NaturalPerson172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson172 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson173.
+_:NaturalPerson173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson173 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson174.
+_:NaturalPerson174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson174 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson175.
+_:NaturalPerson175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson175 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson176.
+_:NaturalPerson176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson176 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson177.
+_:NaturalPerson177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson177 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson178.
+_:NaturalPerson178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson178 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson179.
+_:NaturalPerson179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson179 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson180.
+_:NaturalPerson180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson180 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson181.
+_:NaturalPerson181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson181 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson182.
+_:NaturalPerson182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson182 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson183.
+_:NaturalPerson183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson183 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson184.
+_:NaturalPerson184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson184 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson185.
+_:NaturalPerson185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson185 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson186.
+_:NaturalPerson186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson186 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson187.
+_:NaturalPerson187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson187 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson188.
+_:NaturalPerson188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson188 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson189.
+_:NaturalPerson189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson189 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson190.
+_:NaturalPerson190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson190 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson191.
+_:NaturalPerson191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson191 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson192.
+_:NaturalPerson192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson192 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson193.
+_:NaturalPerson193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson193 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson194.
+_:NaturalPerson194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson194 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson195.
+_:NaturalPerson195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson195 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson196.
+_:NaturalPerson196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson196 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson197.
+_:NaturalPerson197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson197 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson198.
+_:NaturalPerson198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson198 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson199.
+_:NaturalPerson199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson199 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson200.
+_:NaturalPerson200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson200 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson201.
+_:NaturalPerson201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson201 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson202.
+_:NaturalPerson202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson202 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson203.
+_:NaturalPerson203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson203 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson204.
+_:NaturalPerson204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson204 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson205.
+_:NaturalPerson205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson205 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson206.
+_:NaturalPerson206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson206 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson207.
+_:NaturalPerson207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson207 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson208.
+_:NaturalPerson208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson208 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson209.
+_:NaturalPerson209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson209 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson210.
+_:NaturalPerson210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson210 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson211.
+_:NaturalPerson211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson211 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson212.
+_:NaturalPerson212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson212 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson213.
+_:NaturalPerson213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson213 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson214.
+_:NaturalPerson214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson214 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson215.
+_:NaturalPerson215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson215 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson216.
+_:NaturalPerson216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson216 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson217.
+_:NaturalPerson217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson217 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson218.
+_:NaturalPerson218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson218 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson219.
+_:NaturalPerson219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson219 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson220.
+_:NaturalPerson220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson220 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson221.
+_:NaturalPerson221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson221 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson222.
+_:NaturalPerson222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson222 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson223.
+_:NaturalPerson223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson223 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson224.
+_:NaturalPerson224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson224 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson225.
+_:NaturalPerson225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson225 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson226.
+_:NaturalPerson226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson226 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson227.
+_:NaturalPerson227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson227 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson228.
+_:NaturalPerson228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson228 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson229.
+_:NaturalPerson229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson229 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson230.
+_:NaturalPerson230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson230 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson231.
+_:NaturalPerson231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson231 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson232.
+_:NaturalPerson232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson232 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson233.
+_:NaturalPerson233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson233 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson234.
+_:NaturalPerson234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson234 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson235.
+_:NaturalPerson235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson235 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson236.
+_:NaturalPerson236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson236 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson237.
+_:NaturalPerson237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson237 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson238.
+_:NaturalPerson238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson238 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson239.
+_:NaturalPerson239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson239 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson240.
+_:NaturalPerson240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson240 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson241.
+_:NaturalPerson241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson241 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson242.
+_:NaturalPerson242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson242 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson243.
+_:NaturalPerson243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson243 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson244.
+_:NaturalPerson244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson244 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson245.
+_:NaturalPerson245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson245 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson246.
+_:NaturalPerson246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson246 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson247.
+_:NaturalPerson247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson247 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson248.
+_:NaturalPerson248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson248 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson249.
+_:NaturalPerson249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson249 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson250.
+_:NaturalPerson250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson250 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson251.
+_:NaturalPerson251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson251 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson252.
+_:NaturalPerson252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson252 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson253.
+_:NaturalPerson253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson253 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson254.
+_:NaturalPerson254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson254 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson255.
+_:NaturalPerson255 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson255 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson256.
+_:NaturalPerson256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson256 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson257.
+_:NaturalPerson257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson257 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson258.
+_:NaturalPerson258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson258 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson259.
+_:NaturalPerson259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson259 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson260.
+_:NaturalPerson260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson260 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson261.
+_:NaturalPerson261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson261 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson262.
+_:NaturalPerson262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson262 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson263.
+_:NaturalPerson263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson263 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson264.
+_:NaturalPerson264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson264 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson265.
+_:NaturalPerson265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson265 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson266.
+_:NaturalPerson266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson266 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson267.
+_:NaturalPerson267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson267 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson268.
+_:NaturalPerson268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson268 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson269.
+_:NaturalPerson269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson269 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson270.
+_:NaturalPerson270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson270 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson271.
+_:NaturalPerson271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson271 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson272.
+_:NaturalPerson272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson272 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson273.
+_:NaturalPerson273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson273 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson274.
+_:NaturalPerson274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson274 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson275.
+_:NaturalPerson275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson275 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson276.
+_:NaturalPerson276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson276 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson277.
+_:NaturalPerson277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson277 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson278.
+_:NaturalPerson278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson278 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson279.
+_:NaturalPerson279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson279 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson280.
+_:NaturalPerson280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson280 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson281.
+_:NaturalPerson281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson281 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson282.
+_:NaturalPerson282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson282 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson283.
+_:NaturalPerson283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson283 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson284.
+_:NaturalPerson284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson284 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson285.
+_:NaturalPerson285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson285 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson286.
+_:NaturalPerson286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson286 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson287.
+_:NaturalPerson287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson287 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson288.
+_:NaturalPerson288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson288 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson289.
+_:NaturalPerson289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson289 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson290.
+_:NaturalPerson290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson290 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson291.
+_:NaturalPerson291 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson291 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson292.
+_:NaturalPerson292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson292 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson293.
+_:NaturalPerson293 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson293 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson294.
+_:NaturalPerson294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson294 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson295.
+_:NaturalPerson295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson295 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson296.
+_:NaturalPerson296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson296 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson297.
+_:NaturalPerson297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson297 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson298.
+_:NaturalPerson298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson298 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson299.
+_:NaturalPerson299 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson299 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson300.
+_:NaturalPerson300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson300 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson301.
+_:NaturalPerson301 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson301 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson302.
+_:NaturalPerson302 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson302 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson303.
+_:NaturalPerson303 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson303 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson304.
+_:NaturalPerson304 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson304 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson305.
+_:NaturalPerson305 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson305 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson306.
+_:NaturalPerson306 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson306 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson307.
+_:NaturalPerson307 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson307 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson308.
+_:NaturalPerson308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson308 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson309.
+_:NaturalPerson309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson309 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson310.
+_:NaturalPerson310 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson310 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson311.
+_:NaturalPerson311 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson311 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson312.
+_:NaturalPerson312 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson312 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson313.
+_:NaturalPerson313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson313 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson314.
+_:NaturalPerson314 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson314 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson315.
+_:NaturalPerson315 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson315 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson316.
+_:NaturalPerson316 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson316 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson317.
+_:NaturalPerson317 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson317 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson318.
+_:NaturalPerson318 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson318 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson319.
+_:NaturalPerson319 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson319 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson320.
+_:NaturalPerson320 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson320 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson321.
+_:NaturalPerson321 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson321 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson322.
+_:NaturalPerson322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson322 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson323.
+_:NaturalPerson323 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson323 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson324.
+_:NaturalPerson324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson324 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson325.
+_:NaturalPerson325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson325 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson326.
+_:NaturalPerson326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson326 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson327.
+_:NaturalPerson327 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson327 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson328.
+_:NaturalPerson328 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson328 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson329.
+_:NaturalPerson329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson329 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson330.
+_:NaturalPerson330 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson330 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson331.
+_:NaturalPerson331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson331 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson332.
+_:NaturalPerson332 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson332 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson333.
+_:NaturalPerson333 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson333 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson334.
+_:NaturalPerson334 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson334 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson335.
+_:NaturalPerson335 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson335 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson336.
+_:NaturalPerson336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson336 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson337.
+_:NaturalPerson337 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson337 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson338.
+_:NaturalPerson338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson338 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson339.
+_:NaturalPerson339 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson339 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson340.
+_:NaturalPerson340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson340 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson341.
+_:NaturalPerson341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson341 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson342.
+_:NaturalPerson342 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson342 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson343.
+_:NaturalPerson343 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson343 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson344.
+_:NaturalPerson344 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson344 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson345.
+_:NaturalPerson345 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson345 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson346.
+_:NaturalPerson346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson346 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson347.
+_:NaturalPerson347 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson347 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson348.
+_:NaturalPerson348 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson348 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson349.
+_:NaturalPerson349 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson349 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson350.
+_:NaturalPerson350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson350 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson351.
+_:NaturalPerson351 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson351 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson352.
+_:NaturalPerson352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson352 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson353.
+_:NaturalPerson353 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson353 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson354.
+_:NaturalPerson354 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson354 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson355.
+_:NaturalPerson355 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson355 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson356.
+_:NaturalPerson356 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson356 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson357.
+_:NaturalPerson357 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson357 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson358.
+_:NaturalPerson358 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson358 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson359.
+_:NaturalPerson359 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson359 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson360.
+_:NaturalPerson360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson360 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson361.
+_:NaturalPerson361 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson361 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson362.
+_:NaturalPerson362 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson362 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson363.
+_:NaturalPerson363 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson363 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson364.
+_:NaturalPerson364 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson364 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson365.
+_:NaturalPerson365 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson365 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson366.
+_:NaturalPerson366 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson366 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson367.
+_:NaturalPerson367 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson367 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson368.
+_:NaturalPerson368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson368 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson369.
+_:NaturalPerson369 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson369 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson370.
+_:NaturalPerson370 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson370 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson371.
+_:NaturalPerson371 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson371 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson372.
+_:NaturalPerson372 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson372 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson373.
+_:NaturalPerson373 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson373 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson374.
+_:NaturalPerson374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson374 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson375.
+_:NaturalPerson375 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson375 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson376.
+_:NaturalPerson376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson376 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson377.
+_:NaturalPerson377 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson377 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson378.
+_:NaturalPerson378 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson378 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson379.
+_:NaturalPerson379 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson379 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson380.
+_:NaturalPerson380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson380 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson381.
+_:NaturalPerson381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson381 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson382.
+_:NaturalPerson382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson382 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson383.
+_:NaturalPerson383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson383 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson384.
+_:NaturalPerson384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson384 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson385.
+_:NaturalPerson385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson385 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson386.
+_:NaturalPerson386 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson386 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson387.
+_:NaturalPerson387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson387 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson388.
+_:NaturalPerson388 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson388 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson389.
+_:NaturalPerson389 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson389 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson390.
+_:NaturalPerson390 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson390 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson391.
+_:NaturalPerson391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson391 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson392.
+_:NaturalPerson392 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson392 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson393.
+_:NaturalPerson393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson393 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson394.
+_:NaturalPerson394 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson394 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson395.
+_:NaturalPerson395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson395 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson396.
+_:NaturalPerson396 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson396 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson397.
+_:NaturalPerson397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson397 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson398.
+_:NaturalPerson398 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson398 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson399.
+_:NaturalPerson399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson399 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson400.
+_:NaturalPerson400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson400 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson401.
+_:NaturalPerson401 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson401 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson402.
+_:NaturalPerson402 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson402 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson403.
+_:NaturalPerson403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson403 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson404.
+_:NaturalPerson404 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson404 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson405.
+_:NaturalPerson405 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson405 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson406.
+_:NaturalPerson406 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson406 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson407.
+_:NaturalPerson407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson407 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson408.
+_:NaturalPerson408 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson408 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson409.
+_:NaturalPerson409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson409 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson410.
+_:NaturalPerson410 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson410 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson411.
+_:NaturalPerson411 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson411 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson412.
+_:NaturalPerson412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson412 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson413.
+_:NaturalPerson413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson413 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson414.
+_:NaturalPerson414 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson414 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson415.
+_:NaturalPerson415 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson415 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson416.
+_:NaturalPerson416 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson416 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson417.
+_:NaturalPerson417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson417 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson418.
+_:NaturalPerson418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson418 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson419.
+_:NaturalPerson419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson419 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson420.
+_:NaturalPerson420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson420 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson421.
+_:NaturalPerson421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson421 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson422.
+_:NaturalPerson422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson422 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson423.
+_:NaturalPerson423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson423 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson424.
+_:NaturalPerson424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson424 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson425.
+_:NaturalPerson425 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson425 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson426.
+_:NaturalPerson426 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson426 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson427.
+_:NaturalPerson427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson427 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson428.
+_:NaturalPerson428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson428 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson429.
+_:NaturalPerson429 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson429 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson430.
+_:NaturalPerson430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson430 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson431.
+_:NaturalPerson431 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson431 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson432.
+_:NaturalPerson432 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson432 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson433.
+_:NaturalPerson433 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson433 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson434.
+_:NaturalPerson434 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson434 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson435.
+_:NaturalPerson435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson435 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson436.
+_:NaturalPerson436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson436 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson437.
+_:NaturalPerson437 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson437 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson438.
+_:NaturalPerson438 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson438 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson439.
+_:NaturalPerson439 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson439 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson440.
+_:NaturalPerson440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson440 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson441.
+_:NaturalPerson441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson441 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson442.
+_:NaturalPerson442 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson442 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson443.
+_:NaturalPerson443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson443 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson444.
+_:NaturalPerson444 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson444 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson445.
+_:NaturalPerson445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson445 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson446.
+_:NaturalPerson446 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson446 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson447.
+_:NaturalPerson447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson447 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson448.
+_:NaturalPerson448 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson448 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson449.
+_:NaturalPerson449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson449 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson450.
+_:NaturalPerson450 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson450 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson451.
+_:NaturalPerson451 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson451 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson452.
+_:NaturalPerson452 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson452 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson453.
+_:NaturalPerson453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson453 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson454.
+_:NaturalPerson454 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson454 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson455.
+_:NaturalPerson455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson455 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson456.
+_:NaturalPerson456 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson456 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson457.
+_:NaturalPerson457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson457 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson458.
+_:NaturalPerson458 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson458 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson459.
+_:NaturalPerson459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson459 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson460.
+_:NaturalPerson460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson460 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson461.
+_:NaturalPerson461 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson461 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson462.
+_:NaturalPerson462 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson462 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson463.
+_:NaturalPerson463 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson463 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson464.
+_:NaturalPerson464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson464 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson465.
+_:NaturalPerson465 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson465 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson466.
+_:NaturalPerson466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson466 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson467.
+_:NaturalPerson467 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson467 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson468.
+_:NaturalPerson468 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson468 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson469.
+_:NaturalPerson469 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson469 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson470.
+_:NaturalPerson470 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson470 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson471.
+_:NaturalPerson471 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson471 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson472.
+_:NaturalPerson472 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson472 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson473.
+_:NaturalPerson473 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson473 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson474.
+_:NaturalPerson474 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson474 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson475.
+_:NaturalPerson475 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson475 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson476.
+_:NaturalPerson476 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson476 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson477.
+_:NaturalPerson477 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson477 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson478.
+_:NaturalPerson478 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson478 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson479.
+_:NaturalPerson479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson479 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson480.
+_:NaturalPerson480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson480 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson481.
+_:NaturalPerson481 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson481 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson482.
+_:NaturalPerson482 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson482 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson483.
+_:NaturalPerson483 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson483 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson484.
+_:NaturalPerson484 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson484 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson485.
+_:NaturalPerson485 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson485 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson486.
+_:NaturalPerson486 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson486 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson487.
+_:NaturalPerson487 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson487 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson488.
+_:NaturalPerson488 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson488 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson489.
+_:NaturalPerson489 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson489 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson490.
+_:NaturalPerson490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson490 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson491.
+_:NaturalPerson491 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson491 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson492.
+_:NaturalPerson492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson492 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson493.
+_:NaturalPerson493 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson493 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson494.
+_:NaturalPerson494 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson494 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson495.
+_:NaturalPerson495 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson495 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson496.
+_:NaturalPerson496 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson496 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson497.
+_:NaturalPerson497 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson497 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson498.
+_:NaturalPerson498 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson498 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+
+_:EmployerDeclaration <http://kg.socialsecurity.be/ont/dmfa#R_90007_90017> _:NaturalPerson499.
+_:NaturalPerson499 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfa#NaturalPerson>.
+_:NaturalPerson499 <http://kg.socialsecurity.be/ont/dmfa#NaturalPersonSequenceNbr> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.

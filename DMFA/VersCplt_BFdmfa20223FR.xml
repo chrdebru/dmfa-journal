@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE List [
+     <!ELEMENT FunctionalBlock (Code+, Version+, DatePublication+, Nom+, Zones+, XmlLabel+, Description+, CardinaliteMinimum+, CardinaliteMaximum+, NrBlocLie+, BlocLie+, Presence+, LimitationsSupplementaires+, Anomalie+)>
+     <!ELEMENT List (FunctionalBlock+)>
+     <!ELEMENT Code (#PCDATA)>
+     <!ELEMENT Version (#PCDATA)>
+     <!ELEMENT DatePublication (#PCDATA)>
+     <!ELEMENT Nom (#PCDATA)>
+     <!ELEMENT Zones (#PCDATA)>
+     <!ELEMENT XmlLabel (#PCDATA)>
+     <!ELEMENT Description (#PCDATA)>
+     <!ELEMENT CardinaliteMinimum (#PCDATA)>
+     <!ELEMENT CardinaliteMaximum (#PCDATA)>
+     <!ELEMENT NrBlocLie (#PCDATA)>
+     <!ELEMENT BlocLie (#PCDATA)>
+     <!ELEMENT Presence (#PCDATA)>
+     <!ELEMENT LimitationsSupplementaires (#PCDATA)>
+     <!ELEMENT Anomalie (CodeAnomalie+,IntituleAnomalie+,GraviteAnomalie+)>
+     <!ELEMENT CodeAnomalie (#PCDATA)>
+     <!ELEMENT IntituleAnomalie (#PCDATA)>
+     <!ELEMENT GraviteAnomalie (#PCDATA)>
+]>
+<List>
+     <FunctionalBlock>
+          <Code>90578</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Activation - Informations</Nom>
+          <Zones>01191 - DATE DE DÉBUT DISPENSE DE PRESTATIONS</Zones>
+          <Zones>01192 - DATE DE DÉBUT SITUATION DE FORMATION</Zones>
+          <Zones>01193 - SITUATION DE FORMATION</Zones>
+          <XmlLabel>ActivationInformation</XmlLabel>
+          <Description>Bloc fonctionnel contenant les données permettant de calculer la cotisation d'activation.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si la zone « Notion de dispense de prestations » (00826) est non présente ou  2 dans tous les blocs Occupation – Informations (90313).
+Cardinalité 1 si la zone « Notion de dispense de prestations » (00826) = 2 dans au moins 1 bloc Occupation-Informations (90313).</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90578-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90578-035</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité trimestre - catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90578-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90578-053</CodeAnomalie>
+               <IntituleAnomalie>Pas d'application</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90578-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90578-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90578-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90001</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Cotisation due pour la ligne travailleur</Nom>
+          <Zones>00082 - CODE TRAVAILLEUR COTISATION</Zones>
+          <Zones>00083 - TYPE DE COTISATION</Zones>
+          <Zones>00084 - BASE DE CALCUL DE LA COTISATION</Zones>
+          <Zones>00085 - MONTANT DE LA COTISATION</Zones>
+          <Zones>00896 - DATE PREMIÈRE EMBAUCHE</Zones>
+          <XmlLabel>WorkerContribution</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les cotisations dues pour une ligne travailleur.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 ... * si  la ligne travailleur concerne un code travailleur cotisation ordinaire (voir annexe 2).
+Cardinalité 1 ou 2 si  la ligne travailleur concerne un code travailleur cotisation Fedris (voir annexe 2).
+Cardinalité 0 ou 1 si  la ligne travailleur concerne un code travailleur cotisation spéciale étudiant.
+Cardinalité 0 sinon.</Presence>
+          <LimitationsSupplementaires>Une cotisation donnée (une combinaison code travailleur cotisation / type de cotisation) ne peut se retrouver qu'une seule fois par ligne travailleur.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90001-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-212</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité avec le statut du travailleur</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-316</CodeAnomalie>
+               <IntituleAnomalie>Type cotisation - combinaison non autorisé</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-476</CodeAnomalie>
+               <IntituleAnomalie>Cotisation spéciale sur les indemnités de rupture non présente</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-480</CodeAnomalie>
+               <IntituleAnomalie>Cotisation pension du secteur public non présente</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-519</CodeAnomalie>
+               <IntituleAnomalie>Pensionné avant le 01/01/2016</IntituleAnomalie>
+               <GraviteAnomalie>W</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90001-520</CodeAnomalie>
+               <IntituleAnomalie>Pensionné après le 31/12/2015</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90002</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Cotisation non liée à une personne physique</Nom>
+          <Zones>00019 - CATÉGORIE DE L'EMPLOYEUR POUR LAQUELLE UNE COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE EST DUE</Zones>
+          <Zones>00020 - CODE TRAVAILLEUR POUR UNE COTISATION QUI N'EST PAS LIÉE À UNE PERSONNE PHYSIQUE</Zones>
+          <Zones>00021 - BASE DE CALCUL DE LA COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE</Zones>
+          <Zones>00022 - MONTANT DE LA COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE</Zones>
+          <XmlLabel>ContributionUnrelatedToNP</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les cotisations non liées à une personne physique dues par l'employeur.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si aucune cotisation non liée à une personne physique n'est due.
+Cardinalité 1 ... * si au moins une cotisation non liée à une personne physique est due.</Presence>
+          <LimitationsSupplementaires>Une cotisation donnée (une combinaison catégorie / code travailleur pour laquelle une cotisation non liée à une personne physique est due) ne peut se retrouver qu'une seule fois par déclaration.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90002-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90002-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90002-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90002-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90002-426</CodeAnomalie>
+               <IntituleAnomalie>Cotisation pension extra-légale (plan de pension sectoriel ou d'entreprise) non présente</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90003</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Cotisation travailleur étudiant</Nom>
+          <Zones>00076 - RÉMUNÉRATION ÉTUDIANT</Zones>
+          <Zones>00077 - COTISATION ÉTUDIANT</Zones>
+          <Zones>00078 - NOMBRE DE JOURS ÉTUDIANT</Zones>
+          <Zones>01158 - NOMBRE D'HEURES ÉTUDIANT</Zones>
+          <Zones>00042 - NUMÉRO D'IDENTIFICATION DE L'UNITÉ LOCALE</Zones>
+          <XmlLabel>StudentContribution</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer la cotisation de solidarité due pour un étudiant.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si la ligne travailleur ne concerne pas un travailleur étudiant (voir annexe 2).
+Cardinalité 1 (indispensable) si la ligne travailleur concerne un travailleur étudiant (voir annexe 2).</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90003-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90003-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90003-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90003-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90003-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90042</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Cotisation travailleur prépensionné</Nom>
+          <Zones>00079 - CODE COTISATION PRÉPENSION</Zones>
+          <Zones>00080 - NOMBRE DE MOIS PRÉPENSION</Zones>
+          <Zones>00081 - COTISATION PRÉPENSION</Zones>
+          <XmlLabel>EarlyRetirementContribution</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les cotisations dues pour un travailleur prépensionné.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>2</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si la ligne travailleur ne concerne pas un travailleur prépensionné ou, à partir des déclarations du 2/2010, si la ligne travailleur concerne un travailleur prépensionné (voir annexe 2).
+Cardinalité 1 ... 2 jusqu'aux déclarations du 1/2010, si la ligne travailleur concerne un travailleur prépensionné (voir annexe 2).</Presence>
+          <LimitationsSupplementaires>Une cotisation travailleur prépensionné donnée (un code cotisation prépension) ne peut se retrouver qu'une seule fois par ligne travailleur.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90042-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90042-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90042-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90042-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90042-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90042-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90005</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Cotisation travailleur statutaire licencié</Nom>
+          <Zones>00071 - RÉMUNÉRATION BRUTE DE RÉFÉRENCE</Zones>
+          <Zones>00072 - COTISATION RÉMUNÉRATION BRUTE DE RÉFÉRENCE</Zones>
+          <Zones>00073 - NOMBRE DE JOURS DE RÉFÉRENCE</Zones>
+          <Zones>00127 - DATE DE DÉBUT DE PÉRIODE DE L'ASSUJETTISSEMENT</Zones>
+          <Zones>00129 - DATE DE FIN DE PÉRIODE DE L'ASSUJETTISSEMENT</Zones>
+          <XmlLabel>DismissedStatutoryWorkerContribution</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les cotisations dues pour un travailleur statutaire licencié.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si la ligne travailleur ne concerne pas un travailleur statutaire licencié (voir annexe 2).
+Cardinalité 1 (indispensable) si la ligne travailleur concerne un travailleur statutaire licencié (voir annexe 2).</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90005-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90005-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90005-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90005-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90005-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90007</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Déclaration employeur</Nom>
+          <Zones>00013 - ANNÉE - TRIMESTRE</Zones>
+          <Zones>00011 - NUMÉRO ONSS</Zones>
+          <Zones>00012 - NOTION CURATELLE</Zones>
+          <Zones>00014 - NUMÉRO D'ENTREPRISE</Zones>
+          <Zones>00015 - MONTANT NET À PAYER</Zones>
+          <Zones>00016 - CONVERSION EN RÉGIME 5</Zones>
+          <Zones>00017 - DATE DE DÉBUT DES VACANCES</Zones>
+          <XmlLabel>EmployerDeclaration</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données de la déclaration.</Description>
+          <CardinaliteMinimum>1</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie>90017</NrBlocLie>
+          <NrBlocLie>90294</NrBlocLie>
+          <NrBlocLie>90002</NrBlocLie>
+          <BlocLie>90017 - Personne physique</BlocLie>
+          <BlocLie>90294 - Véhicule de société</BlocLie>
+          <BlocLie>90002 - Cotisation non liée à une personne physique</BlocLie>
+          <Presence>Indispensable</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90007-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90007-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90007-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90007-134</CodeAnomalie>
+               <IntituleAnomalie>Pas de données</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90007-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90007-165</CodeAnomalie>
+               <IntituleAnomalie>Déclaration mixte - catégorie employeur 021</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90007-151</CodeAnomalie>
+               <IntituleAnomalie>Pas identifiable</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90007-262</CodeAnomalie>
+               <IntituleAnomalie>Plus de travailleurs déclarés en DmfA qu'en DIMONA</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90007-263</CodeAnomalie>
+               <IntituleAnomalie>Moins de travailleurs déclarés en DmfA qu'en DIMONA</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90110</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Déduction ligne travailleur</Nom>
+          <Zones>00086 - CODE DÉDUCTION</Zones>
+          <Zones>00088 - BASE DE CALCUL DE LA DÉDUCTION</Zones>
+          <Zones>00089 - MONTANT DE LA DÉDUCTION</Zones>
+          <Zones>00090 - DATE DE DÉBUT DU DROIT À LA DÉDUCTION</Zones>
+          <Zones>00091 - NOMBRE DE MOIS FRAIS DE GESTION SSA</Zones>
+          <Zones>00092 - NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS DE LA PERSONNE REMPLACÉE</Zones>
+          <Zones>00093 - NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS DE LA PERSONNE QUI A OUVERT LE DROIT À LA DÉDUCTION</Zones>
+          <Zones>00094 - ORIGINE DE L'ATTESTATION</Zones>
+          <XmlLabel>WorkerDeduction</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les déductions demandées pour une ligne travailleur.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie>90108</NrBlocLie>
+          <BlocLie>90108 - Détail données déduction ligne travailleur</BlocLie>
+          <Presence>Cardinalité 0 si aucune déduction ligne travailleur n'est demandée.
+Cardinalité 1 ... * si la ligne travailleur concerne un code travailleur cotisation ordinaire (voir annexe 2) et qu'une déduction ligne travailleur (voir annexe 4) est demandée.</Presence>
+          <LimitationsSupplementaires>Une déduction ligne travailleur donnée (un code déduction) ne peut se retrouver qu'une seule fois par ligne travailleur.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90110-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90110-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90110-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90110-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90110-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90109</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Déduction occupation</Nom>
+          <Zones>00086 - CODE DÉDUCTION</Zones>
+          <Zones>00088 - BASE DE CALCUL DE LA DÉDUCTION</Zones>
+          <Zones>00089 - MONTANT DE LA DÉDUCTION</Zones>
+          <Zones>00090 - DATE DE DÉBUT DU DROIT À LA DÉDUCTION</Zones>
+          <Zones>00091 - NOMBRE DE MOIS FRAIS DE GESTION SSA</Zones>
+          <Zones>00092 - NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS DE LA PERSONNE REMPLACÉE</Zones>
+          <Zones>00093 - NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS DE LA PERSONNE QUI A OUVERT LE DROIT À LA DÉDUCTION</Zones>
+          <Zones>00094 - ORIGINE DE L'ATTESTATION</Zones>
+          <XmlLabel>OccupationDeduction</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les déductions demandées pour une occupation.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie>90250</NrBlocLie>
+          <BlocLie>90250 - Détail données déduction occupation</BlocLie>
+          <Presence>Cardinalité 0 si aucune déduction occupation n'est demandée.
+Cardinalité 1 ... * si la ligne travailleur concerne un code travailleur cotisation ordinaire (voir annexe 2) et qu'une déduction occupation (voir annexe 4) est demandée.</Presence>
+          <LimitationsSupplementaires>Une déduction occupation donnée (un code déduction) ne peut se retrouver qu'une seule fois par occupation.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90109-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90109-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90109-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90108</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Détail données déduction ligne travailleur</Nom>
+          <Zones>00138 - NUMÉRO DE SUITE DÉTAIL DÉDUCTION</Zones>
+          <Zones>00141 - MONTANT DE LA DÉDUCTION - DÉTAIL</Zones>
+          <Zones>00142 - NUMÉRO D'ENREGISTREMENT DU RÈGLEMENT DE TRAVAIL</Zones>
+          <Zones>00143 - DATE D'ORIGINE DU DROIT</Zones>
+          <Zones>00147 - TEMPS DE TRAVAIL HEBDOMADAIRE MOYEN AVANT LA RÉDUCTION DU TEMPS DE TRAVAIL</Zones>
+          <Zones>00148 - TEMPS DE TRAVAIL HEBDOMADAIRE MOYEN APRÈS LA RÉDUCTION DU TEMPS DE TRAVAIL</Zones>
+          <XmlLabel>DeductionDetail</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données détaillées pour certaines déductions ligne travailleur (cf. Annexe dmfas02).</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>99</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si la déduction ligne travailleur demandée ne nécessite aucun détail données déduction ligne travailleur (voir annexe dmfas02).
+Cardinalité 1 ... 99 si la déduction ligne travailleur demandée nécessite un détail données déductions ligne travailleur (voir annexe dmfas02).</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90108-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90108-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90108-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90250</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Détail données déduction occupation</Nom>
+          <Zones>00138 - NUMÉRO DE SUITE DÉTAIL DÉDUCTION</Zones>
+          <Zones>00143 - DATE D'ORIGINE DU DROIT</Zones>
+          <Zones>00914 - DATE D'EXPIRATION DU DROIT</Zones>
+          <Zones>00147 - TEMPS DE TRAVAIL HEBDOMADAIRE MOYEN AVANT LA RÉDUCTION DU TEMPS DE TRAVAIL</Zones>
+          <Zones>00148 - TEMPS DE TRAVAIL HEBDOMADAIRE MOYEN APRÈS LA RÉDUCTION DU TEMPS DE TRAVAIL</Zones>
+          <XmlLabel>OccupationDeductionDetail</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données détaillées pour certaines déductions occupation (cf. Annexe dmfas02).</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si la déduction occupation demandée ne nécessite aucun détail données déduction occupation (voir annexe dmfas02).
+Cardinalité 1 si la déduction occupation demandée nécessite un détail données déduction occupation (voir annexe dmfas02).</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90250-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90250-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90250-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90250-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90172</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Deuxième pilier de pension - Informations</Nom>
+          <Zones>01219 - ANNÉE ET MOIS DE RÉFÉRENCE</Zones>
+          <Zones>01220 - TRAITEMENT MENSUEL</Zones>
+          <Zones>01221 - SUPPLÉMENT DE TRAITEMENT ET BONIFICATION MENSUELS</Zones>
+          <Zones>01222 - ALLOCATION DE FOYER ET RÉSIDENCE MENSUELLE</Zones>
+          <Zones>00966 - RÔLE LINGUISTIQUE</Zones>
+          <XmlLabel>SecondPillarInformation</XmlLabel>
+          <Description>Bloc fonctionnel qui permet de déclarer des données relatives au deuxième pilier de pension.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Obligatoire si des données relatives à un deuxième pilier de pension doivent être mentionnées.</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90172-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-384</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité employeur – 2eme pilier de pension</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-053</CodeAnomalie>
+               <IntituleAnomalie>Pas d'application</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-473</CodeAnomalie>
+               <IntituleAnomalie>Incompatible avec la notion dispense de régime de pension complémentaire</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90172-212</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité avec le statut du travailleur</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90169</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>DmfAOriginal</Nom>
+          <Zones></Zones>
+          <XmlLabel>DmfAOriginal</XmlLabel>
+          <Description>Elément racine du message XML permettant de faire des déclarations originales.</Description>
+          <CardinaliteMinimum>1</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie>90059</NrBlocLie>
+          <BlocLie>90059 - Formulaire</BlocLie>
+          <Presence>Indispensable</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90169-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90169-089</CodeAnomalie>
+               <IntituleAnomalie>Root inconnu</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90169-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90411</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Données de l'occupation relatives au secteur public</Nom>
+          <Zones>00964 - DATE DE DÉBUT - DONNÉES DE L'OCCUPATION RELATIVES AU SECTEUR PUBLIC</Zones>
+          <Zones>00965 - DATE DE FIN - DONNÉES DE L'OCCUPATION RELATIVES AU SECTEUR PUBLIC</Zones>
+          <Zones>00961 - TYPE D'INSTITUTION DU SECTEUR PUBLIC</Zones>
+          <Zones>00962 - CATÉGORIE DE PERSONNEL DU SECTEUR PUBLIC</Zones>
+          <Zones>00963 - DÉNOMINATION DU GRADE OU DE LA FONCTION</Zones>
+          <Zones>00966 - RÔLE LINGUISTIQUE</Zones>
+          <Zones>00967 - NATURE DU SERVICE</Zones>
+          <Zones>00968 - CARACTÈRE DE LA FONCTION</Zones>
+          <Zones>00969 - MOTIF DE FIN DE LA RELATION STATUTAIRE</Zones>
+          <XmlLabel>OccupationPublicServiceData</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer des données de l'occupation spécifiques aux régimes de pension du secteur public.
+Bloc fonctionnel autorisé uniquement à partir des déclarations du premier trimestre 2011.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>99</CardinaliteMaximum>
+          <NrBlocLie>90412</NrBlocLie>
+          <BlocLie>90412 - Traitement barémique</BlocLie>
+          <Presence>Cardinalité 0 si la ligne travailleur concerne une combinaison d'une catégorie d'employeur et de code travailleur qui n'appartient pas à la liste des combinaisons nécessitant la déclaration d'une ligne Données secteur public de la ligne d'occupation.
+Cardinalité 0 si l'occupation de la ligne travailleur concerne une période couverte par une indemnité de rupture.
+Cardinalité 1…99 si la ligne travailleur concerne une combinaison d'une catégorie d'employeur et de code travailleur qui appartient à la liste des combinaisons nécessitant la déclaration d'une ligne Données relatives au secteur public.</Presence>
+          <LimitationsSupplementaires>Un bloc Données de l'occupation relatives au secteur public (une combinaison des zones suivantes : DATE DE DEBUT – DONNEES DE L'OCCUPATION RELATIVES AU SECTEUR PUBLIC, TYPE D'INSTITUTION DU SECTEUR PUBLIC, CATEGORIE DE PERSONNEL DU SECTEUR PUBLIC, NATURE DU SERVICE, CARACTERE DE LA FONCTION) ne peut se retrouver qu'une seule fois par Occupation de la ligne travailleur.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90411-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90411-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90411-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90411-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90411-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90411-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90411-391</CodeAnomalie>
+               <IntituleAnomalie>Hiatus entre traitements</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90411-212</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité avec le statut du travailleur</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90059</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Formulaire</Nom>
+          <Zones>00296 - IDENTIFICATION DU FORMULAIRE</Zones>
+          <Zones>00218 - DATE DE CRÉATION DU FORMULAIRE</Zones>
+          <Zones>00299 - HEURE PRÉCISE DE CRÉATION DU FORMULAIRE</Zones>
+          <Zones>00110 - STATUT DE L'ATTESTATION</Zones>
+          <Zones>00297 - TYPE DU FORMULAIRE</Zones>
+          <XmlLabel>Form</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer un formulaire.</Description>
+          <CardinaliteMinimum>1</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie>90082</NrBlocLie>
+          <NrBlocLie>90007</NrBlocLie>
+          <BlocLie>90082 - Référence</BlocLie>
+          <BlocLie>90007 - Déclaration employeur</BlocLie>
+          <Presence>Indispensable</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90059-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90059-134</CodeAnomalie>
+               <IntituleAnomalie>Pas de données</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90059-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90059-163</CodeAnomalie>
+               <IntituleAnomalie>Formulaire non traitable</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90011</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Indemnité AT-MP</Nom>
+          <Zones>00144 - NATURE DE L'INDEMNITÉ</Zones>
+          <Zones>00145 - DEGRÉ D'INCAPACITÉ</Zones>
+          <Zones>00146 - MONTANT DE L'INDEMNITÉ</Zones>
+          <XmlLabel>IndemnityWAPM</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les indemnités payées à un travailleur ayant eu un accident du travail ou une maladie professionnelle.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si  la ligne travailleur ne concerne pas un code travailleur cotisation Fedris (voir annexe 2).
+Cardinalité 1 ...* si  la ligne travailleur concerne un code travailleur cotisation Fedris (voir annexe 2).</Presence>
+          <LimitationsSupplementaires>Une indemnité donnée (une combinaison nature de l'indemnité / degré d'incapacité) ne peut se retrouver qu'une seule fois par ligne travailleur.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90011-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90011-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90011-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90011-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90336</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Indemnité complémentaire</Nom>
+          <Zones>00815 - NOTION EMPLOYEUR</Zones>
+          <Zones>00046 - NUMÉRO DE COMMISSION PARITAIRE</Zones>
+          <Zones>00228 - CODE NACE</Zones>
+          <Zones>00949 - TYPE DE DÉBITEUR</Zones>
+          <Zones>00823 - DATE DU PREMIER OCTROI DE L'INDEMNITÉ COMPLÉMENTAIRE</Zones>
+          <Zones>00824 - NOTION TYPE D'ACCORD DE L'INDEMNITÉ COMPLÉMENTAIRE</Zones>
+          <Zones>00825 - NOTION D'INTERRUPTION DE CARRIÈRE OU DE PRÉPENSION À MI-TEMPS</Zones>
+          <Zones>00826 - NOTION DE DISPENSE DE PRESTATIONS</Zones>
+          <Zones>00827 - NOTION DE REMPLACEMENT CONFORME</Zones>
+          <Zones>00749 - NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS DU REMPLAÇANT</Zones>
+          <Zones>00853 - MESURES PRÉVUES EN CAS DE REPRISE DU TRAVAIL</Zones>
+          <Zones>00950 - NOMBRE DE PARTIES DE L'INDEMNITÉ COMPLÉMENTAIRE</Zones>
+          <Zones>00951 - DATE DE NOTIFICATION DU PRÉAVIS</Zones>
+          <Zones>00952 - NOTION D'ENTREPRISE EN DIFFICULTÉ OU EN RESTRUCTURATION</Zones>
+          <Zones>00953 - DATE DE DÉBUT DE RECONNAISSANCE</Zones>
+          <Zones>00954 - DATE DE FIN DE RECONNAISSANCE</Zones>
+          <XmlLabel>ComplementaryIndemnity</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les informations générales relatives aux indemnités payées en complément d'allocations de prépension, de chômage ou d'interruption de carrière à un travailleur de 50 ans ou plus.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie>90337</NrBlocLie>
+          <BlocLie>90337 - Indemnité complémentaire - Cotisation</BlocLie>
+          <Presence>Cardinalité 0 si la ligne travailleur ne concerne pas un travailleur pour lequel une cotisation sur des indemnités complémentaires est due (voir annexe 2).
+Cardinalité 1..* si la ligne travailleur concerne un travailleur pour lequel une cotisation sur des indemnités complémentaires est due (voir annexe 2).</Presence>
+          <LimitationsSupplementaires>Une indemnité complémentaire donnée (une combinaison Notion employeur, Numéro de commission paritaire, code NACE, Notion type d'accord de l'indemnité complémentaire, Notion d'interruption de carrière ou de prépension à mi temps, Notion de remplacement conforme, Notion de dispense de prestations) ne peut se retrouver qu'une seule fois par ligne travailleur.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90336-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90336-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90336-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90336-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90336-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90336-378</CodeAnomalie>
+               <IntituleAnomalie>Nombre de mois incorrect pour la part patronale</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90336-405</CodeAnomalie>
+               <IntituleAnomalie>Nombre de mois incorrect pour la part personnelle</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90337</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Indemnité complémentaire - Cotisation</Nom>
+          <Zones>00082 - CODE TRAVAILLEUR COTISATION</Zones>
+          <Zones>00083 - TYPE DE COTISATION</Zones>
+          <Zones>01129 - CODE PÉRIODE</Zones>
+          <Zones>00829 - NOTION D'ADAPTATION DU MONTANT DE L'INDEMNITÉ COMPLÉMENTAIRE OU DE L'ALLOCATION SOCIALE</Zones>
+          <Zones>00955 - NUMÉRO DE SUITE COTISATION</Zones>
+          <Zones>00830 - MONTANT DE L'INDEMNITÉ COMPLÉMENTAIRE</Zones>
+          <Zones>00892 - NOTION DE CAPITALISATION</Zones>
+          <Zones>00956 - MONTANT THÉORIQUE DE L'ALLOCATION SOCIALE</Zones>
+          <Zones>00831 - NOMBRE DE MOIS - INDEMNITÉ COMPLÉMENTAIRE</Zones>
+          <Zones>00957 - DÉCIMALES POUR LE NOMBRE DE MOIS</Zones>
+          <Zones>00958 - NOMBRE DE JOURS - MOIS INCOMPLET</Zones>
+          <Zones>00959 - MOIS INCOMPLET - RAISON</Zones>
+          <Zones>00960 - NOTION D'APPLICATION DU PLANCHER</Zones>
+          <Zones>00085 - MONTANT DE LA COTISATION</Zones>
+          <XmlLabel>ComplIndemnityContribution</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les informations relatives aux cotisations sur les indemnités complémentaires aux allocations de prépension, de chômage ou d'interruption de carrière (part patronale ou part personnelle).</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si aucune cotisation n'est due dans le cadre des indemnités complémentaires aux allocations de prépension, de chômage ou de l'interruption de carrière.
+Cardinalité 1..* si une (ou plusieurs) cotisation(s) est (sont) due(s) dans le cadre des indemnités complémentaires aux allocations de   prépension, de chômage ou de l'interruption de carrière.</Presence>
+          <LimitationsSupplementaires>Une cotisation donnée (une combinaison code travailleur cotisation / type de cotisation / notion d'adaptation du montant de l'indemnité/ numéro de suite cotisation) ne peut se retrouver qu'une seule fois par indemnité complémentaire.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90337-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90337-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90337-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90337-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90337-419</CodeAnomalie>
+               <IntituleAnomalie>Plus de cotisation due</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90012</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Ligne travailleur</Nom>
+          <Zones>00036 - CATÉGORIE DE L'EMPLOYEUR</Zones>
+          <Zones>00037 - CODE TRAVAILLEUR</Zones>
+          <Zones>00038 - DATE DE DÉBUT DU TRIMESTRE POUR LA SÉCURITÉ SOCIALE</Zones>
+          <Zones>00039 - DATE DE FIN DU TRIMESTRE POUR LA SÉCURITÉ SOCIALE</Zones>
+          <Zones>00040 - NOTION FRONTALIER</Zones>
+          <Zones>00041 - ACTIVITÉ PAR RAPPORT AU RISQUE</Zones>
+          <Zones>00042 - NUMÉRO D'IDENTIFICATION DE L'UNITÉ LOCALE</Zones>
+          <Zones>00616 - RÉFÉRENCE UTILISATEUR - LIGNE TRAVAILLEUR</Zones>
+          <XmlLabel>WorkerRecord</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données relatives à une ligne travailleur.</Description>
+          <CardinaliteMinimum>1</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie>90015</NrBlocLie>
+          <NrBlocLie>90578</NrBlocLie>
+          <NrBlocLie>90001</NrBlocLie>
+          <NrBlocLie>90110</NrBlocLie>
+          <NrBlocLie>90005</NrBlocLie>
+          <NrBlocLie>90003</NrBlocLie>
+          <NrBlocLie>90042</NrBlocLie>
+          <NrBlocLie>90336</NrBlocLie>
+          <NrBlocLie>90011</NrBlocLie>
+          <BlocLie>90015 - Occupation de la ligne travailleur</BlocLie>
+          <BlocLie>90578 - Activation - Informations</BlocLie>
+          <BlocLie>90001 - Cotisation due pour la ligne travailleur</BlocLie>
+          <BlocLie>90110 - Déduction ligne travailleur</BlocLie>
+          <BlocLie>90005 - Cotisation travailleur statutaire licencié</BlocLie>
+          <BlocLie>90003 - Cotisation travailleur étudiant</BlocLie>
+          <BlocLie>90042 - Cotisation travailleur prépensionné</BlocLie>
+          <BlocLie>90336 - Indemnité complémentaire</BlocLie>
+          <BlocLie>90011 - Indemnité AT-MP</BlocLie>
+          <Presence>Indispensable</Presence>
+          <LimitationsSupplementaires>Une combinaison catégorie de l'employeur / code travailleur donnée ne peut se retrouver qu'une seule fois par personne physique.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90012-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-134</CodeAnomalie>
+               <IntituleAnomalie>Pas de données</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-161</CodeAnomalie>
+               <IntituleAnomalie>Cumul déductions ligne travailleur non admis</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-192</CodeAnomalie>
+               <IntituleAnomalie>Nombre total de jours trop élevé</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-242</CodeAnomalie>
+               <IntituleAnomalie>Date de fin d'occupation manquante pour au moins une occupation</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-260</CodeAnomalie>
+               <IntituleAnomalie>Nombre d'heures trop élevé</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-390</CodeAnomalie>
+               <IntituleAnomalie>Hiatus entre occupations (ou éléments de carrière)</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-449</CodeAnomalie>
+               <IntituleAnomalie>Rémunérations trop élevées</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-478</CodeAnomalie>
+               <IntituleAnomalie>L'indemnité de rupture commence avant la fin des occupations rémunérées</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-486</CodeAnomalie>
+               <IntituleAnomalie>Flexijob pas de cumul avec un contrat de 80% ou plus</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90012-529</CodeAnomalie>
+               <IntituleAnomalie>Incohérence total des bases de calcul de la cotisation - total des indemnités</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90438</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Mesures de réorganisation du travail simultanées - Informations</Nom>
+          <Zones>00051 - MESURE DE RÉORGANISATION DU TRAVAIL</Zones>
+          <Zones>01030 - POURCENTAGE DE LA MESURE DE RÉORGANISATION DU TRAVAIL</Zones>
+          <XmlLabel>ReorgMeasureInformation</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer des informations relatives à des mesures de réorganisation du travail simultanées.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>2</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 2 si la zone 00051 au niveau de l'occupation est complétée avec la valeur 599.
+Sinon, cardinalité 0.</Presence>
+          <LimitationsSupplementaires>Une mesure de réorganisation du travail ne peut se retrouver qu'une seule fois par occupation.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90438-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90438-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90438-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90438-053</CodeAnomalie>
+               <IntituleAnomalie>Pas d'application</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90438-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90438-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90438-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90313</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Occupation - Informations</Nom>
+          <Zones>00795 - EXTRA</Zones>
+          <Zones>00893 - PERSONNEL MIS À DISPOSITION</Zones>
+          <Zones>00794 - MESURES POUR LE NON MARCHAND</Zones>
+          <Zones>00812 - SALAIRE HORAIRE</Zones>
+          <Zones>00862 - SALAIRE HORAIRE EN MILLIÈMES D'EURO</Zones>
+          <Zones>00728 - DATE À LAQUELLE UN MEMBRE DU PERSONNEL NOMMÉ EST MALADE DEPUIS 6 MOIS OU PLUS</Zones>
+          <Zones>01010 - NOMBRE DE JOURS SALAIRE GARANTI PREMIÈRE SEMAINE</Zones>
+          <Zones>01011 - RÉMUNÉRATION BRUTE PAYÉE EN CAS DE MALADIE</Zones>
+          <Zones>01012 - DISPENSE DE DÉCLARATION DES DONNÉES DE L'OCCUPATION RELATIVES AU SECTEUR PUBLIC</Zones>
+          <Zones>01013 - DISPENSE - RÉGIME DE PENSION COMPLÉMENTAIRE</Zones>
+          <Zones>01063 - DONNÉE DE CONTRÔLE - OBLIGATION</Zones>
+          <Zones>01092 - DATE DE NOMINATION À TITRE DÉFINITIF</Zones>
+          <Zones>01148 - DATE D'ATTRIBUTION DU NOUVEAU POSTE MARIBEL SOCIAL</Zones>
+          <Zones>01176 - COTISATION PENSION DU SECTEUR PUBLIC POUR TRAVAILLEURS STATUTAIRES - BASE DE CALCUL DÉROGATOIRE</Zones>
+          <Zones>01194 - MESURE CARRIÈRE</Zones>
+          <Zones>00826 - NOTION DE DISPENSE DE PRESTATIONS</Zones>
+          <Zones>00197 - NOMBRE DE JOURS DE VACANCES</Zones>
+          <Zones>01215 - DÉTAIL SECTEUR</Zones>
+          <Zones>01216 - BUDGET MOBILITÉ</Zones>
+          <Zones>01232 - NOMBRE D'HEURES DE CONGÉ FORMATION FLAMAND</Zones>
+          <Zones>01237 - AIDE RÉGIONALE À L'EMPLOI</Zones>
+          <XmlLabel>OccupationInformations</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer des informations relatives à une occupation.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si aucune information relative à l'occupation ne doit être déclarée.
+Cardinalité 1 si au moins une information relative à l'occupation doit être déclarée, à partir des déclarations du 2/2005.</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90313-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90313-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90313-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90313-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90015</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Occupation de la ligne travailleur</Nom>
+          <Zones>00043 - NUMÉRO D'OCCUPATION</Zones>
+          <Zones>00044 - DATE DE DÉBUT DE L'OCCUPATION</Zones>
+          <Zones>00045 - DATE DE FIN DE L'OCCUPATION</Zones>
+          <Zones>00046 - NUMÉRO DE COMMISSION PARITAIRE</Zones>
+          <Zones>00047 - NOMBRE DE JOURS PAR SEMAINE DU RÉGIME DE TRAVAIL</Zones>
+          <Zones>00050 - TYPE DU CONTRAT</Zones>
+          <Zones>00049 - NOMBRE MOYEN D'HEURES PAR SEMAINE DE LA PERSONNE DE RÉFÉRENCE</Zones>
+          <Zones>00053 - STATUT DU TRAVAILLEUR</Zones>
+          <Zones>00048 - NOMBRE MOYEN D'HEURES PAR SEMAINE DU TRAVAILLEUR</Zones>
+          <Zones>00051 - MESURE DE RÉORGANISATION DU TRAVAIL</Zones>
+          <Zones>00052 - MESURE DE PROMOTION DE L'EMPLOI</Zones>
+          <Zones>00054 - NOTION PENSIONNÉ</Zones>
+          <Zones>00055 - TYPE D'APPRENTISSAGE</Zones>
+          <Zones>00056 - MODE DE RÉMUNÉRATION</Zones>
+          <Zones>00057 - NUMÉRO DE FONCTION</Zones>
+          <Zones>00059 - CLASSE DU PERSONNEL VOLANT</Zones>
+          <Zones>00060 - ENSEIGNEMENT - MODE PAIEMENT</Zones>
+          <Zones>00617 - RÉFÉRENCE UTILISATEUR - OCCUPATION DE LA LIGNE TRAVAILLEUR</Zones>
+          <Zones>00625 - JUSTIFICATION DES JOURS</Zones>
+          <Zones>00228 - CODE NACE</Zones>
+          <Zones>00042 - NUMÉRO D'IDENTIFICATION DE L'UNITÉ LOCALE</Zones>
+          <Zones>01195 - NUMÉRO D'IDENTIFICATION DU NAVIRE</Zones>
+          <Zones>01199 - CLASSE DU PERSONNEL</Zones>
+          <Zones>01203 - NOMBRE MOYEN D'HEURES SUBSIDIÉES PAR SEMAINE DU TRAVAILLEUR</Zones>
+          <XmlLabel>Occupation</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données relatives à une occupation.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie>90313</NrBlocLie>
+          <NrBlocLie>90172</NrBlocLie>
+          <NrBlocLie>90018</NrBlocLie>
+          <NrBlocLie>90019</NrBlocLie>
+          <NrBlocLie>90411</NrBlocLie>
+          <NrBlocLie>90438</NrBlocLie>
+          <NrBlocLie>90109</NrBlocLie>
+          <BlocLie>90313 - Occupation - Informations</BlocLie>
+          <BlocLie>90172 - Deuxième pilier de pension - Informations</BlocLie>
+          <BlocLie>90018 - Prestation de l'occupation ligne travailleur</BlocLie>
+          <BlocLie>90019 - Rémunération de l'occupation ligne travailleur</BlocLie>
+          <BlocLie>90411 - Données de l'occupation relatives au secteur public</BlocLie>
+          <BlocLie>90438 - Mesures de réorganisation du travail simultanées - Informations</BlocLie>
+          <BlocLie>90109 - Déduction occupation</BlocLie>
+          <Presence>Cardinalité 0 si  la ligne travailleur ne concerne pas un code travailleur cotisation ordinaire (voir annexe 2).
+Cardinalité 1 ...99 si  la ligne travailleur concerne un code travailleur cotisation ordinaire (voir annexe 2).</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90015-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-095</CodeAnomalie>
+               <IntituleAnomalie>Nombre total de jours incompatible avec le trimestre de déclaration pour l'occupation</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-096</CodeAnomalie>
+               <IntituleAnomalie>Nombre total de jours incompatible avec le régime de travail pour l'occupation</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-134</CodeAnomalie>
+               <IntituleAnomalie>Pas de données</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-162</CodeAnomalie>
+               <IntituleAnomalie>Cumul déductions occupation non admis</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-169</CodeAnomalie>
+               <IntituleAnomalie>Indemnité de rupture ou de sortie présente avec d'autres rémunérations</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-243</CodeAnomalie>
+               <IntituleAnomalie>Nombre total de jours insuffisant selon le régime de travail au sein de l'occupation</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-244</CodeAnomalie>
+               <IntituleAnomalie>Fraction d'occupation erronée</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-389</CodeAnomalie>
+               <IntituleAnomalie>Hiatus entre deux occupations (ou éléments de carrière) avec motif de fin de la relation statutaire</IntituleAnomalie>
+               <GraviteAnomalie>W</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-393</CodeAnomalie>
+               <IntituleAnomalie>Lignes de données de l'occupation relatives au secteur public non strictement successives</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-456</CodeAnomalie>
+               <IntituleAnomalie>Pas de Dimona comme travailleur occasionnel pour cette occupation</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-484</CodeAnomalie>
+               <IntituleAnomalie>Occupation Flexijob couverte totalement ou en partie par une indemnité de rupture</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90015-485</CodeAnomalie>
+               <IntituleAnomalie>Occupation Flexijob non couverte ou pas totalement couverte par Dimona</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90017</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Personne physique</Nom>
+          <Zones>00023 - NUMÉRO DE SUITE PERSONNE PHYSIQUE</Zones>
+          <Zones>00024 - NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS</Zones>
+          <Zones>00167 - NUMÉRO DE LA CARTE D'IDENTITÉ SOCIALE</Zones>
+          <Zones>00025 - NOM DU TRAVAILLEUR</Zones>
+          <Zones>00026 - PRÉNOM DU TRAVAILLEUR</Zones>
+          <Zones>00027 - INITIALE DU DEUXIÈME PRÉNOM DU TRAVAILLEUR</Zones>
+          <Zones>00028 - DATE DE NAISSANCE DU TRAVAILLEUR</Zones>
+          <Zones>00168 - COMMUNE - LIEU DE NAISSANCE DU TRAVAILLEUR</Zones>
+          <Zones>00169 - CODE PAYS DU LIEU DE NAISSANCE DU TRAVAILLEUR</Zones>
+          <Zones>00029 - SEXE DU TRAVAILLEUR</Zones>
+          <Zones>00030 - RUE DU TRAVAILLEUR</Zones>
+          <Zones>00031 - NUMÉRO DE L'ADRESSE DU TRAVAILLEUR</Zones>
+          <Zones>00032 - BOÎTE AUX LETTRES DU TRAVAILLEUR</Zones>
+          <Zones>00033 - CODE POSTAL DU TRAVAILLEUR</Zones>
+          <Zones>00034 - COMMUNE DU TRAVAILLEUR</Zones>
+          <Zones>00035 - CODE PAYS DU TRAVAILLEUR</Zones>
+          <Zones>00119 - NATIONALITÉ DU TRAVAILLEUR</Zones>
+          <Zones>00615 - RÉFÉRENCE UTILISATEUR - PERSONNE PHYSIQUE</Zones>
+          <XmlLabel>NaturalPerson</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les données d'identification d'une personne physique.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie>90012</NrBlocLie>
+          <BlocLie>90012 - Ligne travailleur</BlocLie>
+          <Presence>Cardinalité 0 si aucune personne physique ne doit être déclarée.
+Cardinalité 1 ... 9999999 si au moins une personne physique doit être déclarée.</Presence>
+          <LimitationsSupplementaires>Une personne physique ne peut se retrouver qu'une seule fois par déclaration.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90017-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-134</CodeAnomalie>
+               <IntituleAnomalie>Pas de données</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-151</CodeAnomalie>
+               <IntituleAnomalie>Pas identifiable</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-252</CodeAnomalie>
+               <IntituleAnomalie>Modification du numéro NISS</IntituleAnomalie>
+               <GraviteAnomalie>W</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-429</CodeAnomalie>
+               <IntituleAnomalie>Nombre de jours déclaré en DMFA différent du nombre de jours déclaré en DIMONA</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-502</CodeAnomalie>
+               <IntituleAnomalie>Différence heures en DmfA - heures planifiées en Dimona avec cotisations réduites</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-504</CodeAnomalie>
+               <IntituleAnomalie>Aucune heure planifiée en Dimona pouvant bénéficier de cotisations sociales réduites</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-518</CodeAnomalie>
+               <IntituleAnomalie>Données deuxième pilier pension manquantes</IntituleAnomalie>
+               <GraviteAnomalie>NP</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90017-528</CodeAnomalie>
+               <IntituleAnomalie>Base de calcul de la cotisation spéciale prime Corona trop élevée</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90018</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Prestation de l'occupation ligne travailleur</Nom>
+          <Zones>00061 - NUMÉRO DE LIGNE PRESTATION</Zones>
+          <Zones>00062 - CODE PRESTATION</Zones>
+          <Zones>00063 - NOMBRE DE JOURS DE LA PRESTATION</Zones>
+          <Zones>00064 - NOMBRE D'HEURES DE LA PRESTATION</Zones>
+          <Zones>00065 - NOMBRE DE MINUTES DE VOL</Zones>
+          <XmlLabel>Service</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les prestations d'un travailleur pour une occupation de la ligne travailleur.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Obligatoire si au moins une prestation doit être déclarée.</Presence>
+          <LimitationsSupplementaires>Une prestation donnée (un code prestation) ne peut se retrouver qu'une seule fois par occupation.
+</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90018-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90018-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90018-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90018-094</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité type de travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90018-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90018-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90082</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Référence</Nom>
+          <Zones>00221 - TYPE DE LA RÉFÉRENCE</Zones>
+          <Zones>00298 - ORIGINE DE LA RÉFÉRENCE</Zones>
+          <Zones>00222 - NUMÉRO DE RÉFÉRENCE</Zones>
+          <XmlLabel>Reference</XmlLabel>
+          <Description>Bloc fonctionnel permettant de préciser des références relatives à un ou plusieurs formulaires ; un formulaire pouvant être une déclaration DmfA originale, une déclaration de modification DmfA, une DRS, une demande de renseignements, une déclaration Dimona, etc.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>1</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Facultatif</Presence>
+          <LimitationsSupplementaires></LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90082-090</CodeAnomalie>
+               <IntituleAnomalie>Erreur de cardinalité</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90082-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90082-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90019</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Rémunération de l'occupation ligne travailleur</Nom>
+          <Zones>00066 - NUMÉRO DE LIGNE RÉMUNÉRATION</Zones>
+          <Zones>00067 - CODE RÉMUNÉRATION</Zones>
+          <Zones>00068 - FRÉQUENCE EN MOIS DE PAIEMENT DE LA PRIME</Zones>
+          <Zones>00069 - POURCENTAGE DE LA RÉMUNÉRATION SUR BASE ANNUELLE</Zones>
+          <Zones>00070 - RÉMUNÉRATION</Zones>
+          <XmlLabel>Remun</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les rémunérations d'un travailleur pour une occupation de la ligne travailleur.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Obligatoire si au moins une rémunération doit être déclarée.</Presence>
+          <LimitationsSupplementaires>Une rémunération donnée (une combinaison code rémunération / fréquence en mois de paiement de la prime / pourcentage de la rémunération sur base annuelle) ne peut se retrouver qu'une seule fois par occupation.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90019-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>P</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90019-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90019-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90019-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90019-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90019-025</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité catégorie employeur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90413</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Supplément de traitement</Nom>
+          <Zones>00978 - DATE DE DÉBUT DU SUPPLÉMENT DE TRAITEMENT</Zones>
+          <Zones>00979 - DATE DE FIN DU SUPPLÉMENT DE TRAITEMENT</Zones>
+          <Zones>00977 - RÉFÉRENCE DU SUPPLÉMENT DE TRAITEMENT</Zones>
+          <Zones>00980 - MONTANT DE BASE DU SUPPLÉMENT DE TRAITEMENT</Zones>
+          <Zones>00981 - POURCENTAGE DU SUPPLÉMENT DE TRAITEMENT</Zones>
+          <Zones>00982 - NOMBRE D'HEURES OU DE PRESTATIONS</Zones>
+          <Zones>00983 - MONTANT DU SUPPLÉMENT DE TRAITEMENT</Zones>
+          <XmlLabel>AdditionalScaleSalary</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les éléments se rapportant aux suppléments de traitement susceptibles d'entrer en ligne de compte pour le calcul de la pension de retraite ou pour la péréquation des pensions du secteur public.
+Bloc fonctionnel autorisé uniquement à partir des déclarations du premier trimestre 2011.</Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>99</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Facultatif</Presence>
+          <LimitationsSupplementaires>Un bloc Supplément de traitement (une combinaison des zones suivantes : REFERENCE DU SUPPLEMENT DE TRAITEMENT, DATE DE DEBUT DU SUPPLEMENT DE TRAITEMENT) ne peut se retrouver qu'une seule fois par bloc Traitement barémique.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90413-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90413-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90413-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90413-030</CodeAnomalie>
+               <IntituleAnomalie>Incompatibilité code travailleur</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90412</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Traitement barémique</Nom>
+          <Zones>00970 - DATE DE DÉBUT DU TRAITEMENT BARÉMIQUE</Zones>
+          <Zones>00971 - DATE DE FIN DU TRAITEMENT BARÉMIQUE</Zones>
+          <Zones>00972 - DATE DE PRISE DE RANG DE L'ANCIENNETÉ PÉCUNIAIRE</Zones>
+          <Zones>00973 - RÉFÉRENCE DE L'ÉCHELLE DE TRAITEMENT</Zones>
+          <Zones>00974 - MONTANT DU TRAITEMENT BARÉMIQUE</Zones>
+          <Zones>00975 - NOMBRE D'HEURES PAR SEMAINE</Zones>
+          <Zones>00976 - NOMBRE D'HEURES PAR SEMAINE - TRAITEMENT BARÉMIQUE COMPLET</Zones>
+          <Zones>01235 - NOTION TRAITEMENT BARÉMIQUE RÉDUIT</Zones>
+          <XmlLabel>ScaleSalary</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les éléments se rapportant au traitement barémique à prendre en considération pour le calcul de la pension de retraite dans le secteur public.
+Bloc fonctionnel autorisé uniquement à partir des déclarations du premier trimestre 2011.</Description>
+          <CardinaliteMinimum>1</CardinaliteMinimum>
+          <CardinaliteMaximum>99</CardinaliteMaximum>
+          <NrBlocLie>90413</NrBlocLie>
+          <BlocLie>90413 - Supplément de traitement</BlocLie>
+          <Presence>Indispensable</Presence>
+          <LimitationsSupplementaires>Un bloc Traitement barémique (une combinaison des zones suivantes : DATE DE DEBUT DU TRAITEMENT BAREMIQUE, DATE DE PRISE DE RANG DE L'ANCIENNETE PECUNIAIRE, REFERENCE DE L'ECHELLE DE TRAITEMENT) ne peut se retrouver qu'une seule fois par bloc Données de l'occupation relatives au secteur public.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90412-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90412-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90412-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90412-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+     <FunctionalBlock>
+          <Code>90294</Code>
+          <Version>2022/3</Version>
+          <DatePublication>30/08/2022</DatePublication>
+          <Nom>Véhicule de société</Nom>
+          <Zones>00780 - NUMÉRO DE SUITE VÉHICULE DE SOCIÉTÉ</Zones>
+          <Zones>00781 - NUMÉRO DE PLAQUE</Zones>
+          <Zones>01217 - VÉHICULE RESPECTUEUX DE L'ENVIRONNEMENT</Zones>
+          <XmlLabel>CompanyVehicle</XmlLabel>
+          <Description>Bloc fonctionnel permettant de déclarer les informations relatives à un véhicule de société. </Description>
+          <CardinaliteMinimum>0</CardinaliteMinimum>
+          <CardinaliteMaximum>*</CardinaliteMaximum>
+          <NrBlocLie></NrBlocLie>
+          <BlocLie></BlocLie>
+          <Presence>Cardinalité 0 si la société ne dispose pas d'un véhicule de société.
+Cardinalité 1 ... * si la société dispose d'au moins un véhicule de société</Presence>
+          <LimitationsSupplementaires>Un véhicule de société (un numéro de plaque) ne peut se retrouver qu'une seule fois par déclaration.</LimitationsSupplementaires>
+          <Anomalie>
+               <CodeAnomalie>90294-001</CodeAnomalie>
+               <IntituleAnomalie>Non présent</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90294-006</CodeAnomalie>
+               <IntituleAnomalie>Trop d'occurrences avec les mêmes identifiants</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90294-091</CodeAnomalie>
+               <IntituleAnomalie>Erreur de séquence</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+          <Anomalie>
+               <CodeAnomalie>90294-146</CodeAnomalie>
+               <IntituleAnomalie>Non admis</IntituleAnomalie>
+               <GraviteAnomalie>B</GraviteAnomalie>
+          </Anomalie>
+     </FunctionalBlock>
+</List>

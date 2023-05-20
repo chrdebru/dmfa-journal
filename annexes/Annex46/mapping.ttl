@@ -1,0 +1,113 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/annex46#> .
+@base <http://kg.socialsecurity.be/resource/mappings/annex46/>  .
+
+
+<#SectorDetail-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./Adjusted_AN2021-1-FR46.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/List/ann46" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:SectorDetail;
+        rr:termType rr:IRI ;
+        rr:template "http://kg.socialsecurity.be/resource/annex46/SectorDetail{Id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:Sector ;
+        rr:objectMap [
+            rml:reference "CategorieFR" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:Code ;
+        rr:objectMap [
+            rml:reference "Code" ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "DescFR" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:JointCommissionNbr ;
+        rr:objectMap [
+            rml:reference "ParitairComite" ;
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:isPublic ;
+        rr:objectMap [
+            rml:reference "PublicSectorFR" ;
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:isPrivate ;
+        rr:objectMap [
+            rml:reference "PrivateSectorFR" ;
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "Remarquebijlage46" ;
+            rr:language "fr" ;
+        ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFrom ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            rml:reference "begin_geldigheid" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validTo ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            rml:reference "einde_geldigheid" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFromQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_vanaf" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validToQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_tot" ;
+        ] ;
+    ] ;
+.

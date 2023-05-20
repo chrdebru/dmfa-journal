@@ -1,0 +1,232 @@
+@prefix : <http://kg.socialsecurity.be/ont/dmfas02#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/dmfas02/> .
+
+<http://kg.socialsecurity.be/ont/dmfas02#> rdf:type owl:Ontology .
+
+:DeductionDetailDataDetail a owl:Class ;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:FunctionalBlocLinked a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:DeductionDetailAmountPresence a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:WorkingRegulationsRegistryNbrPresence a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:WorkingRegulationsStartingDatePresence a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:WorkingRegulationsEndingDatePresence a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:AverageWorkingTimeBeforeReductionPresence a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+:AverageWorkingTimeAfterReductionPresence a owl:DatatypeProperty ;
+    rdfs:range :DeductionDetailDataDetail;
+.
+
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail à 38 heures par semaine"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#Code> "1350"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#WorkerRecord>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1350-20014> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20014"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20034"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail en deçà de 38 heures par semaine - réduction unique calculée en une fois"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#Code> "1351"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#WorkerRecord>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1351-20021> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20021"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20034"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail en deçà de 38 heures par semaine - réduction unique calculée en quatre tranches"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#Code> "1352"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#WorkerRecord>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1352-20021> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20021"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20034"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail en deçà de 38 heures par semaine - réduction de maintien"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#Code> "1353"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#WorkerRecord>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20021> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20021"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail en deçà de 38 heures par semaine - réduction de maintien"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#Code> "1353"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1353-20041> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20041"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20034"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://www.w3.org/2000/01/rdf-schema#label> "La semaine de quatre jours - réduction unique calculée en une fois"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#Code> "1345"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#WorkerRecord>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1345-20021> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20021"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20034"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://www.w3.org/2000/01/rdf-schema#label> "La semaine de quatre jours - réduction unique calculée en quatre tranches"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#Code> "1346"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#WorkerRecord>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail1346-20021> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20021"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#Code> "3500"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3500-20041> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20041"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail et semaine des quatre jours"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#Code> "3520"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3520-20041> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20041"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail suite à la crise"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#Code> "3700"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20092> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20092"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail suite à la crise"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#Code> "3700"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3700-20203> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20203"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction temporaire du temps de travail suite au Brexit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#Code> "3701"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3701-20211> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20211"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction du temps de travail combinée avec la semaine de quatre jours suite à la crise"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#Code> "3720"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20092> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20092"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction  du temps de travail combinée avec la semaine de quatre jours suite à la crise"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#Code> "3720"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3720-20203> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20203"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailDataDetail>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#validToQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#DeductionDetailAmountPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsRegistryNbrPresence> "Interdit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsStartingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#WorkingRegulationsEndingDatePresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeBeforeReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#AverageWorkingTimeAfterReductionPresence> "Obligatoire"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://www.w3.org/2000/01/rdf-schema#label> "Réduction temporaire du temps de travail combinée avec la semaine de quatre jours suite au Brexit"@fr.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#Code> "3721"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#FunctionalBlocLinked> <http://kg.socialsecurity.be/resource/dmfa#Occupation>.
+<http://kg.socialsecurity.be/resource/dmfas02/DeductionDetailDataDetail3721-20211> <http://kg.socialsecurity.be/ont/dmfas02#validFromQuarter> "20211"^^<http://www.w3.org/2001/XMLSchema#integer>.

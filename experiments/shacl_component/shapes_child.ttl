@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ont: <http://kg.socialsecurity.be/ont/dmfa#> .
+
+@prefix kg: <http://kg.socialsecurity.be/resource/shapes/> .
+@base <http://kg.socialsecurity.be/resource/shapes/> .
+
+<> 
+	sh:declare [
+		sh:prefix "ont" ;
+		sh:namespace "http://kg.socialsecurity.be/ont/dmfa#"^^xs:anyURI ;
+	] ;
+.
+
+kg:NaturalPersonShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for NaturalPerson (90017)" ;
+    sh:targetClass ont:NaturalPerson ;
+
+    ont:pathToUniqueValue ont:NaturalPersonSequenceNbr;
+.
+
+sh:UniqueValueConstraintComponent
+	a sh:ConstraintComponent ;
+	sh:parameter [
+		sh:path ont:pathToUniqueValue ;
+	] ;
+
+	sh:validator [
+        a sh:SPARQLSelectValidator ;
+        sh:select """
+            SELECT $this ?value
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this $pathToUniqueValue ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                BIND(?seqNbr as ?value)
+            }""" ;
+    ]
+.

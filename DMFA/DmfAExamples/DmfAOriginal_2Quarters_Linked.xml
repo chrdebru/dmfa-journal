@@ -1,0 +1,1018 @@
+<DmfAOriginal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DmfAOriginal_20223.xsd" id="0">
+    <Form parent="0" id="0">
+		<Identification parent="0" id="0">DMFA</Identification>
+		<FormCreationDate parent="0" id="0">2022-05-12</FormCreationDate>
+		<FormCreationHour parent="0" id="0">08:45:00.000</FormCreationHour>
+		<AttestationStatus parent="0" id="0">0</AttestationStatus>
+		<TypeForm parent="0" id="0">SU</TypeForm>
+		<Reference parent="0" id="0">
+			<ReferenceType parent="0" id="0">1</ReferenceType>
+			<ReferenceOrigin parent="0" id="0">1</ReferenceOrigin>
+			<ReferenceNbr parent="0" id="0">DMFA TEST</ReferenceNbr>
+		</Reference>
+		<EmployerDeclaration parent="0" id="0">
+			<Quarter parent="0" id="0">20222</Quarter>
+			<NOSSRegistrationNbr parent="0" id="0">199999934</NOSSRegistrationNbr>
+			<Trusteeship parent="0" id="0">0</Trusteeship>
+			<CompanyID parent="0" id="0">0</CompanyID>
+			<NetOwedAmount parent="0" id="0">00000000009999</NetOwedAmount>
+			<NaturalPerson parent="0" id="0">
+				<NaturalPersonSequenceNbr parent="0" id="0">0000001</NaturalPersonSequenceNbr>
+				<INSS parent="0" id="0">77101500172</INSS>
+				<NaturalPersonUserReference parent="0" id="0" />
+				<WorkerRecord parent="0" id="0">
+					<EmployerClass parent="0" id="0">001</EmployerClass>
+					<WorkerCode parent="0" id="0">675</WorkerCode>
+					<NOSSQuarterStartingDate parent="0" id="0">2022-04-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="0" id="0">2022-06-30</NOSSQuarterEndingDate>
+					<Border parent="0" id="0">0</Border>
+					<WorkerRecordUserReference parent="0" id="0" />
+					<Occupation parent="0" id="0">
+						<OccupationSequenceNbr parent="0" id="0">01</OccupationSequenceNbr>
+						<OccupationStartingDate parent="0" id="0">2005-10-01</OccupationStartingDate>
+						<JointCommissionNbr parent="0" id="0">999</JointCommissionNbr>
+						<WorkingDaysSystem parent="0" id="0">500</WorkingDaysSystem>
+						<ContractType parent="0" id="0">0</ContractType>
+						<RefMeanWorkingHours parent="0" id="0">3800</RefMeanWorkingHours>
+						<MeanWorkingHours parent="0" id="0">3800</MeanWorkingHours>
+						<Retired parent="0" id="0">0</Retired>
+						<OccupationUserReference parent="0" id="0" />
+						<ActivityCode parent="0" id="0">87909</ActivityCode>
+						<LocalUnitID parent="0" id="0">2000000141</LocalUnitID>
+						<Service parent="0" id="0">
+							<ServiceSequenceNbr parent="0" id="0">01</ServiceSequenceNbr>
+							<ServiceCode parent="0" id="0">001</ServiceCode>
+							<ServiceNbrDays parent="0" id="0">06600</ServiceNbrDays>
+						</Service>
+						<Remun parent="0" id="0">
+							<RemunSequenceNbr parent="0" id="0">02</RemunSequenceNbr>
+							<RemunCode parent="0" id="0">002</RemunCode>
+							<BonusPaymentFrequency parent="0" id="0">12</BonusPaymentFrequency>
+							<RemunAmount parent="0" id="0">00000099999</RemunAmount>
+						</Remun>
+						<Remun parent="0" id="1">
+							<RemunSequenceNbr parent="1" id="1">01</RemunSequenceNbr>
+							<RemunCode parent="1" id="1">001</RemunCode>
+							<RemunAmount parent="1" id="1">00000999999</RemunAmount>
+						</Remun>
+						<OccupationPublicServiceData parent="0" id="0">
+							<OccupationPSDStartDate parent="0" id="0">2011-01-01</OccupationPSDStartDate>
+							<PublicSectorInstitutionType parent="0" id="0">99</PublicSectorInstitutionType>
+							<PublicSectorPersonnelCategory parent="0" id="0">01</PublicSectorPersonnelCategory>
+							<GradeOrFunction parent="0" id="0">String</GradeOrFunction>
+							<OfficialLanguage parent="0" id="0">2</OfficialLanguage>
+							<AssignmentType parent="0" id="0">0</AssignmentType>
+							<FunctionNature parent="0" id="0">1</FunctionNature>
+							<ScaleSalary parent="0" id="0">
+								<ScaleSalaryStartDate parent="0" id="0">2011-01-01</ScaleSalaryStartDate>
+								<PecuniarySeniorityStartDate parent="0" id="0">1997-10</PecuniarySeniorityStartDate>
+								<SalaryScaleReference parent="0" id="0">999990629999</SalaryScaleReference>
+								<ScaleSalaryAmount parent="0" id="0">00009999999</ScaleSalaryAmount>
+								<WeekHoursNbr parent="0" id="0">3800</WeekHoursNbr>
+								<ScaleSalaryWeekHoursNbr parent="0" id="0">3800</ScaleSalaryWeekHoursNbr>
+							</ScaleSalary>
+						</OccupationPublicServiceData>
+					</Occupation>
+					<WorkerContribution parent="0" id="0">
+						<ContributionWorkerCode parent="0" id="0">675</ContributionWorkerCode>
+						<ContributionType parent="0" id="0">0</ContributionType>
+						<ContributionCalculationBasis parent="0" id="0">00001099998</ContributionCalculationBasis>
+						<ContributionAmount parent="0" id="0">00000096909</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="0" id="1">
+						<ContributionWorkerCode parent="1" id="1">856</ContributionWorkerCode>
+						<ContributionType parent="1" id="1">0</ContributionType>
+						<ContributionAmount parent="1" id="1">00000009999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="0" id="2">
+						<ContributionWorkerCode parent="2" id="2">815</ContributionWorkerCode>
+						<ContributionType parent="2" id="2">1</ContributionType>
+						<ContributionCalculationBasis parent="2" id="1">00001044998</ContributionCalculationBasis>
+						<ContributionAmount parent="2" id="2">00000454574</ContributionAmount>
+					</WorkerContribution>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="0" id="1">
+				<NaturalPersonSequenceNbr parent="1" id="1">0000002</NaturalPersonSequenceNbr>
+				<INSS parent="1" id="1">78101500193</INSS>
+				<NaturalPersonUserReference parent="1" id="1" />
+				<WorkerRecord parent="1" id="1">
+					<EmployerClass parent="1" id="1">001</EmployerClass>
+					<WorkerCode parent="1" id="1">675</WorkerCode>
+					<NOSSQuarterStartingDate parent="1" id="1">2022-04-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="1" id="1">2022-06-30</NOSSQuarterEndingDate>
+					<Border parent="1" id="1">0</Border>
+					<WorkerRecordUserReference parent="1" id="1" />
+					<Occupation parent="1" id="1">
+						<OccupationSequenceNbr parent="1" id="1">01</OccupationSequenceNbr>
+						<OccupationStartingDate parent="1" id="1">2012-07-01</OccupationStartingDate>
+						<JointCommissionNbr parent="1" id="1">999</JointCommissionNbr>
+						<WorkingDaysSystem parent="1" id="1">0</WorkingDaysSystem>
+						<ContractType parent="1" id="1">0</ContractType>
+						<RefMeanWorkingHours parent="1" id="1">3800</RefMeanWorkingHours>
+						<MeanWorkingHours parent="1" id="1">0</MeanWorkingHours>
+						<ReorganisationMeasure parent="1" id="0">599</ReorganisationMeasure>
+						<Retired parent="1" id="1">0</Retired>
+						<OccupationUserReference parent="1" id="1" />
+						<LocalUnitID parent="1" id="1">2000000141</LocalUnitID>
+						<OccupationPublicServiceData parent="1" id="1">
+							<OccupationPSDStartDate parent="1" id="1">2011-01-01</OccupationPSDStartDate>
+							<PublicSectorInstitutionType parent="1" id="1">99</PublicSectorInstitutionType>
+							<PublicSectorPersonnelCategory parent="1" id="1">01</PublicSectorPersonnelCategory>
+							<GradeOrFunction parent="1" id="1">String</GradeOrFunction>
+							<OfficialLanguage parent="1" id="1">2</OfficialLanguage>
+							<AssignmentType parent="1" id="1">0</AssignmentType>
+							<FunctionNature parent="1" id="1">1</FunctionNature>
+							<ScaleSalary parent="1" id="1">
+								<ScaleSalaryStartDate parent="1" id="1">2011-01-01</ScaleSalaryStartDate>
+								<PecuniarySeniorityStartDate parent="1" id="1">1997-10</PecuniarySeniorityStartDate>
+								<SalaryScaleReference parent="1" id="1">999990629999</SalaryScaleReference>
+								<ScaleSalaryAmount parent="1" id="1">00009999999</ScaleSalaryAmount>
+								<WeekHoursNbr parent="1" id="1">3800</WeekHoursNbr>
+								<ScaleSalaryWeekHoursNbr parent="1" id="1">3800</ScaleSalaryWeekHoursNbr>
+							</ScaleSalary>
+						</OccupationPublicServiceData>
+						<ReorgMeasureInformation parent="1" id="0">
+							<ReorganisationMeasure parent="0" id="1">4</ReorganisationMeasure>
+							<ReorganisationMeasurePercentage parent="0" id="0">2000</ReorganisationMeasurePercentage>
+						</ReorgMeasureInformation>
+						<ReorgMeasureInformation parent="1" id="1">
+							<ReorganisationMeasure parent="1" id="2">507</ReorganisationMeasure>
+							<ReorganisationMeasurePercentage parent="1" id="1">8000</ReorganisationMeasurePercentage>
+						</ReorgMeasureInformation>
+					</Occupation>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="0" id="2">
+				<NaturalPersonSequenceNbr parent="2" id="2">0000003</NaturalPersonSequenceNbr>
+				<INSS parent="2" id="2">67011500190</INSS>
+				<NaturalPersonUserReference parent="2" id="2" />
+				<WorkerRecord parent="2" id="2">
+					<EmployerClass parent="2" id="2">001</EmployerClass>
+					<WorkerCode parent="2" id="2">015</WorkerCode>
+					<NOSSQuarterStartingDate parent="2" id="2">2022-04-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="2" id="2">2022-06-30</NOSSQuarterEndingDate>
+					<Border parent="2" id="2">1</Border>
+					<ActivityWithRisk parent="2" id="0">999</ActivityWithRisk>
+					<WorkerRecordUserReference parent="2" id="2">String</WorkerRecordUserReference>
+					<Occupation parent="2" id="2">
+						<OccupationSequenceNbr parent="2" id="2">99</OccupationSequenceNbr>
+						<OccupationStartingDate parent="2" id="2">2007-10-01</OccupationStartingDate>
+						<JointCommissionNbr parent="2" id="2">000</JointCommissionNbr>
+						<WorkingDaysSystem parent="2" id="2">700</WorkingDaysSystem>
+						<ContractType parent="2" id="2">1</ContractType>
+						<RefMeanWorkingHours parent="2" id="2">4800</RefMeanWorkingHours>
+						<WorkerStatus parent="2" id="0">St</WorkerStatus>
+						<MeanWorkingHours parent="2" id="2">4800</MeanWorkingHours>
+						<ReorganisationMeasure parent="2" id="3">1</ReorganisationMeasure>
+						<EmploymentPromotion parent="2" id="0">0</EmploymentPromotion>
+						<Retired parent="2" id="2">1</Retired>
+						<Apprenticeship parent="2" id="0">5</Apprenticeship>
+						<RemunMethod parent="2" id="0">3</RemunMethod>
+						<PositionCode parent="2" id="0">99</PositionCode>
+						<FlyingStaffClass parent="2" id="0">3</FlyingStaffClass>
+						<TenthOrTwelfth parent="2" id="0">10</TenthOrTwelfth>
+						<OccupationUserReference parent="2" id="2">String</OccupationUserReference>
+						<DaysJustification parent="2" id="0">1</DaysJustification>
+						<LocalUnitID parent="2" id="2">2000000141</LocalUnitID>
+						<SubsidizedMeanWorkingHours parent="2" id="0">3000</SubsidizedMeanWorkingHours>
+						<OccupationInformations parent="2" id="0">
+							<CareerMeasure parent="0" id="0">1</CareerMeasure>
+							<ServiceExemptionNotion parent="0" id="0">2</ServiceExemptionNotion>
+							<FlemishTrainingHolidayHoursNbr parent="0" id="0">500</FlemishTrainingHolidayHoursNbr>
+							<RegionalAidMeasure parent="0" id="0">B</RegionalAidMeasure>
+						</OccupationInformations>
+						<SecondPillarInformation parent="2" id="0">
+							<ReferenceYearMonth parent="0" id="0">2020-07</ReferenceYearMonth>
+							<MonthlyScaleSalary parent="0" id="0">200000</MonthlyScaleSalary>
+							<OfficialLanguage parent="0" id="2">1</OfficialLanguage>
+						</SecondPillarInformation>
+						<Service parent="2" id="1">
+							<ServiceSequenceNbr parent="1" id="1">01</ServiceSequenceNbr>
+							<ServiceCode parent="1" id="1">999</ServiceCode>
+							<ServiceNbrDays parent="1" id="1">6400</ServiceNbrDays>
+							<ServiceNbrHours parent="1" id="0">9999999</ServiceNbrHours>
+						</Service>
+						<Service parent="2" id="2">
+							<ServiceSequenceNbr parent="2" id="2">02</ServiceSequenceNbr>
+							<ServiceCode parent="2" id="2">005</ServiceCode>
+							<ServiceNbrDays parent="2" id="2">100</ServiceNbrDays>
+							<ServiceNbrHours parent="2" id="1">500</ServiceNbrHours>
+						</Service>
+						<Remun parent="2" id="2">
+							<RemunSequenceNbr parent="2" id="2">99</RemunSequenceNbr>
+							<RemunCode parent="2" id="2">999</RemunCode>
+							<BonusPaymentFrequency parent="2" id="1">99</BonusPaymentFrequency>
+							<PercentagePaid parent="2" id="0">15000</PercentagePaid>
+							<RemunAmount parent="2" id="2">99999</RemunAmount>
+						</Remun>
+						<OccupationDeduction parent="2" id="0">
+							<DeductionCode parent="0" id="0">9999</DeductionCode>
+							<DeductionCalculationBasis parent="0" id="0">99999999999</DeductionCalculationBasis>
+							<DeductionAmount parent="0" id="0">99999999999</DeductionAmount>
+							<DeductionRightStartingDate parent="0" id="0">2007-10-01</DeductionRightStartingDate>
+							<ManagementCostNbrMonths parent="0" id="0">3</ManagementCostNbrMonths>
+							<ReplacedINSS parent="0" id="0">0</ReplacedINSS>
+							<ApplicantINSS parent="0" id="0">0</ApplicantINSS>
+							<CertificateOrigin parent="0" id="0">5</CertificateOrigin>
+							<OccupationDeductionDetail parent="0" id="0">
+								<DeductionDetailSequenceNbr parent="0" id="0">99</DeductionDetailSequenceNbr>
+								<WorkingRegulationsStartingDate parent="0" id="0">2007-10-01</WorkingRegulationsStartingDate>
+								<AverageWorkingTimeBeforeReduction parent="0" id="0">4800</AverageWorkingTimeBeforeReduction>
+								<AverageWorkingTimeAfterReduction parent="0" id="0">4800</AverageWorkingTimeAfterReduction>
+							</OccupationDeductionDetail>
+						</OccupationDeduction>
+					</Occupation>
+					<ActivationInformation parent="2" id="0">
+						<ServiceExemptionStartDate parent="0" id="0">2017-10-01</ServiceExemptionStartDate>
+						<TrainingSituationStartDate parent="0" id="0">2017-10-01</TrainingSituationStartDate>
+						<TrainingSituation parent="0" id="0">0</TrainingSituation>
+					</ActivationInformation>
+					<WorkerContribution parent="2" id="3">
+						<ContributionWorkerCode parent="3" id="3">015</ContributionWorkerCode>
+						<ContributionType parent="3" id="3">1</ContributionType>
+						<ContributionCalculationBasis parent="3" id="2">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="3" id="3">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="2" id="4">
+						<ContributionWorkerCode parent="4" id="4">260</ContributionWorkerCode>
+						<ContributionType parent="4" id="4">0</ContributionType>
+						<ContributionCalculationBasis parent="4" id="3">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="4" id="4">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerDeduction parent="2" id="0">
+						<DeductionCode parent="0" id="1">9999</DeductionCode>
+						<DeductionCalculationBasis parent="0" id="1">99999999999</DeductionCalculationBasis>
+						<DeductionAmount parent="0" id="1">99999999999</DeductionAmount>
+						<DeductionRightStartingDate parent="0" id="1">2007-10-01</DeductionRightStartingDate>
+						<ManagementCostNbrMonths parent="0" id="1">3</ManagementCostNbrMonths>
+						<ReplacedINSS parent="0" id="1">0</ReplacedINSS>
+						<ApplicantINSS parent="0" id="1">0</ApplicantINSS>
+						<CertificateOrigin parent="0" id="1">5</CertificateOrigin>
+						<DeductionDetail parent="0" id="0">
+							<DeductionDetailSequenceNbr parent="0" id="1">99</DeductionDetailSequenceNbr>
+							<DeductionDetailAmount parent="0" id="0">99999999999</DeductionDetailAmount>
+							<WorkingRegulationsRegistryNbr parent="0" id="0">String</WorkingRegulationsRegistryNbr>
+							<WorkingRegulationsStartingDate parent="0" id="1">2007-10-01</WorkingRegulationsStartingDate>
+							<AverageWorkingTimeBeforeReduction parent="0" id="1">4800</AverageWorkingTimeBeforeReduction>
+							<AverageWorkingTimeAfterReduction parent="0" id="1">4800</AverageWorkingTimeAfterReduction>
+						</DeductionDetail>
+					</WorkerDeduction>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="0" id="3">
+				<NaturalPersonSequenceNbr parent="3" id="3">0000004</NaturalPersonSequenceNbr>
+				<INSS parent="3" id="3">67101500156</INSS>
+				<NaturalPersonUserReference parent="3" id="3" />
+				<WorkerRecord parent="3" id="3">
+					<EmployerClass parent="3" id="3">000</EmployerClass>
+					<WorkerCode parent="3" id="3">015</WorkerCode>
+					<NOSSQuarterStartingDate parent="3" id="3">2022-04-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="3" id="3">2022-06-30</NOSSQuarterEndingDate>
+					<Border parent="3" id="3">1</Border>
+					<ActivityWithRisk parent="3" id="1">999</ActivityWithRisk>
+					<WorkerRecordUserReference parent="3" id="3">String</WorkerRecordUserReference>
+					<Occupation parent="3" id="3">
+						<OccupationSequenceNbr parent="3" id="3">99</OccupationSequenceNbr>
+						<OccupationStartingDate parent="3" id="3">2007-10-01</OccupationStartingDate>
+						<JointCommissionNbr parent="3" id="3">000</JointCommissionNbr>
+						<WorkingDaysSystem parent="3" id="3">700</WorkingDaysSystem>
+						<ContractType parent="3" id="3">1</ContractType>
+						<RefMeanWorkingHours parent="3" id="3">4800</RefMeanWorkingHours>
+						<WorkerStatus parent="3" id="1">St</WorkerStatus>
+						<MeanWorkingHours parent="3" id="3">4800</MeanWorkingHours>
+						<ReorganisationMeasure parent="3" id="4">1</ReorganisationMeasure>
+						<EmploymentPromotion parent="3" id="1">0</EmploymentPromotion>
+						<Retired parent="3" id="3">1</Retired>
+						<Apprenticeship parent="3" id="1">5</Apprenticeship>
+						<RemunMethod parent="3" id="1">3</RemunMethod>
+						<PositionCode parent="3" id="1">99</PositionCode>
+						<FlyingStaffClass parent="3" id="1">3</FlyingStaffClass>
+						<TenthOrTwelfth parent="3" id="1">10</TenthOrTwelfth>
+						<OccupationUserReference parent="3" id="3">String</OccupationUserReference>
+						<DaysJustification parent="3" id="1">1</DaysJustification>
+						<LocalUnitID parent="3" id="3">2000000141</LocalUnitID>
+						<SubsidizedMeanWorkingHours parent="3" id="1">3000</SubsidizedMeanWorkingHours>
+						<OccupationInformations parent="3" id="1">
+							<CareerMeasure parent="1" id="1">1</CareerMeasure>
+							<ServiceExemptionNotion parent="1" id="1">2</ServiceExemptionNotion>
+						</OccupationInformations>
+						<Service parent="3" id="3">
+							<ServiceSequenceNbr parent="3" id="3">99</ServiceSequenceNbr>
+							<ServiceCode parent="3" id="3">999</ServiceCode>
+							<ServiceNbrDays parent="3" id="3">36600</ServiceNbrDays>
+							<ServiceNbrHours parent="3" id="2">9999999</ServiceNbrHours>
+							<FlightNbrMinutes parent="3" id="0">9999999</FlightNbrMinutes>
+						</Service>
+						<Remun parent="3" id="3">
+							<RemunSequenceNbr parent="3" id="3">99</RemunSequenceNbr>
+							<RemunCode parent="3" id="3">999</RemunCode>
+							<BonusPaymentFrequency parent="3" id="2">99</BonusPaymentFrequency>
+							<PercentagePaid parent="3" id="1">15000</PercentagePaid>
+							<RemunAmount parent="3" id="3">99999</RemunAmount>
+						</Remun>
+						<OccupationDeduction parent="3" id="1">
+							<DeductionCode parent="1" id="2">9999</DeductionCode>
+							<DeductionCalculationBasis parent="1" id="2">99999999999</DeductionCalculationBasis>
+							<DeductionAmount parent="1" id="2">99999999999</DeductionAmount>
+							<DeductionRightStartingDate parent="1" id="2">2007-10-01</DeductionRightStartingDate>
+							<ManagementCostNbrMonths parent="1" id="2">3</ManagementCostNbrMonths>
+							<ReplacedINSS parent="1" id="2">0</ReplacedINSS>
+							<ApplicantINSS parent="1" id="2">0</ApplicantINSS>
+							<CertificateOrigin parent="1" id="2">5</CertificateOrigin>
+							<OccupationDeductionDetail parent="1" id="1">
+								<DeductionDetailSequenceNbr parent="1" id="2">99</DeductionDetailSequenceNbr>
+								<WorkingRegulationsStartingDate parent="1" id="2">2007-10-01</WorkingRegulationsStartingDate>
+								<AverageWorkingTimeBeforeReduction parent="1" id="2">4800</AverageWorkingTimeBeforeReduction>
+								<AverageWorkingTimeAfterReduction parent="1" id="2">4800</AverageWorkingTimeAfterReduction>
+							</OccupationDeductionDetail>
+						</OccupationDeduction>
+					</Occupation>
+					<ActivationInformation parent="3" id="1">
+						<ServiceExemptionStartDate parent="1" id="1">2017-10-01</ServiceExemptionStartDate>
+						<TrainingSituationStartDate parent="1" id="1">2017-10-01</TrainingSituationStartDate>
+						<TrainingSituation parent="1" id="1">0</TrainingSituation>
+					</ActivationInformation>
+					<WorkerContribution parent="3" id="5">
+						<ContributionWorkerCode parent="5" id="5">015</ContributionWorkerCode>
+						<ContributionType parent="5" id="5">1</ContributionType>
+						<ContributionCalculationBasis parent="5" id="4">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="5" id="5">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="3" id="6">
+						<ContributionWorkerCode parent="6" id="6">260</ContributionWorkerCode>
+						<ContributionType parent="6" id="6">0</ContributionType>
+						<ContributionCalculationBasis parent="6" id="5">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="6" id="6">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerDeduction parent="3" id="1">
+						<DeductionCode parent="1" id="3">9999</DeductionCode>
+						<DeductionCalculationBasis parent="1" id="3">99999999999</DeductionCalculationBasis>
+						<DeductionAmount parent="1" id="3">99999999999</DeductionAmount>
+						<DeductionRightStartingDate parent="1" id="3">2007-10-01</DeductionRightStartingDate>
+						<ManagementCostNbrMonths parent="1" id="3">3</ManagementCostNbrMonths>
+						<ReplacedINSS parent="1" id="3">0</ReplacedINSS>
+						<ApplicantINSS parent="1" id="3">0</ApplicantINSS>
+						<CertificateOrigin parent="1" id="3">5</CertificateOrigin>
+						<DeductionDetail parent="1" id="1">
+							<DeductionDetailSequenceNbr parent="1" id="3">99</DeductionDetailSequenceNbr>
+							<DeductionDetailAmount parent="1" id="1">99999999999</DeductionDetailAmount>
+							<WorkingRegulationsRegistryNbr parent="1" id="1">String</WorkingRegulationsRegistryNbr>
+							<WorkingRegulationsStartingDate parent="1" id="3">2007-10-01</WorkingRegulationsStartingDate>
+							<AverageWorkingTimeBeforeReduction parent="1" id="3">4800</AverageWorkingTimeBeforeReduction>
+							<AverageWorkingTimeAfterReduction parent="1" id="3">4800</AverageWorkingTimeAfterReduction>
+						</DeductionDetail>
+					</WorkerDeduction>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="0" id="4">
+				<NaturalPersonSequenceNbr parent="4" id="4">0000005</NaturalPersonSequenceNbr>
+				<INSS parent="4" id="4">98010112171</INSS>
+				<NaturalPersonUserReference parent="4" id="4" />
+				<WorkerRecord parent="4" id="4">
+					<EmployerClass parent="4" id="4">000</EmployerClass>
+					<WorkerCode parent="4" id="4">841</WorkerCode>
+					<NOSSQuarterStartingDate parent="4" id="4">2022-04-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="4" id="4">2022-06-30</NOSSQuarterEndingDate>
+					<Border parent="4" id="4">0</Border>
+					<WorkerRecordUserReference parent="4" id="4">Student</WorkerRecordUserReference>
+					<StudentContribution parent="4" id="0">
+						<StudentRemunAmount parent="0" id="0">000100000</StudentRemunAmount>
+						<StudentContributionAmount parent="0" id="0">000010000</StudentContributionAmount>
+						<StudentHoursNbr parent="0" id="0">500</StudentHoursNbr>
+						<LocalUnitID parent="0" id="4">2000000141</LocalUnitID>
+					</StudentContribution>
+					<WorkerContribution parent="4" id="7">
+						<ContributionWorkerCode parent="7" id="7">801</ContributionWorkerCode>
+						<ContributionType parent="7" id="7">0</ContributionType>
+						<ContributionCalculationBasis parent="7" id="6">100</ContributionCalculationBasis>
+						<ContributionAmount parent="7" id="7">1650</ContributionAmount>
+					</WorkerContribution>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="0" id="5">
+				<NaturalPersonSequenceNbr parent="5" id="5">0000006</NaturalPersonSequenceNbr>
+				<INSS parent="5" id="5">78101512170</INSS>
+				<NaturalPersonUserReference parent="5" id="5" />
+				<WorkerRecord parent="5" id="5">
+					<EmployerClass parent="5" id="5">001</EmployerClass>
+					<WorkerCode parent="5" id="5">676</WorkerCode>
+					<NOSSQuarterStartingDate parent="5" id="5">2022-04-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="5" id="5">2022-06-30</NOSSQuarterEndingDate>
+					<Border parent="5" id="5">0</Border>
+					<WorkerRecordUserReference parent="5" id="5" />
+					<Occupation parent="5" id="4">
+						<OccupationSequenceNbr parent="4" id="4">01</OccupationSequenceNbr>
+						<OccupationStartingDate parent="4" id="4">2015-02-01</OccupationStartingDate>
+						<JointCommissionNbr parent="4" id="4">999</JointCommissionNbr>
+						<WorkingDaysSystem parent="4" id="4">500</WorkingDaysSystem>
+						<ContractType parent="4" id="4">0</ContractType>
+						<RefMeanWorkingHours parent="4" id="4">3800</RefMeanWorkingHours>
+						<MeanWorkingHours parent="4" id="4">3800</MeanWorkingHours>
+						<Retired parent="4" id="4">0</Retired>
+						<OccupationUserReference parent="4" id="4" />
+						<LocalUnitID parent="4" id="5">2000000141</LocalUnitID>
+						<OccupationPublicServiceData parent="4" id="2">
+							<OccupationPSDStartDate parent="2" id="2">2011-01-01</OccupationPSDStartDate>
+							<PublicSectorInstitutionType parent="2" id="2">99</PublicSectorInstitutionType>
+							<PublicSectorPersonnelCategory parent="2" id="2">01</PublicSectorPersonnelCategory>
+							<GradeOrFunction parent="2" id="2">String</GradeOrFunction>
+							<OfficialLanguage parent="2" id="3">2</OfficialLanguage>
+							<AssignmentType parent="2" id="2">0</AssignmentType>
+							<FunctionNature parent="2" id="2">1</FunctionNature>
+							<ScaleSalary parent="2" id="2">
+								<ScaleSalaryStartDate parent="2" id="2">2011-01-01</ScaleSalaryStartDate>
+								<PecuniarySeniorityStartDate parent="2" id="2">1997-10</PecuniarySeniorityStartDate>
+								<SalaryScaleReference parent="2" id="2">999990629999</SalaryScaleReference>
+								<ScaleSalaryAmount parent="2" id="2">00009999999</ScaleSalaryAmount>
+								<WeekHoursNbr parent="2" id="2">3800</WeekHoursNbr>
+								<ScaleSalaryWeekHoursNbr parent="2" id="2">3800</ScaleSalaryWeekHoursNbr>
+							</ScaleSalary>
+						</OccupationPublicServiceData>
+					</Occupation>
+					<WorkerContribution parent="5" id="8">
+						<ContributionWorkerCode parent="8" id="8">815</ContributionWorkerCode>
+						<ContributionType parent="8" id="8">0</ContributionType>
+						<ContributionCalculationBasis parent="8" id="7">00001000000</ContributionCalculationBasis>
+						<ContributionAmount parent="8" id="8">00000075000</ContributionAmount>
+					</WorkerContribution>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="0" id="6">
+				<NaturalPersonSequenceNbr parent="6" id="6">0000007</NaturalPersonSequenceNbr>
+				<INSS parent="6" id="6">97010100173</INSS>
+				<WorkerRecord parent="6" id="6">
+					<EmployerClass parent="6" id="6">050</EmployerClass>
+					<WorkerCode parent="6" id="6">015</WorkerCode>
+					<NOSSQuarterStartingDate parent="6" id="6">2022-04-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="6" id="6">2022-06-30</NOSSQuarterEndingDate>
+					<Border parent="6" id="6">0</Border>
+					<Occupation parent="6" id="5">
+						<OccupationSequenceNbr parent="5" id="5">01</OccupationSequenceNbr>
+						<OccupationStartingDate parent="5" id="5">2020-10-01</OccupationStartingDate>
+						<JointCommissionNbr parent="5" id="5">999</JointCommissionNbr>
+						<WorkingDaysSystem parent="5" id="5">700</WorkingDaysSystem>
+						<ContractType parent="5" id="5">0</ContractType>
+						<RefMeanWorkingHours parent="5" id="5">4800</RefMeanWorkingHours>
+						<MeanWorkingHours parent="5" id="5">4800</MeanWorkingHours>
+						<Retired parent="5" id="5">0</Retired>
+						<OccupationUserReference parent="5" id="5">String</OccupationUserReference>
+						<LocalUnitID parent="5" id="6">2000000141</LocalUnitID>
+						<SubsidizedMeanWorkingHours parent="5" id="2">3800</SubsidizedMeanWorkingHours>
+						<OccupationInformations parent="5" id="2">
+							<NOSSLPASocialMaribel parent="2" id="0">7</NOSSLPASocialMaribel>
+							<PSDDclExemption parent="2" id="0">1</PSDDclExemption>
+							<NewMaribelEmploymentDate parent="2" id="0">2021-01-01</NewMaribelEmploymentDate>
+						</OccupationInformations>
+						<Service parent="5" id="4">
+							<ServiceSequenceNbr parent="4" id="4">01</ServiceSequenceNbr>
+							<ServiceCode parent="4" id="4">001</ServiceCode>
+							<ServiceNbrDays parent="4" id="4">6400</ServiceNbrDays>
+						</Service>
+						<Remun parent="5" id="4">
+							<RemunSequenceNbr parent="4" id="4">01</RemunSequenceNbr>
+							<RemunCode parent="4" id="4">001</RemunCode>
+							<RemunAmount parent="4" id="4">999999</RemunAmount>
+						</Remun>
+					</Occupation>
+					<WorkerContribution parent="6" id="9">
+						<ContributionWorkerCode parent="9" id="9">015</ContributionWorkerCode>
+						<ContributionType parent="9" id="9">1</ContributionType>
+						<ContributionCalculationBasis parent="9" id="8">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="9" id="9">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="6" id="10">
+						<ContributionWorkerCode parent="10" id="10">999</ContributionWorkerCode>
+						<ContributionType parent="10" id="10">0</ContributionType>
+						<ContributionCalculationBasis parent="10" id="9">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="10" id="10">99999999999</ContributionAmount>
+					</WorkerContribution>
+				</WorkerRecord>
+			</NaturalPerson>
+			<CompanyVehicle parent="0" id="0">
+				<CompanyVehicleSequenceNbr parent="0" id="0">1</CompanyVehicleSequenceNbr>
+				<LicensePlate parent="0" id="0">1ABC250</LicensePlate>
+				<EcoVehicle parent="0" id="0">0</EcoVehicle>
+			</CompanyVehicle>
+			<CompanyVehicle parent="0" id="1">
+				<CompanyVehicleSequenceNbr parent="1" id="1">2</CompanyVehicleSequenceNbr>
+				<LicensePlate parent="1" id="1">1ABC999</LicensePlate>
+				<EcoVehicle parent="1" id="1">1</EcoVehicle>
+			</CompanyVehicle>
+			<ContributionUnrelatedToNP parent="0" id="0">
+				<UnrelatedEmployerClass parent="0" id="0">000</UnrelatedEmployerClass>
+				<UnrelatedWorkerCode parent="0" id="0">000</UnrelatedWorkerCode>
+				<UnrelatedCalculationBasis parent="0" id="0">9999999999999</UnrelatedCalculationBasis>
+				<UnrelatedAmount parent="0" id="0">9999999999999</UnrelatedAmount>
+			</ContributionUnrelatedToNP>
+		</EmployerDeclaration>
+	</Form>
+	<Form parent="0" id="1">
+		<Identification parent="1" id="1">DMFA</Identification>
+		<FormCreationDate parent="1" id="1">2022-08-11</FormCreationDate>
+		<FormCreationHour parent="1" id="1">08:45:00.000</FormCreationHour>
+		<AttestationStatus parent="1" id="1">0</AttestationStatus>
+		<TypeForm parent="1" id="1">SU</TypeForm>
+		<Reference parent="1" id="1">
+			<ReferenceType parent="1" id="1">1</ReferenceType>
+			<ReferenceOrigin parent="1" id="1">1</ReferenceOrigin>
+			<ReferenceNbr parent="1" id="1">DMFA TEST</ReferenceNbr>
+		</Reference>
+		<EmployerDeclaration parent="1" id="1">
+			<Quarter parent="1" id="1">20223</Quarter>
+			<NOSSRegistrationNbr parent="1" id="1">199999934</NOSSRegistrationNbr>
+			<Trusteeship parent="1" id="1">0</Trusteeship>
+			<CompanyID parent="1" id="1">0</CompanyID>
+			<NetOwedAmount parent="1" id="1">00000000009999</NetOwedAmount>
+			<NaturalPerson parent="1" id="7">
+				<NaturalPersonSequenceNbr parent="7" id="7">0000001</NaturalPersonSequenceNbr>
+				<INSS parent="7" id="7">77101500172</INSS>
+				<NaturalPersonUserReference parent="7" id="6" />
+				<WorkerRecord parent="7" id="7">
+					<EmployerClass parent="7" id="7">001</EmployerClass>
+					<WorkerCode parent="7" id="7">675</WorkerCode>
+					<NOSSQuarterStartingDate parent="7" id="7">2022-07-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="7" id="7">2022-09-30</NOSSQuarterEndingDate>
+					<Border parent="7" id="7">0</Border>
+					<WorkerRecordUserReference parent="7" id="6" />
+					<Occupation parent="7" id="6">
+						<OccupationSequenceNbr parent="6" id="6">01</OccupationSequenceNbr>
+						<OccupationStartingDate parent="6" id="6">2005-10-01</OccupationStartingDate>
+						<JointCommissionNbr parent="6" id="6">999</JointCommissionNbr>
+						<WorkingDaysSystem parent="6" id="6">500</WorkingDaysSystem>
+						<ContractType parent="6" id="6">0</ContractType>
+						<RefMeanWorkingHours parent="6" id="6">3800</RefMeanWorkingHours>
+						<MeanWorkingHours parent="6" id="6">3800</MeanWorkingHours>
+						<Retired parent="6" id="6">0</Retired>
+						<OccupationUserReference parent="6" id="6" />
+						<ActivityCode parent="6" id="1">87909</ActivityCode>
+						<LocalUnitID parent="6" id="7">2000000141</LocalUnitID>
+						<Service parent="6" id="5">
+							<ServiceSequenceNbr parent="5" id="5">01</ServiceSequenceNbr>
+							<ServiceCode parent="5" id="5">001</ServiceCode>
+							<ServiceNbrDays parent="5" id="5">06600</ServiceNbrDays>
+						</Service>
+						<Remun parent="6" id="5">
+							<RemunSequenceNbr parent="5" id="5">02</RemunSequenceNbr>
+							<RemunCode parent="5" id="5">002</RemunCode>
+							<BonusPaymentFrequency parent="5" id="3">12</BonusPaymentFrequency>
+							<RemunAmount parent="5" id="5">00000099999</RemunAmount>
+						</Remun>
+						<Remun parent="6" id="6">
+							<RemunSequenceNbr parent="6" id="6">01</RemunSequenceNbr>
+							<RemunCode parent="6" id="6">001</RemunCode>
+							<RemunAmount parent="6" id="6">00000999999</RemunAmount>
+						</Remun>
+						<OccupationPublicServiceData parent="6" id="3">
+							<OccupationPSDStartDate parent="3" id="3">2011-01-01</OccupationPSDStartDate>
+							<PublicSectorInstitutionType parent="3" id="3">99</PublicSectorInstitutionType>
+							<PublicSectorPersonnelCategory parent="3" id="3">01</PublicSectorPersonnelCategory>
+							<GradeOrFunction parent="3" id="3">String</GradeOrFunction>
+							<OfficialLanguage parent="3" id="4">2</OfficialLanguage>
+							<AssignmentType parent="3" id="3">0</AssignmentType>
+							<FunctionNature parent="3" id="3">1</FunctionNature>
+							<ScaleSalary parent="3" id="3">
+								<ScaleSalaryStartDate parent="3" id="3">2011-01-01</ScaleSalaryStartDate>
+								<PecuniarySeniorityStartDate parent="3" id="3">1997-10</PecuniarySeniorityStartDate>
+								<SalaryScaleReference parent="3" id="3">999990629999</SalaryScaleReference>
+								<ScaleSalaryAmount parent="3" id="3">00009999999</ScaleSalaryAmount>
+								<WeekHoursNbr parent="3" id="3">3800</WeekHoursNbr>
+								<ScaleSalaryWeekHoursNbr parent="3" id="3">3800</ScaleSalaryWeekHoursNbr>
+							</ScaleSalary>
+						</OccupationPublicServiceData>
+					</Occupation>
+					<WorkerContribution parent="7" id="11">
+						<ContributionWorkerCode parent="11" id="11">675</ContributionWorkerCode>
+						<ContributionType parent="11" id="11">0</ContributionType>
+						<ContributionCalculationBasis parent="11" id="10">00001099998</ContributionCalculationBasis>
+						<ContributionAmount parent="11" id="11">00000096909</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="7" id="12">
+						<ContributionWorkerCode parent="12" id="12">856</ContributionWorkerCode>
+						<ContributionType parent="12" id="12">0</ContributionType>
+						<ContributionAmount parent="12" id="12">00000009999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="7" id="13">
+						<ContributionWorkerCode parent="13" id="13">815</ContributionWorkerCode>
+						<ContributionType parent="13" id="13">1</ContributionType>
+						<ContributionCalculationBasis parent="13" id="11">00001044998</ContributionCalculationBasis>
+						<ContributionAmount parent="13" id="13">00000454574</ContributionAmount>
+					</WorkerContribution>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="1" id="8">
+				<NaturalPersonSequenceNbr parent="8" id="8">0000002</NaturalPersonSequenceNbr>
+				<INSS parent="8" id="8">78101500193</INSS>
+				<NaturalPersonUserReference parent="8" id="7" />
+				<WorkerRecord parent="8" id="8">
+					<EmployerClass parent="8" id="8">001</EmployerClass>
+					<WorkerCode parent="8" id="8">675</WorkerCode>
+					<NOSSQuarterStartingDate parent="8" id="8">2022-07-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="8" id="8">2022-09-30</NOSSQuarterEndingDate>
+					<Border parent="8" id="8">0</Border>
+					<WorkerRecordUserReference parent="8" id="7" />
+					<Occupation parent="8" id="7">
+						<OccupationSequenceNbr parent="7" id="7">01</OccupationSequenceNbr>
+						<OccupationStartingDate parent="7" id="7">2012-07-01</OccupationStartingDate>
+						<JointCommissionNbr parent="7" id="7">999</JointCommissionNbr>
+						<WorkingDaysSystem parent="7" id="7">0</WorkingDaysSystem>
+						<ContractType parent="7" id="7">0</ContractType>
+						<RefMeanWorkingHours parent="7" id="7">3800</RefMeanWorkingHours>
+						<MeanWorkingHours parent="7" id="7">0</MeanWorkingHours>
+						<ReorganisationMeasure parent="7" id="5">599</ReorganisationMeasure>
+						<Retired parent="7" id="7">0</Retired>
+						<OccupationUserReference parent="7" id="7" />
+						<LocalUnitID parent="7" id="8">2000000141</LocalUnitID>
+						<OccupationPublicServiceData parent="7" id="4">
+							<OccupationPSDStartDate parent="4" id="4">2011-01-01</OccupationPSDStartDate>
+							<PublicSectorInstitutionType parent="4" id="4">99</PublicSectorInstitutionType>
+							<PublicSectorPersonnelCategory parent="4" id="4">01</PublicSectorPersonnelCategory>
+							<GradeOrFunction parent="4" id="4">String</GradeOrFunction>
+							<OfficialLanguage parent="4" id="5">2</OfficialLanguage>
+							<AssignmentType parent="4" id="4">0</AssignmentType>
+							<FunctionNature parent="4" id="4">1</FunctionNature>
+							<ScaleSalary parent="4" id="4">
+								<ScaleSalaryStartDate parent="4" id="4">2011-01-01</ScaleSalaryStartDate>
+								<PecuniarySeniorityStartDate parent="4" id="4">1997-10</PecuniarySeniorityStartDate>
+								<SalaryScaleReference parent="4" id="4">999990629999</SalaryScaleReference>
+								<ScaleSalaryAmount parent="4" id="4">00009999999</ScaleSalaryAmount>
+								<WeekHoursNbr parent="4" id="4">3800</WeekHoursNbr>
+								<ScaleSalaryWeekHoursNbr parent="4" id="4">3800</ScaleSalaryWeekHoursNbr>
+							</ScaleSalary>
+						</OccupationPublicServiceData>
+						<ReorgMeasureInformation parent="7" id="2">
+							<ReorganisationMeasure parent="2" id="6">4</ReorganisationMeasure>
+							<ReorganisationMeasurePercentage parent="2" id="2">2000</ReorganisationMeasurePercentage>
+						</ReorgMeasureInformation>
+						<ReorgMeasureInformation parent="7" id="3">
+							<ReorganisationMeasure parent="3" id="7">507</ReorganisationMeasure>
+							<ReorganisationMeasurePercentage parent="3" id="3">8000</ReorganisationMeasurePercentage>
+						</ReorgMeasureInformation>
+					</Occupation>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="1" id="9">
+				<NaturalPersonSequenceNbr parent="9" id="9">0000003</NaturalPersonSequenceNbr>
+				<INSS parent="9" id="9">67011500190</INSS>
+				<NaturalPersonUserReference parent="9" id="8" />
+				<WorkerRecord parent="9" id="9">
+					<EmployerClass parent="9" id="9">001</EmployerClass>
+					<WorkerCode parent="9" id="9">015</WorkerCode>
+					<NOSSQuarterStartingDate parent="9" id="9">2022-07-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="9" id="9">2022-09-30</NOSSQuarterEndingDate>
+					<Border parent="9" id="9">1</Border>
+					<ActivityWithRisk parent="9" id="2">999</ActivityWithRisk>
+					<WorkerRecordUserReference parent="9" id="8">String</WorkerRecordUserReference>
+					<Occupation parent="9" id="8">
+						<OccupationSequenceNbr parent="8" id="8">99</OccupationSequenceNbr>
+						<OccupationStartingDate parent="8" id="8">2007-10-01</OccupationStartingDate>
+						<JointCommissionNbr parent="8" id="8">000</JointCommissionNbr>
+						<WorkingDaysSystem parent="8" id="8">700</WorkingDaysSystem>
+						<ContractType parent="8" id="8">1</ContractType>
+						<RefMeanWorkingHours parent="8" id="8">4800</RefMeanWorkingHours>
+						<WorkerStatus parent="8" id="2">St</WorkerStatus>
+						<MeanWorkingHours parent="8" id="8">4800</MeanWorkingHours>
+						<ReorganisationMeasure parent="8" id="8">1</ReorganisationMeasure>
+						<EmploymentPromotion parent="8" id="2">0</EmploymentPromotion>
+						<Retired parent="8" id="8">1</Retired>
+						<Apprenticeship parent="8" id="2">5</Apprenticeship>
+						<RemunMethod parent="8" id="2">3</RemunMethod>
+						<PositionCode parent="8" id="2">99</PositionCode>
+						<FlyingStaffClass parent="8" id="2">3</FlyingStaffClass>
+						<TenthOrTwelfth parent="8" id="2">10</TenthOrTwelfth>
+						<OccupationUserReference parent="8" id="8">String</OccupationUserReference>
+						<DaysJustification parent="8" id="2">1</DaysJustification>
+						<LocalUnitID parent="8" id="9">2000000141</LocalUnitID>
+						<SubsidizedMeanWorkingHours parent="8" id="3">3000</SubsidizedMeanWorkingHours>
+						<OccupationInformations parent="8" id="3">
+							<CareerMeasure parent="3" id="2">1</CareerMeasure>
+							<ServiceExemptionNotion parent="3" id="2">2</ServiceExemptionNotion>
+							<FlemishTrainingHolidayHoursNbr parent="3" id="1">500</FlemishTrainingHolidayHoursNbr>
+							<RegionalAidMeasure parent="3" id="1">B</RegionalAidMeasure>
+						</OccupationInformations>
+						<SecondPillarInformation parent="8" id="1">
+							<ReferenceYearMonth parent="1" id="1">2020-07</ReferenceYearMonth>
+							<MonthlyScaleSalary parent="1" id="1">200000</MonthlyScaleSalary>
+							<OfficialLanguage parent="1" id="6">1</OfficialLanguage>
+						</SecondPillarInformation>
+						<Service parent="8" id="6">
+							<ServiceSequenceNbr parent="6" id="6">01</ServiceSequenceNbr>
+							<ServiceCode parent="6" id="6">999</ServiceCode>
+							<ServiceNbrDays parent="6" id="6">6400</ServiceNbrDays>
+							<ServiceNbrHours parent="6" id="3">9999999</ServiceNbrHours>
+						</Service>
+						<Service parent="8" id="7">
+							<ServiceSequenceNbr parent="7" id="7">02</ServiceSequenceNbr>
+							<ServiceCode parent="7" id="7">005</ServiceCode>
+							<ServiceNbrDays parent="7" id="7">100</ServiceNbrDays>
+							<ServiceNbrHours parent="7" id="4">500</ServiceNbrHours>
+						</Service>
+						<Remun parent="8" id="7">
+							<RemunSequenceNbr parent="7" id="7">99</RemunSequenceNbr>
+							<RemunCode parent="7" id="7">999</RemunCode>
+							<BonusPaymentFrequency parent="7" id="4">99</BonusPaymentFrequency>
+							<PercentagePaid parent="7" id="2">15000</PercentagePaid>
+							<RemunAmount parent="7" id="7">99999</RemunAmount>
+						</Remun>
+						<OccupationDeduction parent="8" id="2">
+							<DeductionCode parent="2" id="4">9999</DeductionCode>
+							<DeductionCalculationBasis parent="2" id="4">99999999999</DeductionCalculationBasis>
+							<DeductionAmount parent="2" id="4">99999999999</DeductionAmount>
+							<DeductionRightStartingDate parent="2" id="4">2007-10-01</DeductionRightStartingDate>
+							<ManagementCostNbrMonths parent="2" id="4">3</ManagementCostNbrMonths>
+							<ReplacedINSS parent="2" id="4">0</ReplacedINSS>
+							<ApplicantINSS parent="2" id="4">0</ApplicantINSS>
+							<CertificateOrigin parent="2" id="4">5</CertificateOrigin>
+							<OccupationDeductionDetail parent="2" id="2">
+								<DeductionDetailSequenceNbr parent="2" id="4">99</DeductionDetailSequenceNbr>
+								<WorkingRegulationsStartingDate parent="2" id="4">2007-10-01</WorkingRegulationsStartingDate>
+								<AverageWorkingTimeBeforeReduction parent="2" id="4">4800</AverageWorkingTimeBeforeReduction>
+								<AverageWorkingTimeAfterReduction parent="2" id="4">4800</AverageWorkingTimeAfterReduction>
+							</OccupationDeductionDetail>
+						</OccupationDeduction>
+					</Occupation>
+					<ActivationInformation parent="9" id="2">
+						<ServiceExemptionStartDate parent="2" id="2">2017-10-01</ServiceExemptionStartDate>
+						<TrainingSituationStartDate parent="2" id="2">2017-10-01</TrainingSituationStartDate>
+						<TrainingSituation parent="2" id="2">0</TrainingSituation>
+					</ActivationInformation>
+					<WorkerContribution parent="9" id="14">
+						<ContributionWorkerCode parent="14" id="14">015</ContributionWorkerCode>
+						<ContributionType parent="14" id="14">1</ContributionType>
+						<ContributionCalculationBasis parent="14" id="12">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="14" id="14">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="9" id="15">
+						<ContributionWorkerCode parent="15" id="15">260</ContributionWorkerCode>
+						<ContributionType parent="15" id="15">0</ContributionType>
+						<ContributionCalculationBasis parent="15" id="13">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="15" id="15">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerDeduction parent="9" id="2">
+						<DeductionCode parent="2" id="5">9999</DeductionCode>
+						<DeductionCalculationBasis parent="2" id="5">99999999999</DeductionCalculationBasis>
+						<DeductionAmount parent="2" id="5">99999999999</DeductionAmount>
+						<DeductionRightStartingDate parent="2" id="5">2007-10-01</DeductionRightStartingDate>
+						<ManagementCostNbrMonths parent="2" id="5">3</ManagementCostNbrMonths>
+						<ReplacedINSS parent="2" id="5">0</ReplacedINSS>
+						<ApplicantINSS parent="2" id="5">0</ApplicantINSS>
+						<CertificateOrigin parent="2" id="5">5</CertificateOrigin>
+						<DeductionDetail parent="2" id="2">
+							<DeductionDetailSequenceNbr parent="2" id="5">99</DeductionDetailSequenceNbr>
+							<DeductionDetailAmount parent="2" id="2">99999999999</DeductionDetailAmount>
+							<WorkingRegulationsRegistryNbr parent="2" id="2">String</WorkingRegulationsRegistryNbr>
+							<WorkingRegulationsStartingDate parent="2" id="5">2007-10-01</WorkingRegulationsStartingDate>
+							<AverageWorkingTimeBeforeReduction parent="2" id="5">4800</AverageWorkingTimeBeforeReduction>
+							<AverageWorkingTimeAfterReduction parent="2" id="5">4800</AverageWorkingTimeAfterReduction>
+						</DeductionDetail>
+					</WorkerDeduction>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="1" id="10">
+				<NaturalPersonSequenceNbr parent="10" id="10">0000004</NaturalPersonSequenceNbr>
+				<INSS parent="10" id="10">67101500156</INSS>
+				<NaturalPersonUserReference parent="10" id="9" />
+				<WorkerRecord parent="10" id="10">
+					<EmployerClass parent="10" id="10">000</EmployerClass>
+					<WorkerCode parent="10" id="10">015</WorkerCode>
+					<NOSSQuarterStartingDate parent="10" id="10">2022-07-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="10" id="10">2022-09-30</NOSSQuarterEndingDate>
+					<Border parent="10" id="10">1</Border>
+					<ActivityWithRisk parent="10" id="3">999</ActivityWithRisk>
+					<WorkerRecordUserReference parent="10" id="9">String</WorkerRecordUserReference>
+					<Occupation parent="10" id="9">
+						<OccupationSequenceNbr parent="9" id="9">99</OccupationSequenceNbr>
+						<OccupationStartingDate parent="9" id="9">2007-10-01</OccupationStartingDate>
+						<JointCommissionNbr parent="9" id="9">000</JointCommissionNbr>
+						<WorkingDaysSystem parent="9" id="9">700</WorkingDaysSystem>
+						<ContractType parent="9" id="9">1</ContractType>
+						<RefMeanWorkingHours parent="9" id="9">4800</RefMeanWorkingHours>
+						<WorkerStatus parent="9" id="3">St</WorkerStatus>
+						<MeanWorkingHours parent="9" id="9">4800</MeanWorkingHours>
+						<ReorganisationMeasure parent="9" id="9">1</ReorganisationMeasure>
+						<EmploymentPromotion parent="9" id="3">0</EmploymentPromotion>
+						<Retired parent="9" id="9">1</Retired>
+						<Apprenticeship parent="9" id="3">5</Apprenticeship>
+						<RemunMethod parent="9" id="3">3</RemunMethod>
+						<PositionCode parent="9" id="3">99</PositionCode>
+						<FlyingStaffClass parent="9" id="3">3</FlyingStaffClass>
+						<TenthOrTwelfth parent="9" id="3">20</TenthOrTwelfth>
+						<OccupationUserReference parent="9" id="9">String</OccupationUserReference>
+						<DaysJustification parent="9" id="3">1</DaysJustification>
+						<LocalUnitID parent="9" id="10">2000000141</LocalUnitID>
+						<SubsidizedMeanWorkingHours parent="9" id="4">3000</SubsidizedMeanWorkingHours>
+						<OccupationInformations parent="9" id="4">
+							<CareerMeasure parent="4" id="3">1</CareerMeasure>
+							<ServiceExemptionNotion parent="4" id="3">2</ServiceExemptionNotion>
+						</OccupationInformations>
+						<Service parent="9" id="8">
+							<ServiceSequenceNbr parent="8" id="8">99</ServiceSequenceNbr>
+							<ServiceCode parent="8" id="8">999</ServiceCode>
+							<ServiceNbrDays parent="8" id="8">36600</ServiceNbrDays>
+							<ServiceNbrHours parent="8" id="5">9999999</ServiceNbrHours>
+							<FlightNbrMinutes parent="8" id="1">9999999</FlightNbrMinutes>
+						</Service>
+						<Remun parent="9" id="8">
+							<RemunSequenceNbr parent="8" id="8">99</RemunSequenceNbr>
+							<RemunCode parent="8" id="8">999</RemunCode>
+							<BonusPaymentFrequency parent="8" id="5">99</BonusPaymentFrequency>
+							<PercentagePaid parent="8" id="3">15000</PercentagePaid>
+							<RemunAmount parent="8" id="8">99999</RemunAmount>
+						</Remun>
+						<OccupationDeduction parent="9" id="3">
+							<DeductionCode parent="3" id="6">9999</DeductionCode>
+							<DeductionCalculationBasis parent="3" id="6">99999999999</DeductionCalculationBasis>
+							<DeductionAmount parent="3" id="6">99999999999</DeductionAmount>
+							<DeductionRightStartingDate parent="3" id="6">2007-10-01</DeductionRightStartingDate>
+							<ManagementCostNbrMonths parent="3" id="6">3</ManagementCostNbrMonths>
+							<ReplacedINSS parent="3" id="6">0</ReplacedINSS>
+							<ApplicantINSS parent="3" id="6">0</ApplicantINSS>
+							<CertificateOrigin parent="3" id="6">5</CertificateOrigin>
+							<OccupationDeductionDetail parent="3" id="3">
+								<DeductionDetailSequenceNbr parent="3" id="6">99</DeductionDetailSequenceNbr>
+								<WorkingRegulationsStartingDate parent="3" id="6">2007-10-01</WorkingRegulationsStartingDate>
+								<AverageWorkingTimeBeforeReduction parent="3" id="6">4800</AverageWorkingTimeBeforeReduction>
+								<AverageWorkingTimeAfterReduction parent="3" id="6">4800</AverageWorkingTimeAfterReduction>
+							</OccupationDeductionDetail>
+						</OccupationDeduction>
+					</Occupation>
+					<ActivationInformation parent="10" id="3">
+						<ServiceExemptionStartDate parent="3" id="3">2017-10-01</ServiceExemptionStartDate>
+						<TrainingSituationStartDate parent="3" id="3">2017-10-01</TrainingSituationStartDate>
+						<TrainingSituation parent="3" id="3">0</TrainingSituation>
+					</ActivationInformation>
+					<WorkerContribution parent="10" id="16">
+						<ContributionWorkerCode parent="16" id="16">015</ContributionWorkerCode>
+						<ContributionType parent="16" id="16">1</ContributionType>
+						<ContributionCalculationBasis parent="16" id="14">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="16" id="16">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="10" id="17">
+						<ContributionWorkerCode parent="17" id="17">260</ContributionWorkerCode>
+						<ContributionType parent="17" id="17">0</ContributionType>
+						<ContributionCalculationBasis parent="17" id="15">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="17" id="17">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerDeduction parent="10" id="3">
+						<DeductionCode parent="3" id="7">9999</DeductionCode>
+						<DeductionCalculationBasis parent="3" id="7">99999999999</DeductionCalculationBasis>
+						<DeductionAmount parent="3" id="7">99999999999</DeductionAmount>
+						<DeductionRightStartingDate parent="3" id="7">2007-10-01</DeductionRightStartingDate>
+						<ManagementCostNbrMonths parent="3" id="7">3</ManagementCostNbrMonths>
+						<ReplacedINSS parent="3" id="7">0</ReplacedINSS>
+						<ApplicantINSS parent="3" id="7">0</ApplicantINSS>
+						<CertificateOrigin parent="3" id="7">5</CertificateOrigin>
+						<DeductionDetail parent="3" id="3">
+							<DeductionDetailSequenceNbr parent="3" id="7">99</DeductionDetailSequenceNbr>
+							<DeductionDetailAmount parent="3" id="3">99999999999</DeductionDetailAmount>
+							<WorkingRegulationsRegistryNbr parent="3" id="3">String</WorkingRegulationsRegistryNbr>
+							<WorkingRegulationsStartingDate parent="3" id="7">2007-10-01</WorkingRegulationsStartingDate>
+							<AverageWorkingTimeBeforeReduction parent="3" id="7">4800</AverageWorkingTimeBeforeReduction>
+							<AverageWorkingTimeAfterReduction parent="3" id="7">4800</AverageWorkingTimeAfterReduction>
+						</DeductionDetail>
+					</WorkerDeduction>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="1" id="11">
+				<NaturalPersonSequenceNbr parent="11" id="11">0000005</NaturalPersonSequenceNbr>
+				<INSS parent="11" id="11">98010112171</INSS>
+				<NaturalPersonUserReference parent="11" id="10" />
+				<WorkerRecord parent="11" id="11">
+					<EmployerClass parent="11" id="11">000</EmployerClass>
+					<WorkerCode parent="11" id="11">841</WorkerCode>
+					<NOSSQuarterStartingDate parent="11" id="11">2022-07-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="11" id="11">2022-09-30</NOSSQuarterEndingDate>
+					<Border parent="11" id="11">0</Border>
+					<WorkerRecordUserReference parent="11" id="10">Student</WorkerRecordUserReference>
+					<StudentContribution parent="11" id="1">
+						<StudentRemunAmount parent="1" id="1">000100000</StudentRemunAmount>
+						<StudentContributionAmount parent="1" id="1">000010000</StudentContributionAmount>
+						<StudentHoursNbr parent="1" id="1">400</StudentHoursNbr>
+						<LocalUnitID parent="1" id="11">2000000141</LocalUnitID>
+					</StudentContribution>
+					<WorkerContribution parent="11" id="18">
+						<ContributionWorkerCode parent="18" id="18">801</ContributionWorkerCode>
+						<ContributionType parent="18" id="18">0</ContributionType>
+						<ContributionCalculationBasis parent="18" id="16">100</ContributionCalculationBasis>
+						<ContributionAmount parent="18" id="18">1650</ContributionAmount>
+					</WorkerContribution>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="1" id="12">
+				<NaturalPersonSequenceNbr parent="12" id="12">0000006</NaturalPersonSequenceNbr>
+				<INSS parent="12" id="12">78101512170</INSS>
+				<NaturalPersonUserReference parent="12" id="11" />
+				<WorkerRecord parent="12" id="12">
+					<EmployerClass parent="12" id="12">001</EmployerClass>
+					<WorkerCode parent="12" id="12">676</WorkerCode>
+					<NOSSQuarterStartingDate parent="12" id="12">2022-07-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="12" id="12">2022-09-30</NOSSQuarterEndingDate>
+					<Border parent="12" id="12">0</Border>
+					<WorkerRecordUserReference parent="12" id="11" />
+					<Occupation parent="12" id="10">
+						<OccupationSequenceNbr parent="10" id="10">01</OccupationSequenceNbr>
+						<OccupationStartingDate parent="10" id="10">2015-02-01</OccupationStartingDate>
+						<JointCommissionNbr parent="10" id="10">999</JointCommissionNbr>
+						<WorkingDaysSystem parent="10" id="10">500</WorkingDaysSystem>
+						<ContractType parent="10" id="10">0</ContractType>
+						<RefMeanWorkingHours parent="10" id="10">3800</RefMeanWorkingHours>
+						<MeanWorkingHours parent="10" id="10">3800</MeanWorkingHours>
+						<Retired parent="10" id="10">0</Retired>
+						<OccupationUserReference parent="10" id="10" />
+						<LocalUnitID parent="10" id="12">2000000141</LocalUnitID>
+						<OccupationPublicServiceData parent="10" id="5">
+							<OccupationPSDStartDate parent="5" id="5">2011-01-01</OccupationPSDStartDate>
+							<PublicSectorInstitutionType parent="5" id="5">99</PublicSectorInstitutionType>
+							<PublicSectorPersonnelCategory parent="5" id="5">01</PublicSectorPersonnelCategory>
+							<GradeOrFunction parent="5" id="5">String</GradeOrFunction>
+							<OfficialLanguage parent="5" id="7">2</OfficialLanguage>
+							<AssignmentType parent="5" id="5">0</AssignmentType>
+							<FunctionNature parent="5" id="5">1</FunctionNature>
+							<ScaleSalary parent="5" id="5">
+								<ScaleSalaryStartDate parent="5" id="5">2011-01-01</ScaleSalaryStartDate>
+								<PecuniarySeniorityStartDate parent="5" id="5">1997-10</PecuniarySeniorityStartDate>
+								<SalaryScaleReference parent="5" id="5">999990629999</SalaryScaleReference>
+								<ScaleSalaryAmount parent="5" id="5">00009999999</ScaleSalaryAmount>
+								<WeekHoursNbr parent="5" id="5">3800</WeekHoursNbr>
+								<ScaleSalaryWeekHoursNbr parent="5" id="5">3800</ScaleSalaryWeekHoursNbr>
+							</ScaleSalary>
+						</OccupationPublicServiceData>
+					</Occupation>
+					<WorkerContribution parent="12" id="19">
+						<ContributionWorkerCode parent="19" id="19">815</ContributionWorkerCode>
+						<ContributionType parent="19" id="19">0</ContributionType>
+						<ContributionCalculationBasis parent="19" id="17">00001000000</ContributionCalculationBasis>
+						<ContributionAmount parent="19" id="19">00000075000</ContributionAmount>
+					</WorkerContribution>
+				</WorkerRecord>
+			</NaturalPerson>
+			<NaturalPerson parent="1" id="13">
+				<NaturalPersonSequenceNbr parent="13" id="13">0000007</NaturalPersonSequenceNbr>
+				<INSS parent="13" id="13">97010100173</INSS>
+				<WorkerRecord parent="13" id="13">
+					<EmployerClass parent="13" id="13">050</EmployerClass>
+					<WorkerCode parent="13" id="13">015</WorkerCode>
+					<NOSSQuarterStartingDate parent="13" id="13">2022-07-01</NOSSQuarterStartingDate>
+					<NOSSQuarterEndingDate parent="13" id="13">2022-09-30</NOSSQuarterEndingDate>
+					<Border parent="13" id="13">0</Border>
+					<Occupation parent="13" id="11">
+						<OccupationSequenceNbr parent="11" id="11">01</OccupationSequenceNbr>
+						<OccupationStartingDate parent="11" id="11">2020-10-01</OccupationStartingDate>
+						<JointCommissionNbr parent="11" id="11">999</JointCommissionNbr>
+						<WorkingDaysSystem parent="11" id="11">700</WorkingDaysSystem>
+						<ContractType parent="11" id="11">0</ContractType>
+						<RefMeanWorkingHours parent="11" id="11">4800</RefMeanWorkingHours>
+						<MeanWorkingHours parent="11" id="11">4800</MeanWorkingHours>
+						<Retired parent="11" id="11">0</Retired>
+						<OccupationUserReference parent="11" id="11">String</OccupationUserReference>
+						<LocalUnitID parent="11" id="13">2000000141</LocalUnitID>
+						<SubsidizedMeanWorkingHours parent="11" id="5">3800</SubsidizedMeanWorkingHours>
+						<OccupationInformations parent="11" id="5">
+							<NOSSLPASocialMaribel parent="5" id="1">7</NOSSLPASocialMaribel>
+							<PSDDclExemption parent="5" id="1">1</PSDDclExemption>
+							<NewMaribelEmploymentDate parent="5" id="1">2021-01-01</NewMaribelEmploymentDate>
+						</OccupationInformations>
+						<Service parent="11" id="9">
+							<ServiceSequenceNbr parent="9" id="9">01</ServiceSequenceNbr>
+							<ServiceCode parent="9" id="9">001</ServiceCode>
+							<ServiceNbrDays parent="9" id="9">6400</ServiceNbrDays>
+						</Service>
+						<Remun parent="11" id="9">
+							<RemunSequenceNbr parent="9" id="9">01</RemunSequenceNbr>
+							<RemunCode parent="9" id="9">001</RemunCode>
+							<RemunAmount parent="9" id="9">999999</RemunAmount>
+						</Remun>
+					</Occupation>
+					<WorkerContribution parent="13" id="20">
+						<ContributionWorkerCode parent="20" id="20">015</ContributionWorkerCode>
+						<ContributionType parent="20" id="20">1</ContributionType>
+						<ContributionCalculationBasis parent="20" id="18">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="20" id="20">99999999999</ContributionAmount>
+					</WorkerContribution>
+					<WorkerContribution parent="13" id="21">
+						<ContributionWorkerCode parent="21" id="21">999</ContributionWorkerCode>
+						<ContributionType parent="21" id="21">0</ContributionType>
+						<ContributionCalculationBasis parent="21" id="19">99999999999</ContributionCalculationBasis>
+						<ContributionAmount parent="21" id="21">99999999999</ContributionAmount>
+					</WorkerContribution>
+				</WorkerRecord>
+			</NaturalPerson>
+			<CompanyVehicle parent="1" id="2">
+				<CompanyVehicleSequenceNbr parent="2" id="2">1</CompanyVehicleSequenceNbr>
+				<LicensePlate parent="2" id="2">1ABC250</LicensePlate>
+				<EcoVehicle parent="2" id="2">0</EcoVehicle>
+			</CompanyVehicle>
+			<CompanyVehicle parent="1" id="3">
+				<CompanyVehicleSequenceNbr parent="3" id="3">2</CompanyVehicleSequenceNbr>
+				<LicensePlate parent="3" id="3">1ABC999</LicensePlate>
+				<EcoVehicle parent="3" id="3">1</EcoVehicle>
+			</CompanyVehicle>
+			<ContributionUnrelatedToNP parent="1" id="1">
+				<UnrelatedEmployerClass parent="1" id="1">000</UnrelatedEmployerClass>
+				<UnrelatedWorkerCode parent="1" id="1">000</UnrelatedWorkerCode>
+				<UnrelatedCalculationBasis parent="1" id="1">9999999999999</UnrelatedCalculationBasis>
+				<UnrelatedAmount parent="1" id="1">9999999999999</UnrelatedAmount>
+			</ContributionUnrelatedToNP>
+		</EmployerDeclaration>
+	</Form>
+</DmfAOriginal>

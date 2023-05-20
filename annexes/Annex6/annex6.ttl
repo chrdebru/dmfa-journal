@@ -1,0 +1,180 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex6#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex6#> .
+
+<http://kg.socialsecurity.be/ont/annex6#> rdf:type owl:Ontology .
+
+:ActivityWithRisk a owl:Class ;
+.
+
+:WorkerType a owl:DatatypeProperty ;
+    rdfs:range :ActivityWithRisk;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :ActivityWithRisk;
+.
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:range :ActivityWithRisk;
+.
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:range :ActivityWithRisk;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :ActivityWithRisk;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :ActivityWithRisk;
+.
+
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk401-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk401-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk401-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk401-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk401-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk401-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 401"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk401-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "401"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk401-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Employé sédentaire"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk402-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk402-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk402-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk402-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk402-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk402-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 402"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk402-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "402"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk402-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Employé avec missions extérieures occasionnelles"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk403-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk403-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk403-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk403-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk403-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk403-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 403"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk403-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "403"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk403-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Employé avec missions extérieures fréquentes"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk404-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk404-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk404-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk404-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk404-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk404-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 404"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk404-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "404"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk404-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Représentant, personnel itinérant, coursier"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk405-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk405-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk405-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk405-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk405-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk405-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 405"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk405-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "405"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk405-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Employé pouvant accomplir un travail manuel"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk406-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk406-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk406-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk406-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk406-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk406-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 406"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk406-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "406"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk406-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Employé travaillant à domicile"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk407-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk407-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk407-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk407-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk407-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk407-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 407"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk407-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "407"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk407-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Personnel soignant"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk408-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk408-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk408-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk408-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk408-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk408-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 408"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk408-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "408"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk408-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Vendeur"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk409-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk409-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk409-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk409-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk409-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk409-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 409"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk409-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "409"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk409-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Joueur de football assujetti au statut de sportif rémunéré"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk410-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk410-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk410-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk410-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk410-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk410-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 410"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk410-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "410"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk410-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Joueur de football non assujetti au statut de sportif rémunéré et gagnant une rémunération annuelle fixe de 1239,47 EUR ou plus"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk411-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk411-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk411-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk411-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk411-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk411-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 411"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk411-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "411"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk411-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Joueur de football non assujetti au statut de sportif rémunéré et gagnant une rémunération annuelle fixe de moins de 1239,47 EUR"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk412-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk412-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk412-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk412-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk412-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk412-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 412"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk412-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "412"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk412-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Sportif, autre que footballeur (ne pas utiliser pour la catégorie employeur 070 jusqu'au 2ème trimestre 2007 inclus)"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk001-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk001-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk001-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk001-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk001-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk001-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 001"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk001-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "001"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk001-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Ouvrier sédentaire et/ou en atelier"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk002-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk002-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk002-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk002-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk002-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk002-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 002"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk002-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "002"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk002-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Ouvrier sur chantier"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk003-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk003-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk003-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk003-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk003-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk003-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 003"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk003-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "003"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk003-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Concierge"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk004-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk004-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk004-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk004-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk004-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk004-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 004"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk004-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "004"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk004-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Femme d'ouvrage, nettoyeur, personnel d'entretien"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk005-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk005-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk005-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk005-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk005-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk005-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 005"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk005-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "005"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk005-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Personnel de cuisine (ne pas utiliser pour les entreprises du secteur HORECA)"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk006-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex6#ActivityWithRisk>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk006-20031> <http://kg.socialsecurity.be/ont/annex6#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk006-20031> <http://kg.socialsecurity.be/ont/annex6#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk006-20031> <http://kg.socialsecurity.be/ont/annex6#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk006-20031> <http://kg.socialsecurity.be/ont/annex6#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk006-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Activité par rapport au risque : 006"@fr.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk006-20031> <http://kg.socialsecurity.be/ont/annex6#Code> "006"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex6/ActivityWithRisk006-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Chauffeur"@fr.

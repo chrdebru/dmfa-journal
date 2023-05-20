@@ -1,0 +1,187 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/annex4#> .
+@base <http://kg.socialsecurity.be/resource/mappings/annex4/>  .
+
+
+<#DeductionCode-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "./Adjusted_AN2022-2-FR4.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/List/ann4" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:DeductionCode;
+        rr:termType rr:IRI ;
+        rr:template "http://kg.socialsecurity.be/resource/annex4/DeductionCode{Id}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "Label" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:Code ;
+        rr:objectMap [
+            rml:reference "CodeDMFA" ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "Description" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFromQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Vanaf" ;
+        ] ;
+    ] ;
+
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validToQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Tot" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "Description" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReductionJurisdiction ;
+        rr:objectMap [
+            rml:reference "Ded_FedRegFR" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:isUnderFlemishJurisdiction ;
+        rr:objectMap [
+            rml:reference "Ded_FlemishRegFR" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:isUnderBrusselsJurisdiction ;
+        rr:objectMap [
+            rml:reference "Ded_BxlRegFR" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:isUnderFrenchWalloonJurisdiction ;
+        rr:objectMap [
+            rml:reference "Ded_WallNoGermanRegFR" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:isUnderGermanWalloonJurisdiction ;
+        rr:objectMap [
+            rml:reference "Ded_WallGermanRegFR" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:CalculationBasisPresence ;
+        rr:objectMap [
+            rml:reference "CalcBaseFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:AmountPresence ;
+        rr:objectMap [
+            rml:reference "AmountFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:RightStartingDatePresence ;
+        rr:objectMap [
+            rml:reference "StartRightFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ManagementCostNbrMonthsPresence ;
+        rr:objectMap [
+            rml:reference "MnthCostFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ReplacedINSSSPresence ;
+        rr:objectMap [
+            rml:reference "InssNbrReplFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:ApplicantINSSPresence ;
+        rr:objectMap [
+            rml:reference "InssNbrAuthFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:CertificateOriginPresence ;
+        rr:objectMap [
+            rml:reference "OrigAttFr" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:FunctionalBlocLinked ;
+        rr:objectMap [
+            rml:reference "LinkBlocFr" ;
+            rr:termType rr:IRI ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:inOccupationDeductionDetailPresence ;
+        rr:objectMap [
+            rml:reference "PresBlcDetFr" ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
+
+.

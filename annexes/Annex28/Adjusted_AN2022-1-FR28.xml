@@ -1,0 +1,1267 @@
+<List>
+
+    <ann28>
+        <Code>101</Code>
+        <Description>Travailleurs manuels contractuels</Description>
+        <CodeRSZ>15</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>101-2003-01-01</Id>
+        <Label>Code travailleurs APL: 101</Label>
+    </ann28>
+    <ann28>
+        <Code>102</Code>
+        <Description>Travailleurs manuels contractuels qui remplacent un travailleur qui a choisi la semaine (volontaire) de 4 jours</Description>
+        <CodeRSZ>15</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2013-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20134</Geldig_tot>
+        <Id>102-2003-01-01</Id>
+        <Label>Code travailleurs APL: 102</Label>
+    </ann28>
+    <ann28>
+        <Code>102</Code>
+        <Description>Travailleurs manuels contractuels qui remplacent un travailleur qui a choisi la semaine (volontaire) de 4 jours</Description>
+        <CodeRSZ>21</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2014-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20141</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>102-2014-01-01</Id>
+        <Label>Code travailleurs APL: 102</Label>
+    </ann28>
+    <ann28>
+        <Code>103</Code>
+        <Description>Travailleurs manuels contractuels - détachés syndicaux</Description>
+        <CodeRSZ>15</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2016-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20164</Geldig_tot>
+        <Id>103-2009-07-01</Id>
+        <Label>Code travailleurs APL: 103</Label>
+    </ann28>
+    <ann28>
+        <Code>104</Code>
+        <Description>Travailleurs manuels contractuels - travailleurs handicapés occupés dans un atelier protégé</Description>
+        <CodeRSZ>12</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>104-2009-07-01</Id>
+        <Label>Code travailleurs APL: 104</Label>
+    </ann28>
+    <ann28>
+        <Code>109</Code>
+        <Description>Stagiaires en vue d'une nomination à titre définitif - régime de sécurité sociale des contractuels - travailleurs manuels</Description>
+        <CodeRSZ>15</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2012-07-01</begin_geldigheid>
+        <einde_geldigheid>2014-03-31</einde_geldigheid>
+        <Geldig_vanaf>20123</Geldig_vanaf>
+        <Geldig_tot>20141</Geldig_tot>
+        <Id>109-2012-07-01</Id>
+        <Label>Code travailleurs APL: 109</Label>
+    </ann28>
+    <ann28>
+        <Code>111</Code>
+        <Description>Travailleurs manuels ACS - CONTINGENT</Description>
+        <CodeRSZ>24</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2014-03-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20141</Geldig_tot>
+        <Id>111-2003-01-01</Id>
+        <Label>Code travailleurs APL: 111</Label>
+    </ann28>
+    <ann28>
+        <Code>112</Code>
+        <Description>Travailleurs manuels ACS - PROJETS</Description>
+        <CodeRSZ>24</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2014-03-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20141</Geldig_tot>
+        <Id>112-2003-01-01</Id>
+        <Label>Code travailleurs APL: 112</Label>
+    </ann28>
+    <ann28>
+        <Code>113</Code>
+        <Description>Travailleurs manuels ACS - administrations publiques</Description>
+        <CodeRSZ>24</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2014-03-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20141</Geldig_tot>
+        <Id>113-2003-01-01</Id>
+        <Label>Code travailleurs APL: 113</Label>
+    </ann28>
+    <ann28>
+        <Code>114</Code>
+        <Description>Travailleurs manuels contractuels subventionnés</Description>
+        <CodeRSZ>24</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2014-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20141</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>114-2014-01-01</Id>
+        <Label>Code travailleurs APL: 114</Label>
+    </ann28>
+    <ann28>
+        <Code>121</Code>
+        <Description>Travailleurs manuels engagés dans le cadre de l'article 60 § 7 de la loi organique des CPAS du 8 juillet 1976 (à partir de 2019/2 uniquement valable dans la Région Bruxelles-Capitale, la Région wallonne et les communes germanophones)</Description>
+        <CodeRSZ>090</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>121-2003-01-01</Id>
+        <Label>Code travailleurs APL: 121</Label>
+    </ann28>
+    <ann28>
+        <Code>131</Code>
+        <Description>Travailleurs manuels - jeunes jusqu'au 4ème trimestre de l'année de leurs 18 ans - art. 5bis de l'AR du 28.11.1969</Description>
+        <CodeRSZ>27</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>131-2003-01-01</Id>
+        <Label>Code travailleurs APL: 131</Label>
+    </ann28>
+    <ann28>
+        <Code>132</Code>
+        <Description>Travailleurs manuels - jeunes entre 18 et 25 ans occupés dans le cadre d'un système associant le travail et la formation - AR n° 495 du 31.12.1986</Description>
+        <CodeRSZ>15</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2007-06-30</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20072</Geldig_tot>
+        <Id>132-2003-01-01</Id>
+        <Label>Code travailleurs APL: 132</Label>
+    </ann28>
+    <ann28>
+        <Code>133</Code>
+        <Description>Travailleurs manuels - apprentis jusqu'au 4ème trimestre de l'année de leur 18 ans - article 4 de l'AR du 28.11.1969</Description>
+        <CodeRSZ>35</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>1</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>133-2003-01-01</Id>
+        <Label>Code travailleurs APL: 133</Label>
+    </ann28>
+    <ann28>
+        <Code>201</Code>
+        <Description>Travailleurs intellectuels contractuels</Description>
+        <CodeRSZ>495</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>201-2003-01-01</Id>
+        <Label>Code travailleurs APL: 201</Label>
+    </ann28>
+    <ann28>
+        <Code>202</Code>
+        <Description>Travailleurs intellectuels contractuels qui remplacent un travailleur qui a choisi la semaine (volontaire) de 4 jours</Description>
+        <CodeRSZ>495</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2013-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20134</Geldig_tot>
+        <Id>202-2003-01-01</Id>
+        <Label>Code travailleurs APL: 202</Label>
+    </ann28>
+    <ann28>
+        <Code>202</Code>
+        <Description>Travailleurs intellectuels contractuels qui remplacent un travailleur qui a choisi la semaine (volontaire) de 4 jours</Description>
+        <CodeRSZ>481</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2014-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20141</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>202-2014-01-01</Id>
+        <Label>Code travailleurs APL: 202</Label>
+    </ann28>
+    <ann28>
+        <Code>203</Code>
+        <Description>Travailleurs intellectuels contractuels - détachés syndicaux</Description>
+        <CodeRSZ>495</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2016-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20164</Geldig_tot>
+        <Id>203-2009-07-01</Id>
+        <Label>Code travailleurs APL: 203</Label>
+    </ann28>
+    <ann28>
+        <Code>204</Code>
+        <Description>Travailleurs intellectuels contractuels - travailleurs handicapés occupés dans un atelier protégé</Description>
+        <CodeRSZ>492</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>204-2009-07-01</Id>
+        <Label>Code travailleurs APL: 204</Label>
+    </ann28>
+    <ann28>
+        <Code>209</Code>
+        <Description>Stagiaires en vue d'une nomination à titre définitif - régime de sécurité sociale des contractuels - travailleurs intellectuels</Description>
+        <CodeRSZ>495</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2012-07-01</begin_geldigheid>
+        <einde_geldigheid>2014-03-31</einde_geldigheid>
+        <Geldig_vanaf>20123</Geldig_vanaf>
+        <Geldig_tot>20141</Geldig_tot>
+        <Id>209-2012-07-01</Id>
+        <Label>Code travailleurs APL: 209</Label>
+    </ann28>
+    <ann28>
+        <Code>211</Code>
+        <Description>Travailleurs intellectuels ACS - CONTINGENT</Description>
+        <CodeRSZ>484</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2014-03-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20141</Geldig_tot>
+        <Id>211-2003-01-01</Id>
+        <Label>Code travailleurs APL: 211</Label>
+    </ann28>
+    <ann28>
+        <Code>212</Code>
+        <Description>Travailleurs intellectuels ACS - PROJETS</Description>
+        <CodeRSZ>484</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2014-03-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20141</Geldig_tot>
+        <Id>212-2003-01-01</Id>
+        <Label>Code travailleurs APL: 212</Label>
+    </ann28>
+    <ann28>
+        <Code>213</Code>
+        <Description>Travailleurs intellectuels ACS - administrations publiques</Description>
+        <CodeRSZ>484</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2014-03-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20141</Geldig_tot>
+        <Id>213-2003-01-01</Id>
+        <Label>Code travailleurs APL: 213</Label>
+    </ann28>
+    <ann28>
+        <Code>214</Code>
+        <Description>Travailleurs intellectuels contractuels subventionnés</Description>
+        <CodeRSZ>484</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2014-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20141</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>214-2014-01-01</Id>
+        <Label>Code travailleurs APL: 214</Label>
+    </ann28>
+    <ann28>
+        <Code>221</Code>
+        <Description>Travailleurs intellectuels engagés dans le cadre de l'article 60 § 7 de la loi organique des CPAS du 8 juillet 1976 (à partir de 2019/2 uniquement valable dans la Région Bruxelles-Capitale, la Région wallonne et les communes germanophones)</Description>
+        <CodeRSZ>400</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>221-2003-01-01</Id>
+        <Label>Code travailleurs APL: 221</Label>
+    </ann28>
+    <ann28>
+        <Code>231</Code>
+        <Description>Travailleurs intellectuels - jeunes jusqu'au 4ème trimestre de l'année de leurs 18 ans - art. 5bis de l'AR du 28.11.1969</Description>
+        <CodeRSZ>487</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>231-2003-01-01</Id>
+        <Label>Code travailleurs APL: 231</Label>
+    </ann28>
+    <ann28>
+        <Code>232</Code>
+        <Description>Travailleurs intellectuels - jeunes entre 18 et 25 ans occupé dans le cadre d'un système associant le travail et la formation - AR n° 495 du 31.12.1986</Description>
+        <CodeRSZ>495</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2007-06-30</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20072</Geldig_tot>
+        <Id>232-2003-01-01</Id>
+        <Label>Code travailleurs APL: 232</Label>
+    </ann28>
+    <ann28>
+        <Code>233</Code>
+        <Description>Travailleurs intellectuels - apprentis jusqu'au 4ème trimestre de l'année de leur 18 ans - article 4 de l'AR du 28.11.1969</Description>
+        <CodeRSZ>439</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>233-2003-01-01</Id>
+        <Label>Code travailleurs APL: 233</Label>
+    </ann28>
+    <ann28>
+        <Code>251</Code>
+        <Description>Médecins en formation - art. 15bis de l'AR du 28.11.1969</Description>
+        <CodeRSZ>403</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>251-2003-01-01</Id>
+        <Label>Code travailleurs APL: 251</Label>
+    </ann28>
+    <ann28>
+        <Code>252</Code>
+        <Description>Médecins contractuels exonérés des cotisations de sécurité sociale en vertu de l'art. 1, § 3 de la loi du 27.06.1969</Description>
+        <CodeRSZ>402</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>2</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>252-2003-01-01</Id>
+        <Label>Code travailleurs APL: 252</Label>
+    </ann28>
+    <ann28>
+        <Code>301</Code>
+        <Description>Cotisations pension de base - fonds de pension solidarisé - ex-régime commun</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2012-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20121</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>301-2012-01-01</Id>
+        <Label>Code travailleurs APL: 301</Label>
+    </ann28>
+    <ann28>
+        <Code>302</Code>
+        <Description>Cotisations pension de base - fonds de pension solidarisé - ex-régime des nouveaux affiliés + nouveaux adhérents au taux supérieur</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2012-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20121</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>302-2012-01-01</Id>
+        <Label>Code travailleurs APL: 302</Label>
+    </ann28>
+    <ann28>
+        <Code>303</Code>
+        <Description>Cotisations pension de base - fonds de pension solidarisé - police locale</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2012-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20121</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>303-2012-01-01</Id>
+        <Label>Code travailleurs APL: 303</Label>
+    </ann28>
+    <ann28>
+        <Code>304</Code>
+        <Description>Cotisations pension de base - fonds de pension solidarisé - nouveaux adhérents au taux inférieur</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2012-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20121</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>304-2012-01-01</Id>
+        <Label>Code travailleurs APL: 304</Label>
+    </ann28>
+    <ann28>
+        <Code>306</Code>
+        <Description>Cotisations pension de base - fonds de pension solidarisé - ex-institution de prévoyance au taux spécifique</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2012-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20121</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>306-2012-01-01</Id>
+        <Label>Code travailleurs APL: 306</Label>
+    </ann28>
+    <ann28>
+        <Code>307</Code>
+        <Description>Cotisation de pension - pool des parastataux (loi du 28-4-1958)</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2015-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20151</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>307-2015-01-01</Id>
+        <Label>Code travailleurs APL: 307</Label>
+    </ann28>
+    <ann28>
+        <Code>308</Code>
+        <Description>Cotisation de pension - pension à charge du trésor public</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2015-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20151</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>308-2015-01-01</Id>
+        <Label>Code travailleurs APL: 308</Label>
+    </ann28>
+    <ann28>
+        <Code>601</Code>
+        <Description>Définitifs</Description>
+        <CodeRSZ>675</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>601-2003-01-01</Id>
+        <Label>Code travailleurs APL: 601</Label>
+    </ann28>
+    <ann28>
+        <Code>602</Code>
+        <Description>Définitifs - pas de cotisation allocations familiales à l'ORPSS (uniquement les CER et SDR)</Description>
+        <CodeRSZ>675</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2006-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20064</Geldig_tot>
+        <Id>602-2003-01-01</Id>
+        <Label>Code travailleurs APL: 602</Label>
+    </ann28>
+    <ann28>
+        <Code>603</Code>
+        <Description>Définitifs - détachés syndicaux</Description>
+        <CodeRSZ>675</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2016-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20164</Geldig_tot>
+        <Id>603-2009-07-01</Id>
+        <Label>Code travailleurs APL: 603</Label>
+    </ann28>
+    <ann28>
+        <Code>604</Code>
+        <Description>Définitifs - travailleurs handicapés occupés dans un atelier protégé</Description>
+        <CodeRSZ>675</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>604-2009-07-01</Id>
+        <Label>Code travailleurs APL: 604</Label>
+    </ann28>
+    <ann28>
+        <Code>608</Code>
+        <Description>Stagiaires en vue d'une nomination à titre définitif - régime de vacances secteur privé</Description>
+        <CodeRSZ>675</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2014-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20142</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>608-2014-04-01</Id>
+        <Label>Code travailleurs APL: 608</Label>
+    </ann28>
+    <ann28>
+        <Code>609</Code>
+        <Description>Stagiaires en vue d'une nomination à titre définitif - régime de vacances secteur public</Description>
+        <CodeRSZ>675</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2012-07-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20123</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>609-2012-07-01</Id>
+        <Label>Code travailleurs APL: 609</Label>
+    </ann28>
+    <ann28>
+        <Code>642</Code>
+        <Description>Médecins définitifs soumis aux cotisations de sécurité sociale et qui, sur base de l'art. 158 de la loi relative aux hôpitaux du 10-07-2008, n'ont pas de droit à une pension publique</Description>
+        <CodeRSZ>675</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>642-2003-01-01</Id>
+        <Label>Code travailleurs APL: 642</Label>
+    </ann28>
+    <ann28>
+        <Code>651</Code>
+        <Description>Médecins définitifs exonérés des cotisations de sécurité sociale sur base de l'art. 1er, § 3 de la loi du 27.6.1969 et qui, sur base de l'art. 158 de la loi relative aux hôpitaux du 10-07-2008, ont droit à une pension publique</Description>
+        <CodeRSZ>690</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>651-2003-01-01</Id>
+        <Label>Code travailleurs APL: 651</Label>
+    </ann28>
+    <ann28>
+        <Code>652</Code>
+        <Description>Médecins définitifs exonérés des cotisations de sécurité sociale sur base de l'art. 1, § 3 de la loi de 27.06.1969 et qui, sur base de l'art. 158 de la loi relative aux hôpitaux du 10-7-2008, n'ont pas de droit à une pension publique</Description>
+        <CodeRSZ>691</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>3</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>652-2003-01-01</Id>
+        <Label>Code travailleurs APL: 652</Label>
+    </ann28>
+    <ann28>
+        <Code>671</Code>
+        <Description>Cotisation pour le personnel statutaire - Régime assurance maladie invalidité</Description>
+        <CodeRSZ>876</CodeRSZ>
+        <PRESCODE>1</PRESCODE>
+        <WRKTYPE>8</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>671-2003-01-01</Id>
+        <Label>Code travailleurs APL: 671</Label>
+    </ann28>
+    <ann28>
+        <Code>672</Code>
+        <Description>Cotisation pour le personnel statutaire licencié - régime chômage</Description>
+        <CodeRSZ>877</CodeRSZ>
+        <PRESCODE>1</PRESCODE>
+        <WRKTYPE>8</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>672-2003-01-01</Id>
+        <Label>Code travailleurs APL: 672</Label>
+    </ann28>
+    <ann28>
+        <Code>701</Code>
+        <Description>Etudiants occupés dans le cadre d'un contrat d'occupation d'étudiants et pour lesquels la cotisation de solidarité est due</Description>
+        <CodeRSZ>840</CodeRSZ>
+        <PRESCODE>1</PRESCODE>
+        <WRKTYPE>7</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>701-2003-01-01</Id>
+        <Label>Code travailleurs APL: 701</Label>
+    </ann28>
+    <ann28>
+        <Code>702</Code>
+        <Description>Moniteurs et animateurs d'activités socio-culturelles exonérés sur base de l'article 17 de l'AR du 28.11.1969</Description>
+        <CodeRSZ>699</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>6</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>702-2003-01-01</Id>
+        <Label>Code travailleurs APL: 702</Label>
+    </ann28>
+    <ann28>
+        <Code>711</Code>
+        <Description>Ministres des cultes et conseillers laïcs - art. 13 de l'AR du 28.11.1969</Description>
+        <CodeRSZ>675</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>6</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>711-2003-01-01</Id>
+        <Label>Code travailleurs APL: 711</Label>
+    </ann28>
+    <ann28>
+        <Code>721</Code>
+        <Description>Mandataires locaux non protégés - article 37quater de la loi du 29.6.1981</Description>
+        <CodeRSZ>404</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>6</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>721-2003-01-01</Id>
+        <Label>Code travailleurs APL: 721</Label>
+    </ann28>
+    <ann28>
+        <Code>722</Code>
+        <Description>Mandataires locaux protégés</Description>
+        <CodeRSZ>405</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>6</WRKTYPE>
+        <begin_geldigheid>2010-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20101</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>722-2010-01-01</Id>
+        <Label>Code travailleurs APL: 722</Label>
+    </ann28>
+    <ann28>
+        <Code>731</Code>
+        <Description>Pompiers volontaires et ambulanciers volontaires - travailleurs manuels</Description>
+        <CodeRSZ>091</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>6</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>731-2003-01-01</Id>
+        <Label>Code travailleurs APL: 731</Label>
+    </ann28>
+    <ann28>
+        <Code>732</Code>
+        <Description>Pompiers volontaires et ambulanciers volontaires - travailleurs intellectuels</Description>
+        <CodeRSZ>401</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>6</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>732-2003-01-01</Id>
+        <Label>Code travailleurs APL: 732</Label>
+    </ann28>
+    <ann28>
+        <Code>741</Code>
+        <Description>Artistes</Description>
+        <CodeRSZ>46</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>4</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>741-2003-01-01</Id>
+        <Label>Code travailleurs APL: 741</Label>
+    </ann28>
+    <ann28>
+        <Code>761</Code>
+        <Description>Gardiens ou gardiennes d'enfants reconnus</Description>
+        <CodeRSZ>497</CodeRSZ>
+        <PRESCODE>3</PRESCODE>
+        <WRKTYPE>5</WRKTYPE>
+        <begin_geldigheid>2003-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20032</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>761-2003-04-01</Id>
+        <Label>Code travailleurs APL: 761</Label>
+    </ann28>
+    <ann28>
+        <Code>771</Code>
+        <Description>Chômeurs avec complément d'entreprise (RCC)</Description>
+        <CodeRSZ>879</CodeRSZ>
+        <PRESCODE>1</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2010-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20102</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>771-2010-04-01</Id>
+        <Label>Code travailleurs APL: 771</Label>
+    </ann28>
+    <ann28>
+        <Code>801</Code>
+        <Description>Cotisation spéciale due sur la prime Corona</Description>
+        <CodeRSZ>801</CodeRSZ>
+        <PRESCODE>5</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2021-07-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20213</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>801-2021-07-01</Id>
+        <Label>Code travailleurs APL: 801</Label>
+    </ann28>
+    <ann28>
+        <Code>842</Code>
+        <Description>Cotisation régime de pension complémentaire contractuels</Description>
+        <CodeRSZ>835</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2010-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20101</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>842-2010-01-01</Id>
+        <Label>Code travailleurs APL: 842</Label>
+    </ann28>
+    <ann28>
+        <Code>843</Code>
+        <Description>Cotisation régime de pension complémentaire - contractuels - Anvers et Bruges (à partir de 2020/1 uniquement Anvers)</Description>
+        <CodeRSZ>835</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2010-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20101</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>843-2010-01-01</Id>
+        <Label>Code travailleurs APL: 843</Label>
+    </ann28>
+    <ann28>
+        <Code>844</Code>
+        <Description>Cotisation régime de pension complémentaire contractuels - bonus</Description>
+        <CodeRSZ>835</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2014-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20141</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>844-2014-01-01</Id>
+        <Label>Code travailleurs APL: 844</Label>
+    </ann28>
+    <ann28>
+        <Code>845</Code>
+        <Description>Cotisation pour le Service Social Collectif du SFP</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>12</WRKTYPE>
+        <begin_geldigheid>2005-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20051</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>845-2005-01-01</Id>
+        <Label>Code travailleurs APL: 845</Label>
+    </ann28>
+    <ann28>
+        <Code>846</Code>
+        <Description>Cotisation pour le Service Social Collectif de la police</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>12</WRKTYPE>
+        <begin_geldigheid>2005-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20051</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>846-2005-01-01</Id>
+        <Label>Code travailleurs APL: 846</Label>
+    </ann28>
+    <ann28>
+        <Code>847</Code>
+        <Description>Cotisation pour le Service Social Collectif - Flandre</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>12</WRKTYPE>
+        <begin_geldigheid>2010-01-01</begin_geldigheid>
+        <einde_geldigheid>2020-12-31</einde_geldigheid>
+        <Geldig_vanaf>20101</Geldig_vanaf>
+        <Geldig_tot>20204</Geldig_tot>
+        <Id>847-2010-01-01</Id>
+        <Label>Code travailleurs APL: 847</Label>
+    </ann28>
+    <ann28>
+        <Code>847</Code>
+        <Description>Cotisation pour le Service Social Collectif - Flandre</Description>
+        <CodeRSZ>847</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>12</WRKTYPE>
+        <begin_geldigheid>2021-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20211</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>847-2021-01-01</Id>
+        <Label>Code travailleurs APL: 847</Label>
+    </ann28>
+    <ann28>
+        <Code>851</Code>
+        <Description>Cotisation spéciale due sur les réserves constituées par les employeurs en vue de la formation d'une pension extra-légale</Description>
+        <CodeRSZ>851</CodeRSZ>
+        <PRESCODE>5</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2011-09-30</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20113</Geldig_tot>
+        <Id>851-2003-01-01</Id>
+        <Label>Code travailleurs APL: 851</Label>
+    </ann28>
+    <ann28>
+        <Code>855</Code>
+        <Description>Cotisation du chômage de 1,69 % (AR 401)</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>855-2003-01-01</Id>
+        <Label>Code travailleurs APL: 855</Label>
+    </ann28>
+    <ann28>
+        <Code>856</Code>
+        <Description>Cotisation spéciale destinée au financement de la sécurité sociale (loi du 30.03.1994 portant financement de la sécurité sociale)</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>856-2003-01-01</Id>
+        <Label>Code travailleurs APL: 856</Label>
+    </ann28>
+    <ann28>
+        <Code>857</Code>
+        <Description>Cotisation de chômage de 1,60 % (AR 401)</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>857-2009-07-01</Id>
+        <Label>Code travailleurs APL: 857</Label>
+    </ann28>
+    <ann28>
+        <Code>860</Code>
+        <Description>Cotisation de solidarité sur le montant de l'allocation de mobilité</Description>
+        <CodeRSZ>860</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2018-01-01</begin_geldigheid>
+        <einde_geldigheid>2020-12-31</einde_geldigheid>
+        <Geldig_vanaf>20181</Geldig_vanaf>
+        <Geldig_tot>20204</Geldig_tot>
+        <Id>860-2018-01-01</Id>
+        <Label>Code travailleurs APL: 860</Label>
+    </ann28>
+    <ann28>
+        <Code>861</Code>
+        <Description>Cotisation de solidarité sur les participations aux bénéfices</Description>
+        <CodeRSZ>861</CodeRSZ>
+        <PRESCODE>5</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2010-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20101</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>861-2010-01-01</Id>
+        <Label>Code travailleurs APL: 861</Label>
+    </ann28>
+    <ann28>
+        <Code>862</Code>
+        <Description>Cotisation de solidarité pour l'usage d'un véhicule de société à des fins privées ou pour le déplacement domicile-lieu de travail</Description>
+        <CodeRSZ>862</CodeRSZ>
+        <PRESCODE>4</PRESCODE>
+        <WRKTYPE>14</WRKTYPE>
+        <begin_geldigheid>2005-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20051</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>862-2005-01-01</Id>
+        <Label>Code travailleurs APL: 862</Label>
+    </ann28>
+    <ann28>
+        <Code>864</Code>
+        <Description>Cotisation spéciale due sur les versements effectués par les employeurs pour la constitution d'une pension extra-légale ; versements directs aux ex-travailleurs</Description>
+        <CodeRSZ>864</CodeRSZ>
+        <PRESCODE>5</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2011-10-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20114</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>864-2011-10-01</Id>
+        <Label>Code travailleurs APL: 864</Label>
+    </ann28>
+    <ann28>
+        <Code>865</Code>
+        <Description>Cotisation spéciale due sur les versements effectués par les employeurs pour la constitution d'une pension extra-légale ; versements dans le cadre d'un plan d'entreprise</Description>
+        <CodeRSZ>865</CodeRSZ>
+        <PRESCODE>5</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2011-10-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20114</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>865-2011-10-01</Id>
+        <Label>Code travailleurs APL: 865</Label>
+    </ann28>
+    <ann28>
+        <Code>867</Code>
+        <Description>Cotisation spéciale supplémentaire due sur les versements effectués par les employeurs pour la constitution d'une pension extra-légale qui dépassent un montant déterminé</Description>
+        <CodeRSZ>867</CodeRSZ>
+        <PRESCODE>4</PRESCODE>
+        <WRKTYPE>14</WRKTYPE>
+        <begin_geldigheid>2012-10-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20124</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>867-2012-10-01</Id>
+        <Label>Code travailleurs APL: 867</Label>
+    </ann28>
+    <ann28>
+        <Code>868</Code>
+        <Description>Cotisation de solidarité sur un véhicule de société respectueux de  l'environnement dans le cadre du budget mobilité</Description>
+        <CodeRSZ>868</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2019-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20191</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>868-2019-01-01</Id>
+        <Label>Code travailleurs APL: 868</Label>
+    </ann28>
+    <ann28>
+        <Code>869</Code>
+        <Description>Cotisation spéciale sur le solde du budget mobilité versé en espèces et qui correspond au 3ème pilier</Description>
+        <CodeRSZ>869</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2019-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20191</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>869-2019-01-01</Id>
+        <Label>Code travailleurs APL: 869</Label>
+    </ann28>
+    <ann28>
+        <Code>870</Code>
+        <Description>Cotisation due sur le (double) pécule de vacances à l'exception des mandataires et du personnel de police contractuel</Description>
+        <PRESCODE>5</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>870-2003-01-01</Id>
+        <Label>Code travailleurs APL: 870</Label>
+    </ann28>
+    <ann28>
+        <Code>871</Code>
+        <Description>Cotisation due sur le (double) pécule de vacances des mandataires, du personnel de police contractuel et des stagiaires en vue d'une nomination à titre définitif - régime de vacances secteur privé</Description>
+        <PRESCODE>5</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2005-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20051</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>871-2005-01-01</Id>
+        <Label>Code travailleurs APL: 871</Label>
+    </ann28>
+    <ann28>
+        <Code>872</Code>
+        <Description>Cotisation patronale spéciale réduite pour un travailleur bénéficiant du chômage avec complément d'entreprise (RCC) - secteur non marchand - RCC ayant débuté à partir du 1/04/2012 (à l'exception des cas assimilés au CT 880)</Description>
+        <CodeRSZ>277</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2012-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20122</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>872-2012-04-01</Id>
+        <Label>Code travailleurs APL: 872</Label>
+    </ann28>
+    <ann28>
+        <Code>873</Code>
+        <Description>Cotisation patronale spéciale pour un travailleur bénéficiant du régime de chômage avec complément d'entreprise (RCC) - RCC ayant débuté à partir du 01/04/2012 (à l'exception des cas assimilés aux CT 879 ou 881)</Description>
+        <CodeRSZ>276</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2012-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20122</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>873-2012-04-01</Id>
+        <Label>Code travailleurs APL: 873</Label>
+    </ann28>
+    <ann28>
+        <Code>874</Code>
+        <Description>Cotisation patronale spéciale réduite pour un travailleur bénéficiant du chômage avec complément d'entreprise (RCC) durant une période de reconnaissance comme entreprise en restructuration - RCC ayant débuté à partir du 01/04/2012 (à l'exception des cas assimilés au CT 884)</Description>
+        <CodeRSZ>278</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2012-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20122</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>874-2012-04-01</Id>
+        <Label>Code travailleurs APL: 874</Label>
+    </ann28>
+    <ann28>
+        <Code>878</Code>
+        <Description>Cotisation due pour les journalistes professionnels reconnus</Description>
+        <CodeRSZ>878</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2021-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20212</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>878-2021-04-01</Id>
+        <Label>Code travailleurs APL: 878</Label>
+    </ann28>
+    <ann28>
+        <Code>879</Code>
+        <Description>Cotisation patronale spéciale pour un travailleur bénéficiant du chômage avec complément d'entreprise (RCC) -  RCC ayant débuté avant le 01/04/2010 ou assimilé</Description>
+        <CodeRSZ>270</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2010-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20102</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>879-2010-04-01</Id>
+        <Label>Code travailleurs APL: 879</Label>
+    </ann28>
+    <ann28>
+        <Code>880</Code>
+        <Description>Cotisation patronale spéciale réduite pour un travailleur bénéficiant du chômage avec complément d'entreprise (RCC) - secteur non marchand - RCC ayant débuté avant le 01/04/2012 ou assimilé</Description>
+        <CodeRSZ>271</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2010-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20102</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>880-2010-04-01</Id>
+        <Label>Code travailleurs APL: 880</Label>
+    </ann28>
+    <ann28>
+        <Code>881</Code>
+        <Description>Cotisation patronale spéciale pour un travailleur bénéficiant du chômage avec complément d'entreprise (RCC) - RCC ayant débuté entre le 01/04/2010 et le 31/03/2012 ou assimilé</Description>
+        <CodeRSZ>273</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2010-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20102</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>881-2010-04-01</Id>
+        <Label>Code travailleurs APL: 881</Label>
+    </ann28>
+    <ann28>
+        <Code>882</Code>
+        <Description>Cotisation patronale spéciale réduite pour un travailleur bénéficiant du chômage avec complément d'entreprise (RCC) - durant  une période de reconnaissance comme entreprise en difficulté</Description>
+        <CodeRSZ>274</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2010-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20102</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>882-2010-04-01</Id>
+        <Label>Code travailleurs APL: 882</Label>
+    </ann28>
+    <ann28>
+        <Code>884</Code>
+        <Description>Cotisation patronale spéciale réduite pour un travailleur bénéficiant du chômage avec complément d'entreprise (RCC) - période de reconnaissance comme entreprise en restructuration - RCC ayant débuté entre le 01/04/2010 et le 31/03/2012 ou assimilé</Description>
+        <CodeRSZ>275</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2010-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20102</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>884-2010-04-01</Id>
+        <Label>Code travailleurs APL: 884</Label>
+    </ann28>
+    <ann28>
+        <Code>886</Code>
+        <Description>Retenue personnelle pour un travailleur bénéficiant du chômage avec complément d'entreprise (RCC)</Description>
+        <CodeRSZ>295</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>15</WRKTYPE>
+        <begin_geldigheid>2010-04-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20102</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>886-2010-04-01</Id>
+        <Label>Code travailleurs APL: 886</Label>
+    </ann28>
+    <ann28>
+        <Code>889</Code>
+        <Description>Cotisation de solidarité sur les amendes de circulation remboursées par l'employeur</Description>
+        <CodeRSZ>889</CodeRSZ>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>9</WRKTYPE>
+        <begin_geldigheid>2009-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20091</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>889-2009-01-01</Id>
+        <Label>Code travailleurs APL: 889</Label>
+    </ann28>
+    <ann28>
+        <Code>891</Code>
+        <Description>Cotisation pension personnel nommé régime commun des pensions</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2011-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20114</Geldig_tot>
+        <Id>891-2003-01-01</Id>
+        <Label>Code travailleurs APL: 891</Label>
+    </ann28>
+    <ann28>
+        <Code>892</Code>
+        <Description>Cotisation pension personnel nommé régime des nouveaux affiliés</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2011-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20114</Geldig_tot>
+        <Id>892-2003-01-01</Id>
+        <Label>Code travailleurs APL: 892</Label>
+    </ann28>
+    <ann28>
+        <Code>893</Code>
+        <Description>Cotisation pension personnel nommé  de la police locale intégrée</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>10</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2011-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20114</Geldig_tot>
+        <Id>893-2003-01-01</Id>
+        <Label>Code travailleurs APL: 893</Label>
+    </ann28>
+    <ann28>
+        <Code>894</Code>
+        <Description>Cotisation pension - personnel nommé - détachés syndicaux</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>11</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2016-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20164</Geldig_tot>
+        <Id>894-2009-07-01</Id>
+        <Label>Code travailleurs APL: 894</Label>
+    </ann28>
+    <ann28>
+        <Code>896</Code>
+        <Description>Cotisation du chômage de 1,69 % (AR 401) - détachés syndicaux</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>11</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2016-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20164</Geldig_tot>
+        <Id>896-2009-07-01</Id>
+        <Label>Code travailleurs APL: 896</Label>
+    </ann28>
+    <ann28>
+        <Code>897</Code>
+        <Description>Cotisations de sécurité sociale - détachés syndicaux</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>11</WRKTYPE>
+        <begin_geldigheid>2009-07-01</begin_geldigheid>
+        <einde_geldigheid>2016-12-31</einde_geldigheid>
+        <Geldig_vanaf>20093</Geldig_vanaf>
+        <Geldig_tot>20164</Geldig_tot>
+        <Id>897-2009-07-01</Id>
+        <Label>Code travailleurs APL: 897</Label>
+    </ann28>
+    <ann28>
+        <Code>898</Code>
+        <Description>Cotisations sur indemnité pour période d'incapacité temporaire en raison d'une maladie professionnelle reconnue</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>13</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2019-06-30</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20192</Geldig_tot>
+        <Id>898-2003-01-01</Id>
+        <Label>Code travailleurs APL: 898</Label>
+    </ann28>
+    <ann28>
+        <Code>899</Code>
+        <Description>Exonération complète des cotisations</Description>
+        <PRESCODE>2</PRESCODE>
+        <WRKTYPE>11</WRKTYPE>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2021-12-31</einde_geldigheid>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20214</Geldig_tot>
+        <Id>899-2003-01-01</Id>
+        <Label>Code travailleurs APL: 899</Label>
+    </ann28>
+</List>

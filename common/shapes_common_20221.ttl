@@ -1,0 +1,5324 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ont: <http://kg.socialsecurity.be/ont/dmfa#> .
+
+@prefix kg: <http://kg.socialsecurity.be/resource/shapes/common/20221/> .
+@base <http://kg.socialsecurity.be/resource/shapes/common/20221/> .
+
+#TODO all relations are DMFA specific
+#TODO reusablility vs usability sequence nbr unique
+#TODO compare with sh:xone mincount and sparql ?p = Path count
+#TODO ?p = PATH vs Optional?
+
+<> 
+    sh:declare [
+		sh:prefix "rdfs" ;
+		sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xs:anyURI ;
+	] ;
+    
+	sh:declare [
+		sh:prefix "xs" ;
+		sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xs:anyURI ;
+	] ;
+
+	sh:declare [
+		sh:prefix "ont" ;
+		sh:namespace "http://kg.socialsecurity.be/ont/dmfa#"^^xs:anyURI ;
+	] ;
+
+    sh:declare [
+        sh:prefix "an2" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex2#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an4" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex4#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an6" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex6#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an7" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex7#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an8" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex8#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an9" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex9#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an10" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex10#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an11" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex11#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an21" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex21#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an27" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex27#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an28" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex28#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an31" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex31#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an35" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex35#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an42" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex42#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an43" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex43#"^^xs:anyURI ;
+    ] ;
+    
+    sh:declare [
+        sh:prefix "an44" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex44#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an45" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex45#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "an46" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/annex46#"^^xs:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "dmfas02" ;
+        sh:namespace "http://kg.socialsecurity.be/ont/dmfas02#"^^xs:anyURI ;
+    ] ;
+.
+
+kg:sparql2DigitsChecksum97 a sh:SPARQLConstraint;
+    sh:message "Checksum is wrong." ;
+    sh:prefixes <> ;
+    sh:select """
+        SELECT $this ?value
+        WHERE {
+            $this $PATH ?value .
+  			BIND( FLOOR(?value / 100) AS ?number )
+            BIND( ?value - (100 * ?number) AS ?check )
+            BIND( ?number - (97 * FLOOR(?number / 97)) AS ?rest )
+            BIND( 97 - ?rest AS ?check2 )
+            FILTER ( ?check != ?check2 )
+        }""" ;
+.
+
+kg:sparqlValidEmployerClass a sh:SPARQLConstraint;
+    sh:message "Invalid code for a employer class, code does not exist" ;
+    sh:prefixes <> ;
+    sh:select """
+        SELECT $this ?value 
+        WHERE {
+            $this $PATH ?value. 
+            OPTIONAL{
+                ?ec a an27:EmployerClass ; an27:Code ?value.
+            }
+            FILTER(!BOUND(?ec))
+        }""" ;
+.
+
+kg:sparqlValidDate90012 a sh:SPARQLConstraint;
+    sh:message "Invalid Year: must be the same as the declaration's year" ;
+    sh:prefixes <> ;
+    sh:select """
+        SELECT $this ?value 
+        WHERE {
+            $this $PATH ?value .
+            BIND ( YEAR(?value) as ?year)
+            $this ^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+            BIND (  FLOOR(?quarter / 10) as ?dYear)
+            FILTER( ?year != ?dYear)
+        }""" ;
+.
+
+kg:sparqlValidNaceCode a sh:SPARQLConstraint;
+    sh:message "Invalid code for a NACE, code does not exist" ;
+    sh:prefixes <> ;
+    sh:select """
+        SELECT $this ?value 
+        WHERE {
+            $this $PATH ?value.
+            OPTIONAL{
+                    ?cn a an31:CodeNace ; an31:Code ?value.
+            }
+            FILTER(!BOUND(?cn))
+        }""" ;
+.
+
+kg:sparqlAcknowledgementPeriodPresence a sh:SPARQLConstraint;
+    sh:message """The Acknowledgement period (ont:AcknowledgementStartDate and ont:AcknowledgementEndDate) must present if ont:AilingOrReorgCompanyNotion has a value in ("1", "2", "3")""" ;
+    sh:prefixes <> ;
+    sh:select """
+        SELECT $this
+        WHERE {
+            {
+                SELECT $this (SUM (?occ) AS ?nbrOcc)
+                WHERE {
+                    $this ?p ?o.
+                    BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                }
+                GROUP BY $this
+            }
+            $this ont:AilingOrReorgCompanyNotion ?aor.
+            FILTER( ?aor in ("1", "2", "3"))
+            FILTER (?nbrOcc != 1)
+        }""" ;
+.
+
+kg:sparqlValidEndDate90313 a sh:SPARQLConstraint;
+    sh:message "Date must be before the end of declaration's quarter" ;
+    sh:prefixes <> ;
+    sh:select """
+        SELECT $this ?value 
+        WHERE {
+            $this $PATH ?value.
+            BIND ( xs:dateTime(?value) as ?valueDT )
+            $this ^ont:R_90015_90313/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+            BIND ( FLOOR(?quarter / 10) as ?dYear)
+            BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+            BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                    IF(?dQuarter = 2, "-06-30T00:00:00",
+                    IF(?dQuarter = 3, "-08-31T00:00:00",
+                    "-12-31T00:00:00"))) as ?endMD)
+            BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+            FILTER( ?endDate < ?valueDT)
+        }""" ;
+.
+
+kg:FormShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Form (90059)" ;
+    sh:targetClass ont:Form ;
+
+    sh:property kg:IdentificationShape;
+    sh:property kg:FormCreationDateShape;
+    sh:property kg:FormCreationHourShape;
+    sh:property kg:AttestationStatusShape;
+    sh:property kg:TypeFormShape;
+.
+
+kg:FormCreationHourShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FormCreationHour (00299)" ;
+    sh:path ont:FormCreationHour;
+    sh:datatype xs:time;
+    sh:minCount 1 ; 
+    sh:maxCount 1 ;
+    sh:minLength 12 ; 
+    sh:maxLength 12 ; 
+    sh:pattern "^\\d{2}:\\d{2}:\\d{2}\\.\\d{3}$" ;
+.
+
+kg:FormCreationDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FormCreationDate (00218)" ;
+    sh:path ont:FormCreationDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+
+    sh:sparql [
+        sh:message "Date beyond [current year - 1 /01/01, now]." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value
+            WHERE {
+                $this $PATH ?value .
+                BIND ( YEAR(?value) AS ?y1 )
+                BIND ( YEAR(NOW()) AS ?y2 )
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                FILTER ( !( ?valueDT <= NOW() && (?y2 - ?y1 = 1 || ?y2 - ?y1 = 0) ) )
+            }""" ;
+    ] ;
+.
+
+kg:AttestationStatusShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AttestationStatus (00110)" ;
+    sh:path ont:AttestationStatus;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 8 ;
+.
+
+kg:TypeFormShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TypeForm (00297)" ;
+    sh:path ont:TypeForm;
+    sh:datatype xs:string;
+    sh:minCount 1 ; 
+    sh:maxCount 1 ;
+    sh:minLength 2 ; 
+    sh:maxLength 2 ; 
+    sh:in ( "RE" "PA" "LA" "FA" "SU" ) ;
+.
+
+kg:IdentificationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Identification (00296)" ;
+    sh:path ont:Identification;
+    sh:datatype xs:string;
+    sh:minCount 1 ; 
+    sh:maxCount 1 ;
+    sh:maxLength 7 ; 
+
+    sh:sparql [
+        sh:message "Invalid ont:Identification, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL {
+                    ?it a an11:IdentificationType;
+                        rdfs:label ?value; 
+                        an11:validFromQuarter ?startQuarter;
+                        an11:validToQuarter ?endQuarter;
+                    .
+                    $this ont:R_90059_90007/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?it))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid Document type, does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?it a an11:IdentificationType ; rdfs:label ?value.
+                }
+                FILTER(!BOUND(?it))
+            }""" ;
+    ] ;
+.
+
+kg:ReferenceShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Reference (90082)" ;
+    sh:targetClass ont:Reference ;
+
+    sh:property kg:ReferenceTypeShape;
+    sh:property kg:ReferenceOriginShape;
+    sh:property kg:ReferenceNbrShape;
+.
+
+kg:ReferenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceNbr (00222)" ;
+    sh:path ont:ReferenceNbr;
+    sh:datatype xs:string;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 64 ;
+.
+
+kg:ReferenceOriginShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceOrigin (00298)" ;
+    sh:path ont:ReferenceOrigin;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 7 ;
+.
+
+kg:ReferenceTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceType (00221)" ;
+    sh:path ont:ReferenceType;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 9 ;
+.
+
+kg:EmployerDeclarationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EmployerDeclaration (90007)" ;
+    sh:targetClass ont:EmployerDeclaration ;
+
+    sh:sparql [
+        sh:message "Each ont:NaturalPersonSequenceNbr must be unique for a ont:EmployerDeclaration." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90007_90017/ont:NaturalPersonSequenceNbr ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:INSS must be unique for a ont:EmployerDeclaration." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90007_90017/ont:INSS ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:CompanyVehicleSequenceNbr must be unique for a ont:EmployerDeclaration." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90007_90294/ont:CompanyVehicleSequenceNbr ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:LicensePlate must be unique for a ont:EmployerDeclaration." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90007_90294/ont:LicensePlate ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "A combination of ont:UnrelatedEmployerClass and ont:UnrelatedWorkerCode must not appear several time for the same ont:EmployerDeclaration." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this 
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90007_90002 ?contrUnrel .
+                        ?contrUnrel ont:UnrelatedEmployerClass ?employerClass; ont:UnrelatedWorkerCode ?workerCode.
+                        BIND(CONCAT( STR(?employerClass), STR(?workerCode)) as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:property kg:QuarterShape;
+    sh:node kg:NOSSRegistrationNbrShape;
+    sh:property kg:TrusteeshipShape;
+    sh:node kg:CompanyIDShape;
+    sh:property kg:NetOwedAmountShape;
+    sh:property kg:System5Shape;
+    sh:property kg:HolidayStartingDateShape;
+.
+
+kg:System5Shape a sh:PropertyShape;
+    rdfs:comment "Property Shape for System5 (00016)" ;
+    sh:path ont:System5 ;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 1 ; 
+.
+
+kg:NOSSRegistrationNbrShape a sh:NodeShape;
+    rdfs:comment "Property Shape for NOSSRegistrationNbr (00011)" ;
+
+    sh:property[
+        sh:path ont:NOSSRegistrationNbr;
+        sh:datatype xs:integer;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:maxLength 9 ;
+    ] ;
+
+    sh:or (
+        [
+            sh:path ont:NOSSRegistrationNbr;
+            sh:minInclusive 100006 ; 
+            sh:maxInclusive 199999934 ;
+            sh:sparql [
+                sh:message "Invalid NOSS registration number: Checksum is wrong" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this ?value
+                    WHERE {
+                        $this $PATH ?value .
+                        BIND( FLOOR(?value / 100) * 100 as ?number )
+                        BIND( ?value - ?number AS ?check )
+                        BIND( ?number - (97 * FLOOR(?number / 97)) AS ?rest )
+                        BIND( 96 - ?rest AS ?check2 )
+                        FILTER ( ?check != ?check2 )
+                    }"""
+            ] ;
+        ]
+        [
+            sh:path ont:NOSSRegistrationNbr;
+            sh:in (0) ;
+            sh:sparql [
+                sh:message "CompanyID (00014) is unknown : value is 0" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this ?value
+                    WHERE {
+                        $this ont:CompanyID ?value .
+                        FILTER ( ?value = 0 )
+                    }"""
+            ] ;
+        ]
+    ) ;
+.
+
+# TODO discuss unclear complexe
+# kg:NOSSRegistrationNbrShape a sh:PropertyShape;
+#     rdfs:comment "Property Shape for NOSSRegistrationNbr (00011)" ;
+
+#     sh:path ont:NOSSRegistrationNbr;
+#     sh:datatype xs:integer;
+#     sh:minCount 1 ;
+#     sh:maxCount 1 ;
+#     sh:minLength 1 ;
+#     sh:maxLength 9 ;
+
+#     sh:sparql [
+#         sh:message "Invalid NOSS registration number: Checksum is wrong or value is 0 and ont:CompanyId is 0" ;
+#         sh:prefixes <> ;
+#         sh:select """
+#             SELECT $this  ?value
+#             WHERE {
+#                 $this ont:CompanyID ?companyId .
+#                 $this $PATH ?value .
+#                 BIND( FLOOR(?value / 100) * 100 as ?number )
+#                 BIND( ?value - ?number AS ?check )
+#                 BIND( ?number - (97 * FLOOR(?number / 97)) AS ?rest )
+#                 BIND( 96 - ?rest AS ?check2 )
+#                 FILTER ( 
+#                     (?value = 0 && ?companyId = 0) ||
+#                     (0 < ?value && ?value < 100006) ||
+#                     (100006 <= ?value && ?value <= 199999934 && ?check != ?check2) ||
+#                     (199999934 < ?value)
+#                 )
+#             }"""
+#     ] ;
+# .
+
+kg:QuarterShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Quarter (00013)" ;
+    sh:path ont:Quarter;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 5 ;
+    sh:maxLength 5 ;
+    sh:minInclusive 20031 ;
+    sh:pattern "^\\d{4}[1-4]$" ;
+    sh:sparql [
+        sh:message "Quarter beyond [20031, last quarter in progress - 1]." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value
+            WHERE {
+                $this $PATH ?value .
+                BIND ( MONTH ( NOW() ) as ?currentMonth)
+                BIND (
+                    COALESCE (
+                        IF(?currentMonth <= 3, 1, ""),
+                        IF(?currentMonth <= 6, 2, ""),
+                        IF(?currentMonth <= 9, 3, ""),
+                        IF(?currentMonth <= 12, 4, ""),
+                        "" 
+                    ) as ?quarter
+                ) 
+                BIND ( (YEAR ( NOW() ) * 10 + ?quarter) as ?currentquarter)
+                BIND ( IF(?currentquarter = 1, ?currentquarter - 7, ?currentquarter - 1) as ?maxAllowedQuarter)
+                FILTER ( ?value < 20031 || ?maxAllowedQuarter < ?value)
+            }"""
+    ]
+.
+
+kg:HolidayStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HolidayStartingDate (00017)" ;
+    sh:path ont:HolidayStartingDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [
+        sh:message "Date beyond [next year/05/01, next year/12/31]." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value
+            WHERE {
+                $this $PATH ?value .
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ont:Quarter ?quarter .
+                BIND ( STR(xs:integer(FLOOR(?quarter / 10) + 1)) AS ?nextYear )
+                BIND ( STRDT(CONCAT(STR(?nextYear),"-05-01T00:00:00"),xs:dateTime) as ?minDate)
+                BIND ( STRDT(CONCAT(STR(?nextYear),"-12-31T00:00:00"),xs:dateTime) as ?maxDate)
+                FILTER ( ?valueDT < ?minDate || ?maxDate < ?valueDT)
+            }"""
+    ] ;
+    # TODO Obligatoire si le trimestre de la déclaration est le 4e trimestre de l'année et si l'employeur occupe des travailleurs manuels.
+.
+
+kg:CompanyIDShape a sh:NodeShape;
+    rdfs:comment "Property Shape for CompanyID (00014)" ;
+
+    sh:property [
+        sh:path ont:CompanyID;
+        sh:datatype xs:integer;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:maxLength 10 ;
+    ] ;
+
+
+    sh:or (
+        [
+            sh:path ont:CompanyID;
+            sh:minInclusive 100000070 ;
+            sh:maxInclusive 1999999943 ;
+            sh:sparql kg:sparql2DigitsChecksum97 ;
+        ]
+        [
+            sh:path ont:CompanyID;
+            sh:in (0) ;
+        ]
+    ) ;
+.
+
+kg:NetOwedAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NetOwedAmount (00015)" ;
+    sh:path ont:NetOwedAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 15 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 999999999999999 ; 
+    sh:sparql [
+        sh:message "Amount declared different from amount calculated" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value
+            WHERE {
+                $this $PATH ?value .
+                {
+                    SELECT $this (SUM (?contribution) as ?sumContribution)
+                    WHERE{
+                        {
+                            SELECT $this ?contribution
+                            WHERE{
+                                BIND (0 as ?contribution)
+                            }
+                        }
+                        UNION
+                        {
+                            SELECT $this ?contribution
+                            WHERE{
+                                $this 
+                                    ont:R_90007_90017/ont:R_90017_90012/ont:R_90012_90336/ont:R_90336_90337/ont:ContributionAmount |
+                                    ont:R_90007_90017/ont:R_90017_90012/ont:R_90012_90001/ont:ContributionAmount |
+                                    ont:R_90007_90002/ont:UnrelatedAmount |
+                                    ont:R_90007_90017/ont:R_90017_90012/ont:R_90012_90003/ont:StudentContributionAmount |
+                                    ont:R_90007_90017/ont:R_90017_90012/ont:R_90012_90042/ont:EarlyRetirementContributionAmount |
+                                    ont:R_90007_90017/ont:R_90017_90012/ont:R_90012_90005/ont:GrossRefRemunContributionAmount 
+                                        ?contribution
+                            }
+                        }
+                    }
+                    GROUP BY $this
+                }
+                {
+                    SELECT $this (SUM (?deduction) as ?sumDeduction)
+                    WHERE{
+                        {
+                            SELECT $this ?deduction
+                            WHERE{
+                                BIND (0 as ?deduction)
+                            }
+                        }
+                        UNION
+                        {
+                            SELECT $this ?deduction
+                            WHERE{
+                                $this 
+                                    ont:R_90007_90017/ont:R_90017_90012/ont:R_90012_90015/ont:R_90015_90109/ont:DeductionAmount |
+                                    ont:R_90007_90017/ont:R_90017_90012/ont:R_90012_90110/ont:DeductionAmount 
+                                        ?deduction
+                            }
+                        }
+                    }
+                    GROUP BY $this
+                } 
+                BIND(?sumContribution - ?sumDeduction as ?amountCalculated)
+                FILTER(?amountCalculated != ?value)
+            }""" ;
+    ]
+.
+
+kg:TrusteeshipShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Trusteeship (00012)" ;
+    sh:path ont:Trusteeship;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 1 ; 
+.
+
+kg:NaturalPersonShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for NaturalPerson (90017)" ;
+    sh:targetClass ont:NaturalPerson ;
+
+    sh:sparql [
+        sh:message "A combination of ont:EmployerClass and ont:WorkerCode must not appear several time for the same ont:NaturalPerson." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90017_90012 ?workerRecord .
+                        ?workerRecord ont:EmployerClass ?employerClass; ont:WorkerCode ?workerCode.
+                        BIND(CONCAT( STR(?employerClass), STR(?workerCode)) as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:property kg:NaturalPersonSequenceNbrShape;
+    sh:property kg:INSSShape;
+    sh:property kg:SISShape;
+    sh:property kg:WorkerNameShape;
+    sh:property kg:WorkerFirstNameShape;
+    sh:property kg:WorkerInitialShape;
+    sh:property kg:WorkerBirthdateShape;
+    sh:property kg:WorkerBirthplaceShape;
+    sh:property kg:WorkerBirthplaceCountryShape;
+    sh:property kg:WorkerSexShape;
+    sh:property kg:WorkerStreetShape;
+    sh:property kg:WorkerHouseNbrShape;
+    sh:property kg:WorkerPostBoxShape;
+    sh:property kg:WorkerZIPCodeShape;
+    sh:property kg:WorkerCityShape;
+    sh:property kg:WorkerCountryShape;
+    sh:property kg:NationalityShape;
+    sh:property kg:NaturalPersonUserReferenceShape;
+.
+
+kg:WorkerBirthdateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerBirthdate (00028)" ;
+    sh:path ont:WorkerBirthdate;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+.
+
+kg:WorkerInitialShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerInitial (00027)" ;
+    sh:path ont:WorkerInitial ;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+.
+
+kg:WorkerSexShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerSex (00029)" ;
+    sh:path ont:WorkerSex;
+    sh:datatype xs:integer;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1 ; 
+    sh:maxInclusive 2 ; 
+.
+
+kg:NaturalPersonSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NaturalPersonSequenceNbr (00023)" ;
+    sh:path ont:NaturalPersonSequenceNbr;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 7 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 9999999 ;
+
+    # sh:sparql [
+    #     sh:message "NaturalPersonSequenceNbr not unique." ;
+    #     sh:prefixes <> ;
+    #     sh:select """
+    #         SELECT $this ?value
+    #         WHERE {
+    #             $this ont:NaturalPersonSequenceNbr ?value .
+    #             $this ^ont:R_90007_90017 ?employerDeclaration .
+    #             ?employerDeclaration ont:R_90007_90017 ?other .
+    #             ?other ont:NaturalPersonSequenceNbr ?valueOther .
+    #             FILTER ($this != ?other && ?value = ?valueOther)
+    #         }"""
+    # ] ;
+.
+
+kg:NationalityShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Nationality (00119)" ;
+    sh:path ont:Nationality;
+    sh:datatype xs:integer;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 5 ;
+.
+
+kg:WorkerPostBoxShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerPostBox (00032)" ;
+    sh:path ont:WorkerPostBox;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+.
+
+kg:SISShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SIS (00167)" ;
+    sh:path ont:SIS;
+    sh:datatype xs:integer;
+    sh:maxCount 0 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+.
+
+kg:WorkerBirthplaceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerBirthplace (00168)" ;
+    sh:path ont:WorkerBirthplace;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 40 ;
+.
+
+kg:INSSShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for INSS (00024)" ;
+    sh:path ont:INSS;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 11 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 97 ; 
+    sh:maxInclusive 99999999964 ;
+    sh:sparql kg:sparql2DigitsChecksum97 ;
+.
+
+kg:WorkerFirstNameShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerFirstName (00026)" ;
+    sh:path ont:WorkerFirstName;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 24 ;
+.
+
+kg:WorkerCityShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerCity (00034)" ;
+    sh:path ont:WorkerCity;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 40 ;
+.
+
+kg:WorkerHouseNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerHouseNbr (00031)" ;
+    sh:path ont:WorkerHouseNbr;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 10 ;
+.
+
+kg:WorkerCountryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerCountry (00035)" ;
+    sh:path ont:WorkerCountry;
+    sh:datatype xs:integer;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 5 ;
+.
+
+kg:WorkerBirthplaceCountryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerBirthplaceCountry (00169)" ;
+    sh:path ont:WorkerBirthplaceCountry;
+    sh:datatype xs:integer;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 5 ;
+.
+
+kg:WorkerStreetShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerStreet (00030)" ;
+    sh:path ont:WorkerStreet;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 30 ;
+.
+
+kg:WorkerZIPCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerZIPCode (00033)" ;
+    sh:path ont:WorkerZIPCode;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+.
+
+kg:NaturalPersonUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NaturalPersonUserReference (00615)" ;
+    sh:path ont:NaturalPersonUserReference;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:maxLength 200 ;
+.
+
+kg:WorkerNameShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerName (00025)" ;
+    sh:path ont:WorkerName;
+    sh:datatype xs:string;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 48 ;
+.
+
+
+kg:CompanyVehicleShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for CompanyVehicle (90294)" ;
+    sh:targetClass ont:CompanyVehicle ;
+
+    sh:property kg:CompanyVehicleSequenceNbrShape;
+    sh:property kg:LicensePlateShape;
+    sh:property kg:EcoVehicleShape;
+.
+
+kg:EcoVehicleShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EcoVehicle (01217)" ;
+    sh:path ont:EcoVehicle;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+.
+
+kg:LicensePlateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for LicensePlate (00781)" ;
+    sh:path ont:LicensePlate;
+    sh:datatype xs:string;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 10 ;
+.
+
+kg:CompanyVehicleSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CompanyVehicleSequenceNbr (00780)" ;
+    sh:path ont:CompanyVehicleSequenceNbr;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 5 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999;
+.
+
+kg:ContributionUnrelatedToNPShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ContributionUnrelatedToNP (90002)" ;
+    sh:targetClass ont:ContributionUnrelatedToNP ;
+
+    sh:property kg:UnrelatedEmployerClassShape;
+    sh:property kg:UnrelatedWorkerCodeShape;
+    sh:node kg:UnrelatedCalculationBasisShape;
+    sh:property kg:UnrelatedAmountShape;
+.
+
+kg:UnrelatedWorkerCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for UnrelatedWorkerCode (00020)" ;
+    sh:path ont:UnrelatedWorkerCode;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 3 ;
+    sh:maxLength 3 ;
+   
+    sh:sparql [
+        sh:message "Invalid ont:UnrelatedWorkerCode, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?wc a an2:WorkerCodeContributionDue;
+                        an2:WorkerCode ?value; 
+                        an2:validFromQuarter ?startQuarter;
+                        an2:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90007_90002/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?wc))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid Worker Code, code does not exist or is not allowed for ont:UnrelatedWorkerCode." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?wc a an2:WorkerCodeContributionDue ; an2:WorkerCode ?value; an2:Presence ?presence.
+                    FILTER(?presence = 4)
+                }
+                FILTER(!BOUND(?wc))
+            }""" ;
+    ] ;
+.
+
+kg:UnrelatedAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for UnrelatedAmount (00022)" ;
+    sh:path ont:UnrelatedAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 13 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 9999999999999 ;
+.
+
+kg:UnrelatedCalculationBasisShape a sh:NodeShape;
+    rdfs:comment "Property Shape for UnrelatedCalculationBasis (00021)" ;
+
+    sh:property [
+        sh:path ont:UnrelatedCalculationBasis;
+        sh:datatype xs:integer;
+        sh:minLength 1 ;
+        sh:maxLength 13 ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 9999999999999 ;
+    ] ;
+
+    sh:xone(
+        [
+            sh:property [
+                sh:path ont:UnrelatedCalculationBasis;
+                sh:maxCount 1 ;
+                sh:sparql [
+                    sh:message "No ont:UnrelatedCalculationBasis must not exist for a ont:UnrelatedWorkerCode with the value 862" ;
+                    sh:prefixes <> ;
+                    sh:select """
+                        SELECT $this ?value 
+                        WHERE {
+                            $this $PATH ?value.
+                            $this ont:UnrelatedWorkerCode 862. 
+                        }""" ;
+                ] ;
+            ]
+        ]
+        [
+            sh:property [
+                sh:path ont:UnrelatedCalculationBasis;
+                sh:maxCount 0 ;
+            ]
+        ]
+    ) ;
+.
+
+kg:UnrelatedEmployerClassShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for UnrelatedEmployerClass (00019)" ;
+    sh:path ont:UnrelatedEmployerClass;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 3 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 999 ;
+    sh:sparql kg:sparqlValidEmployerClass ;
+.
+
+kg:WorkerRecordShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerRecord (90012)" ;
+    sh:targetClass ont:WorkerRecord ;
+
+    sh:sparql [
+        sh:message "A combination of ont:ContributionWorkerCode and ont:ContributionType must not appear several time for the same ont:WorkerRecord." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?combination ?combinationOcc 
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90012_90001 ?wc .
+                        ?wc ont:ContributionWorkerCode ?cwc; ont:ContributionType ?ct.
+                        BIND(CONCAT( STR(?cwc), STR(?ct)) as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }    
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:DeductionCode must be unique for a ont:WorkerRecord." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?dc) as ?dcOcc)
+                    WHERE {
+                        $this ont:R_90012_90110/ont:DeductionCode ?dc .
+                    } 
+                    GROUP BY ?dc $this
+                }
+                FILTER(?dcOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "A combination of ont:EmployerNotion, ont:JointCommissionNbr, ont:ActivityCode, ont:ComplIndemnityAgreementNotion, ont:HalfTimeCareerInterruptionNotion, ont:ReplacementAccordanceWCCNotion and ont:ServiceExemptionNotion must not appear several time for the same ont:WorkerRecord." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90012_90336 ?ci .
+                        ?ci ont:EmployerNotion ?en;
+                            ont:JointCommissionNbr ?jcn;
+                            ont:ActivityCode ?ac;
+                            ont:ComplIndemnityAgreementNotion ?cia;
+                            ont:HalfTimeCareerInterruptionNotion ?hfci; 
+                            ont:ReplacementAccordanceWCCNotion ?rcawn;
+                            ont:ServiceExemptionNotion? ?sen
+                        .
+
+                        BIND(
+                            CONCAT( STR(?en),
+                            CONCAT( STR(?jcn),
+                            CONCAT( STR(?ac),
+                            CONCAT( STR(?cia),
+                            CONCAT( STR(?hfci),
+                            CONCAT( STR(?rcawn),
+                                    STR(?sen)))))))
+                            as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }    
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "A combination of ont:IndemnityNature and ont:IncapacityDegree must not appear several time for the same ont:WorkerRecord." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90012_90011 ?iw .
+                        ?iw ont:IndemnityNature ?in; ont:IncapacityDegree ?ic.
+                        BIND(CONCAT( STR(?in), STR(?ic)) as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }    
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:OccupationSequenceNbr must be unique for a ont:WorkerRecord." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90012_90015/ont:OccupationSequenceNbr ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:property kg:EmployerClassShape;
+    sh:property kg:WorkerCodeShape;
+    sh:property kg:NOSSQuarterStartingDateShape;
+    sh:property kg:NOSSQuarterEndingDateShape;
+    sh:property kg:BorderShape;
+    sh:property kg:ActivityWithRiskShape;
+    sh:property kg:LocalUnitIDShape;
+    sh:property kg:WorkerRecordUserReferenceShape;
+.
+
+kg:WorkerCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerCode (00037)" ;
+    sh:path ont:WorkerCode;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 3 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 999;
+    
+    sh:sparql [
+       sh:message "Invalid Worker Code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?wc a an2:WorkerCodeContributionDue;
+                        an2:WorkerCode ?value; 
+                        an2:validFromQuarter ?startQuarter;
+                        an2:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?wc))
+            }""" ;
+    ] ;
+
+     sh:sparql [
+        sh:message """Invalid Worker Code, code does not exist or is not allowed for this data property.""" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    {
+                        ?wc a an2:WorkerCodeContributionDue;
+                            an2:WorkerCode ?value;
+                            an2:Presence ?presence; 
+                        .
+                        FILTER( ?presence = 1 || ?presence = 3)
+                    }
+                    UNION
+                    {
+                        ?wc a an28:WorkerCodeContributionDueAPL;
+                                an28:WorkerCode ?value;
+                                an28:Presence ?presence; 
+                                .
+                        FILTER( ?presence = 1 || ?presence = 3)
+                    }
+                }
+                FILTER(!BOUND(?wc))
+            }""" ;
+    ] ;
+    # TODO En DmfA les stagiaires (= codes travailleurs 848 et 849) ne sont pas autorisés.
+.
+
+kg:NOSSQuarterStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NOSSQuarterStartingDate (00038)" ;
+    sh:path ont:NOSSQuarterStartingDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql kg:sparqlValidDate90012 ;
+.
+
+kg:BorderShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Border (00040)" ;
+    sh:path ont:Border;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 1 ; 
+.
+
+kg:EmployerClassShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EmployerClass (00036)" ;
+    sh:path ont:EmployerClass;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 3 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 999 ;
+    sh:sparql kg:sparqlValidEmployerClass ;
+.
+
+kg:LocalUnitIDShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for LocalUnitID (00042)" ;
+    sh:path ont:LocalUnitID;
+    sh:datatype xs:integer;
+    # sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;    
+    sh:maxLength 10 ;
+    sh:minInclusive 2000000042;
+    sh:maxInclusive 8999999894 ;
+    sh:sparql kg:sparql2DigitsChecksum97 ;
+    # https://www.socialsecurity.be/portail/glossaires/dmfa.nsf/77847e9daf4d0560c125686200574ff1/4c362d32cbc1166ac125885c002b85ee?OpenDocument
+.
+
+kg:WorkerRecordUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerRecordUserReference (00616)" ;
+    sh:path ont:WorkerRecordUserReference;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:maxLength 200 ;
+.
+
+kg:ActivityWithRiskShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ActivityWithRisk (00041)" ;
+    sh:path ont:ActivityWithRisk;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 3 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 999 ;
+
+    sh:sparql [
+        sh:message "Invalid ont:ActivityWithRisk code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?awr a an6:ActivityWithRisk;
+                        an6:Code ?value;
+                        an6:validFromQuarter ?startQuarter;
+                        an6:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?awr))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid code for ont:ActivityWithRisk, does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+           SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?awr a an6:ActivityWithRisk;
+                        an6:Code ?value;
+                    .
+                }
+                FILTER(!BOUND(?awr))
+            }""" ;
+    ] ;
+.
+
+kg:NOSSQuarterEndingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NOSSQuarterEndingDate (00039)" ;
+    sh:path ont:NOSSQuarterEndingDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql kg:sparqlValidDate90012 ;
+.
+
+kg:OccupationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Occupation (90015)" ;
+    sh:targetClass ont:Occupation ;
+
+    sh:sparql [
+        sh:message "Each ont:ServiceCode must be unique for a ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?sc) as ?scOcc)
+                    WHERE {
+                        $this ont:R_90015_90018/ont:DeductionCode ?sc .
+                    } 
+                    GROUP BY ?sc $this
+                }
+                FILTER(?scOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "A combination of ont:RemunCode, ont:PercentagePaid and ont:BonusPaymentFrequency must not appear several time for the same ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90015_90019 ?r .
+                        ?r ont:RemunCode ?rc;
+                            ont:PercentagePaid ?pp;
+                            ont:BonusPaymentFrequency ?bpf;
+                        .
+
+                        BIND(
+                            CONCAT( STR(?rc),
+                            CONCAT( STR(?pp),
+                                    STR(?bpf)))
+                            as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }    
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "A combination of ont:OccupationPSDStartDate, ont:PublicSectorInstitutionType, ont:PublicSectorPersonnelCategory, ont:AssignmentType and ont:FunctionNature must not appear several time for the same ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90015_90411 ?opsd .
+                        ?opsd ont:OccupationPSDStartDate ?opsdsd;
+                            ont:PublicSectorInstitutionType ?psit;
+                            ont:PublicSectorPersonnelCategory ?pspc;
+                            ont:AssignmentType ?at;
+                            ont:FunctionNature ?fn;
+                        .
+
+                        BIND(
+                            CONCAT( STR(?opsdsd),
+                            CONCAT( STR(?psit),
+                            CONCAT( STR(?pspc),
+                            CONCAT( STR(?at),
+                                    STR(?fn)))))
+                            as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }    
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:ReorganisationMeasure in ont:ReorgMeasureInformation must be unique for a ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?rm) as ?rmOcc)
+                    WHERE {
+                        $this ont:R_90015_90438/ont:ReorganisationMeasure ?rm .
+                    } 
+                    GROUP BY ?rm $this
+                }
+                FILTER(?rmOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:DeductionCode in ont:OccupationDeduction must be unique for a ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?dc) as ?dcOcc)
+                    WHERE {
+                        $this ont:R_90015_90109/ont:DeductionCode ?dc .
+                    } 
+                    GROUP BY ?dc $this
+                }
+                FILTER(?dcOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:ServiceSequenceNbr must be unique for a ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90012_90015/ont:ServiceSequenceNbr ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Each ont:RemunSequenceNbr must be unique for a ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90015_90019/ont:RemunSequenceNbr ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;    
+
+    sh:sparql [
+        sh:message "A combination of ont:RemunCode, ont:BonusPaymentFrequency and ont:PercentagePaid must not appear several time for the same ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?combination ?combinationOcc 
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90015_90019 ?r .
+                        ?r ont:RemunCode ?rc;
+                            ont:BonusPaymentFrequency ?bpf;
+                            ont:PercentagePaid ?pp;
+                        .
+
+                        BIND( 
+                            CONCAT( STR(?rc),
+                            CONCAT( STR(?bpf),
+                                    STR(?pp)))
+                            as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }    
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:property kg:OccupationSequenceNbrShape;
+    sh:property kg:OccupationStartingDateShape;
+    sh:property kg:OccupationEndingDateShape;
+    sh:property kg:JointCommissionNbrShape;
+    sh:property kg:WorkingDaysSystemShape;
+    sh:property kg:ContractTypeShape;
+    sh:property kg:RefMeanWorkingHoursShape;
+    sh:property kg:WorkerStatusShape;
+    sh:property kg:MeanWorkingHoursShape;
+    sh:node kg:ReorganisationMeasureShape;
+    sh:property kg:EmploymentPromotionShape;
+    sh:property kg:RetiredShape;
+    sh:property kg:ApprenticeshipShape;
+    sh:property kg:RemunMethodShape;
+    sh:property kg:PositionCodeShape;
+    sh:property kg:FlyingStaffClassShape;
+    sh:property kg:TenthOrTwelfthShape;
+    sh:property kg:OccupationUserReferenceShape;
+    sh:property kg:DaysJustificationShape;
+    sh:node kg:ActivityCodeShape;
+    sh:property kg:LocalUnitIDShape;
+    sh:property kg:ShipIdShape;
+    sh:property kg:StaffCodeShape;
+    sh:property kg:SubsidizedMeanWorkingHoursShape;
+.
+
+kg:ActivityCodeShape a sh:NodeShape;
+    rdfs:comment "Property Shape for ActivityCode (00228)" ;
+
+    sh:property [
+        sh:path ont:ActivityCode;
+        sh:datatype xs:integer;
+        sh:maxCount 1 ;
+        sh:minLength 5 ;
+        sh:maxLength 5 ;
+        sh:minInclusive 0;
+        sh:maxInclusive 99999;
+    ] ;
+
+    sh:xone (
+        [
+            sh:class ont:ComplementaryIndemnity;
+            sh:property [
+                sh:path ont:ActivityCode;
+                sh:minCount 1;
+            ] ;
+            sh:or (
+                [
+                    sh:path ont:ActivityCode;
+                    sh:in (00000) ;
+                ] 
+                [
+                    sh:path ont:ActivityCode;
+                    sh:sparql kg:sparqlValidNaceCode ;
+                ]
+            ) ;
+        ]
+        [
+            sh:class ont:Occupation ;
+            sh:property [
+                sh:path ont:ActivityCode;
+                sh:sparql kg:sparqlValidNaceCode ;
+            ]
+        ]
+    ) ;
+.
+
+kg:PositionCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PositionCode (00057)" ;
+    sh:path ont:PositionCode;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 99 ;
+
+    sh:sparql [
+        sh:message "Invalid ont:PositionCode, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?p a an9:PositionCode;
+                        an9:Code ?value;
+                        an9:validFromQuarter ?startQuarter;
+                        an9:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?p))   
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid code for a position, code does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?p a an9:PositionCode ; an9:Code ?value.
+                }
+                FILTER(!BOUND(?p))
+            }""" ;
+    ] ;
+.
+
+kg:JointCommissionNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for JointCommissionNbr (00046)" ;
+    sh:path ont:JointCommissionNbr;
+    sh:datatype xs:string;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 3 ;
+    sh:maxLength 9 ;
+    sh:pattern "^(\\d{3}|\\d{3}\\.\\d{2}|\\d{3}\\.\\d{2}\\.\\d{2})$" ;
+
+.
+
+kg:ApprenticeshipShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Apprenticeship (00055)" ;
+    sh:path ont:Apprenticeship;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 5;
+.
+
+kg:ReorganisationMeasureShape a sh:NodeShape;
+    rdfs:comment "Property Shape for ReorganisationMeasure (00051)" ;
+
+    sh:property [
+        sh:path ont:ReorganisationMeasure;
+        sh:datatype xs:integer;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:maxLength 3 ;
+        sh:minInclusive 0;
+        sh:maxInclusive 999;
+
+        sh:sparql [
+            sh:message "Invalid ont:ReorganisationMeasure code, code is out of valid quarter range." ;
+            sh:prefixes <> ;
+            sh:select """
+                SELECT $this ?value 
+                WHERE {
+                    $this $PATH ?value.
+                    OPTIONAL{
+                        ?rm a an44:ReorganisationMeasure;
+                            an44:Code ?value;
+                            an44:validFromQuarter ?startQuarter;
+                            an44:validToQuarter ?endQuarter;
+                        .
+                        $this ^ont:R_90015_90438?/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                        FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                    }
+                    FILTER(!BOUND(?rm))
+                }""" ;
+        ] ;
+
+        sh:sparql [
+            sh:message "Invalid Reorganisation Measure, code does not exist" ;
+            sh:prefixes <> ;
+            sh:select """
+                SELECT $this ?value 
+                WHERE {
+                    $this $PATH ?value.
+                    OPTIONAL{
+                        ?rm a an44:ReorganisationMeasure ; an44:Code ?value.
+                    }
+                    FILTER(!BOUND(?rm))
+                }""" ;
+        ] ;
+    ] ;
+
+
+    sh:xone (
+        [
+            sh:class ont:ReorgMeasureInformation ;
+            sh:property [
+                sh:path ont:ReorganisationMeasure;
+                sh:minCount 1 ;
+  
+            ] ;
+            sh:not [
+                    sh:path ont:ReorganisationMeasure;
+                    sh:in (599);
+            ] ;
+        ]
+        [
+            sh:class ont:Occupation ;
+        ]
+    ) ;
+.
+
+kg:WorkerStatusShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkerStatus (00053)" ;
+    sh:path ont:WorkerStatus;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 2 ;
+
+
+    sh:sparql [
+        sh:message "Invalid ont:WorkerStatus code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?ws a an21:WorkerStatus;
+                        an21:Code ?value;
+                        an21:validFromQuarter ?startQuarter;
+                        an21:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?ws))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid Worker Status, code does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?ws a an21:WorkerStatus ; an21:Code ?value.
+                }
+                FILTER(!BOUND(?ws))
+            }""" ;
+    ] ;
+.
+
+
+kg:ContractTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContractType (00050)" ;
+    sh:path ont:ContractType;
+    sh:datatype xs:integer;
+    sh:minCount 1;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 1 ; 
+.
+
+kg:EmploymentPromotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EmploymentPromotion (00052)" ;
+    sh:path ont:EmploymentPromotion;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 999;
+
+    sh:sparql [
+        sh:message "Invalid ont:EmploymentPromotion code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?ep a an35:EmploymentPromotion;
+                        an35:Code ?value;
+                        an35:validFromQuarter ?startQuarter;
+                        an35:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?ep))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid Employment Promotion, code does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?ep a an35:EmploymentPromotion ; an35:Code ?value.
+                }
+                FILTER(!BOUND(?ep))
+            }""" ;
+    ] ;
+.
+
+kg:WorkingDaysSystemShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkingDaysSystem (00047)" ;
+    sh:path ont:WorkingDaysSystem;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 700;
+
+    sh:sparql [
+        sh:message "ont:WorkingDaysSystem must have the value 0 if ont:ReorganisationMeasure has a value in (513, 516, 517, 542, 543, 545, 546, 599)" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:ReorganisationMeasure ?rm.
+                FILTER( ?rm in (513, 516, 517, 542, 543, 545, 546, 599))
+                FILTER( ?value != 0 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "ont:WorkingDaysSystem must have the value 500 if it concerns a ont:EmployerClass that has a value in (099, 199, 299, 699)" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ^ont:R_90012_90015/ont:EmployerClass ?ec.
+                FILTER( ?ec in (099, 199, 299, 699))
+                FILTER( ?value != 500 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "ont:WorkingDaysSystem must have the value 700 if it concerns a ont:EmployerClass that has the value 405" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ^ont:R_90012_90015/ont:EmployerClass ?ec.
+                FILTER( ?ec = 405 )
+                FILTER( ?value != 700 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "ont:WorkingDaysSystem must have the value 500 if it concerns a ont:WorkerCode in (497 (annex2), 761 (annex28))" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ^ont:R_90012_90015/ont:WorkerCode ?wc.
+                FILTER( ?wc in (497, 761))
+                FILTER( ?value != 500 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message """ont:WorkingDaysSystem must not have the value 0 if ont:ReorganisationMeasure has not a value in (501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 516, 517, 531, 541, 542, 543, 544, 545, 546, 599) or ont:DaysJustification does not have the value "7" """ ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:ReorganisationMeasure ?rm.
+                $this ont:DaysJustification ?dj.
+                FILTER( !(?rm in (501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 516, 517, 531, 541, 542, 543, 544, 545, 546, 599)))
+                FILTER( ?dj != "7" )
+                FILTER( ?value = 0 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "ont:WorkingDaysSystem must have the value 0 if ont:MeanWorkingHours has the value 0" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:MeanWorkingHours ?mwh.
+                FILTER( ?mwh = 0 )
+                FILTER( ?value != 0 )
+            }""" ;
+    ] ;
+.
+
+kg:RefMeanWorkingHoursShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RefMeanWorkingHours (00049)" ;
+    sh:path ont:RefMeanWorkingHours;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 6000;
+
+    #TODO discuss advantage with no generic $PATH
+    sh:sparql [
+        sh:message """ont:RefMeanWorkingHours must have a value under 5000 (included) if ont:WorkerStatus is not "D2".""" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:WorkerStatus ?ws.
+                FILTER( ?ws != "D2" )
+                FILTER( ?value > 5000 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message """ont:RefMeanWorkingHours must have a value under 4800 (included) if ont:WorkerStatus is not in ("D1" "D2").""" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:WorkerStatus ?ws.
+                FILTER( !(?ws in ("D2", "D1")) )
+                FILTER( ?value > 4800 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "ont:RefMeanWorkingHours must have the value 3800 if it concerns a ont:WorkerCode in (497 (annex2), 761 (annex28))" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ^ont:R_90012_90015/ont:WorkerCode ?wc.
+                FILTER( ?wc in (497, 761))
+                FILTER( ?value != 3800 )
+            }""" ;
+    ] ;
+
+.
+
+kg:RemunMethodShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RemunMethod (00056)" ;
+    sh:path ont:RemunMethod;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1 ; 
+    sh:maxInclusive 3 ; 
+.
+
+kg:OccupationEndingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationEndingDate (00045)" ;
+    sh:path ont:OccupationEndingDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [    
+        sh:message "Invalid Year: must be the same as the declaration's year" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value .
+                BIND ( YEAR(?value) as ?year)
+                $this ^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND (  FLOOR(?quarter / 10) as ?dYear)
+                FILTER( ?year != ?dYear)
+            }""" ;
+    ] ;
+.
+
+kg:OccupationUserReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationUserReference (00617)" ;
+    sh:path ont:OccupationUserReference;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:maxLength 200 ;
+.
+
+kg:MeanWorkingHoursShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MeanWorkingHours (00048)" ;
+    sh:path ont:MeanWorkingHours;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 6000;
+
+    sh:sparql [
+        sh:message """ont:MeanWorkingHours must have a value under 5000 (included) if ont:WorkerStatus is not "D2".""" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:WorkerStatus ?ws.
+                FILTER( ?ws != "D2" )
+                FILTER( ?value > 5000 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message """ont:MeanWorkingHours must have a value under 4800 (included) if ont:WorkerStatus is not in ("D1" "D2").""" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:WorkerStatus ?ws.
+                FILTER( !(?ws in ("D2", "D1")) )
+                FILTER( ?value > 4800 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "ont:MeanWorkingHours must have the value 3800 if it concerns a ont:WorkerCode in (497 (annex2), 761 (annex28))" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ^ont:R_90012_90015/ont:WorkerCode ?wc.
+                FILTER( ?wc in (497, 761))
+                FILTER( ?value != 3800 )
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "ont:MeanWorkingHours must have the value 0 if ont:WorkingDaysSystem has the value 0" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:WorkingDaysSystem ?wds.
+                FILTER( ?wds = 0 )
+                FILTER( ?value != 0 )
+            }""" ;
+    ] ;
+
+    #TODO inconsistent ne concerne pas un tiers payant
+.
+
+kg:RetiredShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for Retired (00054)" ;
+    sh:path ont:Retired;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 1 ; 
+.
+
+kg:DaysJustificationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DaysJustification (00625)" ;
+    sh:path ont:DaysJustification;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ( "1" "2" "3" "4" "5" "6" "7" "8") ;
+    #TODO WHY SINCE CREATION string? but intger
+.
+
+kg:OccupationSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationSequenceNbr (00043)" ;
+    sh:path ont:OccupationSequenceNbr;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+.
+
+kg:OccupationStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationStartingDate (00044)" ;
+    sh:path ont:OccupationStartingDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [    
+        sh:message "Invalid Year: must be in [declaration's year - 100; declaration's year]" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value .
+                BIND ( YEAR(?value) as ?year)
+                $this ^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                FILTER( ?year < ?dYear - 100 || ?dYear < ?year)
+            }""" ;
+    ] ;
+
+    sh:sparql [    
+        sh:message """Date must be in [Start of declaration's quarter; End of declaration's quarter] if ont:WorkerStatus has a value in ("B", "VA")""" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                BIND( xs:dateTime(?value) as ?valueDT)
+                $this ont:WorkerStatus ?ws.
+                FILTER( ?ws in ("B", "VA"))
+                $this ^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-01-01T00:00:00",
+                        IF(?dQuarter = 2, "-04-01T00:00:00",
+                        IF(?dQuarter = 3, "-07-01T00:00:00",
+                        "-09-01T00:00:00"))) as ?startMD)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+  				BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?startMD)) as ?startDate)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+                FILTER( ?valueDT < ?startDate || ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:TenthOrTwelfthShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TenthOrTwelfth (00060)" ;
+    sh:path ont:TenthOrTwelfth;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:in (10 12 20) ;
+.
+
+kg:SubsidizedMeanWorkingHoursShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SubsidizedMeanWorkingHours (01203)" ;
+    sh:path ont:SubsidizedMeanWorkingHours;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 5000;
+    sh:sparql [
+        sh:message "There must be one ont:SubsidizedMeanWorkingHours for a ont:Occupation if it has a ont:RemunCode in (24, 25, 26)" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ont:R_90015_90019/ont:RemunCode ?rc.
+                        FILTER(?rc in (24, 25, 26))
+                        $this ?p ?o.
+                        BIND( IF(?p = ont:SubsidizedMeanWorkingHours, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                FILTER (?nbrOcc != 1)
+            }""" ;
+    ] ;
+.
+
+kg:ShipIdShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ShipId (01195)" ;
+    sh:path ont:ShipId;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 7 ;
+    sh:maxLength 7 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 9999999 ;
+    sh:sparql [
+        sh:message "There must be one ont:SubsidizedMeanWorkingHours for a ont:Occupation if it has a ont:RemunCode in (24, 25, 26)" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ^ont:R_90012_90015/ont:EmployerClass ?ec.
+                        FILTER(?ec in (105, 205, 305))
+                        $this ?p ?o.
+                        BIND( IF(?p = ont:ShipId, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                FILTER (?nbrOcc != 1)
+            }""" ;
+    ] ;
+.
+
+kg:FlyingStaffClassShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FlyingStaffClass (00059)" ;
+    sh:path ont:FlyingStaffClass;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1 ; 
+    sh:maxInclusive 3 ; 
+.
+
+kg:StaffCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StaffCode (01199)" ;
+    sh:path ont:StaffCode;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ; # Ne vas que jusque 2
+
+    sh:sparql [
+        sh:message "Invalid ont:StaffCode code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL {
+                    ?sc a an45:StaffCode;
+                        an45:Code ?value;
+                        an45:validFromQuarter ?startQuarter;
+                        an45:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?sc))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid value for a ont:StaffCode, code does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?sc a an45:StaffCode ; an45:Code ?value.
+                }
+                FILTER(!BOUND(?sc))
+            }""" ;
+    ]
+.
+
+kg:ActivationInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ActivationInformation (90578)" ;
+    sh:targetClass ont:ActivationInformation ;
+
+    sh:property kg:ServiceExemptionStartDateShape;
+    sh:property kg:TrainingSituationStartDateShape;
+    sh:property kg:TrainingSituationShape;
+.
+
+kg:TrainingSituationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TrainingSituation (01193)" ;
+    sh:path ont:TrainingSituation;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+.
+
+kg:TrainingSituationStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for TrainingSituationStartDate (01192)" ;
+    sh:path ont:TrainingSituationStartDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "2017-09-28"^^xs:date;
+.
+
+kg:ServiceExemptionStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceExemptionStartDate (01191)" ;
+    sh:path ont:ServiceExemptionStartDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "2017-09-28"^^xs:date;
+.
+
+kg:WorkerContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerContribution (90001)" ;
+    sh:targetClass ont:WorkerContribution ;
+
+    sh:property kg:ContributionWorkerCodeShape;
+    sh:property kg:ContributionTypeShape;
+    sh:property kg:ContributionCalculationBasisShape;
+    sh:property kg:ContributionAmountShape;
+    sh:property kg:FirstHiringDateShape;
+.
+
+kg:ContributionTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionType (00083)" ;
+    sh:path ont:ContributionType;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 1 ;
+    #TODO not done because not clear enough and too complex
+    #TODO les valeurs admises en fonction du code travailleur cotisation se trouvent en annexe 3 - Valeurs autorisées pour le "Type de cotisation" en fonction des codes travailleurs cotisations.
+.
+
+kg:ContributionCalculationBasisShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionCalculationBasis (00084)" ;
+    sh:path ont:ContributionCalculationBasis;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+.
+
+kg:FirstHiringDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FirstHiringDate (00896)" ;
+    sh:path ont:FirstHiringDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "2007-07-01"^^xs:date ;
+    sh:sparql [    
+        sh:message "Date must be before the end of declaration's quarter" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this ont:FirstHiringDate ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90012_90001/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+                FILTER( ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:ContributionWorkerCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionWorkerCode (00082)" ;
+    sh:path ont:ContributionWorkerCode;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 999;
+
+    sh:sparql [
+        sh:message "Invalid ont:WorkerCode, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    {
+                        ?wc a an2:WorkerCodeContributionDue;
+                            an2:WorkerCode ?value;
+                            an2:validFromQuarter ?startQuarter;
+                            an2:validToQuarter ?endQuarter;
+                        .
+                    }
+                    UNION
+                    {
+                        ?wc a an28:WorkerCodeContributionDueAPL;
+                            an28:WorkerCode ?value;
+                            an28:validFromQuarter ?startQuarter;
+                            an28:validToQuarter ?endQuarter;
+                        .
+                    }                      
+                    $this ((^ont:R_90336_90337/^ont:R_90012_90336)|^ont:R_90012_90001)/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                } 
+                FILTER(!BOUND(?wc))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message """Invalid Worker Code, code does not exist or is not allowed for this data property.""" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL {
+                    {
+                        ?wc a an2:WorkerCodeContributionDue;
+                            an2:WorkerCode ?value;
+                            an2:Presence ?presence; 
+                        .
+                        FILTER( ?presence in (2, 3, 5))
+                    }
+                    UNION
+                    {
+                        ?wc a an28:WorkerCodeContributionDueAPL;
+                            an28:WorkerCode ?value;
+                            an28:Presence ?presence; 
+                            .
+                            FILTER( ?presence in (2, 3, 5))
+                    }
+                }
+                FILTER(!BOUND(?wc))
+            }""" ;
+    ] ;
+.
+
+kg:ContributionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionAmount (00085)" ;
+    sh:path ont:ContributionAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+.
+
+kg:WorkerDeductionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for WorkerDeduction (90110)" ;
+    sh:targetClass ont:WorkerDeduction ;
+
+    sh:sparql [
+        sh:message "Each ont:DeductionDetailSequenceNbr must be unique for a ont:WorkerDeduction." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90110_90108/ont:DeductionDetailSequenceNbr ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:property kg:DeductionCodeShape;
+    sh:property kg:DeductionCalculationBasisShape;
+    sh:property kg:DeductionAmountShape;
+    sh:property kg:DeductionRightStartingDateShape;
+    sh:property kg:ManagementCostNbrMonthsShape;
+    sh:node kg:ReplacedINSSShape;
+    sh:node kg:ApplicantINSSShape;
+    sh:property kg:CertificateOriginShape;
+.
+
+kg:DeductionCalculationBasisShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionCalculationBasis (00088)" ;
+    sh:path ont:DeductionCalculationBasis;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:DeductionCalculationBasis." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this ont:DeductionCode ?dc.
+                ?d a an4:DeductionCode;
+                    an4:Code ?dc;
+                    an4:CalculationBasisPresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;
+.
+
+kg:ReplacedINSSShape a sh:NodeShape;
+    rdfs:comment "Property Shape for ReplacedINSS (00092)" ;
+
+    sh:property [
+        sh:path ont:ReplacedINSS;
+        sh:datatype xs:integer;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:maxLength 11 ;
+    ] ;
+
+    sh:xone (
+        [
+            sh:path ont:ReplacedINSS;
+            sh:maxCount 0 ;
+        ]
+        [
+            sh:path ont:ReplacedINSS;
+            sh:minCount 1 ;
+            sh:minInclusive 97 ; 
+            sh:maxInclusive 99999999964 ;
+            sh:sparql kg:sparql2DigitsChecksum97 ;
+        ]
+        [
+            sh:path ont:ReplacedINSS;
+            sh:minCount 1 ;
+            sh:in (0);
+        ]
+    ) ;
+    
+    sh:property [
+        sh:path ont:ReplacedINSS;
+        sh:sparql [
+            sh:message "Wrong cardinatlity for ont:ReplacedINSS." ;
+            sh:prefixes <> ;
+            sh:select """
+                SELECT $this
+                WHERE {
+                    { 
+                        SELECT $this (SUM (?occ) as ?nbrOcc) 
+                        WHERE {
+                            $this ?p ?o.
+                            BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                        }
+                        GROUP BY $this
+                    }
+                    $this ont:DeductionCode ?dc.
+                    ?d a an4:DeductionCode;
+                        an4:Code ?dc;
+                        an4:ReplacedINSSSPresence ?presence;
+                    .
+                    BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                            IF(?presence = "Interdit"@fr, 0, 
+                            IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                    FILTER(?expectdNbrOcc != ?nbrOcc)
+                }""" ;
+        ] ;
+    ] ;
+.
+
+kg:CertificateOriginShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CertificateOrigin (00094)" ;
+    sh:path ont:CertificateOrigin;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 3 ; #TODO 1 in practice
+    sh:minInclusive 1 ; 
+    sh:maxInclusive 5 ; 
+.
+
+kg:ManagementCostNbrMonthsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ManagementCostNbrMonths (00091)" ;
+    sh:path ont:ManagementCostNbrMonths;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 3;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:ManagementCostNbrMonths." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this ont:DeductionCode ?dc.
+                ?d a an4:DeductionCode;
+                    an4:Code ?dc;
+                    an4:ManagementCostNbrMonthsPresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;
+.
+
+kg:DeductionCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionCode (00086)" ;
+    sh:path ont:DeductionCode;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 4 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 9999;
+
+    sh:sparql [
+        sh:message "Invalid ont:DeductionCode, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?dc a an4:DeductionCode;
+                        an4:Code ?value;
+                        an4:validFromQuarter ?startQuarter;
+                        an4:validToQuarter ?endQuarter;
+                    .
+                    $this ((^ont:R_90015_90109/^ont:R_90012_90015)|^ont:R_90012_90110)/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                } 
+                FILTER(!BOUND(?dc))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid code for ont:DeductionCode, does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?dc a an4:DeductionCode;
+                        an4:Code ?value;
+                        an4:FunctionalBlocLinked ?fbl;
+                    .
+                    $this ^ont:R_90012_90110|^ont:R_90015_90109 ?bl.
+                    ?bl a ?fbl.
+                }
+                FILTER(!BOUND(?dc))
+            }""" ;
+    ] ;
+.
+
+kg:DeductionRightStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionRightStartingDate (00090)" ;
+    sh:path ont:DeductionRightStartingDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [    
+        sh:message "Date must be withinin valid deduction validity range" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ont:DeductionCode ?code. 
+                ?dc a an4:DeductionCode;
+                    an4:Code ?code;
+                    an4:validFromQuarter ?startQuarter;
+                    an4:validToQuarter ?endQuarter;
+                .
+                BIND ( FLOOR(?startQuarter / 10) as ?startYear)
+                BIND ( FLOOR(?endQuarter / 10) as ?endYear)
+                BIND ( ?startQuarter - 10 * ?startYear as ?startQuarterN)
+                BIND ( ?endQuarter - 10 * ?endYear as ?endQuarterN)
+                BIND (  IF(?startQuarterN = 1, "-01-01T00:00:00",
+                        IF(?startQuarterN = 2, "-04-01T00:00:00",
+                        IF(?startQuarterN = 3, "-07-01T00:00:00",
+                        "-09-01T00:00:00"))) as ?startMD)
+                BIND (  IF(?endQuarterN = 1, "-03-31T00:00:00",
+                        IF(?endQuarterN = 2, "-06-30T00:00:00",
+                        IF(?endQuarterN = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+  				BIND( xs:dateTime(CONCAT(STR(xs:integer(?startYear)), ?startMD)) as ?startDate)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?endYear)), ?endMD)) as ?endDate)
+                FILTER( ?valueDT < ?startDate || ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:ApplicantINSSShape a sh:NodeShape;
+    rdfs:comment "Property Shape for ApplicantINSS (00093)" ;
+    
+    sh:property [
+        sh:path ont:ApplicantINSS;
+        sh:datatype xs:integer;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:maxLength 11 ;
+    ] ;
+
+    sh:xone (
+        [
+            sh:path ont:ApplicantINSS;
+            sh:maxCount 0 ;
+        ]
+        [
+            sh:path ont:ApplicantINSS;
+            sh:minCount 1 ;
+            sh:minInclusive 97 ; 
+            sh:maxInclusive 99999999964 ;
+            sh:sparql kg:sparql2DigitsChecksum97 ;
+        ]
+        [
+            sh:path ont:ApplicantINSS;
+            sh:minCount 1 ;
+            sh:in (0);
+        ]
+    ) ;
+
+    sh:property [
+        sh:path ont:ApplicantINSS;
+        sh:sparql [
+            sh:message "Wrong cardinatlity for ont:ApplicantINSS." ;
+            sh:prefixes <> ;
+            sh:select """
+                SELECT $this
+                WHERE {
+                    { 
+                        SELECT $this (SUM (?occ) as ?nbrOcc) 
+                        WHERE {
+                            $this ?p ?o.
+                            BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                        }
+                        GROUP BY $this
+                    }
+                    $this ont:DeductionCode ?dc.
+                    ?d a an4:DeductionCode;
+                        an4:Code ?dc;
+                        an4:ApplicantINSSPresence ?presence;
+                    .
+                    BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                            IF(?presence = "Interdit"@fr, 0, 
+                            IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                    FILTER(?expectdNbrOcc != ?nbrOcc)
+                }""" ;
+        ] ;
+    ] ;
+.
+
+kg:DeductionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionAmount (00089)" ;
+    sh:path ont:DeductionAmount;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:DeductionAmount." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this ont:DeductionCode ?dc.
+                ?d a an4:DeductionCode;
+                    an4:Code ?dc;
+                    an4:AmountPresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;
+.
+
+kg:DismissedStatutoryWorkerContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DismissedStatutoryWorkerContribution (90005)" ;
+    sh:targetClass ont:DismissedStatutoryWorkerContribution ;
+
+    sh:property kg:GrossRefRemunAmountShape;
+    sh:property kg:GrossRefRemunContributionAmountShape;
+    sh:property kg:RefNbrDaysShape;
+    sh:property kg:SubjectionStartingDateShape;
+    sh:property kg:SubjectionEndingDateShape;
+.
+
+kg:GrossRefRemunContributionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for GrossRefRemunContributionAmount (00072)" ;
+    sh:path ont:GrossRefRemunContributionAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 999999999 ;
+.
+
+kg:RefNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RefNbrDays (00073)" ;
+    sh:path ont:RefNbrDays;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 624 ;
+.
+
+kg:SubjectionEndingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SubjectionEndingDate (00129)" ;
+    sh:path ont:SubjectionEndingDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [    
+        sh:message "Date must be in [Start of declaration's quarter; End of declaration's quarter]"  ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90012_90005/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-01-01T00:00:00",
+                        IF(?dQuarter = 2, "-04-01T00:00:00",
+                        IF(?dQuarter = 3, "-07-01T00:00:00",
+                        "-09-01T00:00:00"))) as ?startMD)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+  				BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?startMD)) as ?startDate)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+                FILTER( ?valueDT < ?startDate || ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:GrossRefRemunAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for GrossRefRemunAmount (00071)" ;
+    sh:path ont:GrossRefRemunAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 999999999;
+.
+
+kg:SubjectionStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SubjectionStartingDate (00127)" ;
+    sh:path ont:SubjectionStartingDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [    
+        sh:message "Date must be in [Start of (declaration's quarter - 8); End of declaration's quarter]"  ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90012_90005/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?dYear - 2 as ?dYear2)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-01-01T00:00:00",
+                        IF(?dQuarter = 2, "-04-01T00:00:00",
+                        IF(?dQuarter = 3, "-07-01T00:00:00",
+                        "-09-01T00:00:00"))) as ?startMD)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+  				BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear2)), ?startMD)) as ?startDate)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+                FILTER( ?valueDT < ?startDate || ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:StudentContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for StudentContribution (90003)" ;
+    sh:targetClass ont:StudentContribution ;
+
+    sh:property kg:StudentRemunAmountShape;
+    sh:property kg:StudentContributionAmountShape;
+    sh:property kg:StudentNbrDaysShape;
+    sh:property kg:StudentHoursNbrShape;
+    sh:property kg:LocalUnitIDShape;
+.
+
+kg:StudentHoursNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StudentHoursNbr (01158)" ;
+    sh:path ont:StudentHoursNbr;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 475;
+.
+
+kg:StudentNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StudentNbrDays (00078)" ;
+    sh:path ont:StudentNbrDays;
+    sh:datatype xs:integer;
+    sh:maxCount 0;
+.
+
+kg:StudentRemunAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StudentRemunAmount (00076)" ;
+    sh:path ont:StudentRemunAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999;
+.
+
+kg:StudentContributionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StudentContributionAmount (00077)" ;
+    sh:path ont:StudentContributionAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999;
+.
+
+kg:EarlyRetirementContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EarlyRetirementContribution (90042)" ;
+    sh:targetClass ont:EarlyRetirementContribution ;
+
+    sh:property kg:EarlyRetirementCodeShape;
+    sh:property kg:EarlyRetirementNbrMonthsShape;
+    sh:property kg:EarlyRetirementContributionAmountShape;
+.
+
+kg:EarlyRetirementCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EarlyRetirementCode (00079)" ;
+    sh:path ont:EarlyRetirementCode;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 1 ; 
+.
+
+kg:EarlyRetirementContributionAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EarlyRetirementContributionAmount (00081)" ;
+    sh:path ont:EarlyRetirementContributionAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999;
+.
+
+kg:EarlyRetirementNbrMonthsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for EarlyRetirementNbrMonths (00080)" ;
+    sh:path ont:EarlyRetirementNbrMonths;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 156;
+.
+
+kg:ComplementaryIndemnityShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ComplementaryIndemnity (90336)" ;
+    sh:targetClass ont:ComplementaryIndemnity ;
+
+    sh:sparql [
+        sh:message "Each ont:ContributionSequenceNbr must be unique for a ont:ComplementaryIndemnity." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90336_90337/ont:ContributionSequenceNbr ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "A combination of ont:ContributionWorkerCode, ont:ContributionType, ont:ComplIndemnityAmountAdjustNotion and ont:ContributionSequenceNbr must not appear several time for the same ont:ComplementaryIndemnity." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?combination ?combinationOcc 
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90336_90337 ?cic .
+                        ?cic ont:ContributionWorkerCode ?cwc;
+                            ont:ContributionType ?ct;
+                            ont:ComplIndemnityAmountAdjustNotion ?ciaan;
+                            ont:ContributionSequenceNbr ?csr;
+                        .
+                        BIND(   CONCAT( STR(?cwc),
+                                CONCAT( STR(?ct),
+                                CONCAT( STR(?ciaan), 
+                                        STR(?csr))))
+                            as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:node kg:EmployerNotionShape;
+    sh:property kg:JointCommissionNbrShape;
+    sh:node kg:ActivityCodeShape;
+    sh:property kg:DebtorTypeShape;
+    sh:property kg:FirstComplIndemnityDateShape;
+    sh:property kg:ComplIndemnityAgreementNotionShape;
+    sh:property kg:HalfTimeCareerInterruptionNotionShape;
+    sh:property kg:ServiceExemptionNotionShape;
+    sh:property kg:ReplacementAccordanceWCCNotionShape;
+    sh:property kg:SubstituteINSSShape;
+    sh:property kg:ResumptionOfWorkMeasureShape;
+    sh:property kg:ComplIndemnityNbrOfPartsShape;
+    sh:property kg:NoticeDateShape;
+    sh:property kg:AilingOrReorgCompanyNotionShape;
+    sh:property kg:AcknowledgementStartDateShape;
+    sh:property kg:AcknowledgementEndDateShape;
+.
+
+kg:AilingOrReorgCompanyNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AilingOrReorgCompanyNotion (00952)" ;
+    sh:path ont:AilingOrReorgCompanyNotion;
+    sh:datatype xs:string;
+    #TODO xs:integer in practice
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ( "0" "1" "2" "3" ) ;
+.
+
+kg:EmployerNotionShape a sh:NodeShape;
+    rdfs:comment "Property Shape for EmployerNotion (00815)" ;
+
+    sh:property [
+        sh:path ont:EmployerNotion;
+        sh:datatype xs:integer;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 11 ;
+        sh:maxLength 11 ;
+    ] ;
+
+    sh:xone (
+        [
+            # FASTER THAN SUBSTR
+            sh:path ont:EmployerNotion;
+            sh:sparql [
+                sh:message "Wrong format for ont:EmployerNotion" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this
+                    WHERE {
+                        $this $PATH ?en.
+                        $this ^ont:R_90012_90336/^ont:R_90017_90012/^ont:R_90007_90012 ?ed.
+                        ?ed ont:NOSSRegistrationNbr ?noss;
+                            ont:CompanyId ?cid
+                        .
+                        BIND ( FLOOR( ?ed / 10000000000) as ?firstDigit)
+                        BIND ( ?ed - ?firstDigit * 10000000000 as ?last10Digit)
+                        BIND ( FLOOR( (?ed - ?firstDigit * 10000000000) / 1000000000) as ?secondDigit)
+                        BIND ( ?ed - ?firstDigit * 10000000000 - ?secondDigit * 1000000000 as ?last9Digit)
+
+                        FILTER ( 
+                            (1 < ?firstDigit) ||
+                            (1 = ?firstDigit && ?last10Digit != ?cid) ||
+                            (0 = ?firstDigit && 0 != ?secondDigit) ||
+                            (0 = ?firstDigit && 0 = ?secondDigit && ?last9Digit != ?noss)
+                        )
+                    }""" ;
+            ] ;
+            sh:sparql [
+                sh:message "ont:DebtorType not in (0, 1, 4)" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this
+                    WHERE {
+                        $this ont:DebtorType ?dt
+                        FILTER(!(?dt in (2, 3, 4)))
+                    }""" ;
+            ] ;
+        ]
+        [
+            sh:path ont:EmployerNotion;
+            sh:in ("0") ;
+            sh:sparql [
+                sh:message "ont:DebtorType not in (0, 1, 4)" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this
+                    WHERE {
+                        $this ont:DebtorType ?dt
+                        FILTER(!(?dt in (0, 1, 4)))
+                    }""" ;
+            ] ;
+        ]
+    )
+.
+
+kg:SubstituteINSSShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SubstituteINSS (00749)" ;
+    sh:path ont:SubstituteINSS;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 11 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 97 ; 
+    sh:maxInclusive 99999999964 ;
+    sh:sparql kg:sparql2DigitsChecksum97 ;
+.
+
+kg:ComplIndemnityAgreementNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityAgreementNotion (00824)" ;
+    sh:path ont:ComplIndemnityAgreementNotion;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 3;
+.
+
+kg:ReplacementAccordanceWCCNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReplacementAccordanceWCCNotion (00827)" ;
+    sh:path ont:ReplacementAccordanceWCCNotion;
+    sh:datatype xs:string;
+    #TODO xs:integer in practice
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ( "0" "1" "9")
+.
+
+kg:ServiceExemptionNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceExemptionNotion (00826)" ;
+    sh:path ont:ServiceExemptionNotion;
+    sh:datatype xs:string;
+    #TODO xs:integer in practice
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in   ("0" "1" "2" "3" "4" "5" "6" "9") ;
+    sh:sparql [
+        sh:message "Value not in set of allowed values"  ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value;
+                    a ?type.
+                BIND (IF (?type = ont:ComplementaryIndemnity && ?value in ("0", "1", "9"), 1, 0) as ?validCI )
+                BIND (IF (?type = ont:OccupationInformations && ?value in ("0", "1", "2", "3", "4", "5", "6"), 1, 0) as ?validOI )
+                BIND(?validCI + ?validOI as ?match)
+                FILTER(?match = 0) 
+            }""" ;
+    ]
+.
+
+kg:ResumptionOfWorkMeasureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ResumptionOfWorkMeasure (00853)" ;
+    sh:path ont:ResumptionOfWorkMeasure;
+    sh:datatype xs:string;
+    #TODO xs:integer in practice
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("0" "1" "9") ;
+.
+
+kg:AcknowledgementStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AcknowledgementStartDate (00953)" ;
+    sh:path ont:AcknowledgementStartDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "1990-01-01"^^xs:date ;
+    sh:sparql [    
+        sh:message "Date must be before the end of declaration's quarter" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90012_90336/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+                FILTER( ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+    sh:sparql kg:sparqlAcknowledgementPeriodPresence;
+.
+
+kg:DebtorTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DebtorType (00949)" ;
+    sh:path ont:DebtorType;
+    sh:datatype xs:string;
+    #TODO xs:integer in practice
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("1" "2" "3" "4" "5")
+.
+
+kg:ComplIndemnityNbrOfPartsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityNbrOfParts (00950)" ;
+    sh:path ont:ComplIndemnityNbrOfParts;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 9;
+.
+
+kg:AcknowledgementEndDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AcknowledgementEndDate (00954)" ;
+    sh:path ont:AcknowledgementEndDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql kg:sparqlAcknowledgementPeriodPresence;
+    sh:sparql [    
+        sh:message "ont:AcknowledgementEndDate must be after ont:AcknowledgementStartDate" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                $this ont:AcknowledgementStartDate ?asd.
+                FILTER( ?value < ?asd )
+            }""" ;
+    ] ;
+.
+
+kg:HalfTimeCareerInterruptionNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HalfTimeCareerInterruptionNotion (00825)" ;
+    sh:path ont:HalfTimeCareerInterruptionNotion;
+    sh:datatype xs:string;
+    #TODO xs:integer inpractice
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("0" "1" "9") 
+.
+
+kg:FirstComplIndemnityDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FirstComplIndemnityDate (00823)" ;
+    sh:path ont:FirstComplIndemnityDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "1995-03-01"^^xs:date ;
+.
+
+kg:NoticeDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NoticeDate (00951)" ;
+    sh:path ont:NoticeDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "1990-01-01"^^xs:date ;
+.
+
+kg:IndemnityWAPMShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for IndemnityWAPM (90011)" ;
+    sh:targetClass ont:IndemnityWAPM ;
+
+    sh:property kg:IndemnityNatureShape;
+    sh:property kg:IncapacityDegreeShape;
+    sh:property kg:IndemnityAmountShape;
+.
+
+kg:IndemnityNatureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IndemnityNature (00144)" ;
+    sh:path ont:IndemnityNature;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99;
+
+    sh:sparql [
+        sh:message "Invalid ont:IndemnityNature code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?in a an10:IndemnityNature;
+                        an10:Code ?value;
+                        an10:validFromQuarter ?startQuarter;
+                        an10:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90012_90011/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                } 
+                FILTER(!BOUND(?in))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid code for ont:IndemnityNature, does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?in a an10:IndemnityNature ; an10:Code ?value.
+                }
+                FILTER(!BOUND(?in))
+            }""" ;
+    ] ;
+.
+
+kg:IncapacityDegreeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IncapacityDegree (00145)" ;
+    sh:path ont:IncapacityDegree;
+    sh:datatype xs:string;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 6 ;
+    sh:maxLength 6 ;
+    sh:pattern "^\\d{3},\\d{2}$" ;
+.
+
+kg:IndemnityAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IndemnityAmount (00146)" ;
+    sh:path ont:IndemnityAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+.
+
+kg:OccupationInformationsShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationInformations (90313)" ;
+    sh:targetClass ont:OccupationInformations ;
+
+    sh:property kg:HorecaExtraShape;
+    sh:property kg:PostedWorkerShape;
+    sh:property kg:NOSSLPASocialMaribelShape;
+    sh:property kg:HourRemunShape;
+    sh:property kg:HourRemunInThousandthOfEuroShape;
+    sh:property kg:SixMonthsIllnessDateShape;
+    sh:property kg:FirstWeekGuaranteedSalaryNbrDaysShape;
+    sh:property kg:IllnessGrossRemunAmountShape;
+    sh:property kg:PSDDclExemptionShape;
+    sh:property kg:SupplPensionContributionExemptionShape;
+    sh:property kg:ObligationControlInformationShape;
+    sh:property kg:DefinitiveNominationDateShape;
+    sh:property kg:NewMaribelEmploymentDateShape;
+    sh:property kg:PSPContribCalcBasisDerogationShape;
+    sh:property kg:CareerMeasureShape;
+    sh:property kg:ServiceExemptionNotionShape;
+    sh:property kg:HolidayDaysNumberShape;
+    sh:property kg:SectorDetailShape;
+    sh:property kg:MobilityBudgetShape;
+    sh:property kg:FlemishTrainingHolidayHoursNbrShape;
+    sh:property kg:RegionalAidMeasureShape;
+.
+
+kg:FirstWeekGuaranteedSalaryNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FirstWeekGuaranteedSalaryNbrDays (01010)" ;
+    sh:path ont:FirstWeekGuaranteedSalaryNbrDays;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 9200 ;
+.
+
+kg:PSPContribCalcBasisDerogationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PSPContribCalcBasisDerogation (01176)" ;
+    sh:path ont:PSPContribCalcBasisDerogation;
+    sh:datatype xs:string; #TODO integer in practice
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("1" "2") ;
+.
+
+kg:SixMonthsIllnessDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SixMonthsIllnessDate (00728)" ;
+    sh:path ont:SixMonthsIllnessDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [    
+        sh:message "Invalid Year: must be in [declaration's year - 100; declaration's year]" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value .
+                BIND ( YEAR(?value) as ?year)
+                $this ^ont:R_90015_90313/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                FILTER( ?year < ?dYear - 100 || ?dYear < ?year)
+            }""" ;
+    ] ;
+.
+
+kg:MobilityBudgetShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MobilityBudget (01216)" ;
+    sh:path ont:MobilityBudget;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+.
+
+kg:HolidayDaysNumberShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HolidayDaysNumber (00197)" ;
+    sh:path ont:HolidayDaysNumber;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 999 ;
+.
+
+kg:NewMaribelEmploymentDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NewMaribelEmploymentDate (01148)" ;
+    sh:path ont:NewMaribelEmploymentDate;
+    sh:datatype xs:date;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "2021-01-01"^^xs:date ;
+    sh:sparql kg:sparqlValidEndDate90313
+.
+
+kg:HourRemunShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HourRemun (00812)" ;
+    sh:path ont:HourRemun;
+    sh:datatype xs:integer;
+    sh:maxCount 0 ;
+    sh:minLength 1 ;
+    sh:maxLength 5 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 999999;
+.
+
+kg:NOSSLPASocialMaribelShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NOSSLPASocialMaribel (00794)" ;
+    sh:path ont:NOSSLPASocialMaribel;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 11 ;
+.
+
+kg:DefinitiveNominationDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DefinitiveNominationDate (01092)" ;
+    sh:path ont:DefinitiveNominationDate;
+    sh:datatype xs:date;
+    sh:maxCount 0 ; 
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "1900-01-01"^^xs:date ;
+    sh:sparql kg:sparqlValidEndDate90313
+.
+
+kg:HorecaExtraShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HorecaExtra (00795)" ;
+    sh:path ont:HorecaExtra;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("E") ;
+.
+
+kg:IllnessGrossRemunAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IllnessGrossRemunAmount (01011)" ;
+    sh:path ont:IllnessGrossRemunAmount;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 99999999999;
+.
+
+kg:ObligationControlInformationShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ObligationControlInformation (01063)" ;
+    sh:path ont:ObligationControlInformation;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:minLength 3 ;
+    sh:maxLength 3 ;
+    sh:in ("FWT") ;
+.
+
+kg:SupplPensionContributionExemptionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SupplPensionContributionExemption (01013)" ;
+    sh:path ont:SupplPensionContributionExemption;
+    sh:datatype xs:string;
+    #TODO integer in practice
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("1" "2") ;
+.
+
+kg:CareerMeasureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CareerMeasure (01194)" ;
+    sh:path ont:CareerMeasure;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1; 
+    sh:maxInclusive 99;
+.
+
+kg:FlemishTrainingHolidayHoursNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FlemishTrainingHolidayHoursNbr (01232)" ;
+    sh:path ont:FlemishTrainingHolidayHoursNbr;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 7 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 9999999;
+.
+
+kg:PostedWorkerShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PostedWorker (00893)" ;
+    sh:path ont:PostedWorker;
+    sh:datatype xs:string;
+    #TODO integer in practice
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("1" "2") ;
+.
+
+kg:HourRemunInThousandthOfEuroShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for HourRemunInThousandthOfEuro (00862)" ;
+    sh:path ont:HourRemunInThousandthOfEuro;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 6 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 999999;
+.
+
+kg:PSDDclExemptionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PSDDclExemption (01012)" ;
+    sh:path ont:PSDDclExemption;
+    sh:datatype xs:string;
+    #TODO integer in practice
+    sh:maxCount 1 ;
+    sh:in ("1") ;
+.
+
+kg:RegionalAidMeasureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RegionalAidMeasure (01237)" ;
+    sh:path ont:RegionalAidMeasure;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:maxLength 2 ; #TODO in practice 1
+    sh:in ("B") ;
+.
+
+kg:SectorDetailShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SectorDetail (01215)" ;
+    sh:path ont:SectorDetail;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 9999;
+
+    sh:sparql [
+        sh:message "Invalid ont:SectorDetail code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?sd a an46:SectorDetail;
+                        an46:Code ?value;
+                        an46:validFromQuarter ?startQuarter;
+                        an46:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90015_90313/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?sd))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid code for ont:SectorDetail, does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                OPTIONAL{
+                    ?sd a an46:SectorDetail ; an46:Code ?value.
+                }
+                FILTER(!BOUND(?sd))
+            }""" ;
+    ] ;
+.
+
+kg:SecondPillarInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for SecondPillarInformation (90172)" ;
+    sh:targetClass ont:SecondPillarInformation ;
+
+    sh:property kg:ReferenceYearMonthShape;
+    sh:property kg:MonthlyScaleSalaryShape;
+    sh:property kg:MonthlyAdditionalScaleSalaryShape;
+    sh:property kg:MonthlyHomeIndemnityShape;
+    sh:property kg:OfficialLanguageShape;
+.
+
+kg:ReferenceYearMonthShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReferenceYearMonth (01219)" ;
+    sh:path ont:ReferenceYearMonth;
+    sh:datatype xs:string;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 7 ;
+    sh:maxLength 7 ;
+    sh:pattern "^\\d{4}-\\d{2}$" ;
+    sh:sparql [
+        sh:message "Invalid Year: must be the same as the declaration's year" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value .
+                BIND ( xs:integer(SUBSTR(?value, 1, 4)) as ?year)
+                $this ^ont:R_90015_90172/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND (  FLOOR(?quarter / 10) as ?dYear)
+                FILTER( ?year != ?dYear)
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid Month: must be within the quarter start and end months" ;
+        sh:prefixes <> ;
+        sh:select """
+        SELECT $this ?value 
+        WHERE {
+            $this $PATH ?value.
+            BIND ( (SUBSTR(?value, 6, 2)) as ?month)
+            $this ^ont:R_90015_90172/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+            BIND ( ?quarter - 10 * FLOOR(?quarter / 10) as ?dQuarter)
+            BIND (IF (?dQuarter = 1 && ?month in ("01", "02", "03"), 1, 0) as ?validQ1 )
+            BIND (IF (?dQuarter = 2 && ?month in ("04", "05", "06"), 1, 0) as ?validQ2 )
+            BIND (IF (?dQuarter = 3 && ?month in ("07", "08", "09"), 1, 0) as ?validQ3 )
+            BIND (IF (?dQuarter = 4 && ?month in ("10", "11", "12"), 1, 0) as ?validQ4 )
+            BIND(?validQ1 + ?validQ2 + ?validQ3 + ?validQ4 as ?match)
+            FILTER(?match = 0)
+        }""" ;
+    ]
+.
+
+kg:OfficialLanguageShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OfficialLanguage (00966)" ;
+    sh:path ont:OfficialLanguage;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1 ; 
+    sh:maxInclusive 3 ; 
+.
+
+kg:MonthlyAdditionalScaleSalaryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MonthlyAdditionalScaleSalary (01221)" ;
+    sh:path ont:MonthlyAdditionalScaleSalary;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:maxLength 1 ;
+    sh:minLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+.
+
+kg:MonthlyScaleSalaryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MonthlyScaleSalary (01220)" ;
+    sh:path ont:MonthlyScaleSalary;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+.
+
+kg:MonthlyHomeIndemnityShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for MonthlyHomeIndemnity (01222)" ;
+    sh:path ont:MonthlyHomeIndemnity;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+.
+
+kg:ServiceShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Service (90018)" ;
+    sh:targetClass ont:Service ;
+
+    sh:property kg:ServiceSequenceNbrShape;
+    sh:property kg:ServiceCodeShape;
+    sh:property kg:ServiceNbrDaysShape;
+    sh:property kg:ServiceNbrHoursShape;
+    sh:property kg:FlightNbrMinutesShape;
+.
+
+kg:ServiceNbrHoursShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceNbrHours (00064)" ;
+    sh:path ont:ServiceNbrHours;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 7 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 9999999 ;
+.
+
+kg:ServiceCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceCode (00062)" ; 
+    sh:path ont:ServiceCode;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 999;
+
+    sh:sparql [
+        sh:message "Invalid ont:ServiceCode code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?sc a an8:ServiceCode;
+                        an8:Code ?value;
+                        an8:validFromQuarter ?startQuarter;
+                        an8:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90015_90018/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                } 
+                FILTER(!BOUND(?sc))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid code for ont:ServiceCode, does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                        ?sc a an8:ServiceCode ; an8:Code ?value.
+                }
+                FILTER(!BOUND(?sc))
+            }""" ;
+    ] ;
+.
+
+kg:ServiceSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceSequenceNbr (00061)" ;
+    sh:path ont:ServiceSequenceNbr;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+.
+
+kg:FlightNbrMinutesShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FlightNbrMinutes (00065)" ;
+    sh:path ont:FlightNbrMinutes;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 7 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 9999999 ;
+.
+
+kg:ServiceNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ServiceNbrDays (00063)" ;
+    sh:path ont:ServiceNbrDays;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 5 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 36600;
+.
+
+kg:RemunShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for Remun (90019)" ;
+    sh:targetClass ont:Remun ;
+
+    sh:property kg:RemunSequenceNbrShape;
+    sh:property kg:RemunCodeShape;
+    sh:property kg:BonusPaymentFrequencyShape;
+    sh:property kg:PercentagePaidShape;
+    sh:property kg:RemunAmountShape;
+.
+
+kg:RemunCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RemunCode (00067)" ;
+    sh:path ont:RemunCode;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 999;
+
+    sh:sparql [
+        sh:message "Invalid ont:RemunCode code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?rc a an7:RemunCode;
+                        an7:Code ?value;
+                        an7:validFromQuarter ?startQuarter;
+                        an7:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90015_90019/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?rc))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid code for ont:RemunCode, does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this ont:RemunCode ?value. 
+                OPTIONAL {
+                    ?rc a an7:RemunCode;
+                        an7:Code ?value;
+                    .
+                }
+                FILTER(!BOUND(?rc))
+            }""" ;
+    ] ;
+.
+
+kg:RemunAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RemunAmount (00070)" ;
+    sh:path ont:RemunAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:sparql [
+        sh:message "Only a ont:Remun with a ont:RemunCode having value 029 can have a ont:RemunAmount having value 0." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value;
+                    ont:RemunCode 029.
+                FILTER(?value = 0)
+            }""" ;
+    ] ;
+.
+
+kg:PercentagePaidShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PercentagePaid (00069)" ;
+    sh:path ont:PercentagePaid;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 5 ;
+    sh:maxLength 5 ;
+    sh:minInclusive 10000;
+    sh:maxInclusive 15000;
+.
+
+kg:BonusPaymentFrequencyShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for BonusPaymentFrequency (00068)" ;
+    sh:path ont:BonusPaymentFrequency;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99;
+    sh:sparql [
+        sh:message "There must be one ont:BonusPaymentFrequency if ont:RemunCode has a value in (02, 23, 45, 62)" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ont:RemunCode ?rc.
+                        FILTER(?rc in (02, 23, 45, 62))
+                        $this ?p ?o.
+                        BIND( IF(?p = ont:BonusPaymentFrequency, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                FILTER (?nbrOcc != 1)
+            }""" ;
+    ] ;
+.
+
+kg:RemunSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for RemunSequenceNbr (00066)" ;
+    sh:path ont:RemunSequenceNbr;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+.
+
+kg:OccupationPublicServiceDataShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationPublicServiceData (90411)" ;
+    sh:targetClass ont:OccupationPublicServiceData ;
+
+    sh:sparql [
+        sh:message "A combination of ont:ScaleSalaryStartDate, ont:PecuniarySeniorityStartDate and ont:SalaryScaleReference must not appear several time for the same ont:OccupationPublicServiceData." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?combination ?combinationOcc 
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90411_90412 ?ss .
+                        ?ss ont:ScaleSalaryStartDate ?sssd;
+                            ont:PecuniarySeniorityStartDate ?psssd;
+                            ont:SalaryScaleReference ?ssr;
+                        .
+                        BIND(   CONCAT( STR(?sssd),
+                                CONCAT( STR(?psssd),
+                                        STR(?ssr)))
+                            as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:property kg:OccupationPSDStartDateShape;
+    sh:property kg:OccupationPSDEndDateShape;
+    sh:property kg:PublicSectorInstitutionTypeShape;
+    sh:property kg:PublicSectorPersonnelCategoryShape;
+    sh:property kg:GradeOrFunctionShape;
+    sh:property kg:OfficialLanguageShape;
+    sh:property kg:AssignmentTypeShape;
+    sh:property kg:FunctionNatureShape;
+    sh:property kg:StatutoryRelationEndReasonShape;
+.
+
+kg:OccupationPSDStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationPSDStartDate (00964)" ;
+    sh:path ont:OccupationPSDStartDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "2011-01-01"^^xs:date ;
+    sh:sparql[
+        sh:message "Date must be before the end of declaration's quarter" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90015_90411/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+                FILTER( ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:PublicSectorPersonnelCategoryShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PublicSectorPersonnelCategory (00962)" ;
+    sh:path ont:PublicSectorPersonnelCategory;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+
+    sh:sparql [
+        sh:message "Invalid ont:PublicSectorPersonnelCategory code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?pspc a an43:PublicSectorPersonnelCategory;
+                        an43:Code ?value;
+                        an43:validFromQuarter ?startQuarter;
+                        an43:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90015_90411/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    FILTER(?startQuarter < ?quarter && ?quarter < ?endQuarter)
+                }
+                FILTER(!BOUND(?pspc))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid ont:PublicSectorPersonnelCategory code, code does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL {
+                    ?pspc a an43:PublicSectorPersonnelCategory ; an43:Code ?value.
+                }
+                FILTER(!BOUND(?pspc))
+            }""" ;
+    ] ;
+.
+
+kg:OccupationPSDEndDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for OccupationPSDEndDate (00965)" ;
+    sh:path ont:OccupationPSDEndDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+
+    sh:sparql[
+        sh:message "Date must be before the end of declaration's quarter if ont:OccupationEndingDate is not present and before ont:OccupationEndingDate if mentionned." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ^ont:R_90015_90411 ?Occupation.
+                        ?Occupation ?p ?o.
+                        BIND( IF(?p = ont:OccupationEndingDate, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90015_90411/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                OPTIONAL{	$this ^ont:R_90015_90411/ont:OccupationEndDate ?oed.}
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDateQuarter)
+                BIND(   IF(?nbrOcc = 0, ?endDateQuarter,
+                        IF(?nbrOcc = 1, ?oed, 
+                        "")) as ?endDate)
+                FILTER( ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:PublicSectorInstitutionTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PublicSectorInstitutionType (00961)" ;
+    sh:path ont:PublicSectorInstitutionType;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+
+    sh:sparql [
+        sh:message "Invalid ont:PublicSectorPersonnelCategory code, code is out of valid quarter range." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL{
+                    ?psit a an42:PublicSectorInstitutionType;
+                        an42:Code ?value;
+                        an42:validFromQuarter ?startQuarter;
+                        an42:validToQuarter ?endQuarter;
+                    .
+                    $this ^ont:R_90015_90411/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter.
+                    BIND( IF(?startQuarter < ?quarter && ?quarter < ?endQuarter, 1, 0) AS ?match)
+                }
+                FILTER(!BOUND(?psit))
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        sh:message "Invalid ont:PublicSectorInstitutionType code, code does not exist" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?value 
+            WHERE {
+                $this $PATH ?value. 
+                OPTIONAL {
+                    ?psit a an42:PublicSectorInstitutionType ; an42:Code ?value.
+                }
+                FILTER(!BOUND(?psit))
+            }""" ;
+    ] ;
+.
+
+kg:AssignmentTypeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AssignmentType (00967)" ;
+    sh:path ont:AssignmentType;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 1 ; 
+.
+
+kg:GradeOrFunctionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for GradeOrFunction (00963)" ;
+    sh:path ont:GradeOrFunction;
+    sh:datatype xs:string;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 100 ;
+.
+
+kg:FunctionNatureShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FunctionNature (00968)" ;
+    sh:path ont:FunctionNature;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 1 ; 
+    sh:maxInclusive 3 ; 
+.
+
+kg:StatutoryRelationEndReasonShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for StatutoryRelationEndReason (00969)" ;
+    sh:path ont:StatutoryRelationEndReason;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1 ; 
+    sh:maxInclusive 10 ;
+.
+
+kg:ReorgMeasureInformationShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ReorgMeasureInformation (90438)" ;
+    sh:targetClass ont:ReorgMeasureInformation ;
+
+    sh:node kg:ReorganisationMeasureShape;
+    sh:property kg:ReorganisationMeasurePercentageShape;
+.
+
+kg:ReorganisationMeasurePercentageShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReorganisationMeasurePercentage (01030)" ;
+    sh:path ont:ReorganisationMeasurePercentage;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 9999;
+.
+
+kg:OccupationDeductionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationDeduction (90109)" ;
+    sh:targetClass ont:OccupationDeduction ;
+
+    sh:sparql [
+        sh:message "Each ont:DeductionDetailSequenceNbr must be unique for a ont:Occupation." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(?seqNbr) as ?seqNbrOcc)
+                    WHERE {
+                        $this ont:R_90109_90250 ?NP .
+                        ?NP ont:DeductionDetailSequenceNbr ?seqNbr .
+                    } 
+                    GROUP BY ?seqNbr $this
+                }
+                FILTER(?seqNbrOcc > 1)
+            }""" ;
+    ] ;
+
+    sh:property kg:DeductionCodeShape;
+    sh:property kg:DeductionCalculationBasisShape;
+    sh:property kg:DeductionAmountShape;
+    sh:property kg:DeductionRightStartingDateShape;
+    sh:property kg:ManagementCostNbrMonthsShape;
+    sh:node kg:ReplacedINSSShape;
+    sh:node kg:ApplicantINSSShape;
+    sh:property kg:CertificateOriginShape;
+.
+
+kg:DeductionDetailShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for DeductionDetail (90108)" ;
+    sh:targetClass ont:DeductionDetail ;
+
+    sh:property kg:DeductionDetailSequenceNbrShape;
+    sh:property kg:DeductionDetailAmountShape;
+    sh:property kg:WorkingRegulationsRegistryNbrShape;
+    sh:property kg:WorkingRegulationsStartingDateShape;
+    sh:property kg:AverageWorkingTimeBeforeReductionShape;
+    sh:property kg:AverageWorkingTimeAfterReductionShape;
+.
+
+kg:WorkingRegulationsStartingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkingRegulationsStartingDate (00143)" ;
+    sh:path ont:WorkingRegulationsStartingDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:WorkingRegulationsStartingDate" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this (^ont:R_90110_90108|^ont:R_90110_90108)/ont:DeductionCode ?dc.
+                ?d a dmfas02:DeductionDetailDataDetail;
+                    dmfas02:Code ?dc;
+                    dmfas02:WorkingRegulationsStartingDatePresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;
+.
+
+kg:AverageWorkingTimeAfterReductionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AverageWorkingTimeAfterReduction (00148)" ;
+    sh:path ont:AverageWorkingTimeAfterReduction;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 4800;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:AverageWorkingTimeAfterReduction" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this (^ont:R_90110_90108|^ont:R_90110_90108)/ont:DeductionCode ?dc.
+                ?d a dmfas02:DeductionDetailDataDetail;
+                    dmfas02:Code ?dc;
+                    dmfas02:AverageWorkingTimeAfterReductionPresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;
+.
+
+kg:DeductionDetailAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionDetailAmount (00141)" ;
+    sh:path ont:DeductionDetailAmount;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99999999999;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:AverageWorkingTimeAfterReduction" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this (^ont:R_90110_90108|^ont:R_90110_90108)/ont:DeductionCode ?dc.
+                ?d a dmfas02:DeductionDetailDataDetail;
+                    dmfas02:Code ?dc;
+                    dmfas02:AverageWorkingTimeAfterReductionPresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;
+.
+
+kg:WorkingRegulationsRegistryNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkingRegulationsRegistryNbr (00142)" ;
+    sh:path ont:WorkingRegulationsRegistryNbr;
+    sh:datatype xs:string;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 16 ;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:AverageWorkingTimeAfterReduction" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this (^ont:R_90110_90108|^ont:R_90110_90108)/ont:DeductionCode ?dc.
+                ?d a dmfas02:DeductionDetailDataDetail;
+                    dmfas02:Code ?dc;
+                    dmfas02:AverageWorkingTimeAfterReductionPresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;
+.
+
+kg:AverageWorkingTimeBeforeReductionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AverageWorkingTimeBeforeReduction (00147)" ;
+    sh:path ont:AverageWorkingTimeBeforeReduction;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 4800;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:AverageWorkingTimeBeforeReduction" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this (^ont:R_90110_90108|^ont:R_90110_90108)/ont:DeductionCode ?dc.
+                ?d a dmfas02:DeductionDetailDataDetail;
+                    dmfas02:Code ?dc;
+                    dmfas02:AverageWorkingTimeBeforeReductionPresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;
+.
+
+kg:DeductionDetailSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for DeductionDetailSequenceNbr (00138)" ;
+    sh:path ont:DeductionDetailSequenceNbr;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 99;
+.
+
+kg:ComplIndemnityContributionShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ComplIndemnityContribution (90337)" ;
+    sh:targetClass ont:ComplIndemnityContribution ;
+
+    sh:property kg:ContributionWorkerCodeShape;
+    sh:property kg:ContributionTypeShape;
+    sh:property kg:IndemnityContributionPeriodCodeShape;
+    sh:property kg:ComplIndemnityAmountAdjustNotionShape;
+    sh:property kg:ContributionSequenceNbrShape;
+    sh:property kg:ComplIndemnityAmountShape;
+    sh:property kg:CapitalizationNotionShape;
+    sh:property kg:WelfareBenefitTheoreticalAmountShape;
+    sh:property kg:ComplIndemnityNbrMonthsShape;
+    sh:property kg:NbrMonthsDecimalsShape;
+    sh:property kg:IncompleteMonthNbrDaysShape;
+    sh:property kg:IncompleteMonthReasonShape;
+    sh:property kg:FloorApplicationNotionShape;
+    sh:property kg:ContributionAmountShape;
+.
+
+kg:IndemnityContributionPeriodCodeShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IndemnityContributionPeriodCode (01129)" ;
+    sh:path ont:IndemnityContributionPeriodCode;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 5 ;
+    sh:sparql [
+        sh:message "There must be one ont:IndemnityContributionPeriodCode for a ont:ComplIndemnityContribution if it has a ont:ContributionWorkerCode in (274, 276, 277, 278, 283, 284, 290)" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ont:ContributionWorkerCode ?cwc.
+                        FILTER( ?cwc in (274, 276, 277, 278, 283, 284, 290) )
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                FILTER (?nbrOcc != 1)
+            }""" ;
+    ] ;
+.
+
+kg:IncompleteMonthReasonShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IncompleteMonthReason (00959)" ;
+    sh:path ont:IncompleteMonthReason;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 5 ;
+.
+
+kg:CapitalizationNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for CapitalizationNotion (00892)" ;
+    sh:path ont:CapitalizationNotion;
+    sh:datatype xs:string;
+    # TODO integer in practice
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("0" "1" "2") ;
+.
+
+kg:ComplIndemnityAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityAmount (00830)" ;
+    sh:path ont:ComplIndemnityAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 999999999 ;
+.
+
+kg:ComplIndemnityNbrMonthsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityNbrMonths (00831)" ;
+    sh:path ont:ComplIndemnityNbrMonths;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 181 ;
+.
+
+kg:ContributionSequenceNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ContributionSequenceNbr (00955)" ;
+    sh:path ont:ContributionSequenceNbr;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 3 ;
+    sh:maxLength 3 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 999;
+.
+
+kg:FloorApplicationNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for FloorApplicationNotion (00960)" ;
+    sh:path ont:FloorApplicationNotion;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 4 ;
+.
+
+kg:NbrMonthsDecimalsShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NbrMonthsDecimals (00957)" ;
+    sh:path ont:NbrMonthsDecimals;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 99;
+.
+
+kg:IncompleteMonthNbrDaysShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for IncompleteMonthNbrDays (00958)" ;
+    sh:path ont:IncompleteMonthNbrDays;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 2 ;
+    sh:maxLength 2 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 78;
+    sh:sparql [
+        sh:message "There must be one ont:IncompleteMonthNbrDays for a ont:ComplIndemnityContribution if it has a ont:IncompleteMonthReason different from 0." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ont:IncompleteMonthReason ?imr.
+                        FILTER( ?imr != 0 )
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                FILTER (?nbrOcc != 1)
+            }""" ;
+    ] ;
+.
+
+kg:WelfareBenefitTheoreticalAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WelfareBenefitTheoreticalAmount (00956)" ;
+    sh:path ont:WelfareBenefitTheoreticalAmount;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 9 ;
+    sh:minInclusive 0 ;
+    sh:maxInclusive 999999999 ;
+    sh:sparql [
+        sh:message "There must be one ont:WelfareBenefitTheoreticalAmount for a ont:ComplIndemnityContribution if it has a ont:ContributionWorkerCode with value 295." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ont:ContributionWorkerCode ?cwc.
+                        FILTER( ?cwc != 295 )
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                FILTER (?nbrOcc != 1)
+            }""" ;
+    ] ;
+.
+
+kg:ComplIndemnityAmountAdjustNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ComplIndemnityAmountAdjustNotion (00829)" ;
+    sh:path ont:ComplIndemnityAmountAdjustNotion;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 9;
+.
+
+kg:ScaleSalaryShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ScaleSalary (90412)" ;
+    sh:targetClass ont:ScaleSalary ;
+
+    sh:sparql [
+        sh:message "A combination of ont:AdditionalScaleSalaryReference and ont:AdditionalScaleSalaryStartDate must not appear several time for the same ont:ScaleSalary." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this ?combination ?combinationOcc 
+            WHERE {
+                {
+                    SELECT $this ?combination (COUNT(?combination) as ?combinationOcc)
+                    WHERE {
+                        $this ont:R_90412_90413 ?ass .
+                        ?ass ont:AdditionalScaleSalaryReference ?assr; ont:AdditionalScaleSalaryStartDate ?asssd.
+                        BIND(CONCAT( STR(?assr), STR(?asssd)) as ?combination)
+                    } 
+                    GROUP BY $this ?combination
+                }
+                FILTER(?combinationOcc >1 )
+            }""" ;
+    ] ;
+
+    sh:property kg:ScaleSalaryStartDateShape;
+    sh:property kg:ScaleSalaryEndDateShape;
+    sh:property kg:PecuniarySeniorityStartDateShape;
+    sh:property kg:SalaryScaleReferenceShape;
+    sh:property kg:ScaleSalaryAmountShape;
+    sh:property kg:WeekHoursNbrShape;
+    sh:property kg:ScaleSalaryWeekHoursNbrShape;
+    sh:property kg:ReducedScaleSalaryNotionShape;
+.
+
+kg:SalaryScaleReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for SalaryScaleReference (00973)" ;
+    sh:path ont:SalaryScaleReference;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 12 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999999;
+.
+
+kg:ScaleSalaryAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ScaleSalaryAmount (00974)" ;
+    sh:path ont:ScaleSalaryAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 99999999999 ;
+.
+
+kg:ScaleSalaryEndDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ScaleSalaryEndDate (00971)" ;
+    sh:path ont:ScaleSalaryEndDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql[
+        sh:message "Date must be before the end of declaration's quarter if ont:OccupationPSDEndDateShape is not present and before ont:OccupationPSDEndDateShape if mentionned." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ^ont:R_90411_90412 ?opsd.
+                        ?opsd ?p ?o.
+                        BIND( IF(?p = ont:OccupationPSDEndDateShape, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90411_90412/^ont:R_90015_90411/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                OPTIONAL{ $this ^ont:R_90411_90412/ont:OccupationPSDEndDateShape ?oed. }
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDateQuarter)
+                BIND(   IF(?nbrOcc = 0, ?endDateQuarter,
+                        IF(?nbrOcc = 1, ?oed, 
+                        "")) as ?endDate)
+                FILTER( ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:ScaleSalaryWeekHoursNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ScaleSalaryWeekHoursNbr (00976)" ;
+    sh:path ont:ScaleSalaryWeekHoursNbr;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 4800;
+.
+
+kg:ScaleSalaryStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ScaleSalaryStartDate (00970)" ;
+    sh:path ont:ScaleSalaryStartDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "2011-01-01"^^xs:date ;
+    sh:sparql[
+        sh:message "Date must be before the end of declaration's quarter" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90411_90412/^ont:R_90015_90411/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31"))) as ?endMD)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+                FILTER( ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:WeekHoursNbrShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WeekHoursNbr (00975)" ;
+    sh:path ont:WeekHoursNbr;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 4 ;
+    sh:minInclusive 1;
+    sh:maxInclusive 4800;
+.
+
+kg:ReducedScaleSalaryNotionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for ReducedScaleSalaryNotion (01235)" ;
+    sh:path ont:ReducedScaleSalaryNotion;
+    sh:datatype xs:string;
+    #TODO integer in practice
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:in ("1") ;
+.
+
+kg:PecuniarySeniorityStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for PecuniarySeniorityStartDate (00972)" ;
+    sh:path ont:PecuniarySeniorityStartDate;
+    sh:datatype xs:gYearMonth;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 7 ;
+    sh:maxLength 7 ;
+    sh:pattern "^\\d{4}-\\d{2}$" ;
+.
+
+kg:OccupationDeductionDetailShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for OccupationDeductionDetail (90250)" ;
+    sh:targetClass ont:OccupationDeductionDetail ;
+
+    sh:property kg:DeductionDetailSequenceNbrShape;
+    sh:property kg:WorkingRegulationsStartingDateShape;
+    sh:property kg:WorkingRegulationsEndingDateShape;
+    sh:property kg:AverageWorkingTimeBeforeReductionShape;
+    sh:property kg:AverageWorkingTimeAfterReductionShape;
+.
+
+kg:WorkingRegulationsEndingDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for WorkingRegulationsEndingDate (00914)" ;
+    sh:path ont:WorkingRegulationsEndingDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql [
+        sh:message "Wrong cardinatlity for ont:WorkingRegulationsEndingDate" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                { 
+                    SELECT $this (SUM (?occ) as ?nbrOcc) 
+                    WHERE {
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this (^ont:R_90110_90108|^ont:R_90110_90108)/ont:DeductionCode ?dc.
+                ?d a dmfas02:DeductionDetailDataDetail;
+                    dmfas02:Code ?dc;
+                    dmfas02:WorkingRegulationsEndingDatePresence ?presence;
+                .
+                BIND(   IF(?presence = "Obligatoire"@fr, 1,
+                        IF(?presence = "Interdit"@fr, 0, 
+                        IF(?presence = "Optionnel"@fr, ?nbrOcc, -1))) AS ?expectdNbrOcc) # -1 should cause an error 
+                FILTER(?expectdNbrOcc != ?nbrOcc)
+            }""" ;
+    ] ;.
+
+kg:AdditionalScaleSalaryShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for AdditionalScaleSalary (90413)" ;
+    sh:targetClass ont:AdditionalScaleSalary ;
+
+    sh:property kg:AdditionalScaleSalaryStartDateShape;
+    sh:property kg:AdditionalScaleSalaryEndDateShape;
+    sh:property kg:AdditionalScaleSalaryReferenceShape;
+    sh:property kg:AdditionalScaleSalaryBasisAmountShape;
+    sh:property kg:AdditionalScaleSalaryPercentageShape;
+    sh:property kg:NbrHoursOrServicesShape;
+    sh:property kg:AdditionalScaleSalaryAmountShape;
+.
+
+kg:AdditionalScaleSalaryPercentageShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryPercentage (00981)" ;
+    sh:path ont:AdditionalScaleSalaryPercentage;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 5 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 99999 ;
+.
+
+kg:NbrHoursOrServicesShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for NbrHoursOrServices (00982)" ;
+    sh:path ont:NbrHoursOrServices;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 7 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 9999999 ;
+.
+
+kg:AdditionalScaleSalaryEndDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryEndDate (00979)" ;
+    sh:path ont:AdditionalScaleSalaryEndDate;
+    sh:datatype xs:date;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:sparql[
+        sh:message "Date must be before the end of declaration's quarter if ont:ScaleSalaryEndDate is not present and before ont:ScaleSalaryEndDate if mentionned." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ^ont:R_90412_90413 ?opsd.
+                        ?opsd ?p ?o.
+                        BIND( IF(?p = ont:ScaleSalaryEndDate, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90412_90413/^ont:R_90411_90412/^ont:R_90015_90411/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                OPTIONAL{ $this ^ont:R_90412_90413/ont:ScaleSalaryEndDate ?ssed. }
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDateQuarter)
+                BIND(   IF(?nbrOcc = 0, ?endDateQuarter,
+                        IF(?nbrOcc = 1, ?ssed, 
+                        "")) as ?endDate)
+                FILTER( ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+kg:AdditionalScaleSalaryAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryAmount (00983)" ;
+    sh:path ont:AdditionalScaleSalaryAmount;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 99999999999 ;
+.
+
+kg:AdditionalScaleSalaryReferenceShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryReference (00977)" ;
+    sh:path ont:AdditionalScaleSalaryReference;
+    sh:datatype xs:integer;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 12 ;
+    sh:minInclusive 0;
+    sh:maxInclusive 999999999999;
+.
+
+kg:AdditionalScaleSalaryBasisAmountShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryBasisAmount (00980)" ;
+    sh:path ont:AdditionalScaleSalaryBasisAmount;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 11 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 99999999999 ;
+    sh:sparql [
+        sh:message "There must be one ont:AdditionalScaleSalaryBasisAmount if ont:NbrHoursOrServices is present." ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (SUM (?occ) AS ?nbrOcc)
+                    WHERE {
+                        $this ont:NbrHoursOrServices ?nhos.
+                        $this ?p ?o.
+                        BIND( IF(?p = $PATH, 1, 0) AS ?occ)
+                    }
+                    GROUP BY $this
+                }
+                FILTER (?nbrOcc != 1)
+            }""" ;
+    ] ;
+.
+
+kg:AdditionalScaleSalaryStartDateShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AdditionalScaleSalaryStartDate (00978)" ;
+    sh:path ont:AdditionalScaleSalaryStartDate;
+    sh:datatype xs:date;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 10 ;
+    sh:maxLength 10 ;
+    sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+    sh:minInclusive "2011-01-01"^^xs:date ;
+    sh:sparql[
+        sh:message "Date must be before the end of declaration's quarter" ;
+        sh:prefixes <> ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                $this $PATH ?value.
+                BIND ( xs:dateTime(?value) as ?valueDT )
+                $this ^ont:R_90412_90413/^ont:R_90411_90412/^ont:R_90015_90411/^ont:R_90012_90015/^ont:R_90017_90012/^ont:R_90007_90017/ont:Quarter ?quarter .
+                BIND ( FLOOR(?quarter / 10) as ?dYear)
+                BIND ( ?quarter - 10 * ?dYear as ?dQuarter)
+                BIND (  IF(?dQuarter = 1, "-03-31T00:00:00",
+                        IF(?dQuarter = 2, "-06-30T00:00:00",
+                        IF(?dQuarter = 3, "-08-31T00:00:00",
+                        "-12-31T00:00:00"))) as ?endMD)
+                BIND( xs:dateTime(CONCAT(STR(xs:integer(?dYear)), ?endMD)) as ?endDate)
+                FILTER( ?endDate < ?valueDT)
+            }""" ;
+    ] ;
+.
+
+#ADDED
+kg:EmployerDeclarationIdShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for EmployerDeclarationId (90198)" ;
+    sh:targetClass ont:EmployerDeclarationId ;
+
+    sh:node kg:NOSSLPARegistrationNbrShape;
+    sh:node kg:NOSSRegistrationNbrShape;
+    sh:property kg:TrusteeshipShape;
+    sh:property kg:QuarterShape;
+    sh:node kg:CompanyIDShape;
+    sh:property kg:AnomalySubmissionShape;    
+.
+
+kg:NOSSLPARegistrationNbrShape a sh:NodeShape;
+    rdfs:comment "Property Shape for NOSSLPARegistrationNbr (00109)" ;
+
+    sh:property[
+        sh:path ont:NOSSLPARegistrationNbr;
+        sh:datatype xs:integer;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:maxLength 8 ;
+    ] ;
+
+    sh:or (
+        [
+            sh:path ont:NOSSLPARegistrationNbr;
+            sh:minInclusive 197 ; 
+            sh:maxInclusive 99999926 ;
+            # TODO checksum
+        ]
+        [
+            sh:path ont:NOSSLPARegistrationNbr;
+            sh:in (0) ;
+            sh:sparql [
+                sh:message "CompanyID (00014) is unknown : value is 0" ;
+                sh:prefixes <> ;
+                sh:select """
+                    SELECT $this (ont:CompanyID AS ?path) ?value
+                    WHERE {
+                        $this ont:CompanyID ?value .
+                        FILTER ( ?value = 0 )
+                    }"""
+            ] ;
+        ]
+    ) ;
+.
+
+kg:AnomalySubmissionShape a sh:PropertyShape;
+    rdfs:comment "Property Shape for AnomalySubmission (00852)" ;
+    sh:path ont:AnomalySubmission;
+    sh:datatype xs:integer;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:maxLength 1 ;
+    sh:minInclusive 0 ; 
+    sh:maxInclusive 1 ; 
+.
+
+kg:ContributionUnrelatedToNPIdShape a sh:NodeShape ;
+    rdfs:comment "Property Shape for ContributionUnrelatedToNPId (90199)" ;
+    sh:targetClass ont:ContributionUnrelatedToNPId ;
+
+    sh:property kg:UnrelatedEmployerClassShape;
+    sh:property kg:UnrelatedWorkerCodeShape;
+.

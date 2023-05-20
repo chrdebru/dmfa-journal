@@ -1,0 +1,201 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex43#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex43#> .
+
+<http://kg.socialsecurity.be/ont/annex43#> rdf:type owl:Ontology .
+
+:PublicSectorPersonnelCategory a owl:Class ;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :PublicSectorPersonnelCategory;
+.
+
+:validCodeDMFA a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+    rdfs:domain xsd:boolean;
+.
+
+:validCodeDMFAPPL a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+    rdfs:domain xsd:boolean;
+.
+
+:validCodeCapeloDHG a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+    rdfs:domain xsd:boolean;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :PublicSectorPersonnelCategory;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :PublicSectorPersonnelCategory;
+.
+
+
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory1-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory1-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory1-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory1-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory1-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory1-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory1-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory2-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory2-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory2-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory2-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory2-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory2-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "2"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory2-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory3-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory3-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory3-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory3-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory3-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory3-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "3"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory3-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory4-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory4-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory4-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory4-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory4-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory4-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "4"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory4-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory5-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory5-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory5-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory5-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory5-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory5-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "5"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory5-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory6-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory6-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory6-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory6-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory6-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory6-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "6"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory6-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory7-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory7-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory7-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory7-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory7-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory7-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "7"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory7-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory8-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory8-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory8-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory8-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory8-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory8-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "8"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory8-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory9-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory9-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory9-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory9-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory9-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory9-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "9"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory9-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory10-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory10-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory10-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory10-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory10-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory10-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "10"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory10-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory11-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory11-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory11-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory11-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory11-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory11-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "11"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory11-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory12-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory12-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory12-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory12-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory12-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory12-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "12"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory12-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory13-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory13-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory13-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory13-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory13-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory13-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "13"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory13-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory14-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory14-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory14-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory14-20111> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory14-20111> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory14-20111> <http://kg.socialsecurity.be/ont/annex43#Code> "14"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory14-20111> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory15-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory15-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory15-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory15-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory15-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory15-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "15"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory15-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory16-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory16-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory16-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory16-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory16-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory16-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "16"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory16-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory17-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory17-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory17-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory17-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory17-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory17-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "17"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory17-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory18-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory18-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory18-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory18-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory18-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory18-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "18"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory18-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory19-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory19-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory19-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory19-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory19-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory19-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "19"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory19-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory20-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory20-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory20-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory20-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory20-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory20-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "20"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory20-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory21-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory21-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory21-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory21-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory21-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory21-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "21"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory21-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory22-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory22-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory22-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory22-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory22-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory22-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "22"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory22-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory23-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex43#PublicSectorPersonnelCategory>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory23-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory23-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory23-20221> <http://kg.socialsecurity.be/ont/annex43#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory23-20221> <http://kg.socialsecurity.be/ont/annex43#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory23-20221> <http://kg.socialsecurity.be/ont/annex43#Code> "23"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex43/PublicSectorPersonnelCategory23-20221> <http://kg.socialsecurity.be/ont/annex43#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.

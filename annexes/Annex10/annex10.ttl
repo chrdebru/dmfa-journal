@@ -1,0 +1,102 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex10#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex10#> .
+
+<http://kg.socialsecurity.be/ont/annex10#> rdf:type owl:Ontology .
+
+:IndemnityNature a owl:Class ;
+.
+
+:EmployerClass a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :IndemnityNature;
+.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature01-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature01-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature01-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature01-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature01-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature01-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Indemnité journalière"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature01-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "01"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature02-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature02-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature02-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature02-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature02-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature02-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Allocation annuelle"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature02-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "02"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature03-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature03-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature03-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature03-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature03-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature03-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Rente"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature03-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "03"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature04-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature04-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature04-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature04-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature04-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature04-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Capital"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature04-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "04"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature05-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature05-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature05-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature05-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature05-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature05-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Allocation"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature05-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "05"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature12-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature12-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature12-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature12-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature12-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature12-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Allocation annuelle avec un degré d'incapacité < à 10 %"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature12-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "12"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature12-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Ces codes ne peuvent être utilisés quen cas dexception c.à.d. lorsquon a lautorisation légale de faire la déclaration une seule fois par année. La déclaration dun travailleur avec un degré dincapacité < à 10 % doit de préférence être faite une fois par trimestre en utilisant les codes 01 à 05."@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature13-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature13-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature13-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature13-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature13-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature13-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Rente avec un degré d'incapacité < à 10 %"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature13-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "13"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature13-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Ces codes ne peuvent être utilisés quen cas dexception c.à.d. lorsquon a lautorisation légale de faire la déclaration une seule fois par année. La déclaration dun travailleur avec un degré dincapacité < à 10 % doit de préférence être faite une fois par trimestre en utilisant les codes 01 à 05."@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature15-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature15-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature15-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature15-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature15-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature15-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Allocation avec un degré d'incapacité < à 10 %"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature15-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "15"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature15-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Ces codes ne peuvent être utilisés quen cas dexception c.à.d. lorsquon a lautorisation légale de faire la déclaration une seule fois par année. La déclaration dun travailleur avec un degré dincapacité < à 10 % doit de préférence être faite une fois par trimestre en utilisant les codes 01 à 05."@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature00-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex10#IndemnityNature>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature00-20031> <http://kg.socialsecurity.be/ont/annex10#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature00-20031> <http://kg.socialsecurity.be/ont/annex10#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature00-20031> <http://kg.socialsecurity.be/ont/annex10#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature00-20031> <http://kg.socialsecurity.be/ont/annex10#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature00-20031> <http://www.w3.org/2000/01/rdf-schema#label> "Toutes indemnités"@fr.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature00-20031> <http://kg.socialsecurity.be/ont/annex10#Code> "00"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex10/IndemnityNature00-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Concerne uniquement le Fonds des Maladies Professionnelles"@fr.

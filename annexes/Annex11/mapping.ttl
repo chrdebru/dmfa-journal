@@ -1,0 +1,78 @@
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix fnml:     <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno:      <https://w3id.org/function/ontology#> .
+@prefix grel:     <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix idlab-fn: <http://example.com/idlab/function/> .
+
+@prefix ont: <http://kg.socialsecurity.be/ont/annex11#> .
+@base <http://kg.socialsecurity.be/resource/mappings/annex11/>  .
+
+
+<#IdentificationType-Mapping>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "Adjusted_AN2020-1-FR11.xml" ;
+        rml:referenceFormulation ql:XPath ;
+        rml:iterator "/List/ann11" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:class ont:IdentificationType;
+        rr:termType rr:IRI ;
+        rr:template "http://kg.socialsecurity.be/resource/annex11/IdentificationType{Code}"
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "Code" ;
+            rr:datatype xs:string ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "Description" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFrom ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            rml:reference "begin_geldigheid" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validTo ;
+        rr:objectMap [
+            rr:datatype xs:date ;
+            rml:reference "einde_geldigheid" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validFromQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_vanaf" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:validToQuarter ;
+        rr:objectMap [
+            rr:datatype xs:integer ;
+            rml:reference "Geldig_tot" ;
+        ] ;
+    ] ;
+.

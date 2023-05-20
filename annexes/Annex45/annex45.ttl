@@ -1,0 +1,147 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex45#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex45#> .
+
+<http://kg.socialsecurity.be/ont/annex45#> rdf:type owl:Ontology .
+
+:StaffCode a owl:Class ;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :StaffCode;
+.
+
+:validONSSCode a owl:DatatypeProperty ;
+    rdfs:range :StaffCode;
+    rdfs:domain xsd:boolean;
+.
+
+:validONSSAPLCode a owl:DatatypeProperty ;
+    rdfs:range :StaffCode;
+    rdfs:domain xsd:boolean;
+.
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:range :WorkerStatus;
+.
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:range :WorkerStatus;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :WorkerStatus;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :WorkerStatus;
+.
+
+<http://kg.socialsecurity.be/resource/annex45/StaffCode1-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode1-20181> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode1-20181> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode1-20181> <http://kg.socialsecurity.be/ont/annex45#Code> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode1-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : \n- officier pont (aspirant matelot, aspirant officier, premier/deuxième/troisième/quatrième officier, premier/deuxième second, capitaine);\n- officier machine (aspirant mécanicien, aspirant mécanicien automatisation, mécanicien automatisation, premier mécanicien (en chef), deuxième/troisième, quatrième/cinquième mécanicien, premier électricien);\n- shortsea officier pont (capitaine);\n- shortsea officier machine (premier mécanicien); \n- marin subalterne (maître d'équipage, premier cuisinier, cuisinier et maître d'équipage, cuisinier et maître d'hôtel, pumpman, steward(ess) avec plus d'un an de service, deuxième cuisinier-boulanger, matelot qualifié, matelot qualifié-wiper, wiper-matelot); \n- shoregang (tous les grades)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode1-20181> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode1-20181> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode2-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode2-20181> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode2-20181> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode2-20181> <http://kg.socialsecurity.be/ont/annex45#Code> "2"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode2-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : marin subalterne (matelot)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode2-20181> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode2-20181> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode3-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode3-20181> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode3-20181> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode3-20181> <http://kg.socialsecurity.be/ont/annex45#Code> "3"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode3-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : \n- shortsea officier pont (premier officier); \n- shortsea officier machine (deuxième mécanicien)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode3-20181> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode3-20181> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode4-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode4-20181> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode4-20181> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode4-20181> <http://kg.socialsecurity.be/ont/annex45#Code> "4"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode4-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : shortsea navire à passagers (commissaire)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode4-20181> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode4-20181> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode5-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode5-20181> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode5-20181> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode5-20181> <http://kg.socialsecurity.be/ont/annex45#Code> "5"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode5-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : \n- shortsea officier pont (chef de garde); \n- shortsea officier machine (officier mécanicien chef de garde)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode5-20181> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode5-20181> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode6-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode6-20181> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode6-20181> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode6-20181> <http://kg.socialsecurity.be/ont/annex45#Code> "6"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode6-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : shortsea navire à passagers (premier cuisinier)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode6-20181> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode6-20181> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode7-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode7-20181> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode7-20181> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode7-20181> <http://kg.socialsecurity.be/ont/annex45#Code> "7"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode7-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : \n- shortsea navire à passagers (animateur, gouvernante, maître d'hôtel)\n- shortsea marin subalterne (maître d'équipage, matelot, steward, cuisinier);\n- shortsea officier pont (aspirant officier);\n- shortsea officier machine (aspirant mécanicien);\n- shortsea navire à passagers (aide-cuisinier, électricien)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode7-20181> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode7-20181> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode8-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode8-20181> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode8-20181> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "20194"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode8-20181> <http://kg.socialsecurity.be/ont/annex45#Code> "8"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode8-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : \n- shortsea marin subalterne (maître d'équipage, matelot, steward, cuisinier); \n- shortsea officier pont (aspirant officier); \n- shortsea officier machine (aspirant mécanicien); \n- shortsea navire à passagers (aide-cuisinier, plongeur, barman, garçon, lingère, électricien)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode8-20181> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode8-20181> <http://kg.socialsecurity.be/ont/annex45#validTo> "2019-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode9-20201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode9-20201> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20201"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode9-20201> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode9-20201> <http://kg.socialsecurity.be/ont/annex45#Code> "9"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode9-20201> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : navires à passagers commerciaux officier pont (capitaine)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode9-20201> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2020-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode9-20201> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode10-20201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode10-20201> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20201"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode10-20201> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode10-20201> <http://kg.socialsecurity.be/ont/annex45#Code> "10"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode10-20201> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : navires à passagers commerciaux officier pont (premier officier)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode10-20201> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2020-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode10-20201> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode11-20201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode11-20201> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20201"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode11-20201> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode11-20201> <http://kg.socialsecurity.be/ont/annex45#Code> "11"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode11-20201> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : \n- navires à passagers commerciaux officier pont (deuxième officier)\n- navires à passagers commerciaux officier machine (troisième mécanicien)\n- navires à passagers commerciaux subalterne (matelot)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode11-20201> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2020-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode11-20201> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode12-20201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode12-20201> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20201"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode12-20201> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode12-20201> <http://kg.socialsecurity.be/ont/annex45#Code> "12"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode12-20201> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : \n- navires à passagers commerciaux officier pont (aspirant officier)\n- navires à passagers commerciaux subalterne (steward)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode12-20201> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2020-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode12-20201> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode13-20201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode13-20201> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20201"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode13-20201> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode13-20201> <http://kg.socialsecurity.be/ont/annex45#Code> "13"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode13-20201> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : navires à passagers commerciaux officier machine (premier mécanicien)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode13-20201> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2020-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode13-20201> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode14-20201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode14-20201> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20201"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode14-20201> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode14-20201> <http://kg.socialsecurity.be/ont/annex45#Code> "14"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode14-20201> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : navires à passagers commerciaux officier machine (deuxième mécanicien)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode14-20201> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2020-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode14-20201> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode15-20201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex45#StaffCode>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode15-20201> <http://kg.socialsecurity.be/ont/annex45#validFromQuarter> "20201"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode15-20201> <http://kg.socialsecurity.be/ont/annex45#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode15-20201> <http://kg.socialsecurity.be/ont/annex45#Code> "15"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode15-20201> <http://www.w3.org/2000/01/rdf-schema#comment> "MARIN : navires à passagers commerciaux subalterne (cuisinier)"@fr.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode15-20201> <http://kg.socialsecurity.be/ont/annex45#validFrom> "2020-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex45/StaffCode15-20201> <http://kg.socialsecurity.be/ont/annex45#validTo> "9999-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.

@@ -1,0 +1,426 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex44#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex44#> .
+
+<http://kg.socialsecurity.be/ont/annex44#> rdf:type owl:Ontology .
+
+:ReorganisationMeasure a owl:Class ;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+.
+
+:validCodeDMFA a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+    rdfs:domain xsd:boolean;
+.
+
+:validCodeDMFAPPL a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+    rdfs:domain xsd:boolean;
+.
+
+:validCodeCapeloDHG a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+    rdfs:domain xsd:boolean;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :ReorganisationMeasure;
+.
+
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 1"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://kg.socialsecurity.be/ont/annex44#Code> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Mesure de réduction du temps de travail dans le cadre d'un plan de redistribution du travail approuvé par le Ministre de l'emploi et du travail"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20051"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "20053"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 1"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://kg.socialsecurity.be/ont/annex44#Code> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://www.w3.org/2000/01/rdf-schema#comment> "Mesure de réduction du temps de travail dans le cadre d'un plan de redistribution du travail approuvé par le Ministre de l'emploi et du travail"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure1-20051> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 2"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://kg.socialsecurity.be/ont/annex44#Code> "2"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Systèmes prévus par la CCT n° 42 du 12 juin 1987 relative à l'instauration de nouveaux régimes de travail dans les entreprises. Les expérimentations Hansenne (A.R. 179 du 30/12/1982) ne sont pas comprises."@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure2-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 3"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://kg.socialsecurity.be/ont/annex44#Code> "3"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Interruption complète de la carrière professionnelle (uniquement les systèmes où une intervention de l'ONEm ou de WSE (FL) est prévue)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure3-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 4"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://kg.socialsecurity.be/ont/annex44#Code> "4"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Interruption partielle de la carrière professionnelle (uniquement les systèmes où une intervention de l'ONEm ou de WSE (FL) est prévue)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure4-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 5"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://kg.socialsecurity.be/ont/annex44#Code> "5"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Travail adapté avec perte de salaire c'est à dire lorsque le travailleur accompli des prestations de travail effectives pour lesquelles il perçoit une rémunération réduite."@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure5-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 6"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://kg.socialsecurity.be/ont/annex44#Code> "6"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Prépension à mi-temps"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure6-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 7"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://kg.socialsecurity.be/ont/annex44#Code> "7"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "Réduction des prestations dans le secteur public en application de la loi du 10 avril 1995 (semaine volontaire de quatre jours, départ anticipé à mi-temps). Semaine de quatre jours avec ou sans prime (loi du 19 juillet 2012) pour les travailleurs contractuels."@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure7-20031> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 8"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://kg.socialsecurity.be/ont/annex44#Code> "8"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "Congé pour prestations partielles temporaires pour contractuels dans le secteur public - absence partielle non rémunérée; il faut exclusivement reprendre ici les systèmes pour lesquels aucune intervention de l'ONEM ou du WSE (Région flamande) est prévue"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure8-20181> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20051"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "20051"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 107"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://kg.socialsecurity.be/ont/annex44#Code> "107"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://www.w3.org/2000/01/rdf-schema#comment> "Travailleur contractuel ou statutaire qui suit un projet de formation pour infirmiers dans le cadre du Maribel Social et qui est rémunéré durant son absence au travail parce qu'il suit une formation dans le cadre d'un enseignement à temps plein ou d'un enseignement de promotion sociale en vue d'être diplômé ou  gradué en soins infirmiers."@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure107-20051> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 301"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "301"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Interruption totale de la carrière pour congé parental"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure301-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 302"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "302"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Interruption totale de la carrière en vue d'assurer des soins palliatifs"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure302-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 303"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "303"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Interruption totale de la carrière pour l'assistance ou l'octroi de soins à un membre de son ménage ou à un membre de sa famille jusqu'au deuxième degré qui souffre d'une maladie grave"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure303-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 401"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "401"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Interruption partielle de la carrière pour congé parental"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure401-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 402"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "402"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Interruption partielle de la carrière en vue d'assurer des soins palliatifs"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure402-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 403"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "403"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Interruption partielle de la carrière pour l'assistance ou l'octroi de soins à un membre de son ménage ou à un membre de sa famille jusqu'au deuxième degré qui souffre d'une maladie grave"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure403-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 501"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "501"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Absence (totale ou partielle) assimilée à de l'activité de service ou à du service actif avec une rémunération autre que le traitement d'activité"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure501-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 502"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "502"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Absence (totale ou partielle) assimilée à de l'activité de service et non rémunérée"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure502-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 503"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "503"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Absence (totale ou partielle) assimilée à de l'activité de service, préalable à la mise à la retraite avec traitement d'attente"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure503-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 504"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "504"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Congé parental (absence totale ou partielle)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure504-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 505"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "505"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Absence non rémunérée et assimilée à de l'activité de service en vue d'exercer une activité professionnelle (stage, intérim dans l'enseignement, mission, mandat, ...)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure505-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 506"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "506"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Prestations (partiellement) réduites pour convenances personnelles, ou toute forme de congé ou d'absence, totale ou partielle pour laquelle l'ajout à la liste annexée à la loi du 6 janvier 2014 est requis, et aussi longtemps que cet ajout n'a pas été fait, ou semaine de quatre jours sans prime (loi du 19 juillet 2012) pour les travailleurs statutaires."@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure506-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 507"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "507"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Disponibilité (totale ou partielle) avec traitement d'attente et maintien du droit à l'avancement de traitement"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure507-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 508"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "508"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Disponibilité (totale ou partielle) avec traitement d'attente et perte du droit à l'avancement de traitement"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure508-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 509"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "509"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Disponibilité (totale ou partielle) préalable à la mise à la retraite avec traitement d'attente"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure509-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 510"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "510"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Absence (totale ou partielle) non rémunérée avec position de non-activité, ou disponibilité sans traitement d'attente, ou toute forme de non-activité sans traitement pour les militaires, ou toute forme d'absence ou de congé non rémunéré pour un mandataire politique local"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure510-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 511"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "511"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Absence (totale ou partielle) rémunérée avec position de non-activité ou disponibilité volontaire avec activité professionnelle sans autorisation pour les militaires"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure511-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 512"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "512"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Congé sans traitement avec position de non-activité"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure512-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 513"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "513"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Congé d'office pour mission d'intérêt général en vue d'exercer une fonction de management ou une fonction d'encadrement dans un service public"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure513-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20124"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 514"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://kg.socialsecurity.be/ont/annex44#Code> "514"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://www.w3.org/2000/01/rdf-schema#comment> "Semaine de quatre jours avec prime ou travail à mi-temps à partir de 50 ou 55 ans (loi du 19 juillet 2012) pour les travailleurs statutaires."@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure514-20124> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 515"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "515"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Congé ou dispense de service accordé à un membre du personnel de l'enseignement en vue d'exercer temporairement ou provisoirement une autre fonction dans l'enseignement non universitaire de la même Communauté."@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure515-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20154"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 516"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://kg.socialsecurity.be/ont/annex44#Code> "516"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://www.w3.org/2000/01/rdf-schema#comment> "Absence complète, assimilée à de la non-activité préalable à la pension et avec un traitement d'attente (personnel de police opérationnel)."@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure516-20154> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20221"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 517"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://kg.socialsecurity.be/ont/annex44#Code> "517"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://www.w3.org/2000/01/rdf-schema#comment> "Suspension disciplinaire d'un mandataire local"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure517-20221> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 521"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "521"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Absence (totale ou partielle) non rémunérée par l'employeur pour un travailleur contractuel"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure521-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 531"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "531"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Disponibilité (totale ou partielle) par défaut d'emploi sans traitement d'attente (enseignement)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure531-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 541"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "541"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Retrait temporaire d'emploi par interruption de carrière (militaires - RTEIC-R), ou interruption de carrière avec allocation à charge de l'employeur"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure541-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 542"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "542"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Retrait temporaire d'emploi pour motif de santé (militaires)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure542-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 543"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "543"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Retrait temporaire d'emploi par mesure disciplinaire ou toute autre période de non-activité rémunérée (militaires)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure543-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 544"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "544"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Congé ou interruption de carrière pour soins palliatifs, congé de protection parentale ou interruption de carrière pour congé parental, congé ou interruption de carrière pour soins à un parent gravement malade, avec allocation à charge de l'employeur"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure544-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 545"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "545"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Disponibilité automatique (militaires)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure545-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 546"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "546"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Disponibilité volontaire (militaires)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure546-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 547"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://kg.socialsecurity.be/ont/annex44#Code> "547"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "Retrait temporaire d'emploi par interruption de carrière - « mesures temporaires » (militaires - RTEIC-T)"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure547-20111> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex44#ReorganisationMeasure>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://kg.socialsecurity.be/ont/annex44#validCodeCapeloDHG> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://kg.socialsecurity.be/ont/annex44#validFromQuarter> "20122"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://kg.socialsecurity.be/ont/annex44#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://www.w3.org/2000/01/rdf-schema#label> "MESURE DE RÉORGANISATION DU TRAVAIL : 599"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://kg.socialsecurity.be/ont/annex44#Code> "599"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://www.w3.org/2000/01/rdf-schema#comment> "Absences simultanées impliquant une combinaison de mesures de réorganisation du temps de travail pour un travailleur statutaire du secteur public"@fr.
+<http://kg.socialsecurity.be/resource/annex44/ReorganisationMeasure599-20122> <http://kg.socialsecurity.be/ont/annex44#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.

@@ -1,0 +1,154 @@
+<List>
+
+    <ann35>
+        <Code>1</Code>
+        <Description>travailleur engagé dans le cadre de l'A.R. 495</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20072</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2007-06-30</einde_geldigheid>
+        <Id>1-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 1</Label>
+    </ann35>
+    <ann35>
+        <Code>2</Code>
+        <Description>travailleur engagé dans le cadre de mesures d'activation des allocations de chômage, du revenu d'intégration ou de l'aide sociale financière. Ce code doit uniquement être utilisé dans un des cas suivants:
+ une occupation dans le cadre d'un programme de transition professionnelle reconnu, une occupation dans le cadre d'un poste de travail reconnu, une occupation dans le cadre de l'économie sociale d'insertion (SINE).</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>2-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 2</Label>
+    </ann35>
+    <ann35>
+        <Code>3</Code>
+        <Description>travailleur engagé dans le cadre de la redistribution du travail dans le secteur public</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20134</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2013-12-31</einde_geldigheid>
+        <Id>3-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 3</Label>
+    </ann35>
+    <ann35>
+        <Code>4</Code>
+        <Description>travailleur engagé dans le cadre du troisième circuit du travail</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>4-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 4</Label>
+    </ann35>
+    <ann35>
+        <Code>5</Code>
+        <Description>travailleur engagé dans le cadre du programme PRIME</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>5-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 5</Label>
+    </ann35>
+    <ann35>
+        <Code>10</Code>
+        <Description>travailleur engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 1°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>10-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 10</Label>
+    </ann35>
+    <ann35>
+        <Code>11</Code>
+        <Description>travailleur engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 2°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>11-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 11</Label>
+    </ann35>
+    <ann35>
+        <Code>12</Code>
+        <Description>travailleur engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 3°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>12-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 12</Label>
+    </ann35>
+    <ann35>
+        <Code>13</Code>
+        <Description>travailleur handicapé engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 1°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20033</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-07-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>13-20033</Id>
+        <Label>Mesure de promotion de l'emploi: 13</Label>
+    </ann35>
+    <ann35>
+        <Code>14</Code>
+        <Description>travailleur handicapé engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 2°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20033</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-07-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>14-20033</Id>
+        <Label>Mesure de promotion de l'emploi: 14</Label>
+    </ann35>
+    <ann35>
+        <Code>15</Code>
+        <Description>travailleur handicapé engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 3°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20033</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-07-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>15-20033</Id>
+        <Label>Mesure de promotion de l'emploi: 15</Label>
+    </ann35>
+    <ann35>
+        <Code>16</Code>
+        <Description>travailleur d'origine étrangère engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 1°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20033</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-07-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>16-20033</Id>
+        <Label>Mesure de promotion de l'emploi: 16</Label>
+    </ann35>
+    <ann35>
+        <Code>17</Code>
+        <Description>travailleur d'origine étrangère engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 2°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20033</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-07-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>17-20033</Id>
+        <Label>Mesure de promotion de l'emploi: 17</Label>
+    </ann35>
+    <ann35>
+        <Code>18</Code>
+        <Description>travailleur d'origine étrangère engagé dans le cadre d'une convention de premier emploi définie à l'article 27, premier alinéa, 3°, de la loi du 24 décembre 1999</Description>
+        <Geldig_vanaf>20033</Geldig_vanaf>
+        <Geldig_tot>99994</Geldig_tot>
+        <begin_geldigheid>2003-07-01</begin_geldigheid>
+        <einde_geldigheid>9999-12-31</einde_geldigheid>
+        <Id>18-20033</Id>
+        <Label>Mesure de promotion de l'emploi: 18</Label>
+    </ann35>
+    <ann35>
+        <Code>19</Code>
+        <Description>travailleur ancien chômeur complet indemnisé de 45 ans au moins dont l'engagement est assimilé à une convention de premier emploi</Description>
+        <Geldig_vanaf>20031</Geldig_vanaf>
+        <Geldig_tot>20044</Geldig_tot>
+        <begin_geldigheid>2003-01-01</begin_geldigheid>
+        <einde_geldigheid>2004-12-31</einde_geldigheid>
+        <Id>19-20031</Id>
+        <Label>Mesure de promotion de l'emploi: 19</Label>
+    </ann35>
+</List>

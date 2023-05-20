@@ -1,0 +1,196 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex42#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex42#> .
+
+<http://kg.socialsecurity.be/ont/annex42#> rdf:type owl:Ontology .
+
+:PublicSectorInstitutionType a owl:Class ;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :PublicSectorInstitutionType;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :PublicSectorInstitutionType;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :PublicSectorInstitutionType;
+.
+
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType1-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType1-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType1-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType1-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType2-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType2-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "2"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType2-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType2-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType3-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType3-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "3"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType3-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType3-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType4-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType4-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "4"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType4-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType4-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType5-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType5-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "5"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType5-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType5-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType6-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType6-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "6"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType6-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType6-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType7-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType7-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "7"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType7-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType7-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType8-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType8-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "8"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType8-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType8-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType9-20151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType9-20151> <http://kg.socialsecurity.be/ont/annex42#Code> "9"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType9-20151> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20151"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType9-20151> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType17-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType17-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "17"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType17-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType17-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType20-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType20-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "20"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType20-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType20-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType21-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType21-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "21"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType21-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType21-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType22-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType22-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "22"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType22-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType22-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType23-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType23-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "23"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType23-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType23-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType24-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType24-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "24"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType24-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType24-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType25-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType25-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "25"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType25-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType25-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType26-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType26-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "26"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType26-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType26-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType27-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType27-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "27"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType27-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType27-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType28-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType28-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "28"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType28-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType28-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType30-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType30-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "30"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType30-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType30-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType31-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType31-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "31"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType31-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType31-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType32-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType32-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "32"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType32-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType32-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType33-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType33-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "33"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType33-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType33-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType34-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType34-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "34"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType34-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType34-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType35-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType35-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "35"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType35-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType35-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType40-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType40-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "40"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType40-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType40-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType41-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType41-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "41"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType41-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType41-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType42-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType42-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "42"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType42-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType42-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType43-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType43-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "43"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType43-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType43-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType44-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType44-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "44"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType44-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType44-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType50-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType50-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "50"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType50-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType50-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType51-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType51-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "51"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType51-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType51-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType52-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType52-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "52"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType52-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType52-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType53-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType53-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "53"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType53-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType53-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType54-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType54-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "54"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType54-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType54-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType60-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType60-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "60"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType60-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType60-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType61-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType61-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "61"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType61-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType61-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType62-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType62-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "62"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType62-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType62-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType63-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType63-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "63"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType63-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType63-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType64-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType64-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "64"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType64-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType64-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType65-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType65-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "65"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType65-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType65-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType66-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType66-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "66"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType66-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType66-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType67-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex42#PublicSectorInstitutionType>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType67-20111> <http://kg.socialsecurity.be/ont/annex42#Code> "67"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType67-20111> <http://kg.socialsecurity.be/ont/annex42#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex42/PublicSectorInstitutionType67-20111> <http://kg.socialsecurity.be/ont/annex42#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.

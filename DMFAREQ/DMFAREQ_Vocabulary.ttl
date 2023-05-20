@@ -1,0 +1,696 @@
+
+@prefix : <http://kg.socialsecurity.be/ont/dmfa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/#> .
+@base <http://kg.socialsecurity.be/ont/dmfa#> .
+
+<http://kg.socialsecurity.be/ont/dmfa#> rdf:type owl:Ontology .
+
+:ContributionUnrelatedToNPId a owl:Class;
+dc:identifier "90199";
+rdfs:label "Contribution Unrelated To NP Id"@en;
+rdfs:label "Cotisation non liée à une personne physique - Identification"@fr;
+rdfs:comment """Bloc fonctionnel permettant de déclarer les données d'identification d'une cotisation non liée à une personne physique."""@fr;
+:presence """Obligatoire si la requête concerne une cotisation non liée à une personne physique."""@fr;
+ .
+:EmployerDeclarationId a owl:Class;
+dc:identifier "90198";
+rdfs:label "Employer Declaration Id"@en;
+rdfs:label "Déclaration employeur - Identification"@fr;
+rdfs:comment """Bloc fonctionnel permettant de déclarer les données d'identification d'une déclaration employeur."""@fr;
+:presence """Indispensable"""@fr;
+ .
+:DmfAConsultationRequest a owl:Class;
+dc:identifier "90200";
+rdfs:label "Dmf AConsultation Request"@en;
+rdfs:label "DmfAConsultationRequest"@fr;
+rdfs:comment """Elément racine du message XML permettant de communiquer une demande de consultation de la dernière situation d'une déclaration multifonctionnelle"""@fr;
+:presence """Indispensable"""@fr;
+ .
+:Form a owl:Class;
+dc:identifier "90059";
+rdfs:label "Form"@en;
+rdfs:label "Formulaire"@fr;
+rdfs:comment """Bloc fonctionnel permettant de déclarer un formulaire."""@fr;
+:presence """Indispensable"""@fr;
+ .
+:NaturalPerson a owl:Class;
+dc:identifier "90017";
+rdfs:label "Natural Person"@en;
+rdfs:label "Personne physique"@fr;
+rdfs:comment """Bloc fonctionnel permettant de déclarer les données d'identification d'une personne physique."""@fr;
+:presence """Obligatoire si la requête concerne une personne physique."""@fr;
+ .
+:Reference a owl:Class;
+dc:identifier "90082";
+rdfs:label "Reference"@en;
+rdfs:label "Référence"@fr;
+rdfs:comment """Bloc fonctionnel permettant de préciser des références relatives à un ou plusieurs formulaires ; un formulaire pouvant être une déclaration DmfA originale, une déclaration de modification DmfA, une DRS, une demande de renseignements, une déclaration Dimona, etc."""@fr;
+:presence """Facultatif"""@fr;
+ .
+:Quarter a owl:DatatypeProperty;
+dc:identifier "00013";
+rdfs:label "Quarter"@en;
+rdfs:label "ANNÉE - TRIMESTRE"@fr;
+rdfs:comment """Détermination de l'année et du trimestre.
+Détermination de l'année et du trimestre de la déclaration."""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:EmployerDeclarationId)
+            ]
+    ;
+rdfs:isDefinedBy """Si la demande de consultation concerne une DfmA, la valeur renseignée doit être comprise entre le premier trimestre 2003 (20031) et le dernier trimestre civil échu (AAAAT en cours -1).
+Si la demande de consultation concerne une DmfAPPL, la valeur renseignée doit être comprise entre le premier trimestre 2005 (20051) et le dernier trimestre civil échu (AAAAT en cours -1)."""@fr;
+:length 5;
+:type """Numérique"""@fr;
+.
+
+:WorkerPostBox a owl:DatatypeProperty;
+dc:identifier "00032";
+rdfs:label "Worker Post Box"@en;
+rdfs:label "BOÎTE AUX LETTRES DU TRAVAILLEUR"@fr;
+rdfs:comment """Numéro de boîte aux lettres.
+Numéro de boîte aux lettres du domicile du travailleur.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+:length 4;
+:type """Alphanumérique"""@fr;
+.
+
+:UnrelatedEmployerClass a owl:DatatypeProperty;
+dc:identifier "00019";
+rdfs:label "Unrelated Employer Class"@en;
+rdfs:label "CATÉGORIE DE L'EMPLOYEUR POUR LAQUELLE UNE COTISATION NON LIÉE À UNE PERSONNE PHYSIQUE EST DUE"@fr;
+rdfs:comment """L'indice de catégorie permet de différencier les employeurs selon leurs obligations en fonction de particularités propres à l'activité exercée. Il est attribué par l'ONSS.
+Il s'agit ici de déclarer la catégorie de l'employeur pour laquelle une cotisation non liée à une personne physique est due."""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:ContributionUnrelatedToNPId)
+            ]
+    ;
+rdfs:isDefinedBy """Nombre de 3 chiffres attribué par l'ONSS.
+Pour les valeurs admises pour une administration provinciale ou locale, voir l'annexe 29 - Liste des indices des différentes catégories d'employeurs APL ; uniquement les catégories pour lesquelles le code présence est égal à 4 ou 6."""@fr;
+:length 3;
+:type """Numérique"""@fr;
+.
+
+:WorkerBirthplaceCountry a owl:DatatypeProperty;
+dc:identifier "00169";
+rdfs:label "Worker Birthplace Country"@en;
+rdfs:label "CODE PAYS DU LIEU DE NAISSANCE DU TRAVAILLEUR"@fr;
+rdfs:comment """Code permettant d'identifier un pays.
+Code permettant de déterminer de façon unique le pays du lieu de naissance de la personne physique.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """Voir Annexe 5 - Liste des codes pays.
+"""@fr;
+:length 5;
+:type """Numérique"""@fr;
+.
+
+:WorkerCountry a owl:DatatypeProperty;
+dc:identifier "00035";
+rdfs:label "Worker Country"@en;
+rdfs:label "CODE PAYS DU TRAVAILLEUR"@fr;
+rdfs:comment """Code permettant d'identifier un pays.
+Code permettant d'identifier le pays où est domicilié le travailleur.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """Voir Annexe 5 - Liste des codes pays.
+"""@fr;
+:length 5;
+:type """Numérique"""@fr;
+.
+
+:WorkerZIPCode a owl:DatatypeProperty;
+dc:identifier "00033";
+rdfs:label "Worker ZI PCode"@en;
+rdfs:label "CODE POSTAL DU TRAVAILLEUR"@fr;
+rdfs:comment """Numéro postal d'une commune.
+Numéro postal de l'adresse où le travailleur est domicilié.
+Pour les travailleurs domiciliés en Belgique, il faut utiliser la liste officielle des codes postaux belges.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+:length 9;
+:type """Alphanumérique"""@fr;
+.
+
+:UnrelatedWorkerCode a owl:DatatypeProperty;
+dc:identifier "00020";
+rdfs:label "Unrelated Worker Code"@en;
+rdfs:label "CODE TRAVAILLEUR POUR UNE COTISATION QUI N'EST PAS LIÉE À UNE PERSONNE PHYSIQUE"@fr;
+rdfs:comment """Ce code travailleur permet d'identifier une cotisation qui n'est pas liée à une personne physique mais qui est due au niveau de l'indice de catégorie de l'employeur."""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:ContributionUnrelatedToNPId)
+            ]
+    ;
+rdfs:isDefinedBy """Les codes travailleur correspondant à une cotisation non liée à une personne physique (voir annexe 2 - Liste des codes travailleurs pour lesquels des cotisations sont dues).Pour une administration provinciale ou locale, les codes travailleurs sont repris dans l'annexe 28."""@fr;
+:length 3;
+:type """Numérique"""@fr;
+.
+
+:WorkerBirthplace a owl:DatatypeProperty;
+dc:identifier "00168";
+rdfs:label "Worker Birthplace"@en;
+rdfs:label "COMMUNE - LIEU DE NAISSANCE DU TRAVAILLEUR"@fr;
+rdfs:comment """Nom d'une commune.
+Nom de la commune du lieu de naissance de la personne physique.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+:length 40;
+:type """Alphanumérique"""@fr;
+.
+
+:WorkerCity a owl:DatatypeProperty;
+dc:identifier "00034";
+rdfs:label "Worker City"@en;
+rdfs:label "COMMUNE DU TRAVAILLEUR"@fr;
+rdfs:comment """Nom d'une commune.
+Nom de la commune de domiciliation du travailleur.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """
+S'il s'agit d'une commune belge, la valeur doit référer à un des noms qui correspond en annexe 23 au code postal indiqué dans la zone 00033 [Code postal du travailleur]."""@fr;
+:length 40;
+:type """Alphanumérique"""@fr;
+.
+
+:FormCreationDate a owl:DatatypeProperty;
+dc:identifier "00218";
+rdfs:label "Form Creation Date"@en;
+rdfs:label "DATE DE CRÉATION DU FORMULAIRE"@fr;
+rdfs:comment """
+Date à laquelle le formulaire est créé."""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:Form)
+            ]
+    ;
+rdfs:isDefinedBy """
+AAAA est un élément de [année en cours -1 ; année en cours] ;
+La date ne peut pas se trouver dans le futur."""@fr;
+:length 10;
+:type """Alphanumérique"""@fr;
+.
+
+:WorkerBirthdate a owl:DatatypeProperty;
+dc:identifier "00028";
+rdfs:label "Worker Birthdate"@en;
+rdfs:label "DATE DE NAISSANCE DU TRAVAILLEUR"@fr;
+rdfs:comment """Date de naissance de la personne physique.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """AAAA est un élément de [année de la déclaration-120; année de la déclaration]. """@fr;
+:length 10;
+:type """Alphanumérique"""@fr;
+.
+
+:AnomalySubmission a owl:DatatypeProperty;
+dc:identifier "00852";
+rdfs:label "Anomaly Submission"@en;
+rdfs:label "ENVOI DES ANOMALIES"@fr;
+rdfs:comment """Code qui indique si l'utilisateur souhaite ou non recevoir les anomalies """@fr;
+:presence """Facultative """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:EmployerDeclarationId)
+            ]
+    ;
+rdfs:isDefinedBy """0 = ne pas envoyer les anomalies
+1 = envoyer les anomalies"""@fr;
+:length 1;
+:type """Numérique"""@fr;
+.
+
+:FormCreationHour a owl:DatatypeProperty;
+dc:identifier "00299";
+rdfs:label "Form Creation Hour"@en;
+rdfs:label "HEURE PRÉCISE DE CRÉATION DU FORMULAIRE"@fr;
+rdfs:comment """Moment précis, exprimé en heures, minutes, secondes et millièmes de secondes.
+"""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:Form)
+            ]
+    ;
+rdfs:isDefinedBy """HH est un élément de  [00;23]
+MM est un élément de [00;59]
+SS est un élément de [00;59]
+SSS un élément de [000;999]
+"""@fr;
+:length 12;
+:type """Alphanumérique"""@fr;
+.
+
+:Identification a owl:DatatypeProperty;
+dc:identifier "00296";
+rdfs:label "Identification"@en;
+rdfs:label "IDENTIFICATION DU FORMULAIRE"@fr;
+rdfs:comment """Zone qui décrit la teneur d'un formulaire.
+"""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:Form)
+            ]
+    ;
+rdfs:isDefinedBy """Voir annexe 11 - Identification du formulaire.
+DMFAREQ pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle"""@fr;
+:length 7;
+:type """Alphanumérique"""@fr;
+.
+
+:WorkerInitial a owl:DatatypeProperty;
+dc:identifier "00027";
+rdfs:label "Worker Initial"@en;
+rdfs:label "INITIALE DU DEUXIÈME PRÉNOM DU TRAVAILLEUR"@fr;
+rdfs:comment """Initiale du deuxième prénom d'une personne physique.
+Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """Un caractère alphabétique.
+"""@fr;
+:length 1;
+:type """Alphanumérique"""@fr;
+.
+
+:Nationality a owl:DatatypeProperty;
+dc:identifier "00119";
+rdfs:label "Nationality"@en;
+rdfs:label "NATIONALITÉ DU TRAVAILLEUR"@fr;
+rdfs:comment """Code indiquant la nationalité du travailleur.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """Voir Annexe 5 - Liste des codes pays."""@fr;
+:length 5;
+:type """Numérique"""@fr;
+.
+
+:WorkerName a owl:DatatypeProperty;
+dc:identifier "00025";
+rdfs:label "Worker Name"@en;
+rdfs:label "NOM DU TRAVAILLEUR"@fr;
+rdfs:comment """Nom de famille d'une personne physique.
+Il faut mentionner le nom repris sur le passeport ou la carte d'identité.
+Pour les femmes de nationalité belge, il s'agit du nom de jeune fille.
+Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+:length 48;
+:type """Alphanumérique"""@fr;
+.
+
+:Trusteeship a owl:DatatypeProperty;
+dc:identifier "00012";
+rdfs:label "Trusteeship"@en;
+rdfs:label "NOTION CURATELLE"@fr;
+rdfs:comment """Code qui indique si une déclaration se rapporte à une période pendant laquelle elle est sous curatelle.Cette zone ne peut pas être reprise pour une administration provinciale ou locale."""@fr;
+:presence """Obligatoire si la demande de consultation concerne DmfA."""@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:EmployerDeclarationId)
+            ]
+    ;
+rdfs:isDefinedBy """0 = période pendant laquelle elle n'est pas sous la curatelle
+1 = période pendant laquelle elle est sous curatelle"""@fr;
+:length 1;
+:type """Numérique"""@fr;
+.
+
+:CompanyID a owl:DatatypeProperty;
+dc:identifier "00014";
+rdfs:label "Company ID"@en;
+rdfs:label "NUMÉRO D'ENTREPRISE"@fr;
+rdfs:comment """Numéro qui identifie de manière unique un employeur, qu'il s'agisse d'une personne physique, d'un groupement de personnes physiques ou d'une personne morale.
+"""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:EmployerDeclarationId)
+            ]
+    ;
+rdfs:isDefinedBy """
+Nombre de 10 chiffres dont :
+les positions 1 à 8 correspondent à un numéro d'ordre, avec en première position un chiffre égal à zéro ou 1;
+les positions 9 et 10 correspondent à un nombre de contrôle.
+Si le numéro d'entreprise n'est pas connu, la valeur à renseigner est zéro.Si la demande de consulation concerne un une administration provinciale ou locale, le numéro d'entreprise est toujours connu et ne peut jamais être renseigné à 0."""@fr;
+:length 10;
+:type """Numérique"""@fr;
+.
+
+:INSS a owl:DatatypeProperty;
+dc:identifier "00024";
+rdfs:label "I NS S"@en;
+rdfs:label "NUMÉRO D'IDENTIFICATION DE LA SÉCURITÉ SOCIALE - NISS"@fr;
+rdfs:comment """Numéro d'identification d'une personne physique au sein de la sécurité sociale. Il s'agit du numéro d'identification de la personne physique au registre national ou au registre bis des personnes physiques.
+"""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """La valeur 0 n'est plus autorisée."""@fr;
+:length 11;
+:type """Numérique"""@fr;
+.
+
+:WorkerHouseNbr a owl:DatatypeProperty;
+dc:identifier "00031";
+rdfs:label "Worker House Nbr"@en;
+rdfs:label "NUMÉRO DE L'ADRESSE DU TRAVAILLEUR"@fr;
+rdfs:comment """
+Numéro du domicile du travailleur.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+:length 10;
+:type """Alphanumérique"""@fr;
+.
+
+:SIS a owl:DatatypeProperty;
+dc:identifier "00167";
+rdfs:label "S IS"@en;
+rdfs:label "NUMÉRO DE LA CARTE D'IDENTITÉ SOCIALE"@fr;
+rdfs:comment """Numéro de la carte d'identité sociale d'une personne physique (SIS).
+Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """Nombre de 10 chiffres.
+"""@fr;
+:length 10;
+:type """Numérique"""@fr;
+.
+
+:ReferenceNbr a owl:DatatypeProperty;
+dc:identifier "00222";
+rdfs:label "Reference Nbr"@en;
+rdfs:label "NUMÉRO DE RÉFÉRENCE"@fr;
+rdfs:comment """Le numéro de référence."""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:Reference)
+            ]
+    ;
+rdfs:isDefinedBy """Dans ce message, la longueur autorisée pour cette zone est de 20 positions."""@fr;
+:length 64;
+:type """Alphanumérique"""@fr;
+.
+
+:NaturalPersonSequenceNbr a owl:DatatypeProperty;
+dc:identifier "00023";
+rdfs:label "Natural Person Sequence Nbr"@en;
+rdfs:label "NUMÉRO DE SUITE PERSONNE PHYSIQUE"@fr;
+rdfs:comment """Numéro de suite des personnes physiques au sein d'une déclaration.
+Ce numéro doit être unique au sein d'une déclaration."""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """Nombre entier positif et élément de [1;9999999]."""@fr;
+:length 7;
+:type """Numérique"""@fr;
+.
+
+:NOSSRegistrationNbr a owl:DatatypeProperty;
+dc:identifier "00011";
+rdfs:label "N OS SRegistration Nbr"@en;
+rdfs:label "NUMÉRO ONSS"@fr;
+rdfs:comment """Chaque employeur, qu'il soit une personne physique, un groupement de personnes physiques ou une personne morale, qui occupe du personnel soumis à la loi du 27 juin 1969, doit être inscrit à l'ONSS. Il s'agit d'un numéro ONSS définitif.
+Cette zone ne peut pas être reprise pour une administration provinciale ou locale."""@fr;
+:presence """Obligatoire si la demande de consultation concerne une DmfA."""@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:EmployerDeclarationId)
+            ]
+    ;
+rdfs:isDefinedBy """Nombre entier et élément de [100006;199999934] pour les numéros définitifs.
+Si le numéro unique d'entreprise est connu (zone 00014 différent de zéro), le numéro ONSS peut être mis à la valeur zéro.
+"""@fr;
+:length 9;
+:type """Numérique"""@fr;
+.
+
+:NOSSLPARegistrationNbr a owl:DatatypeProperty;
+dc:identifier "00109";
+rdfs:label "N OS SL PA Registration Nbr"@en;
+rdfs:label "NUMÉRO PPL"@fr;
+rdfs:comment """Toute administration locale ou provinciale qui occupe du personnel doit être inscrite à l'ONSS.Cette zone ne peut pas être reprise pour une DmfA."""@fr;
+:presence """Obligatoire si la demande de consultation concerne une DmfAPPL."""@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:EmployerDeclarationId)
+            ]
+    ;
+rdfs:isDefinedBy """Nombre entier et élément de [00000197;99999926]. Si le numéro unique d'entreprise est connu (zone 00014 différente de zéro), le numéro PPL peut être mis à la valeur zéro."""@fr;
+:length 8;
+:type """Numérique"""@fr;
+.
+
+:ReferenceOrigin a owl:DatatypeProperty;
+dc:identifier "00298";
+rdfs:label "Reference Origin"@en;
+rdfs:label "ORIGINE DE LA RÉFÉRENCE"@fr;
+rdfs:comment """Valeur indiquant la source authentique d'un numéro de référence. 
+"""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:Reference)
+            ]
+    ;
+rdfs:isDefinedBy """1 = le numéro de référence est attribué par un déclarant ou demandeur (une entreprise, un secrétariat social, un développeur de logiciels, ...)
+2 = le numéro de ticket attribué par la Sécurité Sociale, identifiant de manière unique une déclaration , une demande ou une réponse
+3 = le numéro de référence est attribué par un secteur de la Sécurité Sociale
+4 = le numéro de référence est attribué par le service ePost
+5 = le numéro de référence est attribué par la BCSS
+6 = le numéro de référence est attribué par le système d'archivage (DOC-ID)
+7 = le numéro de référence est attribué par le DSP à un fichier archivé (DSP-ID)
+1 pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle"""@fr;
+:length 1;
+:type """Numérique"""@fr;
+.
+
+:WorkerFirstName a owl:DatatypeProperty;
+dc:identifier "00026";
+rdfs:label "Worker First Name"@en;
+rdfs:label "PRÉNOM DU TRAVAILLEUR"@fr;
+rdfs:comment """Premier prénom d'une personne physique.
+Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+:length 24;
+:type """Alphanumérique"""@fr;
+.
+
+:NaturalPersonUserReference a owl:DatatypeProperty;
+dc:identifier "00615";
+rdfs:label "Natural Person User Reference"@en;
+rdfs:label "RÉFÉRENCE UTILISATEUR - PERSONNE PHYSIQUE"@fr;
+rdfs:comment """Référence.
+Référence de la personne physique utilisée par l'employeur ou un secrétariat social agréé."""@fr;
+:presence """Facultative """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """Dans ce message, la longueur autorisée pour cette zone est de 20 positions."""@fr;
+:length 200;
+:type """Alphanumérique"""@fr;
+.
+
+:WorkerStreet a owl:DatatypeProperty;
+dc:identifier "00030";
+rdfs:label "Worker Street"@en;
+rdfs:label "RUE DU TRAVAILLEUR"@fr;
+rdfs:comment """Voie publique.
+Voie publique où se trouve le domicile du travailleur.
+La notion "étage" peut être reprise dans cette zone s'il y a lieu.Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+:length 35;
+:type """Alphanumérique"""@fr;
+.
+
+:WorkerSex a owl:DatatypeProperty;
+dc:identifier "00029";
+rdfs:label "Worker Sex"@en;
+rdfs:label "SEXE DU TRAVAILLEUR"@fr;
+rdfs:comment """Sexe d'une personne physique.
+Cette donnée ne peut plus être utilisée."""@fr;
+:presence """Interdit """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:NaturalPerson)
+            ]
+    ;
+rdfs:isDefinedBy """1 = masculin
+2 = féminin
+"""@fr;
+:length 1;
+:type """Numérique"""@fr;
+.
+
+:AttestationStatus a owl:DatatypeProperty;
+dc:identifier "00110";
+rdfs:label "Attestation Status"@en;
+rdfs:label "STATUT DE L'ATTESTATION"@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:Form)
+            ]
+    ;
+rdfs:isDefinedBy """0 = Original
+1 = Modification
+2 = Duplicata
+3 = Annulation
+4 = Révision
+5 = Rappel
+6 = Clôture
+7 = Modification de l'original version papier
+8 = Copie 0 pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle"""@fr;
+:length 1;
+:type """Numérique"""@fr;
+.
+
+:ReferenceType a owl:DatatypeProperty;
+dc:identifier "00221";
+rdfs:label "Reference Type"@en;
+rdfs:label "TYPE DE LA RÉFÉRENCE"@fr;
+rdfs:comment """Indique sur quoi porte la référence (00222 Numéro de référence) : sur cette déclaration, sur une déclaration qui est apparentée à cette déclaration ou sur un ensemble de déclarations (= un dossier) auquel appartient cette déclaration, sur cette demande, sur ce formulaire."""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:Reference)
+            ]
+    ;
+rdfs:isDefinedBy """0 = la référence porte sur un formulaire précédemment échangé n'ayant pas la même identification (voir annexes 11/302) et qui est en rapport avec le présent formulaire
+1 = la référence porte sur ce formulaire
+2 = la référence est un numéro de dossier et porte sur le dossier (= ensemble de déclarations) auquel appartient cette déclaration ou auquel appartient ce formulaire
+3 = la référence porte sur un formulaire précédemment échangé ayant la même identification (voir annexes 11/302) et qui est en rapport avec le présent formulaire, par exemple : la référence porte sur la déclaration qui doit être annulée par cette déclaration, ou sur la déclaration qui doit être remplacée par cette déclaration, ou sur la déclaration qui fait l'objet de modifications, ou sur la déclaration qui est à l'origine de la création de ce formulaire...
+4 = la référence porte sur une déclaration dans un autre scénario qui est apparentée à cette déclaration
+5 = la référence porte sur une demande
+6 = la référence porte sur une déclaration refusée
+7 = la référence porte sur l'employeur mentionné dans cette déclaration
+8 = la référence porte sur le travailleur mentionné dans cette déclaration
+9 = la référence est une communication structurée qui doit être utilisée dans le cadre d'un payement et porte sur ce formulaire1 pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle"""@fr;
+:length 1;
+:type """Numérique"""@fr;
+.
+
+:TypeForm a owl:DatatypeProperty;
+dc:identifier "00297";
+rdfs:label "Type Form"@en;
+rdfs:label "TYPE DU FORMULAIRE"@fr;
+rdfs:comment """Le type indique la nature du formulaire électronique. 
+"""@fr;
+:presence """Indispensable """@fr;
+rdfs:domain 
+            [ a owl:Class ;
+                owl:unionOf (:Form)
+            ]
+    ;
+rdfs:isDefinedBy """RE = REQUEST - le formulaire contient une demande de renseignements
+PA = PROVISIONAL ANSWER - le formulaire contient une réponse provisoire à une demande de renseignements ou à une communication de renseignements
+FA = FINAL ANSWER - le formulaire contient une réponse définitive à une demande de renseignements ou à une communication de renseignements
+LA = LIMITED ANSWER - le formulaire contient une réponse limitée à une demande de renseignements ou à une communication de renseignements
+SU = SUBMISSION - le formulaire communique des renseignements
+RE pour les requêtes de consultation de la dernière situation d'une déclaration multifonctionnelle"""@fr;
+:length 2;
+:type """Alphanumérique"""@fr;
+.
+
+    :R_90198_90017 a owl:ObjectProperty;
+        rdfs:domain :EmployerDeclarationId;
+        rdfs:range :NaturalPerson;
+    .
+    
+    :R_90198_90199 a owl:ObjectProperty;
+        rdfs:domain :EmployerDeclarationId;
+        rdfs:range :ContributionUnrelatedToNPId;
+    .
+    
+    :R_90200_90059 a owl:ObjectProperty;
+        rdfs:domain :DmfAConsultationRequest;
+        rdfs:range :Form;
+    .
+    
+    :R_90059_90082 a owl:ObjectProperty;
+        rdfs:domain :Form;
+        rdfs:range :Reference;
+    .
+    
+    :R_90059_90198 a owl:ObjectProperty;
+        rdfs:domain :Form;
+        rdfs:range :EmployerDeclarationId;
+    .
+    

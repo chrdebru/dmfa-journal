@@ -1,0 +1,11 @@
+__pycache__/
+package/
+xmlvalidator/
+documentation/
+uploads/
+downloads/
+images/
+.ipynb_checkpoints
+links_papers.txt
+notes.txt
+ref.bib

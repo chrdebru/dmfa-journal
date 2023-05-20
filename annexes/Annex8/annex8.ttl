@@ -1,0 +1,482 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex8#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex8#> .
+
+<http://kg.socialsecurity.be/ont/annex8#> rdf:type owl:Ontology .
+
+:ServiceCode a owl:Class ;
+.
+
+:Code a owl:DatatypeProperty ;
+    rdfs:range :ServiceCode;
+.
+
+:validCodeDMFA a owl:DatatypeProperty ;
+    rdfs:range :ServiceCode;
+    rdfs:domain xsd:boolean;
+.
+
+:validCodeDMFAPPL a owl:DatatypeProperty ;
+    rdfs:range :ServiceCode;
+    rdfs:domain xsd:boolean;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:range :ServiceCode;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:range :ServiceCode;
+.
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:range :ServiceCode;
+.
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:range :ServiceCode;
+.
+
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 1"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "toutes les données relatives au temps de travail couvertes par une rémunération avec cotisations ONSS, à l'exception des vacances légales et complémentaires des ouvriers"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode1-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 2"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "2"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "vacances légales pour ouvriers"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode2-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 3"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "3"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "vacances complémentaires pour ouvriers"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode3-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 4"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "4"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "absence premier jour par suite d'intempéries secteur de la construction (rémunération incomplète)"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode4-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 5"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "5"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "congé-éducation payé ou congé formation flamand"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode5-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 10"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "10"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "rémunération garantie deuxième semaine, jours fériés et jours de remplacement pendant la période de chômage temporaire, fonction de juge social"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode10-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 11"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "11"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "incapacité de travail avec complément ou avance conformément à la CCT 12bis/13bis"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode11-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 12"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "12"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "vacances en vertu d'une CCT rendue obligatoire ou repos compensatoire (construction, commerce de combustibles, industrie de l'habillement et de la confection, industrie et commerce du diamant, batellerie, culture et transformation primaire du lin et/ou du chanvre)"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode12-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 13"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "13"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "promotion sociale"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode13-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20122"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2012-04-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 14"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://kg.socialsecurity.be/ont/annex8#Code> "14"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://www.w3.org/2000/01/rdf-schema#comment> "jours de vacances supplémentaires en cas de début ou de reprise d'activité"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode14-20122> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20154"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2015-10-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 15"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://kg.socialsecurity.be/ont/annex8#Code> "15"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://www.w3.org/2000/01/rdf-schema#comment> "jours de vacances dont le paiement est inclus dans la rémunération flexi"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode15-20154> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 20"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "20"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "jours de repos compensatoire non rémunérés dans le cadre d'une diminution du temps de travail avec rémunération horaire majorée"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode20-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 21"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "21"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "les jours de grève/lock-out"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode21-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 22"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "22"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "mission syndicale"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode22-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "20134"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "2013-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 23"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "23"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "jour de carence"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode23-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 24"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "24"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "congé pour raisons impérieuses sans maintien de la rémunération - pour les gardien(ne)s d'enfants, jours de vacances non rémunérés (maximum 20) et jours fériés légaux lorsqu'il n'y a pas accueil d'enfants"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode24-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 25"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "25"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "devoirs civiques sans maintien de la rémunération, mandat public"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode25-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 26"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "26"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "obligations de milice"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode26-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 30"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "30"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "toutes les données relatives au temps de travail pour lesquelles l'employeur ne paye pas de rémunération ni d'indemnité, à l'exception de celles reprises sous un autre code"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode30-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 31"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://kg.socialsecurity.be/ont/annex8#Code> "31"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "jours d'absence totale non rémunérée, assimilée à de l'activité de service, éventuellement fractionnables (ex.: congé pour des motifs impérieux d'ordre familial)"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode31-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 32"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://kg.socialsecurity.be/ont/annex8#Code> "32"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "jours d'absence totale non rémunérée avec position de non-activité, de disponibilité sans traitement d'attente ou de non-activité non rémunérée pour les militaires"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode32-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 33"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://kg.socialsecurity.be/ont/annex8#Code> "33"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "jours d'absence totale pour congé politique non rémunéré et assimilé à de l'activité de service"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode33-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 41"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://kg.socialsecurity.be/ont/annex8#Code> "41"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "jours d'absence totale rémunérée avec position de non-activité"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode41-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 42"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://kg.socialsecurity.be/ont/annex8#Code> "42"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "jours de disponibilité totale avec traitement d'attente et maintien du droit à l'avancement"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode42-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20111"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 43"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://kg.socialsecurity.be/ont/annex8#Code> "43"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://www.w3.org/2000/01/rdf-schema#comment> "jours de retrait temporaire d'emploi pour motif de santé (militaires)"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode43-20111> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 50"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "50"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "maladie (maladie ou accident de droit commun)"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode50-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 51"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "51"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "protection de la maternité (= mesure de protection de la maternité, repos de maternité ou congé de maternité converti en cas de décès ou d'hospitalisation de la mère) et pauses d'allaitement (CCT n° 80)"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode51-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 52"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "52"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "congé de paternité ou de naissance, congé d'adoption et congé parental d'accueil (seulement les jours à charge du secteur indemnités\")"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode52-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20171"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 53"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://kg.socialsecurity.be/ont/annex8#Code> "53"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://www.w3.org/2000/01/rdf-schema#comment> "maladie (congé prophylactique)"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode53-20171> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 60"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "60"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "accident du travail"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode60-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 61"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "61"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "maladie professionnelle"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode61-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 70"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "70"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "chômage temporaire autre que les codes 71, 72 et 77"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode70-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 71"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "71"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "code spécifique chômage économique"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode71-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 72"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "72"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "code spécifique chômage temporaire pour cause d'intempérie"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode72-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 73"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "73"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "vacances jeunes et vacances seniors"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode73-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20032"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-04-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 74"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://kg.socialsecurity.be/ont/annex8#Code> "74"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://www.w3.org/2000/01/rdf-schema#comment> "manque de prestations d'un gardien ou d'une gardienne d'enfants reconnu, dû à l'absence d'enfants normalement présents, mais qui sont absents pour des raisons indépendantes de la volonté du gardien ou de la gardienne d'enfants"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode74-20032> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20084"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2008-10-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 75"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://kg.socialsecurity.be/ont/annex8#Code> "75"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://www.w3.org/2000/01/rdf-schema#comment> "jours de soins d'accueil"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode75-20084> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20092"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2009-04-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 76"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://kg.socialsecurity.be/ont/annex8#Code> "76"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://www.w3.org/2000/01/rdf-schema#comment> "jours de suspension employés pour manque de travail"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode76-20092> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20202"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "20222"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2020-04-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://kg.socialsecurity.be/ont/annex8#validTo> "2022-06-30"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 77"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://kg.socialsecurity.be/ont/annex8#Code> "77"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://www.w3.org/2000/01/rdf-schema#comment> "Chômage temporaire pour force majeure Corona ou inondations ou guerre Ukraine"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode77-20202> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20154"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2015-10-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 80"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://kg.socialsecurity.be/ont/annex8#Code> "80"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://www.w3.org/2000/01/rdf-schema#comment> "heures supplémentaires à ne pas récupérer et non soumises aux cotisations de sécurité sociale"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode80-20154> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 101"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://kg.socialsecurity.be/ont/annex8#Code> "101"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "Jours de navigation des marins dans le secteur de la marine marchande, des travaux de dragage ou du remorquage maritime"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode101-20181> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20181"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 102"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://kg.socialsecurity.be/ont/annex8#Code> "102"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://www.w3.org/2000/01/rdf-schema#comment> "Jours de congé des marins dans le secteur de la marine marchande, des travaux de dragage ou du remorquage maritime"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode102-20181> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20191"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "99994"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://kg.socialsecurity.be/ont/annex8#validTo> "9999-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 110"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://kg.socialsecurity.be/ont/annex8#Code> "110"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://www.w3.org/2000/01/rdf-schema#comment> "Prestations d'un membre d'un parlement ou d'un gouvernement fédéral ou régional ou d'un mandataire local protégé ; jours couverts par une indemnité de sortie d'un membre d'un parlement, d'un gouvernement, d'une Députation permanente ou d'un collège provincial"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode110-20191> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex8#ServiceCode>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFAPPL> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://kg.socialsecurity.be/ont/annex8#validFromQuarter> "20031"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://kg.socialsecurity.be/ont/annex8#validToQuarter> "20214"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://kg.socialsecurity.be/ont/annex8#validFrom> "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://kg.socialsecurity.be/ont/annex8#validTo> "2021-12-31"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://www.w3.org/2000/01/rdf-schema#label> "CODE PRESTATION: 301"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://kg.socialsecurity.be/ont/annex8#Code> "301"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://www.w3.org/2000/01/rdf-schema#comment> "toutes les données relatives au temps de travail couvertes par une indemnité exonérée de cotisations de sécurité sociale, à l'exception de celles reprises sous un autre code"@fr.
+<http://kg.socialsecurity.be/resource/annex8/ServiceCode301-20031> <http://kg.socialsecurity.be/ont/annex8#validCodeDMFA> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
