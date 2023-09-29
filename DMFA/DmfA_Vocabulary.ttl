@@ -33,7 +33,7 @@ dc:identifier "90578";
 rdfs:label "Activation Information"@en;
 rdfs:label "Activation - Informations"@fr;
 rdfs:comment """Bloc fonctionnel contenant les données permettant de calculer la cotisation d'activation."""@fr;
-:presence """Cardinalité 0 si la zone « Notion de dispense de prestations » (00826) est non présente ou  2 dans tous les blocs Occupation  Informations (90313).
+:presence """Cardinalité 0 si la zone « Notion de dispense de prestations » (00826) est non présente ou 2 dans tous les blocs Occupation  Informations (90313).
 Cardinalité 1 si la zone « Notion de dispense de prestations » (00826) = 2 dans au moins 1 bloc Occupation-Informations (90313)."""@fr;
  .
 :WorkerContribution a owl:Class;
@@ -139,7 +139,7 @@ rdfs:comment """Bloc fonctionnel permettant de déclarer des données de l'occup
 Bloc fonctionnel autorisé uniquement à partir des déclarations du premier trimestre 2011."""@fr;
 :presence """Cardinalité 0 si la ligne travailleur concerne une combinaison d'une catégorie d'employeur et de code travailleur qui n'appartient pas à la liste des combinaisons nécessitant la déclaration d'une ligne Données secteur public de la ligne d'occupation.
 Cardinalité 0 si l'occupation de la ligne travailleur concerne une période couverte par une indemnité de rupture.
-Cardinalité 199 si la ligne travailleur concerne une combinaison d'une catégorie d'employeur et de code travailleur qui appartient à la liste des combinaisons nécessitant la déclaration d'une ligne Données relatives au secteur public."""@fr;
+Cardinalité 1-99 si la ligne travailleur concerne une combinaison d'une catégorie d'employeur et de code travailleur qui appartient à la liste des combinaisons nécessitant la déclaration d'une ligne Données relatives au secteur public."""@fr;
  .
 :Form a owl:Class;
 dc:identifier "90059";
@@ -2866,7 +2866,7 @@ rdfs:isDefinedBy """0 = pas de dispense de prestations
 2 = dispense de prestations durant tout le trimestre
 3 = dispense de prestations durant tout le trimestre octroyée avant le 29/12/2017
 4 = dispense de prestations durant tout le trimestre CCT ou accord individuel conclu avant le 29/12/2017
-5 = dispense de prestations durant tout le trimestre et formation dont coût  20% salaire brut annuel
+5 = dispense de prestations durant tout le trimestre et formation dont coût 20% salaire brut annuel
 6 = dispense de prestations durant tout le trimestre et occupation au moins 1/3 temps pendant tout le trimestre
 9 = pas d'applicationDans le bloc Indemnité Complémentaire (90336), seules les valeurs 0, 1 et 9 sont autorisées. La valeur 9 concerne un travailleur qui n'est pas en interruption de carrière (code travailleur différent de 885) ou un travailleur en interruption de carrière (code travailleur de 885) mais pas à mi-temps.
 Dans le bloc Occupation - Informationsc (90313), seules les valeurs 0, 2, 3, 4, 5 et 6 sont autorisées."""@fr;
@@ -2894,7 +2894,7 @@ rdfs:isDefinedBy """0 = pas de dispense de prestations
 2 = dispense de prestations durant tout le trimestre
 3 = dispense de prestations durant tout le trimestre octroyée avant le 29/12/2017
 4 = dispense de prestations durant tout le trimestre CCT ou accord individuel conclu avant le 29/12/2017
-5 = dispense de prestations durant tout le trimestre et formation dont coût  20% salaire brut annuel
+5 = dispense de prestations durant tout le trimestre et formation dont coût 20% salaire brut annuel
 6 = dispense de prestations durant tout le trimestre et occupation au moins 1/3 temps pendant tout le trimestre
 9 = pas d'applicationDans le bloc Indemnité Complémentaire (90336), seules les valeurs 0, 1 et 9 sont autorisées. La valeur 9 concerne un travailleur qui n'est pas en interruption de carrière (code travailleur différent de 885) ou un travailleur en interruption de carrière (code travailleur de 885) mais pas à mi-temps.
 Dans le bloc Occupation - Informationsc (90313), seules les valeurs 0, 2, 3, 4, 5 et 6 sont autorisées."""@fr;
