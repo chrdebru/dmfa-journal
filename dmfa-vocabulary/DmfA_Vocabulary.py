@@ -179,17 +179,17 @@ next(relationTable, None)
 for row in relationTable:
 
     relationName = "R_" + row[0] + "_" + row[1]
-    labelFr = row[4]
+    labelFr, labelNl, labelEn = row[4], row[5], row[6]
     domain = row[2]
     range = row[3]
 
     outfile.write("""
     :{} a owl:ObjectProperty;
-        rdfs:label "{}"@fr;
+        rdfs:label "{}"@fr, "{}"@nl, "{}"@en;
         rdfs:domain :{};
         rdfs:range :{};
     .
-    """.format(relationName, labelFr, domain, range))
+    """.format(relationName, labelFr, labelNl, labelEn, domain, range))
 
 relationCSV.close()
 

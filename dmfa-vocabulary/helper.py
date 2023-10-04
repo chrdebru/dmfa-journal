@@ -8,7 +8,7 @@ def xmlRoot(filename, encoding):
 
 def addTripleQuotes(s):
     if s:
-        return '"""' + s + '"""'
+        return '"""' + s.strip() + '"""'
     else:
         return None
 
