@@ -5,74 +5,6 @@ from helper import *
 outfile = open("mapping.ttl", "w")
 DmfA_xml_filename = "./data/DmfAExamples/DmfAOriginal_2Quarters_Linked.xml"
 
-# outfile.write("""
-# @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
-# @prefix rr: <http://www.w3.org/ns/r2rml#> .
-# @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
-# @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
-
-# @prefix fnml:     <http://semweb.mmlab.be/ns/fnml#> .
-# @prefix fno:      <https://w3id.org/function/ontology#> .
-# @prefix grel:     <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
-# @prefix idlab-fn: <http://example.com/idlab/function/> .
-
-# @prefix ont: <http://kg.socialsecurity.be/ont/dmfa#> .
-# @base <http://kg.socialsecurity.be/resource/> .
-
-
-# _:executesJoin
-#     a rr:predicateObjectMap ;
-#     rr:predicate fno:executes ;
-#     rr:objectMap [     
-#         rr:constant grel:array_join ;
-#         rr:termType rr:IRI ;
-#     ]
-# .
-
-# _:randomString
-#     a rr:predicateObjectMap;
-#     rr:predicate grel:p_array_a ;
-#     rr:objectMap [
-#         fnml:functionValue [
-#             rr:predicateObjectMap [
-#                 rr:predicate fno:executes ;
-#                 rr:objectMap [
-#                     rr:constant grel:string_substring;
-#                     rr:termType rr:IRI ;
-#                 ]
-#             ] ;
-
-#             rr:predicateObjectMap [
-#                 rr:predicate grel:valueParameter ;
-#                 rr:objectMap [
-#                     fnml:functionValue [
-#                         rr:predicateObjectMap [
-#                             rr:predicate fno:executes ;
-#                             rr:objectMap [ 
-#                                 rr:constant idlab-fn:random ;
-#                                 rr:termType rr:IRI ;
-#                             ] ;
-#                         ] ;
-#                     ] ;
-#                 ] ;
-#             ] ;
-
-#             rr:predicateObjectMap [
-#                 rr:predicate grel:param_int_i_from ;
-#                 rr:object 0;
-#             ] ;
-
-#             rr:predicateObjectMap [
-#                 rr:predicate grel:param_int_i_opt_to ;
-#                 rr:object 7;
-#             ] ;
-
-#         ] ;
-#     ] ;
-# .
-
-# """)
-
 outfile.write("""
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
@@ -100,33 +32,6 @@ def writeBFMapping(path, BFcode):
     path = path.copy()
     path.append(className)
     iterator = "/" + ("/").join(path)
-#     outfile.write("""
-# <#{0}-Mapping>
-#     a rr:TriplesMap ;
-
-#     rml:logicalSource [
-#         rml:source "{2}" ;
-#         rml:referenceFormulation ql:XPath ;
-#         rml:iterator "{1}" ;
-#     ] ;
-
-#     rr:subjectMap [
-#         rr:class ont:{0};
-#         rr:termType rr:BlankNode ;
-#         fnml:functionValue [
-#             rr:predicateObjectMap _:executesJoin;
-#             rr:predicateObjectMap[
-#                 rr:predicate grel:p_array_a ;
-#                 rr:objectMap [
-#                     rr:constant "{0}" ;
-#                     rr:termType rr:Literal ;
-#                 ] ;
-#             ] ;
-#             rr:predicateObjectMap _:randomString;
-#         ] ;
-#     ] ;
-#     """.format(className, iterator, DmfA_xml_filename))
-
     outfile.write("""
 <#{0}-Mapping>
     a rr:TriplesMap ;
@@ -167,16 +72,8 @@ def writeBFMapping(path, BFcode):
     relations = bfToWrite.findall("NrBlocLie")
     if relations[0].text != None:
         for relation in relations:
-
             rangeClassCode = relation.text
             rangeClassName = bfCodeDict[rangeClassCode].find("XmlLabel").text
-#             outfile.write("""
-#     rr:predicateObjectMap [
-#         rr:predicate ont:R_{}_{} ;
-#         rr:objectMap [ rr:parentTriplesMap <#{}-Mapping> ; ] ;
-#     ] ;
-# """.format(BFcode, relation.text, rangeClassName))
-
             outfile.write("""
     rr:predicateObjectMap [
         rr:predicate ont:R_{0}_{1} ;
