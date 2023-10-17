@@ -2,7 +2,7 @@ import csv
 import re
 
 import sys
-sys.path.append("../")
+sys.path.append("../0-files/")
 from helper import *
 
 #TODO think of range of dataproperties
@@ -195,9 +195,8 @@ relationCSV.close()
 
 outfile.close()
 
-from rdflib import Graph
-g = Graph()
-g.parse("DmfA_Vocabulary.ttl", format="ttl")
-print(len(g))
-
-g.serialize(destination="DmfA_Vocabulary.ttl", format="ttl")
+# from rdflib import Graph
+# g = Graph()
+# g.parse("DmfA_Vocabulary.ttl", format="ttl")
+# print(len(g))
+# g.serialize(destination="DmfA_Vocabulary.ttl", format="ttl")
