@@ -7,37 +7,40 @@
 
 <http://kg.socialsecurity.be/ont/annex7#> rdf:type owl:Ontology .
 
-:RemunCode a owl:Class ;
-.
+:RemunCode a owl:Class .
 
 :Code a owl:DatatypeProperty ;
-    rdfs:range :RemunCode;
+    rdfs:domain :RemunCode ;
 .
 
 :validCodeDMFA a owl:DatatypeProperty ;
-    rdfs:range :RemunCode;
-    rdfs:domain xsd:boolean;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:boolean ;
 .
 
 :validCodeDRS a owl:DatatypeProperty ;
-    rdfs:range :RemunCode;
-    rdfs:domain xsd:boolean;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:boolean ;
 .
 
 :validFrom a owl:DatatypeProperty ;
-    rdfs:range :RemunCode;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:date ;
 .
 
 :validTo a owl:DatatypeProperty ;
-    rdfs:range :RemunCode;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:date ;
 .
 
 :validFromQuarter a owl:DatatypeProperty ;
-    rdfs:range :RemunCode;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:integer ;
 .
 
 :validToQuarter a owl:DatatypeProperty ;
-    rdfs:range :RemunCode;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:integer ;
 .
 
 <http://kg.socialsecurity.be/resource/annex7/RemunCode1-20031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.socialsecurity.be/ont/annex7#RemunCode>.
