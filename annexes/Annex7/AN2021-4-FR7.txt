@@ -1,0 +1,40 @@
+1;Tous les montants qui sont toujours considérés comme rémunération, à l'exception des indemnités mentionnées sous un autre code.;Yes;Yes;01/01/1900;01/01/9999
+2;Les primes et les avantages similaires accordés indépendamment du nombre de journées de travail prestées effectivement durant le trimestre de la déclaration.;Yes;Yes;01/01/1900;01/01/9999
+3;Les indemnités qui sont payées au travailleur lorsqu'il est mis fin au contrat de travail et qui sont exprimées en temps de travail.;Yes;Yes;01/01/1900;01/01/9999
+4;Indemnités qui sont payées au travailleur lorsqu'il est mis fin au contrat de travail et qui ne sont pas exprimées en temps de travail.;Yes;Yes;01/01/1900;01/01/9999
+5;Primes reçues par le travailleur qui limite ses prestations de travail dans le cadre des mesures de redistribution du travail.;Yes;Yes;01/01/1900;01/01/9999
+6;Indemnités pour les heures qui ne constituent pas un temps de travail au sens de la loi du 16 mars 1971 sur le travail, accordées en vertu d'une convention collective de travail conclue au sein d'un organe paritaire avant le 1er janvier 1994 et rendue obligatoire par arrêté royal.;Yes;Yes;01/01/1900;01/01/9999
+7;Pécule simple de vacances de sortie payé aux employés et soumis aux cotisations.;Yes;Yes;01/01/2007;01/01/9999
+8;Supplément pour occupation d'un travailleur occasionnel de l'Horeca un samedi, une veille de jour férié, un dimanche ou un jour férié.;Yes;Yes;01/07/2007;30/09/2013
+9;Les indemnités qui sont payées au fonctionnaire statutaire lorsqu'il est mis fin à la relation de travail et qui sont exprimées en temps de travail.;Yes;Yes;01/01/2004;01/01/9999
+10;Avantage de toute nature sur l'utilisation personnelle d'un véhicule de société ou, jusqu'au 31/12/2020, sur l'allocation de mobilité contre restitution d'un véhicule de société ou sur le véhicule de société respectueux de l'environnement dans le cadre du budget de mobilité.;Yes;Yes;01/01/1900;01/01/9999
+11;Pécule simple de vacances de sortie payé aux employés et non soumis aux cotisations.;Yes;Yes;01/01/2007;01/01/9999
+12;Partie du pécule simple de vacances qui correspond au salaire normal des jours de vacances et qui a été payé anticipativement par l'employeur précédent et non soumis aux cotisations.;Yes;Yes;01/01/2007;01/01/9999
+13;Indemnités pour les heures supplémentaires à ne pas récupérer et non soumises aux cotisations de sécurité sociale;Yes;Yes;01/10/2015;01/01/9999
+20;Eléments constitutifs spécifiques de la rémunération qui sont considérés comme rémunération dans le cas des pensionnés pour l'application des règles en matière de cumul d'une pension de retraite et de survie et un revenu résultant d'une activité professionnelle.;Yes;Yes;01/01/1900;01/01/9999
+21;Avantages non soumis aux cotisations ONSS ordinaires.;No;Yes;01/01/1900;31/12/2021
+21;Avantages non soumis aux cotisations ONSS ordinaires.;Yes;Yes;01/01/2022;01/01/9999
+22;Rémunération Flexi;Yes;Yes;01/10/2015;01/01/9999
+23;Primes payées à un travailleur flexijob;Yes;Yes;01/10/2015;01/01/9999
+24;Avantages non soumis aux cotisations ONSS ordinaires pris en compte pour les subsides;Yes;Yes;01/10/2018;01/01/9999
+25;Intervention pour les déplacements en mission;Yes;Yes;01/10/2018;01/01/9999
+26;Primes et/ou subsides autres que Maribel social perçus par l'employeur;Yes;Yes;01/10/2018;01/01/9999
+27;Indemnité pour un membre d'un parlement ou d'un gouvernement fédéral ou régional ou d'un mandataire local protégé;Yes;Yes;01/01/2019;01/01/9999
+28;Indemnité de sortie d'un membre d'un parlement, d'un gouvernement, d'une Députation permanente ou d'un collège provincial;Yes;Yes;01/01/2019;01/01/9999
+29;Solde du budget mobilité versé en espèces et qui correspond au 3ème pilier;Yes;Yes;01/01/2019;01/01/9999
+30;Salaire garanti deuxième semaine.;No;Yes;01/01/1900;01/01/9999
+31;Indemnité CCT 12bis/13bis.;No;Yes;01/01/1900;01/01/9999
+32;Rémunération nette programmes d'activation.;No;Yes;01/01/1900;01/01/9999
+33;Rémunération brute pour un travailleur à temps partiel bénéficiant d'une allocation de garantie de revenus.;No;Yes;01/01/1900;01/01/9999
+41;Indemnité pour responsabilités supplémentaires d'un membre du parlement/gouvernement fédéral ou régional;Yes;No;01/01/2019;01/01/9999
+42;Partie de la rémunération (10%) réservée à la formation des travailleurs engagés dans le cadre des conventions de 1er emploi;Yes;Yes;01/01/2022;01/01/9999
+43;Primes, allocations et indemnités payées à un travailleur contractuel ou statutaire de la police locale qui sont prises en compte pour la dotation sociale II, à l’exception de la prime de fin d’année – soumis à la cotisation pension public;Yes;Yes;01/01/2022;01/01/9999
+44;Primes, allocations et indemnités payées à un travailleur statutaire de la police locale qui sont prises en compte pour la dotation sociale II, à l’exception de la prime de fin d’année – exonéré de la cotisation pension public;Yes;Yes;01/01/2022;01/01/9999
+45;Prime de fin d'année soumise de la police locale;Yes;Yes;01/01/2022;01/01/9999
+46;Avantages non soumis aux cotisations ONSS ordinaires, qui entrent en ligne de compte pour des subsides versés par le Fonds Maribel Social pour le secteur public, à l'exception des éléments déclarés sous un autre code.;Yes;Yes;01/01/2022;01/01/9999
+51;Indemnité payée à un membre du personnel nommé à titre définitif qui est totalement absent dans le cadre d'une mesure de réorganisation du temps de travail;Yes;Yes;01/01/2011;01/01/9999
+61;Tous les montants payés à un travailleur statutaire qui sont toujours considérés comme rémunération, à l'exception des indemnités mentionnées sous un autre code - exonéré de la cotisation de pension secteur public;Yes;Yes;01/01/2022;01/01/9999
+62;Les primes et les avantages similaires payés à un travailleur statutaire accordés indépendamment du nombre de journées de travail prestées effectivement durant le trimestre de la déclaration - exonéré de la cotisation de pension secteur public;Yes;Yes;01/01/2022;01/01/9999
+65;Primes reçues par le travailleur statutaire qui limite ses prestations de travail dans le cadre des mesures de redistribution du travail - exonéré de la cotisation de pension secteur public;Yes;Yes;01/01/2022;01/01/9999
+66;Indemnité payée à un membre du personnel nommé à titre définitif qui est totalement absent dans le cadre d'une mesure de réorganisation du temps de travail - exonéré de la cotisation de pension secteur public;Yes;Yes;01/01/2022;01/01/9999
+67;Tous les montants payés à un travailleur statutaire exonérés de la cotisation sécurité sociale et soumis à la cotisation de pension secteur public;Yes;Yes;01/01/2022;01/01/9999

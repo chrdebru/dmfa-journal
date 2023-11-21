@@ -1,0 +1,44 @@
+@prefix : <http://kg.socialsecurity.be/ont/annex7#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kg.socialsecurity.be/ont/annex7#> .
+
+<http://kg.socialsecurity.be/ont/annex7#> rdf:type owl:Ontology .
+
+:RemunCode a owl:Class .
+
+:Code a owl:DatatypeProperty ;
+    rdfs:domain :RemunCode ;
+.
+
+:validCodeDMFA a owl:DatatypeProperty ;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:boolean ;
+.
+
+:validCodeDRS a owl:DatatypeProperty ;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:boolean ;
+.
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:date ;
+.
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:date ;
+.
+
+:validFromQuarter a owl:DatatypeProperty ;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:integer ;
+.
+
+:validToQuarter a owl:DatatypeProperty ;
+    rdfs:domain :RemunCode ;
+    rdfs:range xsd:integer ;
+.
