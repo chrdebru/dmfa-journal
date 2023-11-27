@@ -1,0 +1,438 @@
+@prefix ns1: <http://kg.socialsecurity.be/ont/annex7#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode1> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 1"@fr ;
+    ns1:Code 1 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Tous les montants qui sont toujours consid?r?s comme r?mun?ration, ? l'exception des indemnit?s mentionn?es sous un autre code."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode10> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 10"@fr ;
+    ns1:Code 10 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Avantage de toute nature sur l'utilisation personnelle d'un v?hicule de soci?t? ou, jusqu'au 31/12/2020, sur l'allocation de mobilit? contre restitution d'un v?hicule de soci?t? ou sur le v?hicule de soci?t? respectueux de l'environnement dans le cadre du budget de mobilit?."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode11> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 11"@fr ;
+    ns1:Code 11 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2007-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20071 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "P?cule simple de vacances de sortie pay? aux employ?s et non soumis aux cotisations."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode12> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 12"@fr ;
+    ns1:Code 12 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2007-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20071 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Partie du p?cule simple de vacances qui correspond au salaire normal des jours de vacances et qui a ?t? pay? anticipativement par l'employeur pr?c?dent et non soumis aux cotisations."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode13> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 13"@fr ;
+    ns1:Code 13 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2015-10-01"^^xsd:date ;
+    ns1:validFromQuarter 20154 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit?s pour les heures suppl?mentaires ? ne pas r?cup?rer et non soumises aux cotisations de s?curit? sociale"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode2> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 2"@fr ;
+    ns1:Code 2 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Les primes et les avantages similaires accord?s ind?pendamment du nombre de journ?es de travail prest?es effectivement durant le trimestre de la d?claration."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode20> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 20"@fr ;
+    ns1:Code 20 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "El?ments constitutifs sp?cifiques de la r?mun?ration qui sont consid?r?s comme r?mun?ration dans le cas des pensionn?s pour l'application des r?gles en mati?re de cumul d'une pension de retraite et de survie et un revenu r?sultant d'une activit? professionnelle."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode21> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 21"@fr ;
+    ns1:Code 21 ;
+    ns1:validCodeDMFA false,
+        true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date,
+        "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001,
+        20221 ;
+    ns1:validTo "2021-12-31"^^xsd:date,
+        "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 20214,
+        99991 ;
+    rdfs:comment "Avantages non soumis aux cotisations ONSS ordinaires."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode22> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 22"@fr ;
+    ns1:Code 22 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2015-10-01"^^xsd:date ;
+    ns1:validFromQuarter 20154 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "R?mun?ration Flexi"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode23> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 23"@fr ;
+    ns1:Code 23 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2015-10-01"^^xsd:date ;
+    ns1:validFromQuarter 20154 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Primes pay?es ? un travailleur flexijob"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode24> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 24"@fr ;
+    ns1:Code 24 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2018-10-01"^^xsd:date ;
+    ns1:validFromQuarter 20184 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Avantages non soumis aux cotisations ONSS ordinaires pris en compte pour les subsides"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode25> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 25"@fr ;
+    ns1:Code 25 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2018-10-01"^^xsd:date ;
+    ns1:validFromQuarter 20184 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Intervention pour les d?placements en mission"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode26> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 26"@fr ;
+    ns1:Code 26 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2018-10-01"^^xsd:date ;
+    ns1:validFromQuarter 20184 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Primes et/ou subsides autres que Maribel social per?us par l'employeur"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode27> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 27"@fr ;
+    ns1:Code 27 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2019-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20191 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit? pour un membre d'un parlement ou d'un gouvernement f?d?ral ou r?gional ou d'un mandataire local prot?g?"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode28> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 28"@fr ;
+    ns1:Code 28 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2019-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20191 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit? de sortie d'un membre d'un parlement, d'un gouvernement, d'une D?putation permanente ou d'un coll?ge provincial"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode29> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 29"@fr ;
+    ns1:Code 29 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2019-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20191 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Solde du budget mobilit? vers? en esp?ces et qui correspond au 3?me pilier"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode3> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 3"@fr ;
+    ns1:Code 3 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Les indemnit?s qui sont pay?es au travailleur lorsqu'il est mis fin au contrat de travail et qui sont exprim?es en temps de travail."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode30> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 30"@fr ;
+    ns1:Code 30 ;
+    ns1:validCodeDMFA false ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Salaire garanti deuxi?me semaine."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode31> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 31"@fr ;
+    ns1:Code 31 ;
+    ns1:validCodeDMFA false ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit? CCT 12bis/13bis."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode32> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 32"@fr ;
+    ns1:Code 32 ;
+    ns1:validCodeDMFA false ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "R?mun?ration nette programmes d'activation."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode33> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 33"@fr ;
+    ns1:Code 33 ;
+    ns1:validCodeDMFA false ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "R?mun?ration brute pour un travailleur ? temps partiel b?n?ficiant d'une allocation de garantie de revenus."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode4> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 4"@fr ;
+    ns1:Code 4 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit?s qui sont pay?es au travailleur lorsqu'il est mis fin au contrat de travail et qui ne sont pas exprim?es en temps de travail."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode41> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 41"@fr ;
+    ns1:Code 41 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL false ;
+    ns1:validFrom "2019-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20191 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit? pour responsabilit?s suppl?mentaires d'un membre du parlement/gouvernement f?d?ral ou r?gional"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode42> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 42"@fr ;
+    ns1:Code 42 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Partie de la r?mun?ration (10%) r?serv?e ? la formation des travailleurs engag?s dans le cadre des conventions de 1er emploi"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode43> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 43"@fr ;
+    ns1:Code 43 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Primes, allocations et indemnit?s pay?es ? un travailleur contractuel ou statutaire de la police locale qui sont prises en compte pour la dotation sociale II, ? l'exception de la prime de fin d'ann?e - soumis ? la cotisation pension public"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode44> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 44"@fr ;
+    ns1:Code 44 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Primes, allocations et indemnit?s pay?es ? un travailleur statutaire de la police locale qui sont prises en compte pour la dotation sociale II, ? l'exception de la prime de fin d'ann?e - exon?r? de la cotisation pension public"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode45> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 45"@fr ;
+    ns1:Code 45 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Prime de fin d'ann?e soumise de la police locale"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode46> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 46"@fr ;
+    ns1:Code 46 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Avantages non soumis aux cotisations ONSS ordinaires, qui entrent en ligne de compte pour des subsides vers?s par le Fonds Maribel Social pour le secteur public, ? l'exception des ?l?ments d?clar?s sous un autre code."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode5> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 5"@fr ;
+    ns1:Code 5 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Primes re?ues par le travailleur qui limite ses prestations de travail dans le cadre des mesures de redistribution du travail."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode51> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 51"@fr ;
+    ns1:Code 51 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2011-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20111 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit? pay?e ? un membre du personnel nomm? ? titre d?finitif qui est totalement absent dans le cadre d'une mesure de r?organisation du temps de travail"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode6> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 6"@fr ;
+    ns1:Code 6 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "1900-01-01"^^xsd:date ;
+    ns1:validFromQuarter 19001 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit?s pour les heures qui ne constituent pas un temps de travail au sens de la loi du 16 mars 1971 sur le travail, accord?es en vertu d'une convention collective de travail conclue au sein d'un organe paritaire avant le 1er janvier 1994 et rendue obligatoire par arr?t? royal."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode61> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 61"@fr ;
+    ns1:Code 61 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Tous les montants pay?s ? un travailleur statutaire qui sont toujours consid?r?s comme r?mun?ration, ? l'exception des indemnit?s mentionn?es sous un autre code - exon?r? de la cotisation de pension secteur public"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode62> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 62"@fr ;
+    ns1:Code 62 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Les primes et les avantages similaires pay?s ? un travailleur statutaire accord?s ind?pendamment du nombre de journ?es de travail prest?es effectivement durant le trimestre de la d?claration - exon?r? de la cotisation de pension secteur public"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode65> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 65"@fr ;
+    ns1:Code 65 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Primes re?ues par le travailleur statutaire qui limite ses prestations de travail dans le cadre des mesures de redistribution du travail - exon?r? de la cotisation de pension secteur public"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode66> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 66"@fr ;
+    ns1:Code 66 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Indemnit? pay?e ? un membre du personnel nomm? ? titre d?finitif qui est totalement absent dans le cadre d'une mesure de r?organisation du temps de travail - exon?r? de la cotisation de pension secteur public"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode67> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 67"@fr ;
+    ns1:Code 67 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2022-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20221 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Tous les montants pay?s ? un travailleur statutaire exon?r?s de la cotisation s?curit? sociale et soumis ? la cotisation de pension secteur public"@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode7> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 7"@fr ;
+    ns1:Code 7 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2007-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20071 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "P?cule simple de vacances de sortie pay? aux employ?s et soumis aux cotisations."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode8> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 8"@fr ;
+    ns1:Code 8 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2007-07-01"^^xsd:date ;
+    ns1:validFromQuarter 20073 ;
+    ns1:validTo "2013-09-30"^^xsd:date ;
+    ns1:validToQuarter 20133 ;
+    rdfs:comment "Suppl?ment pour occupation d'un travailleur occasionnel de l'Horeca un samedi, une veille de jour f?ri?, un dimanche ou un jour f?ri?."@fr .
+
+<http://kg.socialsecurity.be/resource/annex7/RemunCode9> a ns1:RemunCode ;
+    rdfs:label "CODE RÉMUNÉRATION: 9"@fr ;
+    ns1:Code 9 ;
+    ns1:validCodeDMFA true ;
+    ns1:validCodeDMFAPPL true ;
+    ns1:validFrom "2004-01-01"^^xsd:date ;
+    ns1:validFromQuarter 20041 ;
+    ns1:validTo "9999-01-01"^^xsd:date ;
+    ns1:validToQuarter 99991 ;
+    rdfs:comment "Les indemnit?s qui sont pay?es au fonctionnaire statutaire lorsqu'il est mis fin ? la relation de travail et qui sont exprim?es en temps de travail."@fr .
+

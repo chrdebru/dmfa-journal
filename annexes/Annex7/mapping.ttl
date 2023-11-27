@@ -4,6 +4,10 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fnml:   <http://semweb.mmlab.be/ns/fnml#> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+
+@prefix fun: <http://kg.socialsecurity.be/fun#> .
 
 @prefix ont: <http://kg.socialsecurity.be/ont/annex7#> .
 @base <http://kg.socialsecurity.be/resource/mappings/annex7/>  .
@@ -21,78 +25,137 @@
     rr:subjectMap [
         rr:class ont:RemunCode;
         rr:termType rr:IRI ;
-        rr:template "http://kg.socialsecurity.be/resource/annex7/RemunCode{Code}"
+        #rr:template "http://kg.socialsecurity.be/resource/annex7/RemunCode{Code}"
+
+        fnml:execution [
+            fnml:function fun:QuarterFromDate ;
+            fnml:input [
+                fnml:parameter grel:valueParam ;
+                fnml:valueMap [
+                    rml:reference "einde_geldigheid" ;
+                ] ;
+            ] ;
+        ] ;
     ] ;
     
-    # rr:predicateObjectMap [
-    #     rr:predicate rdfs:label ;
-    #     rr:objectMap [
-    #         rml:reference "Label" ;
-    #         rr:language "fr" ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "CODE RÉMUNÉRATION: {Code}" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
     
-    # rr:predicateObjectMap [
-    #     rr:predicate ont:Code ;
-    #     rr:objectMap [
-    #         rml:reference "Code" ;
-    #         rr:datatype xs:integer ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:Code ;
+        rr:objectMap [
+            rml:reference "Code" ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
 
-    # rr:predicateObjectMap [
-    #     rr:predicate rdfs:comment ;
-    #     rr:objectMap [
-    #         rml:reference "Description" ;
-    #         rr:language "fr" ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rml:reference "Description" ;
+            rr:language "fr" ;
+        ] ;
+    ] ;
 
-    # rr:predicateObjectMap [
-    #     rr:predicate ont:validCodeDMFA ;
-    #     rr:objectMap [
-    #         rml:reference "DMFA" ;
-    #         rr:datatype xs:boolean ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:validCodeDMFA ;
+        rr:objectMap [
+            fnml:execution [
+                fnml:function fun:YesNoToBoolean ;
+                fnml:input [
+                    fnml:parameter grel:valueParam ;
+                    fnml:valueMap [
+                        rml:reference "DMFA" ;
+                    ] ;
+                ] ;
+            ] ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
 
-    # rr:predicateObjectMap [
-    #     rr:predicate ont:validCodeDMFAPPL ;
-    #     rr:objectMap [
-    #         rml:reference "ADRS" ;
-    #         rr:datatype xs:boolean ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:validCodeDMFAPPL ;
+        rr:objectMap [
+            fnml:execution [
+                fnml:function fun:YesNoToBoolean ;
+                fnml:input [
+                    fnml:parameter grel:valueParam ;
+                    fnml:valueMap [
+                        rml:reference "ADRS" ;
+                    ] ;
+                ] ;
+            ] ;
+            rr:datatype xs:boolean ;
+        ] ;
+    ] ;
 
-    # rr:predicateObjectMap [
-    #     rr:predicate ont:validFrom ;
-    #     rr:objectMap [
-    #         rr:datatype xs:date ;
-    #         rml:reference "begin_geldigheid" ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:validFrom ;
+        rr:objectMap [
+            fnml:execution [
+                fnml:function fun:FormatDate ;
+                fnml:input [
+                    fnml:parameter grel:valueParam ;
+                    fnml:valueMap [
+                        rml:reference "begin_geldigheid" ;
+                    ] ;
+                ] ;
+            ] ;
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
 
-    # rr:predicateObjectMap [
-    #     rr:predicate ont:validTo ;
-    #     rr:objectMap [
-    #         rr:datatype xs:date ;
-    #         rml:reference "einde_geldigheid" ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:validTo ;
+        rr:objectMap [
+            fnml:execution [
+                fnml:function fun:FormatDate ;
+                fnml:input [
+                    fnml:parameter grel:valueParam ;
+                    fnml:valueMap [
+                        rml:reference "einde_geldigheid" ;
+                    ] ;
+                ] ;
+            ] ;
+            rr:datatype xs:date ;
+        ] ;
+    ] ;
 
-    # rr:predicateObjectMap [
-    #     rr:predicate ont:validFromQuarter ;
-    #     rr:objectMap [
-    #         rr:datatype xs:integer ;
-    #         rml:reference "Geldig_vanaf" ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:validFromQuarter ;
+        rr:objectMap [
+            fnml:execution [
+                fnml:function fun:QuarterFromDate ;
+                fnml:input [
+                    fnml:parameter grel:valueParam ;
+                    fnml:valueMap [
+                        rml:reference "begin_geldigheid" ;
+                    ] ;
+                ] ;
+            ] ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
 
-    # rr:predicateObjectMap [
-    #     rr:predicate ont:validToQuarter ;
-    #     rr:objectMap [
-    #         rr:datatype xs:integer ;
-    #         rml:reference "Geldig_tot" ;
-    #     ] ;
-    # ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:validToQuarter ;
+        rr:objectMap [
+            fnml:execution [
+                fnml:function fun:QuarterFromDate ;
+                fnml:input [
+                    fnml:parameter grel:valueParam ;
+                    fnml:valueMap [
+                        rml:reference "einde_geldigheid" ;
+                    ] ;
+                ] ;
+            ] ;
+            rr:datatype xs:integer ;
+        ] ;
+    ] ;
+
 .
