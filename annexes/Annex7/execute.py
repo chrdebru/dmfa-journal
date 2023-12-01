@@ -4,7 +4,7 @@ config = """
             [CONFIGURATION]
             
             [DataSource1]
-            mappings: ./mapping.ttl
+            mappings: ./annex7-mapping.ttl
             db_url: duckdb:///:memory:
          """
 
