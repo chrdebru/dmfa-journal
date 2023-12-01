@@ -4,11 +4,6 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix fnml:   <http://semweb.mmlab.be/ns/fnml#> .
-@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
-
-@prefix fun: <http://kg.socialsecurity.be/fun#> .
-
 @prefix ont: <http://kg.socialsecurity.be/ont/annex7#> .
 @base <http://kg.socialsecurity.be/resource/mappings/annex7/>  .
 
@@ -22,9 +17,7 @@
                 *,
                 CASE WHEN D = 'Yes' THEN 1 ELSE 0 END AS DMFA,
                 CASE WHEN A = 'Yes' THEN 1 ELSE 0 END AS ADRS,
-
                 CASE WHEN DATEPART('YEAR', VF) < 2003 THEN DATE '2003-01-01' ELSE VF END AS ValidFrom,
-
                 DATEPART('YEAR', ValidFrom) * 10 + CAST(CEIL(DATEPART('MONTH', ValidFrom) / 3) AS INTEGER) AS ValidFromQ,
                 CASE WHEN DATEPART('YEAR', ValidTo) = 9999 THEN 99994 ELSE DATEPART('YEAR', ValidTo) * 10 + CAST(CEIL(DATEPART('MONTH', ValidTo) / 3) AS INTEGER) END AS ValidToQ
             FROM 
@@ -32,7 +25,13 @@
                 'AN2021-4-FR7.txt', 
                 dateformat = '%d/%m/%Y', 
                 delim = ';',
-                columns = {'Code': 'INT', 'Description': 'VARCHAR', 'D': 'VARCHAR', 'A': 'VARCHAR', 'VF': 'DATE', 'ValidTo': 'DATE'}
+                columns = {
+                    'Code': 'INT', 
+                    'Description': 'VARCHAR', 
+                    'D': 'VARCHAR', 
+                    'A': 'VARCHAR', 
+                    'VF': 'DATE', 
+                    'ValidTo': 'DATE'}
             );
         """ ;
     ] ;
