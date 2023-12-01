@@ -16,26 +16,31 @@
 <#RemunCode-Mapping>
     a rr:TriplesMap ;
 
-    rml:logicalSource [
-        rml:source "./AN2021-4-FR7.xml" ;
-        rml:referenceFormulation ql:XPath ;
-        rml:iterator "/List/ann7" ;
+    rr:logicalTable [
+        rr:sqlQuery """
+            SELECT 
+                *,
+                CASE WHEN D = 'Yes' THEN 1 ELSE 0 END AS DMFA,
+                CASE WHEN A = 'Yes' THEN 1 ELSE 0 END AS ADRS,
+
+                CASE WHEN DATEPART('YEAR', VF) < 2003 THEN DATE '2003-01-01' ELSE VF END AS ValidFrom,
+
+                DATEPART('YEAR', ValidFrom) * 10 + CAST(CEIL(DATEPART('MONTH', ValidFrom) / 3) AS INTEGER) AS ValidFromQ,
+                CASE WHEN DATEPART('YEAR', ValidTo) = 9999 THEN 99994 ELSE DATEPART('YEAR', ValidTo) * 10 + CAST(CEIL(DATEPART('MONTH', ValidTo) / 3) AS INTEGER) END AS ValidToQ
+            FROM 
+            READ_CSV(
+                'AN2021-4-FR7.txt', 
+                dateformat = '%d/%m/%Y', 
+                delim = ';',
+                columns = {'Code': 'INT', 'Description': 'VARCHAR', 'D': 'VARCHAR', 'A': 'VARCHAR', 'VF': 'DATE', 'ValidTo': 'DATE'}
+            );
+        """ ;
     ] ;
 
     rr:subjectMap [
         rr:class ont:RemunCode;
         rr:termType rr:IRI ;
-        #rr:template "http://kg.socialsecurity.be/resource/annex7/RemunCode{Code}"
-
-        fnml:execution [
-            fnml:function fun:QuarterFromDate ;
-            fnml:input [
-                fnml:parameter grel:valueParam ;
-                fnml:valueMap [
-                    rml:reference "einde_geldigheid" ;
-                ] ;
-            ] ;
-        ] ;
+        rr:template "http://kg.socialsecurity.be/resource/annex7/RemunCode{Code}-{ValidFromQ}" ;
     ] ;
     
     rr:predicateObjectMap [
@@ -65,15 +70,7 @@
     rr:predicateObjectMap [
         rr:predicate ont:validCodeDMFA ;
         rr:objectMap [
-            fnml:execution [
-                fnml:function fun:YesNoToBoolean ;
-                fnml:input [
-                    fnml:parameter grel:valueParam ;
-                    fnml:valueMap [
-                        rml:reference "DMFA" ;
-                    ] ;
-                ] ;
-            ] ;
+            rml:reference "DMFA" ;
             rr:datatype xs:boolean ;
         ] ;
     ] ;
@@ -81,15 +78,7 @@
     rr:predicateObjectMap [
         rr:predicate ont:validCodeDMFAPPL ;
         rr:objectMap [
-            fnml:execution [
-                fnml:function fun:YesNoToBoolean ;
-                fnml:input [
-                    fnml:parameter grel:valueParam ;
-                    fnml:valueMap [
-                        rml:reference "ADRS" ;
-                    ] ;
-                ] ;
-            ] ;
+            rml:reference "ADRS" ;
             rr:datatype xs:boolean ;
         ] ;
     ] ;
@@ -97,15 +86,7 @@
     rr:predicateObjectMap [
         rr:predicate ont:validFrom ;
         rr:objectMap [
-            fnml:execution [
-                fnml:function fun:FormatDate ;
-                fnml:input [
-                    fnml:parameter grel:valueParam ;
-                    fnml:valueMap [
-                        rml:reference "begin_geldigheid" ;
-                    ] ;
-                ] ;
-            ] ;
+            rml:reference "ValidFrom" ;
             rr:datatype xs:date ;
         ] ;
     ] ;
@@ -113,15 +94,7 @@
     rr:predicateObjectMap [
         rr:predicate ont:validTo ;
         rr:objectMap [
-            fnml:execution [
-                fnml:function fun:FormatDate ;
-                fnml:input [
-                    fnml:parameter grel:valueParam ;
-                    fnml:valueMap [
-                        rml:reference "einde_geldigheid" ;
-                    ] ;
-                ] ;
-            ] ;
+            rml:reference "ValidTo" ;
             rr:datatype xs:date ;
         ] ;
     ] ;
@@ -129,15 +102,7 @@
     rr:predicateObjectMap [
         rr:predicate ont:validFromQuarter ;
         rr:objectMap [
-            fnml:execution [
-                fnml:function fun:QuarterFromDate ;
-                fnml:input [
-                    fnml:parameter grel:valueParam ;
-                    fnml:valueMap [
-                        rml:reference "begin_geldigheid" ;
-                    ] ;
-                ] ;
-            ] ;
+            rml:reference "ValidFromQ" ;
             rr:datatype xs:integer ;
         ] ;
     ] ;
@@ -145,15 +110,7 @@
     rr:predicateObjectMap [
         rr:predicate ont:validToQuarter ;
         rr:objectMap [
-            fnml:execution [
-                fnml:function fun:QuarterFromDate ;
-                fnml:input [
-                    fnml:parameter grel:valueParam ;
-                    fnml:valueMap [
-                        rml:reference "einde_geldigheid" ;
-                    ] ;
-                ] ;
-            ] ;
+            rml:reference "ValidToQ" ;
             rr:datatype xs:integer ;
         ] ;
     ] ;
